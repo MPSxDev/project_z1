@@ -26,6 +26,10 @@ const Collaborations = dynamic(() => import('@/components/sections/Collaboration
   loading: () => <div className="min-h-[400px]" />,
 });
 
+const ContactForm = dynamic(() => import('@/components/solutions/enterprise/EnterpriseContactForm'), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+
 const Footer = dynamic(() => import('@/components/Footer'), {
   loading: () => <div className="min-h-[400px]" />,
 });
@@ -63,6 +67,9 @@ export default function Home() {
 
         {/* Collaborations (Company Logos) */}
         <Collaborations />
+
+        {/* Contact Form */}
+        <ContactForm />
       </main>
 
       <Footer />

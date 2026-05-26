@@ -158,7 +158,7 @@ const Footer = memo(function Footer({ description, minimal = false, ctaText, cta
                   {t('readyToStreamline')}
                 </p>
                 <a
-                  href="mailto:info@yieldge.com"
+                  href="#contact-form"
                   className="inline-block px-5 py-2 sm:px-6 sm:py-2.5 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 transition-colors duration-200 text-xs sm:text-sm mb-4 sm:mb-5"
                 >
                   {t('scheduleConsultation')}
@@ -202,7 +202,7 @@ const Footer = memo(function Footer({ description, minimal = false, ctaText, cta
           <div className="md:hidden mb-6 text-center">
             <p className="text-gray-600 mb-3 text-sm">{t('readyToStreamline')}</p>
             <a
-              href="mailto:info@yieldge.com"
+              href="#contact-form"
               className="inline-block w-full px-6 py-3 bg-gray-900 text-white font-medium rounded-lg hover:bg-gray-800 transition-colors duration-200 text-sm"
             >
               {t('scheduleConsultation')}

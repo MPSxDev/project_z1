@@ -12,6 +12,7 @@ import {
   MessageSquare,
   ArrowRight,
   AlertCircle,
+  Phone,
 } from 'lucide-react';
 import Container from '@/components/ui/Container';
 
@@ -171,13 +172,24 @@ const EnterpriseContactForm = memo(function EnterpriseContactForm() {
               className="mt-10 pt-10 border-t border-gray-200"
             >
               <p className="text-gray-500 mb-4">{t('alternative')}</p>
-              <a
-                href="mailto:contacto@yieldge.com"
-                className="inline-flex items-center gap-2 text-[#1F5CFF] hover:text-blue-600 font-medium transition-colors"
-              >
-                <Mail className="w-5 h-5" />
-                contacto@yieldge.com
-              </a>
+              <div className="flex flex-col gap-3">
+                <a
+                  href="mailto:contacto@yieldge.com"
+                  className="inline-flex items-center gap-2 text-[#1F5CFF] hover:text-blue-600 font-medium transition-colors"
+                >
+                  <Mail className="w-5 h-5" />
+                  contacto@yieldge.com
+                </a>
+                <a
+                  href="https://wa.me/50670724236"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-[#1F5CFF] hover:text-blue-600 font-medium transition-colors"
+                >
+                  <Phone className="w-5 h-5" />
+                  Whatsapp cotizaciones: +506 7072 4236
+                </a>
+              </div>
             </motion.div>
           </motion.div>
 
