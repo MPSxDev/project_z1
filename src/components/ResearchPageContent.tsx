@@ -140,13 +140,6 @@ const methodologySources = [
   { key: 'bestPractices', icon: BookMarked },
 ] as const;
 
-// Research metrics
-const metrics = [
-  { value: '20+', label: 'Research Topics Analyzed' },
-  { value: '5', label: 'Industries Covered' },
-  { value: '100+', label: 'Sources Reviewed' },
-  { value: 'Enterprise', label: 'Focused Research' },
-];
 
 // Research areas
 const researchAreas = [
@@ -610,35 +603,6 @@ const ResearchPageContent = memo(function ResearchPageContent() {
           </div>
         </Container>
       </section>
-
-      {/* ============================================
-          RESEARCH METRICS SECTION
-          Key statistics
-          ============================================ */}
-      <Section background="white">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={staggerContainer}
-          className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8"
-        >
-          {metrics.map((metric, index) => (
-            <motion.div
-              key={index}
-              variants={fadeInUp}
-              className="text-center p-6 lg:p-8 rounded-lg bg-gray-50 border border-gray-200"
-            >
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-gray-900 mb-2">
-                {metric.value}
-              </div>
-              <div className="text-sm text-gray-500 font-medium">
-                {metric.label}
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-      </Section>
 
       {/* ============================================
           RESEARCH BRIEFING SECTION
