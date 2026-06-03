@@ -5,7 +5,6 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import StickyCTA from '@/components/StickyCTA';
 import Container from '@/components/ui/Container';
-import Section from '@/components/ui/Section';
 import { useTranslations } from 'next-intl';
 
 const fadeInUp = {
@@ -21,9 +20,34 @@ const staggerContainer = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.1, delayChildren: 0.1 },
+    transition: { staggerChildren: 0.08, delayChildren: 0.1 },
   },
 };
+
+interface SectionBlockProps {
+  title: string;
+  children: React.ReactNode;
+  index: number;
+}
+
+function SectionBlock({ title, children, index }: SectionBlockProps) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 0.5, delay: index * 0.05 }}
+      className="mb-10 pb-10 border-b border-gray-100 last:border-b-0 last:pb-0"
+    >
+      <h2 className="text-xl sm:text-2xl font-semibold tracking-tight text-gray-900 mb-4">
+        {title}
+      </h2>
+      <div className="text-gray-700 leading-relaxed space-y-4">
+        {children}
+      </div>
+    </motion.div>
+  );
+}
 
 export default function TermsPageClient() {
   const t = useTranslations('terms');
@@ -51,7 +75,7 @@ export default function TermsPageClient() {
             >
               <motion.span
                 variants={fadeInUp}
-                className="block text-gray-500 font-medium text-xs uppercase tracking-[0.2em] mb-4 sm:mb-5"
+                className="inline-block text-[#1F5CFF] font-medium text-xs uppercase tracking-[0.2em] mb-4 sm:mb-5 bg-[#eff4ff] px-3 py-1 rounded-full"
               >
                 {t('lastUpdated')}
               </motion.span>
@@ -72,335 +96,245 @@ export default function TermsPageClient() {
         </section>
 
         {/* Content Section */}
-        <Section background="white">
-          <div className="max-w-4xl mx-auto prose prose-gray">
-            {/* Nature of Professional Services */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.professionalServices.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                {t('sections.professionalServices.description')}
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                {t('sections.professionalServices.noGuarantees')}
-              </p>
-            </section>
+        <section className="py-16 sm:py-20 lg:py-24">
+          <Container>
+            <div className="max-w-4xl mx-auto">
+              {/* Nature of Professional Services */}
+              <SectionBlock title={t('sections.professionalServices.title')} index={0}>
+                <p>{t('sections.professionalServices.description')}</p>
+                <p className="mt-4 p-4 bg-amber-50 rounded-lg border border-amber-200 text-amber-800 text-sm">
+                  {t('sections.professionalServices.noGuarantees')}
+                </p>
+              </SectionBlock>
 
-            {/* Independent Professional Judgment */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.professionalJudgment.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                {t('sections.professionalJudgment.description')}
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                {t('sections.professionalJudgment.disclaimer')}
-              </p>
-            </section>
+              {/* Independent Professional Judgment */}
+              <SectionBlock title={t('sections.professionalJudgment.title')} index={1}>
+                <p>{t('sections.professionalJudgment.description')}</p>
+                <p className="mt-4 p-4 bg-gray-50 rounded-lg border border-gray-200 text-gray-600 text-sm">
+                  {t('sections.professionalJudgment.disclaimer')}
+                </p>
+              </SectionBlock>
 
-            {/* Client Responsibilities */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.clientResponsibilities.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                {t('sections.clientResponsibilities.description')}
-              </p>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>{t('sections.clientResponsibilities.items.accurate')}</li>
-                <li>{t('sections.clientResponsibilities.items.review')}</li>
-                <li>{t('sections.clientResponsibilities.items.validate')}</li>
-                <li>{t('sections.clientResponsibilities.items.approvals')}</li>
-                <li>{t('sections.clientResponsibilities.items.compliance')}</li>
-              </ul>
-            </section>
+              {/* Client Responsibilities */}
+              <SectionBlock title={t('sections.clientResponsibilities.title')} index={2}>
+                <p>{t('sections.clientResponsibilities.description')}</p>
+                <ul className="list-none space-y-3 mt-4">
+                  {['accurate', 'review', 'validate', 'approvals', 'compliance'].map((item, i) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="flex-shrink-0 w-6 h-6 bg-[#eff4ff] text-[#1F5CFF] rounded-full flex items-center justify-center text-xs font-semibold mt-0.5">
+                        {i + 1}
+                      </span>
+                      <span>{t(`sections.clientResponsibilities.items.${item}`)}</span>
+                    </li>
+                  ))}
+                </ul>
+              </SectionBlock>
 
-            {/* Client Decision Responsibility */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.decisionResponsibility.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                {t('sections.decisionResponsibility.description')}
-              </p>
-            </section>
+              {/* Client Decision Responsibility */}
+              <SectionBlock title={t('sections.decisionResponsibility.title')} index={3}>
+                <p>{t('sections.decisionResponsibility.description')}</p>
+              </SectionBlock>
 
-            {/* Intellectual Property */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.intellectualProperty.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                {t('sections.intellectualProperty.description')}
-              </p>
-            </section>
+              {/* Intellectual Property */}
+              <SectionBlock title={t('sections.intellectualProperty.title')} index={4}>
+                <p>{t('sections.intellectualProperty.description')}</p>
+              </SectionBlock>
 
-            {/* Ownership of Deliverables */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.deliverables.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                {t('sections.deliverables.description')}
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                {t('sections.deliverables.retained')}
-              </p>
-            </section>
+              {/* Ownership of Deliverables */}
+              <SectionBlock title={t('sections.deliverables.title')} index={5}>
+                <p>{t('sections.deliverables.description')}</p>
+                <p className="mt-4">{t('sections.deliverables.retained')}</p>
+              </SectionBlock>
 
-            {/* Retained Knowledge */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.retainedKnowledge.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                {t('sections.retainedKnowledge.description')}
-              </p>
-            </section>
+              {/* Retained Knowledge */}
+              <SectionBlock title={t('sections.retainedKnowledge.title')} index={6}>
+                <p>{t('sections.retainedKnowledge.description')}</p>
+              </SectionBlock>
 
-            {/* Confidentiality */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.confidentiality.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                {t('sections.confidentiality.description')}
-              </p>
-              <p className="text-gray-600 leading-relaxed">
-                {t('sections.confidentiality.definition')}
-              </p>
-            </section>
+              {/* Confidentiality */}
+              <SectionBlock title={t('sections.confidentiality.title')} index={7}>
+                <p>{t('sections.confidentiality.description')}</p>
+                <p className="mt-4">{t('sections.confidentiality.definition')}</p>
+              </SectionBlock>
 
-            {/* Security and Information Protection */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.security.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                {t('sections.security.description')}
-              </p>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>{t('sections.security.items.access')}</li>
-                <li>{t('sections.security.items.monitoring')}</li>
-                <li>{t('sections.security.items.audit')}</li>
-                <li>{t('sections.security.items.governance')}</li>
-                <li>{t('sections.security.items.procedures')}</li>
-              </ul>
-              <p className="text-gray-600 leading-relaxed mt-4">
-                {t('sections.security.disclaimer')}
-              </p>
-            </section>
+              {/* Security and Information Protection */}
+              <SectionBlock title={t('sections.security.title')} index={8}>
+                <p>{t('sections.security.description')}</p>
+                <ul className="list-none space-y-3 mt-4">
+                  {['access', 'monitoring', 'audit', 'governance', 'procedures'].map((item, i) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="flex-shrink-0 w-6 h-6 bg-[#eff4ff] text-[#1F5CFF] rounded-full flex items-center justify-center text-xs font-semibold mt-0.5">
+                        {i + 1}
+                      </span>
+                      <span>{t(`sections.security.items.${item}`)}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-4 p-4 bg-gray-50 rounded-lg border border-gray-200 text-gray-600 text-sm">
+                  {t('sections.security.disclaimer')}
+                </p>
+              </SectionBlock>
 
-            {/* Artificial Intelligence Services */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.aiServices.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                {t('sections.aiServices.description')}
-              </p>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>{t('sections.aiServices.items.ai')}</li>
-                <li>{t('sections.aiServices.items.ml')}</li>
-                <li>{t('sections.aiServices.items.genai')}</li>
-                <li>{t('sections.aiServices.items.agents')}</li>
-                <li>{t('sections.aiServices.items.decision')}</li>
-              </ul>
-              <p className="text-gray-600 leading-relaxed mt-4">
-                {t('sections.aiServices.disclaimer')}
-              </p>
-              <p className="text-gray-600 leading-relaxed mt-2">
-                {t('sections.aiServices.review')}
-              </p>
-            </section>
+              {/* Artificial Intelligence Services */}
+              <SectionBlock title={t('sections.aiServices.title')} index={9}>
+                <p>{t('sections.aiServices.description')}</p>
+                <ul className="list-none space-y-3 mt-4">
+                  {['ai', 'ml', 'genai', 'agents', 'decision'].map((item, i) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="flex-shrink-0 w-6 h-6 bg-[#eff4ff] text-[#1F5CFF] rounded-full flex items-center justify-center text-xs font-semibold mt-0.5">
+                        {i + 1}
+                      </span>
+                      <span>{t(`sections.aiServices.items.${item}`)}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-4 p-4 bg-amber-50 rounded-lg border border-amber-200 text-amber-800 text-sm">
+                  {t('sections.aiServices.disclaimer')}
+                </p>
+                <p className="mt-4">{t('sections.aiServices.review')}</p>
+              </SectionBlock>
 
-            {/* Responsible Artificial Intelligence */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.responsibleAI.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                {t('sections.responsibleAI.description')}
-              </p>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>{t('sections.responsibleAI.items.transparency')}</li>
-                <li>{t('sections.responsibleAI.items.accountability')}</li>
-                <li>{t('sections.responsibleAI.items.oversight')}</li>
-                <li>{t('sections.responsibleAI.items.explainability')}</li>
-                <li>{t('sections.responsibleAI.items.traceability')}</li>
-                <li>{t('sections.responsibleAI.items.risk')}</li>
-              </ul>
-              <p className="text-gray-600 leading-relaxed mt-4">
-                {t('sections.responsibleAI.augment')}
-              </p>
-            </section>
+              {/* Responsible Artificial Intelligence */}
+              <SectionBlock title={t('sections.responsibleAI.title')} index={10}>
+                <p>{t('sections.responsibleAI.description')}</p>
+                <ul className="list-none space-y-3 mt-4">
+                  {['transparency', 'accountability', 'oversight', 'explainability', 'traceability', 'risk'].map((item, i) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="flex-shrink-0 w-6 h-6 bg-[#eff4ff] text-[#1F5CFF] rounded-full flex items-center justify-center text-xs font-semibold mt-0.5">
+                        {i + 1}
+                      </span>
+                      <span>{t(`sections.responsibleAI.items.${item}`)}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-4">{t('sections.responsibleAI.augment')}</p>
+              </SectionBlock>
 
-            {/* Digital Governance, Observability and Traceability */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.governance.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                {t('sections.governance.description')}
-              </p>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>{t('sections.governance.items.visibility')}</li>
-                <li>{t('sections.governance.items.observability')}</li>
-                <li>{t('sections.governance.items.traceability')}</li>
-                <li>{t('sections.governance.items.governanceItem')}</li>
-                <li>{t('sections.governance.items.intelligence')}</li>
-                <li>{t('sections.governance.items.auditability')}</li>
-                <li>{t('sections.governance.items.monitoring')}</li>
-                <li>{t('sections.governance.items.decision')}</li>
-              </ul>
-              <p className="text-gray-600 leading-relaxed mt-4">
-                {t('sections.governance.disclaimer')}
-              </p>
-            </section>
+              {/* Digital Governance, Observability and Traceability */}
+              <SectionBlock title={t('sections.governance.title')} index={11}>
+                <p>{t('sections.governance.description')}</p>
+                <ul className="list-none space-y-3 mt-4">
+                  {['visibility', 'observability', 'traceability', 'governanceItem', 'intelligence', 'auditability', 'monitoring', 'decision'].map((item, i) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="flex-shrink-0 w-6 h-6 bg-[#eff4ff] text-[#1F5CFF] rounded-full flex items-center justify-center text-xs font-semibold mt-0.5">
+                        {i + 1}
+                      </span>
+                      <span>{t(`sections.governance.items.${item}`)}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-4 p-4 bg-gray-50 rounded-lg border border-gray-200 text-gray-600 text-sm">
+                  {t('sections.governance.disclaimer')}
+                </p>
+              </SectionBlock>
 
-            {/* Third Party Platforms */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.thirdParty.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                {t('sections.thirdParty.description')}
-              </p>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>{t('sections.thirdParty.items.cloud')}</li>
-                <li>{t('sections.thirdParty.items.apis')}</li>
-                <li>{t('sections.thirdParty.items.telecom')}</li>
-                <li>{t('sections.thirdParty.items.software')}</li>
-                <li>{t('sections.thirdParty.items.infrastructure')}</li>
-              </ul>
-              <p className="text-gray-600 leading-relaxed mt-4">
-                {t('sections.thirdParty.disclaimer')}
-              </p>
-            </section>
+              {/* Third Party Platforms */}
+              <SectionBlock title={t('sections.thirdParty.title')} index={12}>
+                <p>{t('sections.thirdParty.description')}</p>
+                <ul className="list-none space-y-3 mt-4">
+                  {['cloud', 'apis', 'telecom', 'software', 'infrastructure'].map((item, i) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="flex-shrink-0 w-6 h-6 bg-[#eff4ff] text-[#1F5CFF] rounded-full flex items-center justify-center text-xs font-semibold mt-0.5">
+                        {i + 1}
+                      </span>
+                      <span>{t(`sections.thirdParty.items.${item}`)}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-4 p-4 bg-gray-50 rounded-lg border border-gray-200 text-gray-600 text-sm">
+                  {t('sections.thirdParty.disclaimer')}
+                </p>
+              </SectionBlock>
 
-            {/* No Reliance by Third Parties */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.noReliance.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                {t('sections.noReliance.description')}
-              </p>
-            </section>
+              {/* No Reliance by Third Parties */}
+              <SectionBlock title={t('sections.noReliance.title')} index={13}>
+                <p>{t('sections.noReliance.description')}</p>
+              </SectionBlock>
 
-            {/* Disclaimer of Warranties */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.warranties.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                {t('sections.warranties.description')}
-              </p>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>{t('sections.warranties.items.merchantability')}</li>
-                <li>{t('sections.warranties.items.fitness')}</li>
-                <li>{t('sections.warranties.items.availability')}</li>
-                <li>{t('sections.warranties.items.nonInfringement')}</li>
-                <li>{t('sections.warranties.items.performance')}</li>
-                <li>{t('sections.warranties.items.accuracy')}</li>
-                <li>{t('sections.warranties.items.uninterrupted')}</li>
-              </ul>
-            </section>
+              {/* Disclaimer of Warranties */}
+              <SectionBlock title={t('sections.warranties.title')} index={14}>
+                <p>{t('sections.warranties.description')}</p>
+                <ul className="list-none space-y-3 mt-4">
+                  {['merchantability', 'fitness', 'availability', 'nonInfringement', 'performance', 'accuracy', 'uninterrupted'].map((item, i) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="flex-shrink-0 w-6 h-6 bg-red-50 text-red-600 rounded-full flex items-center justify-center text-xs font-semibold mt-0.5">
+                        {i + 1}
+                      </span>
+                      <span>{t(`sections.warranties.items.${item}`)}</span>
+                    </li>
+                  ))}
+                </ul>
+              </SectionBlock>
 
-            {/* Limitation of Liability */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.liability.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                {t('sections.liability.description')}
-              </p>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>{t('sections.liability.items.profits')}</li>
-                <li>{t('sections.liability.items.revenue')}</li>
-                <li>{t('sections.liability.items.opportunity')}</li>
-                <li>{t('sections.liability.items.business')}</li>
-                <li>{t('sections.liability.items.goodwill')}</li>
-                <li>{t('sections.liability.items.interruption')}</li>
-                <li>{t('sections.liability.items.reputation')}</li>
-                <li>{t('sections.liability.items.indirect')}</li>
-                <li>{t('sections.liability.items.consequential')}</li>
-                <li>{t('sections.liability.items.special')}</li>
-                <li>{t('sections.liability.items.punitive')}</li>
-              </ul>
-              <p className="text-gray-600 leading-relaxed mt-4">
-                {t('sections.liability.cap')}
-              </p>
-            </section>
+              {/* Limitation of Liability */}
+              <SectionBlock title={t('sections.liability.title')} index={15}>
+                <p>{t('sections.liability.description')}</p>
+                <ul className="list-none space-y-3 mt-4">
+                  {['profits', 'revenue', 'opportunity', 'business', 'goodwill', 'interruption', 'reputation', 'indirect', 'consequential', 'special', 'punitive'].map((item, i) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="flex-shrink-0 w-6 h-6 bg-red-50 text-red-600 rounded-full flex items-center justify-center text-xs font-semibold mt-0.5">
+                        {i + 1}
+                      </span>
+                      <span>{t(`sections.liability.items.${item}`)}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-4 p-4 bg-amber-50 rounded-lg border border-amber-200 text-amber-800 text-sm font-medium">
+                  {t('sections.liability.cap')}
+                </p>
+              </SectionBlock>
 
-            {/* Regulatory Environments */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.regulatory.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                {t('sections.regulatory.description')}
-              </p>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>{t('sections.regulatory.items.financial')}</li>
-                <li>{t('sections.regulatory.items.government')}</li>
-                <li>{t('sections.regulatory.items.healthcare')}</li>
-                <li>{t('sections.regulatory.items.insurance')}</li>
-                <li>{t('sections.regulatory.items.critical')}</li>
-              </ul>
-              <p className="text-gray-600 leading-relaxed mt-4">
-                {t('sections.regulatory.additional')}
-              </p>
-            </section>
+              {/* Regulatory Environments */}
+              <SectionBlock title={t('sections.regulatory.title')} index={16}>
+                <p>{t('sections.regulatory.description')}</p>
+                <ul className="list-none space-y-3 mt-4">
+                  {['financial', 'government', 'healthcare', 'insurance', 'critical'].map((item, i) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="flex-shrink-0 w-6 h-6 bg-[#eff4ff] text-[#1F5CFF] rounded-full flex items-center justify-center text-xs font-semibold mt-0.5">
+                        {i + 1}
+                      </span>
+                      <span>{t(`sections.regulatory.items.${item}`)}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-4">{t('sections.regulatory.additional')}</p>
+              </SectionBlock>
 
-            {/* Force Majeure */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.forceMajeure.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                {t('sections.forceMajeure.description')}
-              </p>
-            </section>
+              {/* Force Majeure */}
+              <SectionBlock title={t('sections.forceMajeure.title')} index={17}>
+                <p>{t('sections.forceMajeure.description')}</p>
+              </SectionBlock>
 
-            {/* Governing Law */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.governingLaw.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                {t('sections.governingLaw.description')}
-              </p>
-            </section>
+              {/* Governing Law */}
+              <SectionBlock title={t('sections.governingLaw.title')} index={18}>
+                <p className="p-4 bg-[#eff4ff] rounded-lg border border-[#dbe6ff] text-gray-800">
+                  {t('sections.governingLaw.description')}
+                </p>
+              </SectionBlock>
 
-            {/* Changes to Terms */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.changes.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                {t('sections.changes.description')}
-              </p>
-            </section>
+              {/* Changes to Terms */}
+              <SectionBlock title={t('sections.changes.title')} index={19}>
+                <p>{t('sections.changes.description')}</p>
+              </SectionBlock>
 
-            {/* Contact */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.contact.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                {t('sections.contact.description')}
-              </p>
-              <p className="text-gray-600 mt-2">
-                <a href="mailto:legal@yieldge.com" className="text-[#1F5CFF] hover:underline">
-                  legal@yieldge.com
-                </a>
-              </p>
-            </section>
-          </div>
-        </Section>
+              {/* Contact */}
+              <SectionBlock title={t('sections.contact.title')} index={20}>
+                <p>{t('sections.contact.description')}</p>
+                <div className="mt-4 p-6 bg-gray-50 rounded-xl border border-gray-200">
+                  <a
+                    href="mailto:legal@yieldge.com"
+                    className="text-[#1F5CFF] hover:text-[#1a4edb] font-semibold text-lg flex items-center gap-2 transition-colors"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    legal@yieldge.com
+                  </a>
+                </div>
+              </SectionBlock>
+            </div>
+          </Container>
+        </section>
       </main>
 
       <Footer />
