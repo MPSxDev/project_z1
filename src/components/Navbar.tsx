@@ -123,7 +123,6 @@ const Navbar = memo(function Navbar({ hideNavLinks = false }: NavbarProps) {
       ]
     : [
         { label: t('solutions'), href: solutionsHref(pathname) },
-        { label: t('research'), href: researchHref(pathname) },
         { label: t('company'), href: companyHref(pathname) },
         { label: t('careers'), href: careersHref(pathname) },
       ];
