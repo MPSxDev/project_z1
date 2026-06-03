@@ -397,111 +397,296 @@
   },
   "privacyPolicy": {
     "title": "Privacy Policy",
-    "lastUpdated": "Last updated: February 2025",
-    "introduction": "At Yieldge, we are committed to protecting your privacy and handling your personal data with transparency and responsibility. This policy describes how we collect, use, and protect your information when you use our services.",
+    "lastUpdated": "Last updated: June 2025",
+    "introduction": "Yieldge is an enterprise technology consulting firm committed to responsible data stewardship. This Privacy Policy describes how we collect, process, protect, and manage personal information in connection with our professional services, digital platforms, and business operations. We maintain governance practices designed to ensure transparency, accountability, and compliance with applicable privacy requirements.",
     "sections": {
       "informationCollect": {
         "title": "Information We Collect",
-        "description": "We may collect the following types of information:",
+        "description": "In the course of providing professional consulting and technology services, we may collect the following categories of information:",
         "items": {
-          "contact": "Contact information: name, email address, phone number, and address",
-          "usage": "Usage information: how you interact with our website and services",
-          "technical": "Technical information: IP address, browser type, operating system, and device data",
-          "cookies": "Cookie information: site preferences and settings"
+          "personal": "Personal Information: Name, professional title, organizational affiliation, and other identifiers",
+          "contact": "Contact Information: Email address, telephone number, mailing address, and professional contact details",
+          "business": "Business Information: Company name, industry sector, organizational role, and engagement-related information",
+          "device": "Device Information: Device type, operating system, browser type, and unique device identifiers",
+          "technical": "Technical Information: IP address, access timestamps, referring URLs, and network configuration data",
+          "usage": "Usage Information: Interaction patterns with our digital platforms, pages visited, features accessed, and session duration",
+          "communication": "Communication Data: Content of correspondence, inquiries, and professional communications exchanged with our team"
         }
       },
       "howWeUse": {
-        "title": "How We Use Your Information",
-        "description": "We use the collected information to:",
+        "title": "How We Use Information",
+        "description": "We process information collected in connection with the following legitimate business purposes:",
         "items": {
-          "services": "Provide and improve our services",
-          "communication": "Communicate with you about our products and services",
-          "improvement": "Analyze and improve user experience",
-          "legal": "Comply with legal and regulatory obligations"
+          "delivery": "Service Delivery: Providing professional consulting, technology implementation, and advisory services",
+          "support": "Client Support: Responding to inquiries, providing technical assistance, and maintaining engagement communications",
+          "security": "Security: Protecting our systems, detecting unauthorized access, and maintaining platform integrity",
+          "compliance": "Compliance: Meeting legal, regulatory, contractual, and audit obligations",
+          "communications": "Communications: Delivering service updates, research publications, and professional insights",
+          "analytics": "Analytics: Understanding service utilization patterns and improving platform functionality",
+          "improvement": "Service Improvement: Enhancing service quality, developing new capabilities, and optimizing operational processes"
         }
       },
-      "dataProtection": {
-        "title": "Data Protection",
-        "description": "We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, loss, destruction, or alteration. This includes the use of encryption, firewalls, and access controls."
-      },
-      "yourRights": {
-        "title": "Your Rights",
-        "description": "You have the following rights regarding your personal data:",
+      "dataGovernance": {
+        "title": "Data Governance",
+        "description": "Yieldge maintains governance practices designed to ensure responsible information management:",
         "items": {
-          "access": "Right of access: request a copy of your personal data",
-          "rectification": "Right of rectification: correct inaccurate or incomplete data",
-          "deletion": "Right of deletion: request the deletion of your data",
-          "objection": "Right of objection: object to the processing of your data"
+          "accountability": "Accountability: Clear ownership and responsibility for information assets",
+          "traceability": "Traceability: Documented processing activities and audit capabilities",
+          "access": "Access Control: Role-based access restrictions and authorization procedures",
+          "stewardship": "Information Stewardship: Defined processes for data quality, accuracy, and integrity",
+          "lifecycle": "Lifecycle Management: Retention schedules aligned with business, legal, and regulatory requirements",
+          "responsible": "Responsible Data Handling: Policies governing collection, processing, storage, and disposal of information"
         }
+      },
+      "dataSecurity": {
+        "title": "Data Security",
+        "description": "We implement commercially reasonable administrative, technical, and physical safeguards designed to protect information under our control:",
+        "items": {
+          "access": "Access Controls: Role-based permissions and least-privilege access principles",
+          "authentication": "Authentication Mechanisms: Identity verification and credential management procedures",
+          "encryption": "Encryption Technologies: Protection of data in transit and at rest using industry-standard protocols",
+          "monitoring": "Monitoring Systems: Security monitoring, threat detection, and incident alerting capabilities",
+          "audit": "Audit Logging: Comprehensive logging of system access, changes, and security-relevant events"
+        },
+        "disclaimer": "However, no technology environment can guarantee absolute security. We cannot ensure or warrant the security of any information transmitted to us or stored on our systems."
+      },
+      "informationSharing": {
+        "title": "Information Sharing",
+        "description": "We limit information sharing to circumstances necessary for legitimate business operations:",
+        "items": {
+          "serviceProviders": "Service Providers: Trusted vendors who assist with business operations under appropriate contractual protections",
+          "cloudProviders": "Cloud Providers: Infrastructure and platform providers supporting our technology operations",
+          "legal": "Legal Requirements: Disclosure required by law, regulation, legal process, or governmental request",
+          "business": "Business Operations: Professional advisors, auditors, and parties involved in corporate transactions"
+        },
+        "noSale": "Yieldge does not sell personal information to third parties."
+      },
+      "aiProcessing": {
+        "title": "Artificial Intelligence Processing",
+        "description": "Certain services may utilize artificial intelligence, machine learning, and automated processing technologies to support analysis, automation, information processing, and operational efficiency. These technologies are deployed in accordance with our responsible AI principles and applicable governance frameworks."
+      },
+      "responsibleAI": {
+        "title": "Responsible AI Processing",
+        "description": "Customer information is not used to train public artificial intelligence models unless explicitly authorized in writing by the client. Any AI processing involving client data is performed in accordance with engagement-specific terms, confidentiality obligations, and applicable data protection requirements."
+      },
+      "internationalTransfers": {
+        "title": "International Transfers",
+        "description": "Yieldge and our trusted service providers may operate across multiple jurisdictions. When information is transferred internationally, we apply appropriate safeguards designed to ensure adequate protection consistent with applicable legal requirements and industry standards."
+      },
+      "dataRetention": {
+        "title": "Data Retention",
+        "description": "We retain information only as long as necessary to fulfill the purposes for which it was collected, including to satisfy business, contractual, legal, regulatory, audit, and security requirements. Retention periods are determined based on the nature of the information, the purposes for processing, and applicable legal obligations. When information is no longer required, it is securely disposed of in accordance with our information governance procedures."
+      },
+      "userRights": {
+        "title": "User Rights",
+        "description": "Subject to applicable law, you may have the following rights regarding your personal information:",
+        "items": {
+          "access": "Access: Request information about the personal data we hold about you",
+          "correction": "Correction: Request correction of inaccurate or incomplete personal information",
+          "deletion": "Deletion: Request deletion of personal information under certain circumstances",
+          "restriction": "Restriction: Request restriction of processing in specific situations",
+          "clarification": "Clarification: Request information about our data processing practices"
+        },
+        "exercise": "To exercise any of these rights, please contact us using the information provided below. We will respond to requests in accordance with applicable legal requirements."
       },
       "cookies": {
-        "title": "Cookies",
-        "description": "We use cookies and similar technologies to improve your experience on our website. You can configure your browser to reject cookies, although this may affect site functionality."
+        "title": "Cookies and Analytics",
+        "description": "Our digital platforms may use cookies, web beacons, and similar technologies to enhance functionality, analyze usage patterns, and improve user experience. These technologies help us understand how visitors interact with our platforms and enable certain features to function properly.",
+        "management": "You may configure your browser settings to manage cookie preferences. Please note that disabling certain cookies may affect platform functionality and your experience with our services."
       },
-      "thirdParty": {
-        "title": "Third-Party Services",
-        "description": "We may share information with trusted service providers who help us operate our business. These providers are required to protect your information and can only use it for the specific purposes we have indicated."
+      "incidentResponse": {
+        "title": "Incident Response",
+        "description": "Yieldge maintains procedures designed to identify, investigate, contain, and respond to security incidents affecting personal information. In the event of a security incident requiring notification, we will inform affected parties and relevant authorities in accordance with applicable legal requirements and timeframes."
+      },
+      "regulatoryCompliance": {
+        "title": "Regulatory Compliance",
+        "description": "We are committed to compliance with applicable privacy, cybersecurity, and data protection requirements in the jurisdictions where we operate. Our privacy practices are designed to align with recognized standards and regulatory frameworks governing the protection of personal information."
       },
       "changes": {
         "title": "Changes to This Policy",
-        "description": "We may update this privacy policy periodically. We will notify you of significant changes by posting the new policy on this page with a revised update date."
+        "description": "We may update this Privacy Policy periodically to reflect changes in our practices, technologies, legal requirements, or business operations. Material changes will be communicated by posting the revised policy on our website with an updated effective date. We encourage you to review this policy regularly."
       },
       "contact": {
-        "title": "Contact",
-        "description": "If you have questions about this privacy policy or how we handle your information, you can contact us at:"
+        "title": "Contact Information",
+        "description": "For questions, concerns, or requests regarding this Privacy Policy or our data protection practices, please contact our Privacy Office at:"
       }
     }
   },
   "terms": {
-    "title": "Terms and Conditions",
-    "lastUpdated": "Last updated: February 2025",
-    "introduction": "Welcome to Yieldge. By accessing and using our website and services, you agree to be bound by these terms and conditions. Please read them carefully before using our services.",
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: June 2025",
+    "introduction": "Yieldge is an enterprise technology consulting firm providing professional services in technology consulting, digital transformation, software engineering, enterprise architecture, systems integration, automation, artificial intelligence, data analytics, observability, and operational intelligence. These Terms of Service govern the use of our website, digital platforms, and professional services.",
     "sections": {
-      "acceptance": {
-        "title": "Acceptance of Terms",
-        "description": "By accessing or using Yieldge services, you confirm that you have read, understood, and agree to be bound by these terms. If you do not agree with any part of these terms, you should not use our services."
+      "professionalServices": {
+        "title": "Nature of Professional Services",
+        "description": "Yieldge provides professional consulting, software engineering, systems integration, digital transformation, automation, artificial intelligence, observability, data analytics, and technology advisory services. All services are delivered using commercially reasonable skill, care, and diligence consistent with generally accepted industry practices.",
+        "noGuarantees": "Except as expressly stated in a written agreement, Yieldge does not guarantee any specific business outcome, operational improvement, financial result, cost reduction, revenue increase, regulatory approval, or strategic objective."
       },
-      "services": {
-        "title": "Description of Services",
-        "description": "Yieldge provides technology solutions, software development, consulting, and related services. We reserve the right to modify, suspend, or discontinue any aspect of our services at any time."
+      "professionalJudgment": {
+        "title": "Independent Professional Judgment",
+        "description": "Any recommendation, assessment, architecture, implementation strategy, report, analysis, or technological guidance provided by Yieldge represents professional opinion based upon information available at the time of engagement.",
+        "disclaimer": "Such guidance shall not be construed as legal, financial, tax, audit, or regulatory advice. Clients should consult appropriate professionals for matters requiring specialized legal, financial, or regulatory expertise."
       },
-      "userObligations": {
-        "title": "User Obligations",
-        "description": "By using our services, you agree to:",
+      "clientResponsibilities": {
+        "title": "Client Responsibilities",
+        "description": "The client is responsible for:",
         "items": {
-          "accurate": "Provide accurate and up-to-date information",
-          "lawful": "Use our services only for lawful purposes",
-          "noHarm": "Not attempt to harm or disrupt our systems or services",
-          "confidentiality": "Maintain the confidentiality of any proprietary information shared"
+          "accurate": "Providing accurate, complete, and timely information necessary for the performance of services",
+          "review": "Reviewing deliverables, reports, and outputs in a timely manner",
+          "validate": "Validating that deliverables meet requirements and are fit for intended purposes",
+          "approvals": "Obtaining and maintaining all necessary internal approvals, authorizations, and consents",
+          "compliance": "Ensuring compliance with all applicable laws, regulations, and internal policies"
         }
+      },
+      "decisionResponsibility": {
+        "title": "Client Decision Responsibility",
+        "description": "The client retains sole responsibility for all business, operational, financial, legal, cybersecurity, compliance, and strategic decisions made based upon services, recommendations, reports, analyses, software, deliverables, or information provided by Yieldge. Yieldge provides professional guidance to inform decision-making but does not make decisions on behalf of the client."
       },
       "intellectualProperty": {
         "title": "Intellectual Property",
-        "description": "All content, trademarks, logos, and intellectual property on our website and services are owned by Yieldge or its licensors. You may not use, copy, or distribute any content without our prior written consent."
+        "description": "Yieldge retains exclusive ownership of all intellectual capital, methodologies, frameworks, processes, templates, accelerators, software components, automation assets, artificial intelligence systems, analytical models, prompts, agent systems, reference architectures, trade secrets, and know-how used, developed, enhanced, or utilized in connection with the provision of services."
+      },
+      "deliverables": {
+        "title": "Ownership of Deliverables",
+        "description": "Upon full payment of applicable fees, the client shall own project-specific deliverables expressly developed for the client under the applicable agreement, subject to any third-party license terms that may apply to incorporated components.",
+        "retained": "Yieldge retains ownership of all generic, reusable, pre-existing, or independently developed assets incorporated into such deliverables, including methodologies, frameworks, templates, software libraries, and intellectual property developed prior to or independently of the engagement."
+      },
+      "retainedKnowledge": {
+        "title": "Retained Knowledge",
+        "description": "Nothing contained in any agreement shall restrict Yieldge from using general knowledge, experience, skills, concepts, methodologies, techniques, and know-how acquired during the course of providing services, provided that no confidential information of the client is disclosed. Yieldge may develop and provide similar services to other clients."
+      },
+      "confidentiality": {
+        "title": "Confidentiality",
+        "description": "Both parties agree to protect confidential information using reasonable administrative, technical, and organizational safeguards appropriate to the nature of the information.",
+        "definition": "Confidential information includes information belonging to either party that would reasonably be considered confidential, proprietary, sensitive, or commercially valuable, including business strategies, technical specifications, client data, pricing information, and trade secrets."
+      },
+      "security": {
+        "title": "Security and Information Protection",
+        "description": "Yieldge implements commercially reasonable safeguards designed to protect information under its control, including:",
+        "items": {
+          "access": "Access management and identity controls",
+          "monitoring": "Security monitoring and threat detection",
+          "audit": "Audit logging and accountability measures",
+          "governance": "Information governance and classification procedures",
+          "procedures": "Security policies and operational procedures"
+        },
+        "disclaimer": "However, no technology environment can guarantee absolute security. Yieldge shall not be liable for security incidents resulting from factors beyond its reasonable control."
+      },
+      "aiServices": {
+        "title": "Artificial Intelligence Services",
+        "description": "Certain services may incorporate:",
+        "items": {
+          "ai": "Artificial Intelligence",
+          "ml": "Machine Learning",
+          "genai": "Generative AI",
+          "agents": "Autonomous Agents",
+          "decision": "Automated Decision Support Technologies"
+        },
+        "disclaimer": "Outputs generated by such technologies may contain inaccuracies, omissions, hallucinations, biases, or incomplete information.",
+        "review": "Human review and validation remain essential. Clients should independently verify AI-generated outputs before relying upon them for business decisions."
+      },
+      "responsibleAI": {
+        "title": "Responsible Artificial Intelligence",
+        "description": "Yieldge promotes responsible artificial intelligence practices grounded in:",
+        "items": {
+          "transparency": "Transparency regarding AI capabilities and limitations",
+          "accountability": "Accountability for AI system behavior and outcomes",
+          "oversight": "Human Oversight of automated processes and decisions",
+          "explainability": "Explainability of AI-driven recommendations where feasible",
+          "traceability": "Traceability of AI processing and decision logic",
+          "risk": "Risk Management proportionate to AI system impact"
+        },
+        "augment": "Artificial intelligence systems are intended to augment human decision-making and do not replace professional judgment, governance processes, or appropriate human oversight."
+      },
+      "governance": {
+        "title": "Digital Governance, Observability and Traceability",
+        "description": "Yieldge may provide solutions involving:",
+        "items": {
+          "visibility": "Operational Visibility",
+          "observability": "Observability",
+          "traceability": "Traceability",
+          "governanceItem": "Governance",
+          "intelligence": "Process Intelligence",
+          "auditability": "Auditability",
+          "monitoring": "Monitoring",
+          "decision": "Decision Support"
+        },
+        "disclaimer": "Such capabilities improve organizational awareness and governance maturity but do not guarantee the identification, prevention, or elimination of all operational, compliance, fraud, cybersecurity, or business risks. Effective risk management requires comprehensive programs beyond technology solutions."
+      },
+      "thirdParty": {
+        "title": "Third Party Platforms",
+        "description": "Yieldge may rely upon:",
+        "items": {
+          "cloud": "Cloud Providers",
+          "apis": "APIs and External Services",
+          "telecom": "Telecommunications Providers",
+          "software": "Software Vendors",
+          "infrastructure": "Infrastructure Providers"
+        },
+        "disclaimer": "Yieldge shall not be responsible for outages, interruptions, policy changes, service limitations, security incidents, or failures attributable to third-party providers beyond its reasonable control."
+      },
+      "noReliance": {
+        "title": "No Reliance by Third Parties",
+        "description": "Deliverables, recommendations, reports, assessments, and services are intended exclusively for the client identified in the applicable engagement. No third party may rely upon such materials without Yieldge's prior written consent. Yieldge assumes no duty or liability to any third party in connection with services provided to a client."
+      },
+      "warranties": {
+        "title": "Disclaimer of Warranties",
+        "description": "Except as expressly set forth in a written agreement, Yieldge disclaims all warranties, whether express, implied, statutory, or otherwise, including warranties of:",
+        "items": {
+          "merchantability": "Merchantability",
+          "fitness": "Fitness for a particular purpose",
+          "availability": "Continuous availability",
+          "nonInfringement": "Non-infringement",
+          "performance": "Specific performance levels",
+          "accuracy": "Absolute accuracy or completeness",
+          "uninterrupted": "Uninterrupted or error-free operation"
+        }
       },
       "liability": {
         "title": "Limitation of Liability",
-        "description": "Yieldge shall not be liable for indirect, incidental, special, consequential, or punitive damages, including loss of profits, data, or other intangible losses, resulting from your use or inability to use our services."
+        "description": "To the maximum extent permitted by applicable law, Yieldge shall not be liable for:",
+        "items": {
+          "profits": "Loss of profits",
+          "revenue": "Loss of revenue",
+          "opportunity": "Loss of opportunity",
+          "business": "Loss of business value",
+          "goodwill": "Loss of goodwill",
+          "interruption": "Business interruption",
+          "reputation": "Reputational damage",
+          "indirect": "Indirect damages",
+          "consequential": "Consequential damages",
+          "special": "Special damages",
+          "punitive": "Punitive or exemplary damages"
+        },
+        "cap": "Yieldge's aggregate liability for any and all claims arising out of or relating to services shall not exceed the fees actually paid by the client to Yieldge during the twelve (12) months immediately preceding the event giving rise to the claim."
       },
-      "indemnification": {
-        "title": "Indemnification",
-        "description": "You agree to indemnify and hold harmless Yieldge, its directors, employees, and agents from any claims, damages, losses, or expenses, including reasonable legal fees, arising from your use of our services or violation of these terms."
+      "regulatory": {
+        "title": "Regulatory Environments",
+        "description": "Projects involving:",
+        "items": {
+          "financial": "Financial Institutions",
+          "government": "Government Entities",
+          "healthcare": "Healthcare Organizations",
+          "insurance": "Insurance Companies",
+          "critical": "Critical Infrastructure Operators"
+        },
+        "additional": "may require additional compliance, governance, audit, and security controls beyond these Terms. Such requirements shall be addressed in engagement-specific agreements."
       },
-      "termination": {
-        "title": "Termination",
-        "description": "We may terminate or suspend your access to our services immediately, without prior notice, for any reason, including if you breach these terms. Upon termination, your right to use the services will cease immediately."
+      "forceMajeure": {
+        "title": "Force Majeure",
+        "description": "Yieldge shall not be liable for delays or failures in performance resulting from causes beyond its reasonable control, including acts of God, natural disasters, pandemic, war, terrorism, civil unrest, government action, labor disputes, power outages, telecommunications failures, or third-party service disruptions."
       },
       "governingLaw": {
         "title": "Governing Law",
-        "description": "These terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law provisions."
+        "description": "These Terms of Service shall be governed by and construed in accordance with the laws of Costa Rica, without regard to conflict of law principles. Any disputes arising hereunder shall be subject to the exclusive jurisdiction of the courts of Costa Rica."
       },
       "changes": {
         "title": "Changes to Terms",
-        "description": "We reserve the right to modify these terms at any time. Changes will take effect immediately upon posting on the website. Your continued use of the services after any changes constitutes your acceptance of the new terms."
+        "description": "Yieldge reserves the right to modify these Terms of Service at any time. Material changes will be communicated by posting the revised terms on our website with an updated effective date. Continued use of our services following any changes constitutes acceptance of the modified terms."
       },
       "contact": {
-        "title": "Contact",
-        "description": "If you have questions about these terms and conditions, you can contact us at:"
+        "title": "Contact Information",
+        "description": "For questions or concerns regarding these Terms of Service, please contact our Legal Department at:"
       }
     }
   },
@@ -1082,6 +1267,97 @@
       "description": "Request a technical assessment. We analyze your current situation and propose an action plan with measurable impact.",
       "button": "Request Assessment",
       "trustLine": "No commitment. No sales pressure."
+    }
+  },
+  "researchPage": {
+    "hero": {
+      "eyebrow": "RESEARCH & ANALYSIS",
+      "subheadline": "Rigorous analysis and strategic insights on operational intelligence, digital transformation, and the future of enterprise technology.",
+      "primaryCta": "Explore Research",
+      "secondaryCta": "Contact Research"
+    },
+    "featured": {
+      "eyebrow": "FEATURED RESEARCH",
+      "title": "The State of Enterprise Operational Intelligence 2024",
+      "description": "A comprehensive analysis of how leading organizations are leveraging operational intelligence to transform decision-making, reduce operational friction, and build sustainable competitive advantages in a rapidly evolving digital landscape.",
+      "cta": "Read Full Publication"
+    },
+    "areas": {
+      "eyebrow": "RESEARCH AREAS",
+      "title": "Research Domains",
+      "subtitle": "Deep research into the critical areas of enterprise technology and operational excellence.",
+      "items": {
+        "operationalIntelligence": {
+          "title": "Operational Intelligence",
+          "description": "Strategies for transforming operational data into actionable insights that drive decision-making."
+        },
+        "enterpriseArchitecture": {
+          "title": "Enterprise Architecture",
+          "description": "Best practices for designing scalable and maintainable systems that support organizational growth."
+        },
+        "aiAutomation": {
+          "title": "AI & Automation",
+          "description": "Application of machine learning and intelligent automation to optimize business processes."
+        },
+        "financialSystems": {
+          "title": "Financial Systems",
+          "description": "Financial infrastructure modernization and regulatory compliance in financial institutions."
+        },
+        "governmentTechnology": {
+          "title": "Government Technology",
+          "description": "Public sector digital transformation and citizen-centric service delivery."
+        },
+        "digitalTransformation": {
+          "title": "Digital Transformation",
+          "description": "Frameworks for executing digital transformation initiatives at organizational scale."
+        },
+        "observability": {
+          "title": "Observability",
+          "description": "Monitoring and instrumentation strategies for complex distributed systems."
+        },
+        "systemsIntegration": {
+          "title": "Systems Integration",
+          "description": "Patterns and best practices for connecting legacy systems with modern platforms."
+        }
+      }
+    },
+    "latest": {
+      "eyebrow": "LATEST RESEARCH",
+      "title": "Recent Publications",
+      "subtitle": "Explore our most recent analyses and perspectives on enterprise technology."
+    },
+    "methodology": {
+      "eyebrow": "METHODOLOGY",
+      "title": "Rigorous Research",
+      "subtitle": "Our publications are grounded in proven methodologies and verified sources.",
+      "description": "We combine quantitative analysis with industry expertise to deliver insights that inform strategic decisions. Every publication undergoes peer review and validation against real-world data.",
+      "sources": {
+        "title": "Sources and Reference Frameworks",
+        "items": {
+          "oecd": "OECD data and indicators on digital transformation",
+          "worldBank": "World Bank research on technology development",
+          "gartner": "Gartner analytical frameworks and market trends",
+          "enterpriseArchitecture": "Enterprise architecture standards and frameworks (TOGAF, Zachman)",
+          "operationalIntelligence": "Operational intelligence and observability methodologies",
+          "publicSector": "Public sector modernization frameworks",
+          "fintech": "Financial technology and regulatory compliance research",
+          "bestPractices": "Industry best practices and case studies"
+        }
+      }
+    },
+    "newsletter": {
+      "eyebrow": "RESEARCH BRIEFING",
+      "title": "Stay Informed",
+      "description": "Receive our latest analyses and insights directly in your inbox. No spam, just valuable research.",
+      "placeholder": "your.email@company.com",
+      "subscribe": "Subscribe",
+      "privacy": "We respect your privacy. You can unsubscribe at any time."
+    },
+    "cta": {
+      "eyebrow": "READY TO EXPLORE?",
+      "title": "Start Your Transformation",
+      "description": "Discover how our research insights can inform your technology strategy and accelerate your digital transformation.",
+      "button": "Contact Our Team"
     }
   }
 }

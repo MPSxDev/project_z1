@@ -397,111 +397,296 @@
   },
   "privacyPolicy": {
     "title": "Política de Privacidad",
-    "lastUpdated": "Última actualización: Febrero 2025",
-    "introduction": "En Yieldge, nos comprometemos a proteger tu privacidad y a manejar tus datos personales con transparencia y responsabilidad. Esta política describe cómo recopilamos, usamos y protegemos tu información cuando utilizas nuestros servicios.",
+    "lastUpdated": "Última actualización: Junio 2025",
+    "introduction": "Yieldge es una firma de consultoría tecnológica empresarial comprometida con la gestión responsable de datos. Esta Política de Privacidad describe cómo recopilamos, procesamos, protegemos y gestionamos la información personal en conexión con nuestros servicios profesionales, plataformas digitales y operaciones comerciales. Mantenemos prácticas de gobernanza diseñadas para garantizar transparencia, rendición de cuentas y cumplimiento con los requisitos de privacidad aplicables.",
     "sections": {
       "informationCollect": {
         "title": "Información que Recopilamos",
-        "description": "Podemos recopilar los siguientes tipos de información:",
+        "description": "En el curso de la prestación de servicios profesionales de consultoría y tecnología, podemos recopilar las siguientes categorías de información:",
         "items": {
-          "contact": "Información de contacto: nombre, correo electrónico, número de teléfono y dirección",
-          "usage": "Información de uso: cómo interactúas con nuestro sitio web y servicios",
-          "technical": "Información técnica: dirección IP, tipo de navegador, sistema operativo y datos del dispositivo",
-          "cookies": "Información de cookies: preferencias y configuraciones del sitio"
+          "personal": "Información Personal: Nombre, título profesional, afiliación organizacional y otros identificadores",
+          "contact": "Información de Contacto: Dirección de correo electrónico, número de teléfono, dirección postal y datos de contacto profesional",
+          "business": "Información Empresarial: Nombre de la empresa, sector industrial, rol organizacional e información relacionada con el compromiso",
+          "device": "Información del Dispositivo: Tipo de dispositivo, sistema operativo, tipo de navegador e identificadores únicos del dispositivo",
+          "technical": "Información Técnica: Dirección IP, marcas de tiempo de acceso, URLs de referencia y datos de configuración de red",
+          "usage": "Información de Uso: Patrones de interacción con nuestras plataformas digitales, páginas visitadas, funcionalidades accedidas y duración de sesión",
+          "communication": "Datos de Comunicación: Contenido de correspondencia, consultas y comunicaciones profesionales intercambiadas con nuestro equipo"
         }
       },
       "howWeUse": {
-        "title": "Cómo Usamos tu Información",
-        "description": "Utilizamos la información recopilada para:",
+        "title": "Cómo Usamos la Información",
+        "description": "Procesamos la información recopilada en conexión con los siguientes propósitos comerciales legítimos:",
         "items": {
-          "services": "Proporcionar y mejorar nuestros servicios",
-          "communication": "Comunicarnos contigo sobre nuestros productos y servicios",
-          "improvement": "Analizar y mejorar la experiencia del usuario",
-          "legal": "Cumplir con obligaciones legales y regulatorias"
+          "delivery": "Prestación de Servicios: Provisión de consultoría profesional, implementación tecnológica y servicios de asesoría",
+          "support": "Soporte al Cliente: Responder a consultas, proporcionar asistencia técnica y mantener comunicaciones del compromiso",
+          "security": "Seguridad: Proteger nuestros sistemas, detectar accesos no autorizados y mantener la integridad de la plataforma",
+          "compliance": "Cumplimiento: Cumplir con obligaciones legales, regulatorias, contractuales y de auditoría",
+          "communications": "Comunicaciones: Entregar actualizaciones de servicios, publicaciones de investigación y perspectivas profesionales",
+          "analytics": "Analítica: Comprender patrones de utilización de servicios y mejorar la funcionalidad de la plataforma",
+          "improvement": "Mejora del Servicio: Mejorar la calidad del servicio, desarrollar nuevas capacidades y optimizar procesos operativos"
         }
       },
-      "dataProtection": {
-        "title": "Protección de Datos",
-        "description": "Implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger tu información personal contra acceso no autorizado, pérdida, destrucción o alteración. Esto incluye el uso de encriptación, firewalls y controles de acceso."
-      },
-      "yourRights": {
-        "title": "Tus Derechos",
-        "description": "Tienes los siguientes derechos respecto a tus datos personales:",
+      "dataGovernance": {
+        "title": "Gobernanza de Datos",
+        "description": "Yieldge mantiene prácticas de gobernanza diseñadas para garantizar la gestión responsable de la información:",
         "items": {
-          "access": "Derecho de acceso: solicitar una copia de tus datos personales",
-          "rectification": "Derecho de rectificación: corregir datos inexactos o incompletos",
-          "deletion": "Derecho de supresión: solicitar la eliminación de tus datos",
-          "objection": "Derecho de oposición: oponerte al procesamiento de tus datos"
+          "accountability": "Rendición de Cuentas: Propiedad y responsabilidad claras sobre los activos de información",
+          "traceability": "Trazabilidad: Actividades de procesamiento documentadas y capacidades de auditoría",
+          "access": "Control de Acceso: Restricciones de acceso basadas en roles y procedimientos de autorización",
+          "stewardship": "Custodia de Información: Procesos definidos para calidad, precisión e integridad de datos",
+          "lifecycle": "Gestión del Ciclo de Vida: Calendarios de retención alineados con requisitos comerciales, legales y regulatorios",
+          "responsible": "Manejo Responsable de Datos: Políticas que rigen la recopilación, procesamiento, almacenamiento y eliminación de información"
         }
+      },
+      "dataSecurity": {
+        "title": "Seguridad de Datos",
+        "description": "Implementamos salvaguardas administrativas, técnicas y físicas comercialmente razonables diseñadas para proteger la información bajo nuestro control:",
+        "items": {
+          "access": "Controles de Acceso: Permisos basados en roles y principios de privilegio mínimo",
+          "authentication": "Mecanismos de Autenticación: Procedimientos de verificación de identidad y gestión de credenciales",
+          "encryption": "Tecnologías de Encriptación: Protección de datos en tránsito y en reposo utilizando protocolos estándar de la industria",
+          "monitoring": "Sistemas de Monitoreo: Monitoreo de seguridad, detección de amenazas y capacidades de alerta de incidentes",
+          "audit": "Registro de Auditoría: Registro completo de acceso al sistema, cambios y eventos relevantes para la seguridad"
+        },
+        "disclaimer": "Sin embargo, ningún entorno tecnológico puede garantizar seguridad absoluta. No podemos asegurar o garantizar la seguridad de cualquier información transmitida a nosotros o almacenada en nuestros sistemas."
+      },
+      "informationSharing": {
+        "title": "Compartición de Información",
+        "description": "Limitamos la compartición de información a circunstancias necesarias para operaciones comerciales legítimas:",
+        "items": {
+          "serviceProviders": "Proveedores de Servicios: Proveedores de confianza que asisten con operaciones comerciales bajo protecciones contractuales apropiadas",
+          "cloudProviders": "Proveedores de Nube: Proveedores de infraestructura y plataforma que soportan nuestras operaciones tecnológicas",
+          "legal": "Requisitos Legales: Divulgación requerida por ley, regulación, proceso legal o solicitud gubernamental",
+          "business": "Operaciones Comerciales: Asesores profesionales, auditores y partes involucradas en transacciones corporativas"
+        },
+        "noSale": "Yieldge no vende información personal a terceros."
+      },
+      "aiProcessing": {
+        "title": "Procesamiento de Inteligencia Artificial",
+        "description": "Ciertos servicios pueden utilizar tecnologías de inteligencia artificial, aprendizaje automático y procesamiento automatizado para apoyar análisis, automatización, procesamiento de información y eficiencia operativa. Estas tecnologías se implementan de acuerdo con nuestros principios de IA responsable y marcos de gobernanza aplicables."
+      },
+      "responsibleAI": {
+        "title": "Procesamiento de IA Responsable",
+        "description": "La información del cliente no se utiliza para entrenar modelos de inteligencia artificial públicos a menos que sea explícitamente autorizado por escrito por el cliente. Cualquier procesamiento de IA que involucre datos del cliente se realiza de acuerdo con los términos específicos del compromiso, obligaciones de confidencialidad y requisitos de protección de datos aplicables."
+      },
+      "internationalTransfers": {
+        "title": "Transferencias Internacionales",
+        "description": "Yieldge y nuestros proveedores de servicios de confianza pueden operar en múltiples jurisdicciones. Cuando la información se transfiere internacionalmente, aplicamos salvaguardas apropiadas diseñadas para asegurar protección adecuada consistente con los requisitos legales aplicables y estándares de la industria."
+      },
+      "dataRetention": {
+        "title": "Retención de Datos",
+        "description": "Retenemos información solo durante el tiempo necesario para cumplir los propósitos para los cuales fue recopilada, incluyendo satisfacer requisitos comerciales, contractuales, legales, regulatorios, de auditoría y seguridad. Los períodos de retención se determinan basándose en la naturaleza de la información, los propósitos del procesamiento y las obligaciones legales aplicables. Cuando la información ya no es requerida, se elimina de forma segura de acuerdo con nuestros procedimientos de gobernanza de información."
+      },
+      "userRights": {
+        "title": "Derechos del Usuario",
+        "description": "Sujeto a la ley aplicable, usted puede tener los siguientes derechos respecto a su información personal:",
+        "items": {
+          "access": "Acceso: Solicitar información sobre los datos personales que mantenemos sobre usted",
+          "correction": "Corrección: Solicitar corrección de información personal inexacta o incompleta",
+          "deletion": "Eliminación: Solicitar eliminación de información personal bajo ciertas circunstancias",
+          "restriction": "Restricción: Solicitar restricción del procesamiento en situaciones específicas",
+          "clarification": "Clarificación: Solicitar información sobre nuestras prácticas de procesamiento de datos"
+        },
+        "exercise": "Para ejercer cualquiera de estos derechos, por favor contáctenos utilizando la información proporcionada a continuación. Responderemos a las solicitudes de acuerdo con los requisitos legales aplicables."
       },
       "cookies": {
-        "title": "Cookies",
-        "description": "Utilizamos cookies y tecnologías similares para mejorar tu experiencia en nuestro sitio web. Puedes configurar tu navegador para rechazar cookies, aunque esto puede afectar la funcionalidad del sitio."
+        "title": "Cookies y Analítica",
+        "description": "Nuestras plataformas digitales pueden usar cookies, web beacons y tecnologías similares para mejorar la funcionalidad, analizar patrones de uso y mejorar la experiencia del usuario. Estas tecnologías nos ayudan a entender cómo los visitantes interactúan con nuestras plataformas y permiten que ciertas funcionalidades operen correctamente.",
+        "management": "Puede configurar los ajustes de su navegador para gestionar las preferencias de cookies. Por favor tenga en cuenta que deshabilitar ciertas cookies puede afectar la funcionalidad de la plataforma y su experiencia con nuestros servicios."
       },
-      "thirdParty": {
-        "title": "Servicios de Terceros",
-        "description": "Podemos compartir información con proveedores de servicios de confianza que nos ayudan a operar nuestro negocio. Estos proveedores están obligados a proteger tu información y solo pueden usarla para los fines específicos que les hemos indicado."
+      "incidentResponse": {
+        "title": "Respuesta a Incidentes",
+        "description": "Yieldge mantiene procedimientos diseñados para identificar, investigar, contener y responder a incidentes de seguridad que afecten información personal. En el evento de un incidente de seguridad que requiera notificación, informaremos a las partes afectadas y autoridades relevantes de acuerdo con los requisitos legales y plazos aplicables."
+      },
+      "regulatoryCompliance": {
+        "title": "Cumplimiento Regulatorio",
+        "description": "Estamos comprometidos con el cumplimiento de los requisitos de privacidad, ciberseguridad y protección de datos aplicables en las jurisdicciones donde operamos. Nuestras prácticas de privacidad están diseñadas para alinearse con estándares reconocidos y marcos regulatorios que rigen la protección de información personal."
       },
       "changes": {
         "title": "Cambios a esta Política",
-        "description": "Podemos actualizar esta política de privacidad periódicamente. Te notificaremos sobre cambios significativos publicando la nueva política en esta página con una fecha de actualización revisada."
+        "description": "Podemos actualizar esta Política de Privacidad periódicamente para reflejar cambios en nuestras prácticas, tecnologías, requisitos legales u operaciones comerciales. Los cambios materiales se comunicarán publicando la política revisada en nuestro sitio web con una fecha de vigencia actualizada. Le animamos a revisar esta política regularmente."
       },
       "contact": {
-        "title": "Contacto",
-        "description": "Si tienes preguntas sobre esta política de privacidad o sobre cómo manejamos tu información, puedes contactarnos en:"
+        "title": "Información de Contacto",
+        "description": "Para preguntas, inquietudes o solicitudes respecto a esta Política de Privacidad o nuestras prácticas de protección de datos, por favor contacte a nuestra Oficina de Privacidad en:"
       }
     }
   },
   "terms": {
-    "title": "Términos y Condiciones",
-    "lastUpdated": "Última actualización: Febrero 2025",
-    "introduction": "Bienvenido a Yieldge. Al acceder y utilizar nuestro sitio web y servicios, aceptas estar sujeto a estos términos y condiciones. Por favor, léelos cuidadosamente antes de utilizar nuestros servicios.",
+    "title": "Términos de Servicio",
+    "lastUpdated": "Última actualización: Junio 2025",
+    "introduction": "Yieldge es una firma de consultoría tecnológica empresarial que proporciona servicios profesionales en consultoría tecnológica, transformación digital, ingeniería de software, arquitectura empresarial, integración de sistemas, automatización, inteligencia artificial, analítica de datos, observabilidad e inteligencia operacional. Estos Términos de Servicio rigen el uso de nuestro sitio web, plataformas digitales y servicios profesionales.",
     "sections": {
-      "acceptance": {
-        "title": "Aceptación de los Términos",
-        "description": "Al acceder o utilizar los servicios de Yieldge, confirmas que has leído, entendido y aceptas estar vinculado por estos términos. Si no estás de acuerdo con alguna parte de estos términos, no debes utilizar nuestros servicios."
+      "professionalServices": {
+        "title": "Naturaleza de los Servicios Profesionales",
+        "description": "Yieldge proporciona servicios profesionales de consultoría, ingeniería de software, integración de sistemas, transformación digital, automatización, inteligencia artificial, observabilidad, analítica de datos y asesoría tecnológica. Todos los servicios se entregan utilizando habilidad, cuidado y diligencia comercialmente razonables, consistentes con las prácticas generalmente aceptadas de la industria.",
+        "noGuarantees": "Salvo que se indique expresamente en un acuerdo escrito, Yieldge no garantiza ningún resultado comercial específico, mejora operacional, resultado financiero, reducción de costos, aumento de ingresos, aprobación regulatoria u objetivo estratégico."
       },
-      "services": {
-        "title": "Descripción de los Servicios",
-        "description": "Yieldge proporciona soluciones tecnológicas, desarrollo de software, consultoría y servicios relacionados. Nos reservamos el derecho de modificar, suspender o descontinuar cualquier aspecto de nuestros servicios en cualquier momento."
+      "professionalJudgment": {
+        "title": "Juicio Profesional Independiente",
+        "description": "Cualquier recomendación, evaluación, arquitectura, estrategia de implementación, informe, análisis u orientación tecnológica proporcionada por Yieldge representa opinión profesional basada en la información disponible en el momento del compromiso.",
+        "disclaimer": "Dicha orientación no deberá interpretarse como asesoría legal, financiera, fiscal, de auditoría o regulatoria. Los clientes deben consultar a profesionales apropiados para asuntos que requieran experiencia legal, financiera o regulatoria especializada."
       },
-      "userObligations": {
-        "title": "Obligaciones del Usuario",
-        "description": "Al utilizar nuestros servicios, te comprometes a:",
+      "clientResponsibilities": {
+        "title": "Responsabilidades del Cliente",
+        "description": "El cliente es responsable de:",
         "items": {
-          "accurate": "Proporcionar información precisa y actualizada",
-          "lawful": "Usar nuestros servicios solo para fines legales",
-          "noHarm": "No intentar dañar o interrumpir nuestros sistemas o servicios",
-          "confidentiality": "Mantener la confidencialidad de cualquier información propietaria compartida"
+          "accurate": "Proporcionar información precisa, completa y oportuna necesaria para la prestación de servicios",
+          "review": "Revisar entregables, informes y productos en tiempo oportuno",
+          "validate": "Validar que los entregables cumplan con los requisitos y sean aptos para los propósitos previstos",
+          "approvals": "Obtener y mantener todas las aprobaciones, autorizaciones y consentimientos internos necesarios",
+          "compliance": "Asegurar el cumplimiento de todas las leyes, regulaciones y políticas internas aplicables"
         }
+      },
+      "decisionResponsibility": {
+        "title": "Responsabilidad de Decisiones del Cliente",
+        "description": "El cliente retiene responsabilidad exclusiva por todas las decisiones comerciales, operacionales, financieras, legales, de ciberseguridad, cumplimiento y estratégicas tomadas basándose en servicios, recomendaciones, informes, análisis, software, entregables o información proporcionada por Yieldge. Yieldge proporciona orientación profesional para informar la toma de decisiones pero no toma decisiones en nombre del cliente."
       },
       "intellectualProperty": {
         "title": "Propiedad Intelectual",
-        "description": "Todo el contenido, marcas comerciales, logos y propiedad intelectual en nuestro sitio web y servicios son propiedad de Yieldge o sus licenciantes. No puedes usar, copiar o distribuir ningún contenido sin nuestro consentimiento previo por escrito."
+        "description": "Yieldge retiene propiedad exclusiva de todo el capital intelectual, metodologías, marcos, procesos, plantillas, aceleradores, componentes de software, activos de automatización, sistemas de inteligencia artificial, modelos analíticos, prompts, sistemas de agentes, arquitecturas de referencia, secretos comerciales y know-how utilizados, desarrollados, mejorados o empleados en conexión con la prestación de servicios."
+      },
+      "deliverables": {
+        "title": "Propiedad de Entregables",
+        "description": "Tras el pago completo de las tarifas aplicables, el cliente será propietario de los entregables específicos del proyecto expresamente desarrollados para el cliente bajo el acuerdo aplicable, sujeto a cualquier término de licencia de terceros que pueda aplicar a componentes incorporados.",
+        "retained": "Yieldge retiene la propiedad de todos los activos genéricos, reutilizables, preexistentes o desarrollados independientemente incorporados en dichos entregables, incluyendo metodologías, marcos, plantillas, bibliotecas de software y propiedad intelectual desarrollada antes o independientemente del compromiso."
+      },
+      "retainedKnowledge": {
+        "title": "Conocimiento Retenido",
+        "description": "Nada contenido en ningún acuerdo restringirá a Yieldge de utilizar conocimiento general, experiencia, habilidades, conceptos, metodologías, técnicas y know-how adquiridos durante el curso de la prestación de servicios, siempre que no se divulgue información confidencial del cliente. Yieldge puede desarrollar y proporcionar servicios similares a otros clientes."
+      },
+      "confidentiality": {
+        "title": "Confidencialidad",
+        "description": "Ambas partes acuerdan proteger la información confidencial utilizando salvaguardas administrativas, técnicas y organizacionales razonables apropiadas a la naturaleza de la información.",
+        "definition": "La información confidencial incluye información perteneciente a cualquiera de las partes que razonablemente se consideraría confidencial, propietaria, sensible o comercialmente valiosa, incluyendo estrategias comerciales, especificaciones técnicas, datos del cliente, información de precios y secretos comerciales."
+      },
+      "security": {
+        "title": "Seguridad y Protección de Información",
+        "description": "Yieldge implementa salvaguardas comercialmente razonables diseñadas para proteger la información bajo su control, incluyendo:",
+        "items": {
+          "access": "Gestión de acceso y controles de identidad",
+          "monitoring": "Monitoreo de seguridad y detección de amenazas",
+          "audit": "Registro de auditoría y medidas de rendición de cuentas",
+          "governance": "Gobernanza de información y procedimientos de clasificación",
+          "procedures": "Políticas de seguridad y procedimientos operacionales"
+        },
+        "disclaimer": "Sin embargo, ningún entorno tecnológico puede garantizar seguridad absoluta. Yieldge no será responsable por incidentes de seguridad resultantes de factores más allá de su control razonable."
+      },
+      "aiServices": {
+        "title": "Servicios de Inteligencia Artificial",
+        "description": "Ciertos servicios pueden incorporar:",
+        "items": {
+          "ai": "Inteligencia Artificial",
+          "ml": "Aprendizaje Automático",
+          "genai": "IA Generativa",
+          "agents": "Agentes Autónomos",
+          "decision": "Tecnologías de Soporte a Decisiones Automatizadas"
+        },
+        "disclaimer": "Los productos generados por dichas tecnologías pueden contener inexactitudes, omisiones, alucinaciones, sesgos o información incompleta.",
+        "review": "La revisión y validación humana permanecen esenciales. Los clientes deben verificar independientemente los productos generados por IA antes de confiar en ellos para decisiones comerciales."
+      },
+      "responsibleAI": {
+        "title": "Inteligencia Artificial Responsable",
+        "description": "Yieldge promueve prácticas de inteligencia artificial responsable fundamentadas en:",
+        "items": {
+          "transparency": "Transparencia respecto a capacidades y limitaciones de IA",
+          "accountability": "Rendición de cuentas por el comportamiento y resultados del sistema de IA",
+          "oversight": "Supervisión Humana de procesos y decisiones automatizadas",
+          "explainability": "Explicabilidad de recomendaciones impulsadas por IA donde sea factible",
+          "traceability": "Trazabilidad del procesamiento de IA y lógica de decisión",
+          "risk": "Gestión de Riesgos proporcional al impacto del sistema de IA"
+        },
+        "augment": "Los sistemas de inteligencia artificial están destinados a aumentar la toma de decisiones humana y no reemplazan el juicio profesional, procesos de gobernanza o supervisión humana apropiada."
+      },
+      "governance": {
+        "title": "Gobernanza Digital, Observabilidad y Trazabilidad",
+        "description": "Yieldge puede proporcionar soluciones que involucran:",
+        "items": {
+          "visibility": "Visibilidad Operacional",
+          "observability": "Observabilidad",
+          "traceability": "Trazabilidad",
+          "governanceItem": "Gobernanza",
+          "intelligence": "Inteligencia de Procesos",
+          "auditability": "Auditabilidad",
+          "monitoring": "Monitoreo",
+          "decision": "Soporte a Decisiones"
+        },
+        "disclaimer": "Dichas capacidades mejoran la conciencia organizacional y madurez de gobernanza pero no garantizan la identificación, prevención o eliminación de todos los riesgos operacionales, de cumplimiento, fraude, ciberseguridad o comerciales. La gestión efectiva de riesgos requiere programas integrales más allá de las soluciones tecnológicas."
+      },
+      "thirdParty": {
+        "title": "Plataformas de Terceros",
+        "description": "Yieldge puede depender de:",
+        "items": {
+          "cloud": "Proveedores de Nube",
+          "apis": "APIs y Servicios Externos",
+          "telecom": "Proveedores de Telecomunicaciones",
+          "software": "Proveedores de Software",
+          "infrastructure": "Proveedores de Infraestructura"
+        },
+        "disclaimer": "Yieldge no será responsable por interrupciones, cortes, cambios de políticas, limitaciones de servicio, incidentes de seguridad o fallas atribuibles a proveedores de terceros más allá de su control razonable."
+      },
+      "noReliance": {
+        "title": "Sin Dependencia de Terceros",
+        "description": "Los entregables, recomendaciones, informes, evaluaciones y servicios están destinados exclusivamente para el cliente identificado en el compromiso aplicable. Ningún tercero puede depender de dichos materiales sin el consentimiento previo por escrito de Yieldge. Yieldge no asume ningún deber o responsabilidad hacia ningún tercero en conexión con los servicios prestados a un cliente."
+      },
+      "warranties": {
+        "title": "Exención de Garantías",
+        "description": "Salvo que se establezca expresamente en un acuerdo escrito, Yieldge renuncia a todas las garantías, ya sean expresas, implícitas, estatutarias o de otro tipo, incluyendo garantías de:",
+        "items": {
+          "merchantability": "Comerciabilidad",
+          "fitness": "Aptitud para un propósito particular",
+          "availability": "Disponibilidad continua",
+          "nonInfringement": "No infracción",
+          "performance": "Niveles específicos de rendimiento",
+          "accuracy": "Precisión o integridad absoluta",
+          "uninterrupted": "Operación ininterrumpida o libre de errores"
+        }
       },
       "liability": {
         "title": "Limitación de Responsabilidad",
-        "description": "Yieldge no será responsable por daños indirectos, incidentales, especiales, consecuentes o punitivos, incluyendo pérdida de beneficios, datos u otras pérdidas intangibles, resultantes de tu uso o incapacidad de usar nuestros servicios."
+        "description": "En la máxima medida permitida por la ley aplicable, Yieldge no será responsable por:",
+        "items": {
+          "profits": "Pérdida de beneficios",
+          "revenue": "Pérdida de ingresos",
+          "opportunity": "Pérdida de oportunidad",
+          "business": "Pérdida de valor comercial",
+          "goodwill": "Pérdida de fondo de comercio",
+          "interruption": "Interrupción del negocio",
+          "reputation": "Daño reputacional",
+          "indirect": "Daños indirectos",
+          "consequential": "Daños consecuentes",
+          "special": "Daños especiales",
+          "punitive": "Daños punitivos o ejemplares"
+        },
+        "cap": "La responsabilidad agregada de Yieldge por todas y cada una de las reclamaciones que surjan de o se relacionen con los servicios no excederá las tarifas efectivamente pagadas por el cliente a Yieldge durante los doce (12) meses inmediatamente anteriores al evento que da origen a la reclamación."
       },
-      "indemnification": {
-        "title": "Indemnización",
-        "description": "Aceptas indemnizar y mantener indemne a Yieldge, sus directores, empleados y agentes de cualquier reclamación, daño, pérdida o gasto, incluyendo honorarios legales razonables, que surjan de tu uso de nuestros servicios o violación de estos términos."
+      "regulatory": {
+        "title": "Entornos Regulados",
+        "description": "Proyectos que involucran:",
+        "items": {
+          "financial": "Instituciones Financieras",
+          "government": "Entidades Gubernamentales",
+          "healthcare": "Organizaciones de Salud",
+          "insurance": "Compañías de Seguros",
+          "critical": "Operadores de Infraestructura Crítica"
+        },
+        "additional": "pueden requerir controles adicionales de cumplimiento, gobernanza, auditoría y seguridad más allá de estos Términos. Dichos requisitos se abordarán en acuerdos específicos del compromiso."
       },
-      "termination": {
-        "title": "Terminación",
-        "description": "Podemos terminar o suspender tu acceso a nuestros servicios inmediatamente, sin previo aviso, por cualquier motivo, incluyendo si incumples estos términos. Tras la terminación, tu derecho a usar los servicios cesará inmediatamente."
+      "forceMajeure": {
+        "title": "Fuerza Mayor",
+        "description": "Yieldge no será responsable por retrasos o fallas en el cumplimiento resultantes de causas más allá de su control razonable, incluyendo actos de Dios, desastres naturales, pandemia, guerra, terrorismo, disturbios civiles, acción gubernamental, disputas laborales, cortes de energía, fallas de telecomunicaciones o interrupciones de servicios de terceros."
       },
       "governingLaw": {
         "title": "Ley Aplicable",
-        "description": "Estos términos se regirán e interpretarán de acuerdo con las leyes aplicables, sin tener en cuenta sus disposiciones sobre conflictos de leyes."
+        "description": "Estos Términos de Servicio se regirán e interpretarán de acuerdo con las leyes de Costa Rica, sin considerar los principios de conflicto de leyes. Cualquier disputa que surja bajo estos términos estará sujeta a la jurisdicción exclusiva de los tribunales de Costa Rica."
       },
       "changes": {
         "title": "Cambios a los Términos",
-        "description": "Nos reservamos el derecho de modificar estos términos en cualquier momento. Los cambios entrarán en vigor inmediatamente después de su publicación en el sitio web. Tu uso continuado de los servicios después de cualquier cambio constituye tu aceptación de los nuevos términos."
+        "description": "Yieldge se reserva el derecho de modificar estos Términos de Servicio en cualquier momento. Los cambios materiales se comunicarán publicando los términos revisados en nuestro sitio web con una fecha de vigencia actualizada. El uso continuado de nuestros servicios después de cualquier cambio constituye aceptación de los términos modificados."
       },
       "contact": {
-        "title": "Contacto",
-        "description": "Si tienes preguntas sobre estos términos y condiciones, puedes contactarnos en:"
+        "title": "Información de Contacto",
+        "description": "Para preguntas o inquietudes respecto a estos Términos de Servicio, por favor contacte a nuestro Departamento Legal en:"
       }
     }
   },
@@ -1082,6 +1267,97 @@
       "description": "Solicite una evaluación técnica. Analizamos su situación actual y proponemos un plan de acción con impacto medible.",
       "button": "Solicitar Evaluación",
       "trustLine": "Sin compromiso. Sin presión comercial."
+    }
+  },
+  "researchPage": {
+    "hero": {
+      "eyebrow": "INVESTIGACIÓN Y ANÁLISIS",
+      "subheadline": "Análisis riguroso e insights estratégicos sobre inteligencia operativa, transformación digital y el futuro de la tecnología empresarial.",
+      "primaryCta": "Explorar Investigación",
+      "secondaryCta": "Contactar Investigación"
+    },
+    "featured": {
+      "eyebrow": "INVESTIGACIÓN DESTACADA",
+      "title": "El Estado de la Inteligencia Operativa Empresarial 2024",
+      "description": "Un análisis exhaustivo de cómo las organizaciones líderes están aprovechando la inteligencia operativa para transformar la toma de decisiones, reducir la fricción operativa y construir ventajas competitivas sostenibles en un panorama digital que evoluciona rápidamente.",
+      "cta": "Leer Publicación Completa"
+    },
+    "areas": {
+      "eyebrow": "ÁREAS DE INVESTIGACIÓN",
+      "title": "Dominios de Investigación",
+      "subtitle": "Investigación profunda en las áreas críticas de la tecnología empresarial y la excelencia operativa.",
+      "items": {
+        "operationalIntelligence": {
+          "title": "Inteligencia Operativa",
+          "description": "Estrategias para transformar datos operativos en insights accionables que impulsan la toma de decisiones."
+        },
+        "enterpriseArchitecture": {
+          "title": "Arquitectura Empresarial",
+          "description": "Mejores prácticas para diseñar sistemas escalables y mantenibles que soporten el crecimiento organizacional."
+        },
+        "aiAutomation": {
+          "title": "IA y Automatización",
+          "description": "Aplicación de machine learning y automatización inteligente para optimizar procesos empresariales."
+        },
+        "financialSystems": {
+          "title": "Sistemas Financieros",
+          "description": "Modernización de infraestructura financiera y cumplimiento regulatorio en instituciones financieras."
+        },
+        "governmentTechnology": {
+          "title": "Tecnología Gubernamental",
+          "description": "Transformación digital del sector público y entrega de servicios centrada en el ciudadano."
+        },
+        "digitalTransformation": {
+          "title": "Transformación Digital",
+          "description": "Marcos para ejecutar iniciativas de transformación digital a escala organizacional."
+        },
+        "observability": {
+          "title": "Observabilidad",
+          "description": "Estrategias de monitoreo e instrumentación para sistemas distribuidos complejos."
+        },
+        "systemsIntegration": {
+          "title": "Integración de Sistemas",
+          "description": "Patrones y mejores prácticas para conectar sistemas heredados con plataformas modernas."
+        }
+      }
+    },
+    "latest": {
+      "eyebrow": "ÚLTIMA INVESTIGACIÓN",
+      "title": "Publicaciones Recientes",
+      "subtitle": "Explore nuestros análisis y perspectivas más recientes sobre tecnología empresarial."
+    },
+    "methodology": {
+      "eyebrow": "METODOLOGÍA",
+      "title": "Investigación Rigurosa",
+      "subtitle": "Nuestras publicaciones están fundamentadas en metodologías probadas y fuentes verificadas.",
+      "description": "Combinamos análisis cuantitativo con expertise en la industria para entregar insights que informan decisiones estratégicas. Cada publicación pasa por revisión por pares y validación contra datos del mundo real.",
+      "sources": {
+        "title": "Fuentes y Marcos de Referencia",
+        "items": {
+          "oecd": "Datos e indicadores de la OCDE sobre transformación digital",
+          "worldBank": "Investigación del Banco Mundial sobre desarrollo tecnológico",
+          "gartner": "Marcos analíticos de Gartner y tendencias de mercado",
+          "enterpriseArchitecture": "Estándares y marcos de arquitectura empresarial (TOGAF, Zachman)",
+          "operationalIntelligence": "Metodologías de inteligencia operativa y observabilidad",
+          "publicSector": "Marcos de modernización del sector público",
+          "fintech": "Investigación en tecnología financiera y cumplimiento regulatorio",
+          "bestPractices": "Mejores prácticas de la industria y estudios de caso"
+        }
+      }
+    },
+    "newsletter": {
+      "eyebrow": "BRIEFING DE INVESTIGACIÓN",
+      "title": "Manténgase Informado",
+      "description": "Reciba nuestros últimos análisis e insights directamente en su bandeja de entrada. Sin spam, solo investigación de valor.",
+      "placeholder": "su.correo@empresa.com",
+      "subscribe": "Suscribirse",
+      "privacy": "Respetamos su privacidad. Puede cancelar en cualquier momento."
+    },
+    "cta": {
+      "eyebrow": "¿LISTO PARA EXPLORAR?",
+      "title": "Comience su Transformación",
+      "description": "Descubra cómo nuestros insights de investigación pueden informar su estrategia tecnológica y acelerar su transformación digital.",
+      "button": "Contactar a Nuestro Equipo"
     }
   }
 }

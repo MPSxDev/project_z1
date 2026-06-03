@@ -83,10 +83,13 @@ export default function PrivacyPolicyPageClient() {
                 {t('sections.informationCollect.description')}
               </p>
               <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                <li>{t('sections.informationCollect.items.personal')}</li>
                 <li>{t('sections.informationCollect.items.contact')}</li>
-                <li>{t('sections.informationCollect.items.usage')}</li>
+                <li>{t('sections.informationCollect.items.business')}</li>
+                <li>{t('sections.informationCollect.items.device')}</li>
                 <li>{t('sections.informationCollect.items.technical')}</li>
-                <li>{t('sections.informationCollect.items.cookies')}</li>
+                <li>{t('sections.informationCollect.items.usage')}</li>
+                <li>{t('sections.informationCollect.items.communication')}</li>
               </ul>
             </section>
 
@@ -99,56 +102,163 @@ export default function PrivacyPolicyPageClient() {
                 {t('sections.howWeUse.description')}
               </p>
               <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>{t('sections.howWeUse.items.services')}</li>
-                <li>{t('sections.howWeUse.items.communication')}</li>
+                <li>{t('sections.howWeUse.items.delivery')}</li>
+                <li>{t('sections.howWeUse.items.support')}</li>
+                <li>{t('sections.howWeUse.items.security')}</li>
+                <li>{t('sections.howWeUse.items.compliance')}</li>
+                <li>{t('sections.howWeUse.items.communications')}</li>
+                <li>{t('sections.howWeUse.items.analytics')}</li>
                 <li>{t('sections.howWeUse.items.improvement')}</li>
-                <li>{t('sections.howWeUse.items.legal')}</li>
               </ul>
             </section>
 
-            {/* Data Protection */}
+            {/* Data Governance */}
             <section className="mb-12">
               <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.dataProtection.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                {t('sections.dataProtection.description')}
-              </p>
-            </section>
-
-            {/* Your Rights */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.yourRights.title')}
+                {t('sections.dataGovernance.title')}
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                {t('sections.yourRights.description')}
+                {t('sections.dataGovernance.description')}
               </p>
               <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>{t('sections.yourRights.items.access')}</li>
-                <li>{t('sections.yourRights.items.rectification')}</li>
-                <li>{t('sections.yourRights.items.deletion')}</li>
-                <li>{t('sections.yourRights.items.objection')}</li>
+                <li>{t('sections.dataGovernance.items.accountability')}</li>
+                <li>{t('sections.dataGovernance.items.traceability')}</li>
+                <li>{t('sections.dataGovernance.items.access')}</li>
+                <li>{t('sections.dataGovernance.items.stewardship')}</li>
+                <li>{t('sections.dataGovernance.items.lifecycle')}</li>
+                <li>{t('sections.dataGovernance.items.responsible')}</li>
               </ul>
             </section>
 
-            {/* Cookies */}
+            {/* Data Security */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.dataSecurity.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                {t('sections.dataSecurity.description')}
+              </p>
+              <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                <li>{t('sections.dataSecurity.items.access')}</li>
+                <li>{t('sections.dataSecurity.items.authentication')}</li>
+                <li>{t('sections.dataSecurity.items.encryption')}</li>
+                <li>{t('sections.dataSecurity.items.monitoring')}</li>
+                <li>{t('sections.dataSecurity.items.audit')}</li>
+              </ul>
+              <p className="text-gray-600 leading-relaxed mt-4">
+                {t('sections.dataSecurity.disclaimer')}
+              </p>
+            </section>
+
+            {/* Information Sharing */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.informationSharing.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                {t('sections.informationSharing.description')}
+              </p>
+              <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                <li>{t('sections.informationSharing.items.serviceProviders')}</li>
+                <li>{t('sections.informationSharing.items.cloudProviders')}</li>
+                <li>{t('sections.informationSharing.items.legal')}</li>
+                <li>{t('sections.informationSharing.items.business')}</li>
+              </ul>
+              <p className="text-gray-600 leading-relaxed mt-4 font-medium">
+                {t('sections.informationSharing.noSale')}
+              </p>
+            </section>
+
+            {/* Artificial Intelligence Processing */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.aiProcessing.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed">
+                {t('sections.aiProcessing.description')}
+              </p>
+            </section>
+
+            {/* Responsible AI Processing */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.responsibleAI.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed">
+                {t('sections.responsibleAI.description')}
+              </p>
+            </section>
+
+            {/* International Transfers */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.internationalTransfers.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed">
+                {t('sections.internationalTransfers.description')}
+              </p>
+            </section>
+
+            {/* Data Retention */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.dataRetention.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed">
+                {t('sections.dataRetention.description')}
+              </p>
+            </section>
+
+            {/* User Rights */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.userRights.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                {t('sections.userRights.description')}
+              </p>
+              <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                <li>{t('sections.userRights.items.access')}</li>
+                <li>{t('sections.userRights.items.correction')}</li>
+                <li>{t('sections.userRights.items.deletion')}</li>
+                <li>{t('sections.userRights.items.restriction')}</li>
+                <li>{t('sections.userRights.items.clarification')}</li>
+              </ul>
+              <p className="text-gray-600 leading-relaxed mt-4">
+                {t('sections.userRights.exercise')}
+              </p>
+            </section>
+
+            {/* Cookies and Analytics */}
             <section className="mb-12">
               <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
                 {t('sections.cookies.title')}
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed mb-4">
                 {t('sections.cookies.description')}
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                {t('sections.cookies.management')}
               </p>
             </section>
 
-            {/* Third Party Services */}
+            {/* Incident Response */}
             <section className="mb-12">
               <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.thirdParty.title')}
+                {t('sections.incidentResponse.title')}
               </h2>
               <p className="text-gray-600 leading-relaxed">
-                {t('sections.thirdParty.description')}
+                {t('sections.incidentResponse.description')}
+              </p>
+            </section>
+
+            {/* Regulatory Compliance */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.regulatoryCompliance.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed">
+                {t('sections.regulatoryCompliance.description')}
               </p>
             </section>
 
@@ -171,8 +281,8 @@ export default function PrivacyPolicyPageClient() {
                 {t('sections.contact.description')}
               </p>
               <p className="text-gray-600 mt-2">
-                <a href="mailto:info@yieldge.com" className="text-[#1F5CFF] hover:underline">
-                  info@yieldge.com
+                <a href="mailto:privacy@yieldge.com" className="text-[#1F5CFF] hover:underline">
+                  privacy@yieldge.com
                 </a>
               </p>
             </section>

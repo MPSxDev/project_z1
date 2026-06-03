@@ -74,40 +74,57 @@ export default function TermsPageClient() {
         {/* Content Section */}
         <Section background="white">
           <div className="max-w-4xl mx-auto prose prose-gray">
-            {/* Acceptance of Terms */}
+            {/* Nature of Professional Services */}
             <section className="mb-12">
               <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.acceptance.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                {t('sections.acceptance.description')}
-              </p>
-            </section>
-
-            {/* Services */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.services.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                {t('sections.services.description')}
-              </p>
-            </section>
-
-            {/* User Obligations */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.userObligations.title')}
+                {t('sections.professionalServices.title')}
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                {t('sections.userObligations.description')}
+                {t('sections.professionalServices.description')}
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                {t('sections.professionalServices.noGuarantees')}
+              </p>
+            </section>
+
+            {/* Independent Professional Judgment */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.professionalJudgment.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                {t('sections.professionalJudgment.description')}
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                {t('sections.professionalJudgment.disclaimer')}
+              </p>
+            </section>
+
+            {/* Client Responsibilities */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.clientResponsibilities.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                {t('sections.clientResponsibilities.description')}
               </p>
               <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>{t('sections.userObligations.items.accurate')}</li>
-                <li>{t('sections.userObligations.items.lawful')}</li>
-                <li>{t('sections.userObligations.items.noHarm')}</li>
-                <li>{t('sections.userObligations.items.confidentiality')}</li>
+                <li>{t('sections.clientResponsibilities.items.accurate')}</li>
+                <li>{t('sections.clientResponsibilities.items.review')}</li>
+                <li>{t('sections.clientResponsibilities.items.validate')}</li>
+                <li>{t('sections.clientResponsibilities.items.approvals')}</li>
+                <li>{t('sections.clientResponsibilities.items.compliance')}</li>
               </ul>
+            </section>
+
+            {/* Client Decision Responsibility */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.decisionResponsibility.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed">
+                {t('sections.decisionResponsibility.description')}
+              </p>
             </section>
 
             {/* Intellectual Property */}
@@ -120,33 +137,231 @@ export default function TermsPageClient() {
               </p>
             </section>
 
+            {/* Ownership of Deliverables */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.deliverables.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                {t('sections.deliverables.description')}
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                {t('sections.deliverables.retained')}
+              </p>
+            </section>
+
+            {/* Retained Knowledge */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.retainedKnowledge.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed">
+                {t('sections.retainedKnowledge.description')}
+              </p>
+            </section>
+
+            {/* Confidentiality */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.confidentiality.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                {t('sections.confidentiality.description')}
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                {t('sections.confidentiality.definition')}
+              </p>
+            </section>
+
+            {/* Security and Information Protection */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.security.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                {t('sections.security.description')}
+              </p>
+              <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                <li>{t('sections.security.items.access')}</li>
+                <li>{t('sections.security.items.monitoring')}</li>
+                <li>{t('sections.security.items.audit')}</li>
+                <li>{t('sections.security.items.governance')}</li>
+                <li>{t('sections.security.items.procedures')}</li>
+              </ul>
+              <p className="text-gray-600 leading-relaxed mt-4">
+                {t('sections.security.disclaimer')}
+              </p>
+            </section>
+
+            {/* Artificial Intelligence Services */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.aiServices.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                {t('sections.aiServices.description')}
+              </p>
+              <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                <li>{t('sections.aiServices.items.ai')}</li>
+                <li>{t('sections.aiServices.items.ml')}</li>
+                <li>{t('sections.aiServices.items.genai')}</li>
+                <li>{t('sections.aiServices.items.agents')}</li>
+                <li>{t('sections.aiServices.items.decision')}</li>
+              </ul>
+              <p className="text-gray-600 leading-relaxed mt-4">
+                {t('sections.aiServices.disclaimer')}
+              </p>
+              <p className="text-gray-600 leading-relaxed mt-2">
+                {t('sections.aiServices.review')}
+              </p>
+            </section>
+
+            {/* Responsible Artificial Intelligence */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.responsibleAI.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                {t('sections.responsibleAI.description')}
+              </p>
+              <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                <li>{t('sections.responsibleAI.items.transparency')}</li>
+                <li>{t('sections.responsibleAI.items.accountability')}</li>
+                <li>{t('sections.responsibleAI.items.oversight')}</li>
+                <li>{t('sections.responsibleAI.items.explainability')}</li>
+                <li>{t('sections.responsibleAI.items.traceability')}</li>
+                <li>{t('sections.responsibleAI.items.risk')}</li>
+              </ul>
+              <p className="text-gray-600 leading-relaxed mt-4">
+                {t('sections.responsibleAI.augment')}
+              </p>
+            </section>
+
+            {/* Digital Governance, Observability and Traceability */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.governance.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                {t('sections.governance.description')}
+              </p>
+              <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                <li>{t('sections.governance.items.visibility')}</li>
+                <li>{t('sections.governance.items.observability')}</li>
+                <li>{t('sections.governance.items.traceability')}</li>
+                <li>{t('sections.governance.items.governanceItem')}</li>
+                <li>{t('sections.governance.items.intelligence')}</li>
+                <li>{t('sections.governance.items.auditability')}</li>
+                <li>{t('sections.governance.items.monitoring')}</li>
+                <li>{t('sections.governance.items.decision')}</li>
+              </ul>
+              <p className="text-gray-600 leading-relaxed mt-4">
+                {t('sections.governance.disclaimer')}
+              </p>
+            </section>
+
+            {/* Third Party Platforms */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.thirdParty.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                {t('sections.thirdParty.description')}
+              </p>
+              <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                <li>{t('sections.thirdParty.items.cloud')}</li>
+                <li>{t('sections.thirdParty.items.apis')}</li>
+                <li>{t('sections.thirdParty.items.telecom')}</li>
+                <li>{t('sections.thirdParty.items.software')}</li>
+                <li>{t('sections.thirdParty.items.infrastructure')}</li>
+              </ul>
+              <p className="text-gray-600 leading-relaxed mt-4">
+                {t('sections.thirdParty.disclaimer')}
+              </p>
+            </section>
+
+            {/* No Reliance by Third Parties */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.noReliance.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed">
+                {t('sections.noReliance.description')}
+              </p>
+            </section>
+
+            {/* Disclaimer of Warranties */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.warranties.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                {t('sections.warranties.description')}
+              </p>
+              <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                <li>{t('sections.warranties.items.merchantability')}</li>
+                <li>{t('sections.warranties.items.fitness')}</li>
+                <li>{t('sections.warranties.items.availability')}</li>
+                <li>{t('sections.warranties.items.nonInfringement')}</li>
+                <li>{t('sections.warranties.items.performance')}</li>
+                <li>{t('sections.warranties.items.accuracy')}</li>
+                <li>{t('sections.warranties.items.uninterrupted')}</li>
+              </ul>
+            </section>
+
             {/* Limitation of Liability */}
             <section className="mb-12">
               <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
                 {t('sections.liability.title')}
               </h2>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed mb-4">
                 {t('sections.liability.description')}
               </p>
-            </section>
-
-            {/* Indemnification */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.indemnification.title')}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                {t('sections.indemnification.description')}
+              <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                <li>{t('sections.liability.items.profits')}</li>
+                <li>{t('sections.liability.items.revenue')}</li>
+                <li>{t('sections.liability.items.opportunity')}</li>
+                <li>{t('sections.liability.items.business')}</li>
+                <li>{t('sections.liability.items.goodwill')}</li>
+                <li>{t('sections.liability.items.interruption')}</li>
+                <li>{t('sections.liability.items.reputation')}</li>
+                <li>{t('sections.liability.items.indirect')}</li>
+                <li>{t('sections.liability.items.consequential')}</li>
+                <li>{t('sections.liability.items.special')}</li>
+                <li>{t('sections.liability.items.punitive')}</li>
+              </ul>
+              <p className="text-gray-600 leading-relaxed mt-4">
+                {t('sections.liability.cap')}
               </p>
             </section>
 
-            {/* Termination */}
+            {/* Regulatory Environments */}
             <section className="mb-12">
               <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
-                {t('sections.termination.title')}
+                {t('sections.regulatory.title')}
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                {t('sections.regulatory.description')}
+              </p>
+              <ul className="list-disc pl-6 text-gray-600 space-y-2">
+                <li>{t('sections.regulatory.items.financial')}</li>
+                <li>{t('sections.regulatory.items.government')}</li>
+                <li>{t('sections.regulatory.items.healthcare')}</li>
+                <li>{t('sections.regulatory.items.insurance')}</li>
+                <li>{t('sections.regulatory.items.critical')}</li>
+              </ul>
+              <p className="text-gray-600 leading-relaxed mt-4">
+                {t('sections.regulatory.additional')}
+              </p>
+            </section>
+
+            {/* Force Majeure */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 mb-4">
+                {t('sections.forceMajeure.title')}
               </h2>
               <p className="text-gray-600 leading-relaxed">
-                {t('sections.termination.description')}
+                {t('sections.forceMajeure.description')}
               </p>
             </section>
 
@@ -179,8 +394,8 @@ export default function TermsPageClient() {
                 {t('sections.contact.description')}
               </p>
               <p className="text-gray-600 mt-2">
-                <a href="mailto:info@yieldge.com" className="text-[#1F5CFF] hover:underline">
-                  info@yieldge.com
+                <a href="mailto:legal@yieldge.com" className="text-[#1F5CFF] hover:underline">
+                  legal@yieldge.com
                 </a>
               </p>
             </section>
