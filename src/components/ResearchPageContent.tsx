@@ -339,12 +339,6 @@ const ResearchPageContent = memo(function ResearchPageContent() {
                 {t('hero.primaryCta')}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
-              <Link
-                href="/get-in-touch"
-                className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-gray-700 font-semibold rounded-lg border border-gray-200 hover:bg-gray-50 hover:border-gray-300 transition-all duration-300"
-              >
-                {t('hero.secondaryCta')}
-              </Link>
             </motion.div>
           </motion.div>
         </Container>
