@@ -44,6 +44,11 @@ function careersHref(pathname: string): string {
   return prefix ? `${prefix}/careers` : '/careers';
 }
 
+function casosDeExitoHref(pathname: string): string {
+  const prefix = getVerticalPrefix(pathname);
+  return prefix ? `${prefix}/casos-de-exito` : '/casos-de-exito';
+}
+
 function researchHref(pathname: string): string {
   const prefix = getVerticalPrefix(pathname);
   return prefix ? `${prefix}/research` : '/research';
@@ -123,6 +128,7 @@ const Navbar = memo(function Navbar({ hideNavLinks = false }: NavbarProps) {
       ]
     : [
         { label: t('solutions'), href: solutionsHref(pathname) },
+        { label: t('casosDeExito'), href: casosDeExitoHref(pathname) },
         { label: t('company'), href: companyHref(pathname) },
         { label: t('careers'), href: careersHref(pathname) },
       ];

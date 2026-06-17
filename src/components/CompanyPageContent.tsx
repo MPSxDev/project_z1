@@ -2,9 +2,11 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Briefcase, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+
+const developmentIcon = { src: '/assets/iconset/icons/4.svg', alt: 'Development Program' };
 import Container from '@/components/ui/Container';
 import Section from '@/components/ui/Section';
 import Heading from '@/components/ui/Heading';
@@ -248,7 +250,15 @@ export default function CompanyPageContent({ verticalName }: CompanyPageContentP
         >
           <motion.div variants={fadeInUp}>
             <div className="w-14 h-14 bg-gray-100 rounded-lg flex items-center justify-center mx-auto mb-5">
-              <Briefcase className="w-7 h-7 text-gray-500" />
+              <div className="relative w-8 h-8">
+                <Image
+                  src={developmentIcon.src}
+                  alt={developmentIcon.alt}
+                  fill
+                  draggable={false}
+                  className="object-contain opacity-70"
+                />
+              </div>
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 mb-4">
               {t('developmentProgram')}
