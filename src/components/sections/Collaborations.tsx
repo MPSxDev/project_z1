@@ -45,6 +45,10 @@ const logos: CompanyLogo[] = [
     name: 'HS',
     logo: '/assets/logos/hslogo.png',
   },
+  {
+    name: 'Logo',
+    logo: '/assets/logos/construrack.png',
+  },
 ];
 
 export default function Collaborations() {
