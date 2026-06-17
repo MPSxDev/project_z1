@@ -7,10 +7,11 @@
   },
   "nav": {
     "solutions": "Solutions",
+    "casosDeExito": "Success Stories",
     "research": "Research",
     "infrastructure": "Digital Infrastructure",
-    "company": "Company",
-    "careers": "Careers",
+    "company": "About Us",
+    "careers": "Opportunities",
     "getInTouch": "Get in Touch",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
@@ -1359,6 +1360,46 @@
       "title": "Start Your Transformation",
       "description": "Discover how our research insights can inform your technology strategy and accelerate your digital transformation.",
       "button": "Contact Our Team"
+    }
+  },
+  "casosDeExito": {
+    "hero": {
+      "eyebrow": "SUCCESS STORIES",
+      "title": "Results That Drive Impact",
+      "subtitle1": "At Yieldge, we help organizations strengthen their digital presence, optimize operational processes, and create digital experiences that drive growth, efficiency, and customer trust.",
+      "subtitle2": "Our approach combines strategy, technology, and execution to transform business challenges into sustainable competitive advantages.",
+      "primaryCta": "Schedule Assessment",
+      "secondaryCta": "Explore Success Stories"
+    },
+    "logos": {
+      "title": "Organizations That Have Trusted Us",
+      "description": "We work with companies and institutions seeking to elevate their digital capabilities and accelerate their technological transformation."
+    },
+    "valueCreation": {
+      "eyebrow": "VALUE CREATION",
+      "title": "How We Create Value",
+      "description1": "Every organization faces distinct challenges. However, the objectives are often similar: improve customer experience, increase operational efficiency, and strengthen digital presence.",
+      "description2": "Our work focuses on identifying improvement opportunities and converting them into tangible results through technology, automation, and continuous optimization."
+    },
+    "caseStudies": {
+      "eyebrow": "SUCCESS STORIES",
+      "title": "Featured Success Stories",
+      "description": "Each project represents an opportunity to generate measurable improvements and strengthen our clients' digital capabilities.",
+      "case": "Case",
+      "challenge": "Challenge",
+      "solution": "Solution",
+      "impact": "Impact"
+    },
+    "methodology": {
+      "eyebrow": "METHODOLOGY",
+      "title": "A Results-Based Approach"
+    },
+    "finalCta": {
+      "title": "Let's Turn Your Organization's Challenges Into Growth Opportunities",
+      "description1": "The most successful organizations don't wait for problems to appear. They build digital capabilities that allow them to grow, adapt, and lead.",
+      "description2": "Let's work together to identify improvement opportunities and develop solutions that generate measurable results.",
+      "primaryCta": "Schedule Assessment",
+      "secondaryCta": "Contact Yieldge"
     }
   }
 }
