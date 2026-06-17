@@ -42,6 +42,10 @@ const logos: CompanyLogo[] = [
     large: true,
   },
   {
+    name: 'PHYC',
+    logo: '/assets/logos/phyclogo-removedbg.png',
+  },
+  {
     name: 'HS',
     logo: '/assets/logos/hslogo.png',
   },
@@ -54,7 +58,7 @@ const logos: CompanyLogo[] = [
 export default function Collaborations() {
   const t = useTranslations('homepage.collaborations');
   const totalLogos = logos.length;
-  const [currentIndex, setCurrentIndex] = useState(totalLogos);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(true);
   const [visibleCount, setVisibleCount] = useState(1);
 
