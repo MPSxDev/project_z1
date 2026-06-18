@@ -2,7 +2,6 @@
 
 import { memo } from 'react';
 import { motion } from 'framer-motion';
-import { Instagram } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
@@ -65,10 +64,7 @@ const Footer = memo(function Footer({ description, minimal = false, ctaText, cta
     { text: t('termsAndConditions'), href: '/terms' },
   ];
 
-  const socialLinks = [
-    { icon: Instagram, href: 'https://www.instagram.com/yieldge.software/', label: 'Instagram' },
-  ];
-
+  
   return (
     <footer className="relative bg-gray-50 border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-8 sm:py-10 lg:py-12">
@@ -92,22 +88,7 @@ const Footer = memo(function Footer({ description, minimal = false, ctaText, cta
               {description || t('description')}
             </p>
 
-            {/* Social Links */}
-            <div className="flex gap-3 sm:gap-4">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target={social.href.startsWith('http') ? '_blank' : undefined}
-                  rel={social.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white border border-gray-200 hover:border-gray-400 flex items-center justify-center transition-colors duration-200 text-gray-500 hover:text-gray-700"
-                  aria-label={social.label}
-                >
-                  <social.icon className="w-4 h-4 sm:w-5 sm:h-5" />
-                </a>
-              ))}
             </div>
-          </div>
 
           {!minimal && (
             <>
