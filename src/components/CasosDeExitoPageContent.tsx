@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Building2, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, Building2, CheckCircle2, ChevronDown } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { useState, useEffect, useCallback } from 'react';
@@ -184,20 +184,19 @@ function HeroSection() {
 
           <motion.div
             variants={fadeInUp}
-            className="flex flex-col sm:flex-row justify-center gap-4"
+            className="flex justify-center"
           >
-            <Link
-              href="/get-in-touch"
-              className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 bg-gray-900 text-white font-medium rounded-lg border border-gray-900 hover:bg-gray-800 transition-colors duration-200"
-            >
-              {t('primaryCta')}
-              <ArrowRight className="w-5 h-5" />
-            </Link>
             <a
-              href="#casos-destacados"
-              className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 bg-white text-gray-900 font-medium rounded-lg border border-gray-300 hover:border-gray-400 hover:bg-gray-50 transition-colors duration-200"
+              href="#clientes"
+              className="inline-flex flex-col items-center gap-2 text-gray-500 hover:text-gray-900 transition-colors duration-200 group"
             >
-              {t('secondaryCta')}
+              <span className="text-sm font-medium">{t('scrollCta')}</span>
+              <motion.div
+                animate={{ y: [0, 8, 0] }}
+                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              >
+                <ChevronDown className="w-6 h-6" />
+              </motion.div>
             </a>
           </motion.div>
         </motion.div>
@@ -271,7 +270,7 @@ function ClientLogosSection() {
   const itemWidthPercent = 100 / visibleCount;
 
   return (
-    <section className="relative bg-gradient-to-b from-white to-[#eff4ff]/20 py-16 sm:py-20 lg:py-24 overflow-hidden">
+    <section id="clientes" className="relative bg-gradient-to-b from-white to-[#eff4ff]/20 py-16 sm:py-20 lg:py-24 overflow-hidden scroll-mt-16">
       <div className="absolute top-0 right-0 w-64 h-64 bg-[#dbe6ff]/20 rounded-full blur-3xl -z-10 pointer-events-none" />
 
       <Container className="relative z-10">
