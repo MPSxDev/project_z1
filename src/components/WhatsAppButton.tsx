@@ -112,27 +112,25 @@ export default function WhatsAppButton() {
           stiffness: 260,
           damping: 20
         }}
-        className="pointer-events-auto flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20ba5a] text-[#25D366] hover:text-[#20ba5a] rounded-full shadow-[0_4px_24px_rgba(37,211,102,0.45)] transition-colors relative group focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#25D366] dark:focus:ring-offset-gray-950"
+        className="pointer-events-auto flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20ba5a] rounded-full shadow-[0_8px_30px_rgba(0,0,0,0.15)] hover:shadow-[0_10px_36px_rgba(37,211,102,0.3)] transition-all duration-300 relative group focus:outline-none"
         aria-label={ariaLabel}
       >
-        {/* Glow pulsing ring behind the button */}
-        <span className="absolute inset-0 rounded-full bg-[#25D366] opacity-35 animate-ping group-hover:animate-none group-hover:scale-110 transition-transform duration-300" />
-        
-        {/* WhatsApp SVG Icon */}
+        {/* WhatsApp SVG Icon - Visually centered with optical alignment */}
         <svg
-          className="w-9 h-9 relative z-10"
-          viewBox="0 0 24 24"
+          className="w-8 h-8 relative z-10 -translate-x-[0.5px] translate-y-[0.5px]"
+          viewBox="0 0 16 16"
           xmlns="http://www.w3.org/2000/svg"
         >
           {/* White speech bubble background */}
           <path
             fill="white"
-            d="M12.004 2c-5.5 0-9.98 4.48-9.98 9.98 0 1.76.46 3.47 1.33 4.98L2 22l5.25-1.38c1.47.8 3.12 1.22 4.75 1.22 5.5 0 9.98-4.48 9.98-9.98C21.98 6.48 17.5 2 12.004 2z"
+            d="M13.601 2.326A7.85 7.85 0 0 0 8 .094c-4.42 0-8 3.58-8 8 0 1.417.37 2.798 1.066 4.02L0 16l4.137-1.086a7.86 7.86 0 0 0 3.863 1.023h.001c4.42 0 8-3.58 8-8a7.86 7.86 0 0 0-2.399-5.617z"
           />
-          {/* Green WhatsApp branding receiver & background (inherits parent hover/tap text color) */}
+          {/* Green WhatsApp branding receiver (transitions dynamically to match background on hover) */}
           <path
-            fill="currentColor"
-            d="M12.004 3.79c4.52 0 8.2 3.68 8.2 8.2 0 4.52-3.68 8.2-8.2 8.2-1.63 0-3.18-.48-4.5-1.39l-.32-.19-3.11.82.83-3.03-.21-.33a8.14 8.14 0 0 1-1.26-4.28c0-4.52 3.68-8.2 8.17-8.2zm-3 3.44c-.17 0-.32.01-.46.03-.33.04-.63.22-.8.53-.17.31-.2.72-.04 1.16.45 1.2 1.55 2.77 2.77 3.9 1.13 1.05 2.5 2.05 3.9 2.77.44.22.85.19 1.16.04.31-.17.49-.47.53-.8.02-.14.03-.29.03-.46l-1.36-.56c-.15-.06-.25-.09-.36-.02-.1.08-.62.6-.73.71-.11.11-.22.12-.41.02-.18-.1-.83-.34-1.57-1-.74-.66-1.24-1.48-1.35-1.66-.11-.18 0-.28.1-.37l.28-.33c.09-.1.12-.18.18-.31.06-.12.03-.23-.02-.33l-.56-1.35c-.07-.11-.1-.14-.21-.14-.11 0-.14.03-.24.03z"
+            fill="#25D366"
+            className="fill-[#25D366] group-hover:fill-[#20ba5a] transition-colors duration-300"
+            d="M11.587 9.7a1.52 1.52 0 0 0-.25-.098c-.13-.06-.772-.382-.893-.425-.12-.045-.208-.068-.295.068-.088.135-.34.424-.417.512-.078.088-.156.1-.286.035a5.43 5.43 0 0 1-1.062-.658 5.7 5.7 0 0 1-1.212-1.12c-.08-.135-.008-.208.058-.274.06-.06.135-.156.2-.234a1 1 0 0 0 .135-.22c.045-.09.023-.17-.01-.24-.035-.07-.295-.71-.405-.98-.106-.256-.215-.22-.295-.224-.076-.004-.163-.005-.25-.005-.088 0-.23.033-.35.17-.12.135-.46.45-.46 1.096 0 .646.47 1.268.535 1.355.067.088 1.93 2.95 4.675 4.14.654.28 1.164.448 1.56.574.655.21 1.25.18 1.72.11.525-.078 1.614-.66 1.84-1.294.228-.635.228-1.18.16-1.294-.07-.115-.257-.185-.515-.31z"
           />
         </svg>
       </motion.a>
