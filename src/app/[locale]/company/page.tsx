@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
+import { setRequestLocale } from 'next-intl/server';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CompanyPageContent from '@/components/CompanyPageContent';
 import StickyCTA from '@/components/StickyCTA';
+import { BreadcrumbSchema } from '@/components/seo';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://yieldge.com';
 
@@ -23,8 +25,8 @@ export async function generateMetadata({
       ? 'Learn about Yieldge, your trusted technology partner with 15+ years of experience in digital transformation, offshore development, and innovative technology solutions across the Americas.'
       : 'Conocé Yieldge, tu socio tecnológico de confianza con más de 15 años de experiencia en transformación digital, desarrollo offshore y soluciones tecnológicas innovadoras en las Américas.',
     keywords: isEnglish
-      ? 'technology company, software development company, offshore development, digital transformation, technology partner, nearshore development, Yieldge about'
-      : 'empresa tecnológica, empresa desarrollo software, desarrollo offshore, transformación digital, socio tecnológico, desarrollo nearshore, sobre Yieldge',
+      ? 'technology company Costa Rica, software development company, offshore development Latin America, digital transformation, technology partner, nearshore development, enterprise consulting'
+      : 'empresa tecnológica Costa Rica, empresa desarrollo software, desarrollo offshore, transformación digital, socio tecnológico, desarrollo nearshore, consultoría empresarial',
     openGraph: {
       title: isEnglish
         ? 'About Us - 15+ Years of Technology Excellence | Yieldge'
@@ -67,9 +69,23 @@ export async function generateMetadata({
   };
 }
 
-export default function CompanyPage() {
+export default async function CompanyPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
+  const isEnglish = locale === 'en';
+  const breadcrumbItems = [
+    { name: isEnglish ? 'Home' : 'Inicio', url: isEnglish ? '/en' : '/' },
+    { name: isEnglish ? 'About Us' : 'Sobre Nosotros', url: isEnglish ? '/en/company' : '/company' },
+  ];
+
   return (
     <div className="min-h-screen bg-white">
+      <BreadcrumbSchema items={breadcrumbItems} />
       <a
         href="#main-content"
         className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-6 focus:py-3 focus:bg-[#1F5CFF] focus:text-white focus:rounded-full focus:shadow-lg focus:outline-none"

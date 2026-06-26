@@ -77,30 +77,30 @@ export function generatePageMetadata({
 export const pageMetadata = {
   careers: {
     title: {
-      es: 'Carreras - Únete a Nuestro Equipo | Yieldge',
-      en: 'Careers - Join Our Team | Yieldge',
+      es: 'Carreras en Tecnología Costa Rica - Únete a Yieldge',
+      en: 'Technology Careers Costa Rica - Join Yieldge',
     },
     description: {
-      es: 'Únete al equipo de Yieldge. Descubre oportunidades de carrera en desarrollo de software, QA, cloud solutions y más. Trabaja con tecnología de vanguardia.',
-      en: 'Join the Yieldge team. Discover career opportunities in software development, QA, cloud solutions and more. Work with cutting-edge technology.',
+      es: 'Únete al equipo de Yieldge en Costa Rica. Descubre oportunidades de carrera en desarrollo de software, QA, cloud solutions y más. Trabaja con tecnología de vanguardia.',
+      en: 'Join the Yieldge team in Costa Rica. Discover career opportunities in software development, QA, cloud solutions and more. Work with cutting-edge technology.',
     },
     keywords: {
-      es: 'carreras tecnología, empleo desarrollo software, trabajo QA, vacantes cloud, empleo Costa Rica',
-      en: 'technology careers, software development jobs, QA jobs, cloud vacancies, tech employment',
+      es: 'carreras tecnología Costa Rica, empleo desarrollo software Costa Rica, trabajo QA, vacantes cloud, empleo tecnología San José',
+      en: 'technology careers Costa Rica, software development jobs Costa Rica, QA jobs, cloud vacancies, tech employment Latin America',
     },
   },
   getInTouch: {
     title: {
-      es: 'Contáctanos - Hablemos de tu Proyecto | Yieldge',
-      en: "Contact Us - Let's Talk About Your Project | Yieldge",
+      es: 'Contáctanos - Consultoría Tecnológica Costa Rica | Yieldge',
+      en: "Contact Us - Technology Consulting Costa Rica | Yieldge",
     },
     description: {
-      es: 'Contáctanos para discutir tu próximo proyecto tecnológico. Consultoría gratuita de 30 minutos con nuestros expertos. Desarrollo de software, cloud, QA y más.',
-      en: 'Contact us to discuss your next technology project. Free 30-minute consultation with our experts. Software development, cloud, QA and more.',
+      es: 'Contáctanos para discutir tu próximo proyecto tecnológico en Costa Rica. Consultoría gratuita de 30 minutos con nuestros expertos. Desarrollo de software, cloud, QA y más.',
+      en: 'Contact us to discuss your next technology project. Based in Costa Rica, serving clients globally. Free 30-minute consultation with our experts.',
     },
     keywords: {
-      es: 'contacto desarrollo software, consultoría tecnológica, cotización software, empresa desarrollo',
-      en: 'software development contact, technology consulting, software quote, development company',
+      es: 'contacto desarrollo software Costa Rica, consultoría tecnológica Costa Rica, cotización software, empresa desarrollo software',
+      en: 'software development contact Costa Rica, technology consulting Costa Rica, software quote, development company Latin America',
     },
   },
   privacyPolicy: {

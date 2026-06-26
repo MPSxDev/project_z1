@@ -7,6 +7,7 @@ import { locales, type Locale } from "@/i18n/config";
 import "./globals.css";
 import FaviconSwitcher from "@/components/FaviconSwitcher";
 import HashScrollFix from "@/components/HashScrollFix";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://yieldge.com";
 
@@ -104,10 +105,11 @@ export async function generateMetadata({
     },
     category: "technology",
     classification: "Business Services",
-    other: {
-      "google-site-verification": "your-google-verification-code", // Add your verification code
-      "msvalidate.01": "your-bing-verification-code", // Add your Bing verification code
-    },
+    // Note: Add verification codes when available:
+    // other: {
+    //   "google-site-verification": "YOUR_ACTUAL_CODE",
+    //   "msvalidate.01": "YOUR_ACTUAL_CODE",
+    // },
   };
 }
 
@@ -162,15 +164,13 @@ export default async function LocaleLayout({
     url: siteUrl,
     description:
       locale === "es"
-        ? "Transforma negocios con sitios web modernos, automatización con IA y sistemas escalables que entregan resultados medibles."
-        : "Transform businesses with modern websites, AI automation, and scalable systems that deliver measurable results.",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${siteUrl}/search?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
+        ? "Firma de consultoría tecnológica empresarial en Costa Rica especializada en integración de sistemas, automatización con IA y desarrollo de software a medida."
+        : "Enterprise technology consulting firm in Costa Rica specializing in systems integration, AI automation, and custom software development.",
+    inLanguage: locale === "es" ? "es" : "en",
+    publisher: {
+      "@type": "Organization",
+      name: "Yieldge",
+      url: siteUrl,
     },
   };
 
@@ -310,6 +310,116 @@ export default async function LocaleLayout({
     },
   };
 
+  // LocalBusiness schema for Costa Rica local SEO
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": `${siteUrl}/#localbusiness`,
+    name: "Yieldge",
+    url: siteUrl,
+    logo: `${siteUrl}/brand/logo-main.png`,
+    image: `${siteUrl}/assets/featured.jpg`,
+    description:
+      locale === "es"
+        ? "Firma de consultoría tecnológica empresarial en Costa Rica. Especialistas en desarrollo de software, integración de sistemas, automatización con IA y transformación digital."
+        : "Enterprise technology consulting firm in Costa Rica. Specialists in software development, systems integration, AI automation, and digital transformation.",
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "CR",
+      addressRegion: "San José",
+      addressLocality: "San José",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 9.9281,
+      longitude: -84.0907,
+    },
+    areaServed: [
+      {
+        "@type": "Country",
+        name: "Costa Rica",
+      },
+      {
+        "@type": "GeoCircle",
+        geoMidpoint: {
+          "@type": "GeoCoordinates",
+          latitude: 9.9281,
+          longitude: -84.0907,
+        },
+        geoRadius: "5000",
+      },
+      {
+        "@type": "Country",
+        name: "United States",
+      },
+    ],
+    priceRange: "$$$",
+    telephone: "+506 7072-4236",
+    email: "info@yieldge.com",
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "08:00",
+        closes: "18:00",
+      },
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name:
+        locale === "es"
+          ? "Servicios de Consultoría Tecnológica"
+          : "Technology Consulting Services",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name:
+              locale === "es"
+                ? "Desarrollo de Software a Medida"
+                : "Custom Software Development",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name:
+              locale === "es"
+                ? "Consultoría en Transformación Digital"
+                : "Digital Transformation Consulting",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name:
+              locale === "es"
+                ? "Integración de Sistemas Empresariales"
+                : "Enterprise Systems Integration",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name:
+              locale === "es"
+                ? "Automatización con Inteligencia Artificial"
+                : "AI-Powered Automation",
+          },
+        },
+      ],
+    },
+    sameAs: [
+      "https://twitter.com/yieldge",
+      "https://www.linkedin.com/company/yieldge",
+      "https://github.com/yieldge",
+    ],
+  };
+
   return (
     <html lang={locale} className="scroll-smooth">
       <head>
@@ -362,6 +472,10 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-BZY8VYMWJY"
           strategy="afterInteractive"
@@ -380,6 +494,7 @@ export default async function LocaleLayout({
           <FaviconSwitcher />
           <HashScrollFix />
           <div className="w-full overflow-x-hidden">{children}</div>
+          <WhatsAppButton />
         </NextIntlClientProvider>
       </body>
     </html>

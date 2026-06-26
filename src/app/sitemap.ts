@@ -66,6 +66,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       },
     },
+    {
+      url: `${baseUrl}/casos-de-exito`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+      alternates: {
+        languages: {
+          es: `${baseUrl}/casos-de-exito`,
+          en: `${baseUrl}/en/casos-de-exito`,
+        },
+      },
+    },
   ];
 
   // English versions of main pages
@@ -127,6 +139,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
           es: `${baseUrl}/get-in-touch`,
           en: `${baseUrl}/en/get-in-touch`,
+        },
+      },
+    },
+    {
+      url: `${baseUrl}/en/casos-de-exito`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+      alternates: {
+        languages: {
+          es: `${baseUrl}/casos-de-exito`,
+          en: `${baseUrl}/en/casos-de-exito`,
         },
       },
     },

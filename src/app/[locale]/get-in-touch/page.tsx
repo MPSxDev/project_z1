@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
+import { setRequestLocale } from 'next-intl/server';
 import { generatePageMetadata, pageMetadata } from '@/lib/seo';
+import { BreadcrumbSchema } from '@/components/seo';
 import GetInTouchPageClient from './GetInTouchPageClient';
 
 export async function generateMetadata({
@@ -16,6 +18,24 @@ export async function generateMetadata({
   });
 }
 
-export default function GetInTouchPage() {
-  return <GetInTouchPageClient />;
+export default async function GetInTouchPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
+  const isEnglish = locale === 'en';
+  const breadcrumbItems = [
+    { name: isEnglish ? 'Home' : 'Inicio', url: isEnglish ? '/en' : '/' },
+    { name: isEnglish ? 'Contact' : 'Contacto', url: isEnglish ? '/en/get-in-touch' : '/get-in-touch' },
+  ];
+
+  return (
+    <>
+      <BreadcrumbSchema items={breadcrumbItems} />
+      <GetInTouchPageClient />
+    </>
+  );
 }
