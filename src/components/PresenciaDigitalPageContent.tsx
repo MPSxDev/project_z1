@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import {
-  ArrowRight,
   CheckCircle,
   ChevronLeft,
   ChevronRight,
@@ -42,6 +41,10 @@ const staggerContainer = {
     transition: { staggerChildren: 0.1, delayChildren: 0.1 },
   },
 };
+
+// WhatsApp constants
+const WHATSAPP_NUMBER = '50683335408';
+const WHATSAPP_MESSAGE = encodeURIComponent('Hola, me interesa conocer más sobre sus servicios de presencia digital.');
 
 // Hero Section
 function HeroSection() {
@@ -91,11 +94,13 @@ function HeroSection() {
 
           <motion.div variants={fadeInUp} className="flex justify-center">
             <a
-              href="#contact"
-              className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 bg-gray-900 text-white font-medium rounded-lg border border-gray-900 hover:bg-gray-800 transition-colors duration-200"
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-[#25D366] text-white font-semibold rounded-xl hover:bg-[#20bd5a] transition-colors duration-200 shadow-lg hover:shadow-xl"
             >
+              <MessageCircle className="w-5 h-5" />
               {t('cta')}
-              <ArrowRight className="w-5 h-5" />
             </a>
           </motion.div>
         </motion.div>
@@ -569,9 +574,6 @@ function CollaborationsSection() {
 }
 
 // CTA Section
-const WHATSAPP_NUMBER = '50683335408';
-const WHATSAPP_MESSAGE = encodeURIComponent('Hola, me interesa conocer más sobre sus servicios de presencia digital.');
-
 function CTASection() {
   const t = useTranslations('presenciaDigital.cta');
   const trustIndicators = t.raw('trustIndicators') as string[];
