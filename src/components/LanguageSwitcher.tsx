@@ -5,16 +5,15 @@ import { useLocale } from 'next-intl';
 import { locales, LOCALE_COOKIE, type Locale } from '@/i18n/config';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
-import Image from 'next/image';
 
 interface LanguageSwitcherProps {
   className?: string;
   variant?: 'default' | 'compact' | 'minimal';
 }
 
-const flagImages: Record<Locale, { src: string; alt: string }> = {
-  en: { src: '/assets/flags/us.svg', alt: 'English' },
-  es: { src: '/assets/flags/es.svg', alt: 'Español' },
+const localeLabels: Record<Locale, { short: string; full: string }> = {
+  en: { short: 'EN', full: 'English' },
+  es: { short: 'ES', full: 'Español' },
 };
 
 export default function LanguageSwitcher({
@@ -91,27 +90,21 @@ export default function LanguageSwitcher({
 
   return (
     <div ref={dropdownRef} className={`relative ${className}`}>
-      {/* Current language button with flag */}
+      {/* Current language button */}
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
         disabled={isLoading}
         whileHover={isLoading ? {} : { scale: 1.02 }}
         whileTap={isLoading ? {} : { scale: 0.98 }}
-        className={`flex items-center gap-1.5 transition-colors ${
+        className={`flex items-center gap-1 px-3 py-1.5 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors ${
           isLoading ? 'opacity-50 cursor-not-allowed' : ''
         }`}
         aria-label="Change language"
         aria-expanded={isOpen}
       >
-        <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-gray-300 shadow-sm">
-          <Image
-            src={flagImages[locale].src}
-            alt={flagImages[locale].alt}
-            width={32}
-            height={32}
-            className="w-full h-full object-cover"
-          />
-        </div>
+        <span className="text-sm font-semibold text-gray-700">
+          {localeLabels[locale].short}
+        </span>
         <ChevronDown
           className={`w-4 h-4 text-gray-500 transition-transform duration-200 ${
             isOpen ? 'rotate-180' : ''
@@ -127,19 +120,16 @@ export default function LanguageSwitcher({
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -8, scale: 0.95 }}
             transition={{ duration: 0.15 }}
-            className="absolute top-full right-0 mt-2 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden z-50 min-w-[60px]"
+            className="absolute top-full right-0 mt-2 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden z-50 min-w-[100px]"
           >
             {/* Current locale */}
-            <div className="p-2 bg-[#d4ffd4] border-b border-gray-100">
-              <div className="w-10 h-10 rounded-full overflow-hidden mx-auto border-2 border-white shadow-sm">
-                <Image
-                  src={flagImages[locale].src}
-                  alt={flagImages[locale].alt}
-                  width={40}
-                  height={40}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            <div className="px-4 py-2 bg-[#d4ffd4] border-b border-gray-100">
+              <span className="text-sm font-semibold text-gray-800">
+                {localeLabels[locale].short}
+              </span>
+              <span className="text-xs text-gray-600 ml-2">
+                {localeLabels[locale].full}
+              </span>
             </div>
 
             {/* Other locales */}
@@ -148,17 +138,14 @@ export default function LanguageSwitcher({
                 key={loc}
                 onClick={() => switchLocale(loc)}
                 disabled={isLoading}
-                className="w-full p-2 hover:bg-gray-50 transition-colors disabled:opacity-50"
+                className="w-full px-4 py-2 hover:bg-gray-50 transition-colors disabled:opacity-50 text-left flex items-center gap-2"
               >
-                <div className="w-10 h-10 rounded-full overflow-hidden mx-auto border-2 border-gray-200 hover:border-[#1F5CFF] transition-colors">
-                  <Image
-                    src={flagImages[loc].src}
-                    alt={flagImages[loc].alt}
-                    width={40}
-                    height={40}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <span className="text-sm font-semibold text-gray-700">
+                  {localeLabels[loc].short}
+                </span>
+                <span className="text-xs text-gray-500">
+                  {localeLabels[loc].full}
+                </span>
               </button>
             ))}
           </motion.div>
