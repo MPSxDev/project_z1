@@ -1490,43 +1490,47 @@
       "description": "We have developed digital platforms for organizations across different sectors looking to strengthen their digital presence and generate better commercial results."
     },
     "cta": {
-      "eyebrow": "LET'S START",
-      "title": "Your next client is probably already looking for you.",
-      "description": "The question is simple: will they find you or your competition?",
-      "supportingText": "Request a strategic assessment and discover how to turn your digital presence into a tool that generates trust, visibility, and new clients.",
-      "benefits": ["Personalized assessment", "No commitment", "Actionable recommendations", "Response in less than 24 hours"],
-      "contact": {
-        "email": "contacto@yieldge.com",
-        "whatsapp": "+506 8333 5408"
-      },
-      "form": {
-        "name": {
-          "label": "Your Name",
-          "placeholder": "Full name"
+      "eyebrow": "LET'S TALK",
+      "title": "Your next client could be searching for your services right now.",
+      "description": "Every day your company doesn't project the confidence it truly deserves, opportunities end up in the hands of your competition. A few minutes of conversation can help you identify what's holding back your digital growth and which strategy offers the best return for your business.",
+      "highlight": "Message us on WhatsApp. We'll analyze your case, answer your questions, and tell you with complete transparency if we can help. No commitment, no sales pressure, and no endless forms.",
+      "primaryButton": "Chat on WhatsApp",
+      "secondaryText": "Response usually within one hour during business hours.",
+      "trustIndicators": ["First conversation free", "Personalized strategy", "No commitment"]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "question": "Is there any cost to message on WhatsApp?",
+          "answer": "No. The first conversation is completely free. Our goal is to understand your situation, answer your questions, and help you determine the best path forward for your business."
         },
-        "organization": {
-          "label": "Company / Organization",
-          "placeholder": "Company name"
+        {
+          "question": "What happens after I contact you?",
+          "answer": "First, we'll learn about your business, your goals, and your current challenges. If we believe we can add value, we'll prepare a personalized proposal with a clear strategy, project scope, and investment tailored to your needs."
         },
-        "email": {
-          "label": "Corporate Email",
-          "placeholder": "work@company.com"
+        {
+          "question": "Do you only work with clinics?",
+          "answer": "No. We collaborate with clinics, businesses, independent professionals, and organizations looking to strengthen their digital presence, build greater credibility, and attract more clients."
         },
-        "message": {
-          "label": "Growth Objective",
-          "placeholder": "Tell us what goals you want to achieve and what are your main challenges in getting more clients..."
+        {
+          "question": "How long does a project take?",
+          "answer": "It depends on the scope. Most projects are developed within three to eight weeks, with a defined timeline and constant communication throughout the process."
         },
-        "button": "Request Strategic Assessment"
-      },
-      "success": {
-        "title": "Request Received",
-        "message": "Our team will contact you within the next 24 hours to schedule your strategic assessment."
-      },
-      "error": {
-        "title": "Could not send",
-        "message": "An error occurred while sending your request. Please try again or email us at contacto@yieldge.com."
-      },
-      "submitting": "Sending..."
+        {
+          "question": "Do you also offer SEO and Google positioning?",
+          "answer": "Yes. All our projects are built on a technical foundation optimized for search engines and can be complemented with SEO strategies to increase visibility and generate more business opportunities."
+        },
+        {
+          "question": "Why message on WhatsApp instead of filling out a form?",
+          "answer": "Because it's the fastest way to receive guidance. In just a few minutes, we can understand your situation, answer your questions, and honestly tell you if we're the right team to help you."
+        }
+      ]
+    },
+    "closing": {
+      "title": "The best digital strategy starts with a conversation.",
+      "description": "If your company is ready to project a more professional image, attract better opportunities, and turn its digital presence into a competitive advantage, we'd be happy to help.",
+      "button": "Message on WhatsApp"
     },
     "footer": {
       "brand": "Yieldge",

@@ -7,11 +7,6 @@ import Image from 'next/image';
 import {
   ArrowRight,
   CheckCircle,
-  User,
-  Building2,
-  Mail,
-  MessageSquare,
-  AlertCircle,
   ChevronLeft,
   ChevronRight,
   Sparkles,
@@ -23,10 +18,10 @@ import {
   Scale,
   FlaskConical,
   Wrench,
-  Building,
-  UserCircle,
   Rocket,
-  Phone,
+  MessageCircle,
+  Plus,
+  Minus,
 } from 'lucide-react';
 import Container from '@/components/ui/Container';
 import Section from '@/components/ui/Section';
@@ -573,6 +568,221 @@ function CollaborationsSection() {
   );
 }
 
+// CTA Section
+const WHATSAPP_NUMBER = '50683335408';
+const WHATSAPP_MESSAGE = encodeURIComponent('Hola, me interesa conocer más sobre sus servicios de presencia digital.');
+
+function CTASection() {
+  const t = useTranslations('presenciaDigital.cta');
+  const trustIndicators = t.raw('trustIndicators') as string[];
+
+  return (
+    <Section background="gray" id="contact">
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        className="max-w-4xl mx-auto text-center"
+      >
+        <motion.span
+          variants={fadeInUp}
+          className="block text-gray-500 font-medium text-xs uppercase tracking-[0.2em] mb-4 sm:mb-5"
+        >
+          {t('eyebrow')}
+        </motion.span>
+        <motion.h2
+          variants={fadeInUp}
+          className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-4 sm:mb-6 leading-tight"
+        >
+          {t('title')}
+        </motion.h2>
+        <motion.p
+          variants={fadeInUp}
+          className="text-base sm:text-lg text-gray-600 leading-relaxed mb-6"
+        >
+          {t('description')}
+        </motion.p>
+        <motion.p
+          variants={fadeInUp}
+          className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8 font-medium bg-white p-6 rounded-xl border border-gray-200"
+        >
+          {t('highlight')}
+        </motion.p>
+
+        <motion.div variants={fadeInUp} className="flex flex-col items-center gap-4">
+          <a
+            href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-[#25D366] text-white font-semibold rounded-xl hover:bg-[#20bd5a] transition-colors duration-200 shadow-lg hover:shadow-xl"
+          >
+            <MessageCircle className="w-5 h-5" />
+            {t('primaryButton')}
+          </a>
+          <p className="text-sm text-gray-500">{t('secondaryText')}</p>
+        </motion.div>
+
+        <motion.div
+          variants={fadeInUp}
+          className="flex flex-wrap justify-center gap-4 mt-8"
+        >
+          {trustIndicators.map((indicator: string, index: number) => (
+            <div
+              key={index}
+              className="flex items-center gap-2 text-sm text-gray-600"
+            >
+              <CheckCircle className="w-4 h-4 text-[#25D366]" />
+              <span>{indicator}</span>
+            </div>
+          ))}
+        </motion.div>
+      </motion.div>
+    </Section>
+  );
+}
+
+// FAQ Section
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+function FAQItemComponent({ item, index }: { item: FAQItem; index: number }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <motion.div
+      variants={fadeInUp}
+      className="border-b border-gray-200 last:border-b-0"
+    >
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
+        className="w-full py-5 sm:py-6 flex items-start justify-between gap-4 text-left hover:bg-gray-50/50 transition-colors px-5 sm:px-6"
+      >
+        <span className="text-base sm:text-lg font-semibold text-gray-900 flex-1">
+          {item.question}
+        </span>
+        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#dbe6ff] flex items-center justify-center mt-0.5">
+          {isOpen ? (
+            <Minus className="w-4 h-4 text-[#1F5CFF]" />
+          ) : (
+            <Plus className="w-4 h-4 text-[#1F5CFF]" />
+          )}
+        </div>
+      </button>
+
+      <AnimatePresence initial={false}>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
+            className="overflow-hidden"
+          >
+            <p className="px-5 sm:px-6 pb-5 sm:pb-6 text-sm sm:text-base text-gray-600 leading-relaxed">
+              {item.answer}
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
+  );
+}
+
+function FAQSection() {
+  const t = useTranslations('presenciaDigital.faq');
+  const items = t.raw('items') as FAQItem[];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": items.map((item) => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
+  };
+
+  return (
+    <Section background="white" id="faq">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-12">
+          <motion.h2
+            variants={fadeInUp}
+            className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-gray-900"
+          >
+            {t('title')}
+          </motion.h2>
+        </div>
+
+        <div className="max-w-3xl mx-auto bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm">
+          {items.map((item, index) => (
+            <FAQItemComponent key={index} item={item} index={index} />
+          ))}
+        </div>
+      </motion.div>
+    </Section>
+  );
+}
+
+// Closing Section
+function ClosingSection() {
+  const t = useTranslations('presenciaDigital.closing');
+
+  return (
+    <section className="relative bg-gradient-to-b from-white to-[#eff4ff] py-16 sm:py-20 lg:py-24">
+      <Container className="relative z-10">
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          className="max-w-3xl mx-auto text-center"
+        >
+          <motion.h2
+            variants={fadeInUp}
+            className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-4 sm:mb-6 leading-tight"
+          >
+            {t('title')}
+          </motion.h2>
+          <motion.p
+            variants={fadeInUp}
+            className="text-base sm:text-lg text-gray-600 leading-relaxed mb-8"
+          >
+            {t('description')}
+          </motion.p>
+          <motion.div variants={fadeInUp}>
+            <a
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-[#25D366] text-white font-semibold rounded-xl hover:bg-[#20bd5a] transition-colors duration-200 shadow-lg hover:shadow-xl"
+            >
+              <MessageCircle className="w-5 h-5" />
+              {t('button')}
+            </a>
+          </motion.div>
+        </motion.div>
+      </Container>
+    </section>
+  );
+}
+
 // Main Page Content Component
 export default function PresenciaDigitalPageContent() {
   return (
@@ -581,9 +791,12 @@ export default function PresenciaDigitalPageContent() {
       <main id="main-content">
         <PracticeAreasSection />
         <ApproachSection />
+        <CollaborationsSection />
         <CapabilitiesSection />
         <ApplicationsSection />
-        <CollaborationsSection />
+        <CTASection />
+        <FAQSection />
+        <ClosingSection />
       </main>
     </>
   );

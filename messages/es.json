@@ -1490,43 +1490,47 @@
       "description": "Hemos desarrollado plataformas digitales para organizaciones de distintos sectores que buscaban fortalecer su presencia digital y generar mejores resultados comerciales."
     },
     "cta": {
-      "eyebrow": "COMENCEMOS",
-      "title": "Su próximo cliente probablemente ya lo está buscando.",
-      "description": "La pregunta es sencilla: ¿lo encontrará a usted o encontrará a su competencia?",
-      "supportingText": "Solicite un diagnóstico estratégico y descubra cómo convertir su presencia digital en una herramienta que genere confianza, visibilidad y nuevos clientes.",
-      "benefits": ["Diagnóstico personalizado", "Sin compromiso", "Recomendaciones accionables", "Respuesta en menos de 24 horas"],
-      "contact": {
-        "email": "contacto@yieldge.com",
-        "whatsapp": "+506 8333 5408"
-      },
-      "form": {
-        "name": {
-          "label": "Su Nombre",
-          "placeholder": "Nombre completo"
+      "eyebrow": "CONVERSEMOS",
+      "title": "Tu próximo cliente podría estar buscando tus servicios en este momento.",
+      "description": "Cada día que tu empresa no proyecta la confianza que realmente merece, existen oportunidades que terminan en manos de la competencia. Una conversación de pocos minutos puede ayudarte a identificar qué está frenando tu crecimiento digital y cuál es la estrategia con mayor retorno para tu negocio.",
+      "highlight": "Escríbenos por WhatsApp. Analizaremos tu caso, responderemos tus preguntas y te diremos con total transparencia si podemos ayudarte. Sin compromiso, sin presión comercial y sin formularios interminables.",
+      "primaryButton": "Hablar por WhatsApp",
+      "secondaryText": "Respuesta normalmente en menos de una hora durante horario laboral.",
+      "trustIndicators": ["Primera conversación sin costo", "Estrategia personalizada", "Sin compromiso"]
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "items": [
+        {
+          "question": "¿Tiene algún costo escribir por WhatsApp?",
+          "answer": "No. La primera conversación es completamente gratuita. Nuestro objetivo es comprender tu situación, responder tus preguntas y ayudarte a determinar cuál es el mejor camino para tu empresa."
         },
-        "organization": {
-          "label": "Empresa / Organización",
-          "placeholder": "Nombre de la empresa"
+        {
+          "question": "¿Qué sucede después de contactarlos?",
+          "answer": "Primero conoceremos tu negocio, tus objetivos y los desafíos actuales. Si consideramos que podemos aportar valor, prepararemos una propuesta personalizada con una estrategia clara, alcance del proyecto y una inversión acorde a tus necesidades."
         },
-        "email": {
-          "label": "Correo Corporativo",
-          "placeholder": "trabajo@empresa.com"
+        {
+          "question": "¿Trabajan únicamente con clínicas?",
+          "answer": "No. Colaboramos con clínicas, empresas, profesionales independientes y organizaciones que buscan fortalecer su presencia digital, generar mayor credibilidad y atraer más clientes."
         },
-        "message": {
-          "label": "Objetivo de Crecimiento",
-          "placeholder": "Cuéntenos qué objetivos desea alcanzar y cuáles son sus principales desafíos para conseguir más clientes..."
+        {
+          "question": "¿Cuánto tarda un proyecto?",
+          "answer": "Depende del alcance. La mayoría de los proyectos se desarrollan entre tres y ocho semanas, con un cronograma definido y comunicación constante durante todo el proceso."
         },
-        "button": "Solicitar Diagnóstico Estratégico"
-      },
-      "success": {
-        "title": "Solicitud Recibida",
-        "message": "Nuestro equipo lo contactará en las próximas 24 horas para agendar su diagnóstico estratégico."
-      },
-      "error": {
-        "title": "No se pudo enviar",
-        "message": "Ocurrió un error al enviar su solicitud. Intente nuevamente o escríbanos a contacto@yieldge.com."
-      },
-      "submitting": "Enviando..."
+        {
+          "question": "¿También ofrecen SEO y posicionamiento en Google?",
+          "answer": "Sí. Todos nuestros proyectos se construyen sobre una base técnica optimizada para buscadores y pueden complementarse con estrategias de SEO para aumentar la visibilidad y generar más oportunidades de negocio."
+        },
+        {
+          "question": "¿Por qué escribir por WhatsApp en lugar de llenar un formulario?",
+          "answer": "Porque es la forma más rápida de recibir orientación. En pocos minutos podremos entender tu situación, responder tus dudas y decirte honestamente si somos el equipo adecuado para ayudarte."
+        }
+      ]
+    },
+    "closing": {
+      "title": "La mejor estrategia digital comienza con una conversación.",
+      "description": "Si tu empresa está lista para proyectar una imagen más profesional, atraer mejores oportunidades y convertir su presencia digital en una ventaja competitiva, estaremos encantados de ayudarte.",
+      "button": "Escribir por WhatsApp"
     },
     "footer": {
       "brand": "Yieldge",

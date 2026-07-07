@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 import StickyCTA from '@/components/StickyCTA';
 import PresenciaDigitalPageContent from '@/components/PresenciaDigitalPageContent';
 import { BreadcrumbSchema } from '@/components/seo';
@@ -100,7 +99,6 @@ export default async function PresenciaDigitalPage({
       <Navbar />
       <StickyCTA />
       <PresenciaDigitalPageContent />
-      <Footer />
     </div>
   );
 }
