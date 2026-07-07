@@ -95,7 +95,22 @@ if confirm "¿Ver diff completo? [y/N]:"; then
     echo ""
 fi
 
-# 6. Verificar archivos sensibles
+# 6. Ejecutar build para verificar errores
+echo -e "${GREEN}🔨 VERIFICACIÓN DE BUILD${NC}"
+echo "────────────────────────────────────────────────────────────"
+echo -e "${CYAN}Ejecutando npm run build...${NC}"
+echo ""
+
+if ! npm run build > /dev/null 2>&1; then
+    echo -e "${RED}❌ ERROR: El build falló. Corrige los errores antes de commitear.${NC}"
+    echo ""
+    echo -e "${YELLOW}Ejecuta 'npm run build' para ver los errores detallados.${NC}"
+    exit 1
+fi
+echo -e "${GREEN}✓ Build exitoso - sin errores${NC}"
+echo ""
+
+# 7. Verificar archivos sensibles
 echo -e "${GREEN}🔒 VERIFICACIÓN DE SEGURIDAD${NC}"
 echo "────────────────────────────────────────────────────────────"
 
@@ -118,13 +133,13 @@ else
 fi
 echo ""
 
-# 7. Mostrar commits recientes para contexto de estilo
+# 8. Mostrar commits recientes para contexto de estilo
 echo -e "${GREEN}📜 COMMITS RECIENTES (para referencia de estilo)${NC}"
 echo "────────────────────────────────────────────────────────────"
 git log --oneline -5
 echo ""
 
-# 8. Solicitar mensaje de commit
+# 9. Solicitar mensaje de commit
 echo -e "${GREEN}✏️  MENSAJE DE COMMIT${NC}"
 echo "────────────────────────────────────────────────────────────"
 echo "Escribe el mensaje de commit (Enter vacío para cancelar):"
@@ -136,7 +151,7 @@ if [ -z "$COMMIT_MSG" ]; then
     exit 1
 fi
 
-# 9. Mostrar resumen final
+# 10. Mostrar resumen final
 echo ""
 echo -e "${BLUE}═══════════════════════════════════════════════════════════════${NC}"
 echo -e "${BLUE}                    RESUMEN FINAL DEL COMMIT                   ${NC}"
@@ -154,13 +169,13 @@ echo ""
 echo -e "${BLUE}═══════════════════════════════════════════════════════════════${NC}"
 echo ""
 
-# 10. CONFIRMACIÓN FINAL OBLIGATORIA
+# 11. CONFIRMACIÓN FINAL OBLIGATORIA
 if ! confirm "¿CONFIRMAR COMMIT? [y/N]:"; then
     echo -e "${YELLOW}❌ Commit cancelado por el usuario${NC}"
     exit 0
 fi
 
-# 11. Ejecutar commit
+# 12. Ejecutar commit
 echo ""
 echo -e "${GREEN}⏳ Ejecutando commit...${NC}"
 
@@ -179,12 +194,12 @@ echo ""
 echo -e "${GREEN}✅ Commit realizado exitosamente${NC}"
 echo ""
 
-# 12. Mostrar el commit creado
+# 13. Mostrar el commit creado
 echo -e "${CYAN}Commit creado:${NC}"
 git log --oneline -1
 echo ""
 
-# 13. Preguntar por push (NUNCA automático)
+# 14. Preguntar por push (NUNCA automático)
 BRANCH=$(git branch --show-current)
 echo -e "${GREEN}🚀 PUSH AL REMOTO${NC}"
 echo "────────────────────────────────────────────────────────────"

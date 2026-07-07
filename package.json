@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "kill": "lsof -ti:3000 | xargs kill -9 2>/dev/null || true",
-    "dev": "next dev -p 3001",
-    "dev:turbo": "next dev -p 3001 --turbopack",
+    "kill": "lsof -ti:3001 | xargs kill -9 2>/dev/null || true",
+    "dev": "lsof -ti:3001 | xargs kill -9 2>/dev/null; next dev -p 3001",
+    "dev:turbo": "lsof -ti:3001 | xargs kill -9 2>/dev/null; next dev -p 3001 --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

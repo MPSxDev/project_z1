@@ -31,6 +31,20 @@ messages/             # i18n translation files
 
 # REGLAS OBLIGATORIAS
 
+## Build - Verificación Antes de Cambios
+
+**SIEMPRE ejecuta `npm run build` ANTES de crear o modificar archivos.**
+
+Esto garantiza:
+1. El estado actual del proyecto es válido
+2. Si hay errores después de tus cambios, sabes que los causaste tú
+3. Puedes corregir inmediatamente antes de continuar
+
+```bash
+# Antes de crear/modificar archivos
+npm run build
+```
+
 ## Git - Sistema de Commits Seguros
 
 **NUNCA ejecutes estos comandos directamente:**

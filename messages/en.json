@@ -1400,5 +1400,147 @@
       "primaryCta": "Schedule Assessment",
       "secondaryCta": "Contact Yieldge"
     }
+  },
+  "presenciaDigital": {
+    "hero": {
+      "eyebrow": "DIGITAL GROWTH",
+      "title": "Turn your digital presence into a client-generating machine.",
+      "description": "We design digital platforms that build trust from the first second, appear when your clients search for them, and convert visitors into real business opportunities.",
+      "supportingText": "We don't just build websites. We construct the digital asset upon which your company will grow for years to come.",
+      "cta": "Request Strategic Assessment"
+    },
+    "practiceAreas": {
+      "eyebrow": "Practice Areas",
+      "title": "How we drive your company's growth",
+      "description": "Each project follows a methodology focused on attracting more clients, strengthening your brand, and increasing commercial opportunities.",
+      "items": {
+        "strategy": {
+          "label": "Digital Strategy",
+          "title": "Digital Growth Assessment",
+          "description": "Before designing any solution, we understand why your company is currently losing opportunities.",
+          "steps": ["Complete audit of your digital presence", "Competitor analysis", "Identification of growth opportunities", "Personalized strategic plan"]
+        },
+        "website": {
+          "label": "Premium Website",
+          "title": "High-Performance Web Platform",
+          "description": "We create a website designed to convey trust, differentiate your company, and convert visitors into clients.",
+          "steps": ["Premium design", "Conversion optimization", "Speed and user experience", "Built to grow with your business"]
+        },
+        "visibility": {
+          "label": "Visibility Engine",
+          "title": "SEO & Google Positioning",
+          "description": "We make people find your company when they really need your services.",
+          "steps": ["Technical SEO", "Local optimization", "Google-ready architecture", "Search-optimized content"]
+        },
+        "growth": {
+          "label": "Digital Growth",
+          "title": "Continuous Optimization",
+          "description": "Launch is just the beginning. We analyze real data to continuously improve your digital platform's performance.",
+          "steps": ["Behavior analysis", "Conversion optimization", "Continuous improvements", "Growth reports"]
+        }
+      }
+    },
+    "approach": {
+      "eyebrow": "Strategic Approach",
+      "title": "A strategy designed to generate clients.",
+      "description": "We don't believe in isolated projects. Every element of your digital presence must work together to generate trust, positioning, and constant growth.",
+      "items": {
+        "design": {
+          "label": "Premium Design",
+          "title": "First impression that builds trust",
+          "description": "A professional design conveys credibility before the client reads a single word."
+        },
+        "conversion": {
+          "label": "Conversion Focus",
+          "title": "Designed to convert visitors",
+          "description": "Every section has a clear purpose: bringing the user closer to becoming a client."
+        },
+        "search": {
+          "label": "Search Visibility",
+          "title": "Presence when it matters most",
+          "description": "Your company appears when people search for exactly what you offer."
+        },
+        "scalable": {
+          "label": "Scalable Platform",
+          "title": "Built to grow",
+          "description": "Your platform evolves alongside your company without starting from scratch."
+        },
+        "partnership": {
+          "label": "Long-Term Partnership",
+          "title": "Continuous support",
+          "description": "We keep optimizing your platform to maintain long-term results."
+        }
+      }
+    },
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "What your company gets",
+      "description": "A digital platform designed to become one of your main client acquisition channels.",
+      "items": ["Greater credibility from the first visit", "More commercial opportunities", "Better Google positioning", "Higher conversion rate", "Fast experience on any device", "Platform ready to grow", "Data for better decisions", "Solid foundation for future marketing campaigns"]
+    },
+    "applications": {
+      "eyebrow": "Applications",
+      "title": "Ideal for companies that want to grow",
+      "description": "We work with organizations that understand that a professional digital presence is no longer optional.",
+      "items": ["Clinics and medical centers", "Service companies", "Professional firms", "Specialized studios", "Workshops and technical businesses", "B2B companies", "Personal brands", "Expanding organizations"]
+    },
+    "collaborations": {
+      "eyebrow": "COLLABORATIONS",
+      "title": "Companies that have trusted us",
+      "description": "We have developed digital platforms for organizations across different sectors looking to strengthen their digital presence and generate better commercial results."
+    },
+    "cta": {
+      "eyebrow": "LET'S START",
+      "title": "Your next client is probably already looking for you.",
+      "description": "The question is simple: will they find you or your competition?",
+      "supportingText": "Request a strategic assessment and discover how to turn your digital presence into a tool that generates trust, visibility, and new clients.",
+      "benefits": ["Personalized assessment", "No commitment", "Actionable recommendations", "Response in less than 24 hours"],
+      "contact": {
+        "email": "contacto@yieldge.com",
+        "whatsapp": "+506 8333 5408"
+      },
+      "form": {
+        "name": {
+          "label": "Your Name",
+          "placeholder": "Full name"
+        },
+        "organization": {
+          "label": "Company / Organization",
+          "placeholder": "Company name"
+        },
+        "email": {
+          "label": "Corporate Email",
+          "placeholder": "work@company.com"
+        },
+        "message": {
+          "label": "Growth Objective",
+          "placeholder": "Tell us what goals you want to achieve and what are your main challenges in getting more clients..."
+        },
+        "button": "Request Strategic Assessment"
+      },
+      "success": {
+        "title": "Request Received",
+        "message": "Our team will contact you within the next 24 hours to schedule your strategic assessment."
+      },
+      "error": {
+        "title": "Could not send",
+        "message": "An error occurred while sending your request. Please try again or email us at contacto@yieldge.com."
+      },
+      "submitting": "Sending..."
+    },
+    "footer": {
+      "brand": "Yieldge",
+      "tagline": "Technology that Yields",
+      "description": "We build digital platforms that help businesses, clinics, and professionals attract more clients, strengthen their credibility, and grow sustainably.",
+      "servicesTitle": "Services",
+      "services": ["Premium Web Design", "SEO", "Landing Pages", "Branding", "Conversion Optimization"],
+      "contactTitle": "Contact",
+      "contactDescription": "For inquiries about digital projects:",
+      "cta": "Request Information",
+      "legalTitle": "Legal",
+      "legal": ["Privacy Policy", "Terms and Conditions"],
+      "email": "info@yieldge.com",
+      "copyright": "© 2026 Yieldge. All rights reserved."
+    }
   }
 }

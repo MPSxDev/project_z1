@@ -1400,5 +1400,147 @@
       "primaryCta": "Agendar Diagnóstico",
       "secondaryCta": "Contactar a Yieldge"
     }
+  },
+  "presenciaDigital": {
+    "hero": {
+      "eyebrow": "CRECIMIENTO DIGITAL",
+      "title": "Convierta su presencia digital en una máquina para atraer clientes.",
+      "description": "Diseñamos plataformas digitales que generan confianza desde el primer segundo, aparecen cuando sus clientes las buscan y convierten visitantes en oportunidades reales de negocio.",
+      "supportingText": "No desarrollamos simplemente sitios web. Construimos el activo digital sobre el que crecerá su empresa durante los próximos años.",
+      "cta": "Solicitar Diagnóstico Estratégico"
+    },
+    "practiceAreas": {
+      "eyebrow": "Áreas de Práctica",
+      "title": "Cómo impulsamos el crecimiento de su empresa",
+      "description": "Cada proyecto sigue una metodología enfocada en atraer más clientes, fortalecer su marca y aumentar las oportunidades comerciales.",
+      "items": {
+        "strategy": {
+          "label": "Digital Strategy",
+          "title": "Diagnóstico de Crecimiento Digital",
+          "description": "Antes de diseñar cualquier solución entendemos por qué hoy su empresa está perdiendo oportunidades.",
+          "steps": ["Auditoría completa de su presencia digital", "Análisis de competidores", "Identificación de oportunidades de crecimiento", "Plan estratégico personalizado"]
+        },
+        "website": {
+          "label": "Premium Website",
+          "title": "Plataforma Web de Alto Rendimiento",
+          "description": "Creamos un sitio web diseñado para transmitir confianza, diferenciar su empresa y convertir visitantes en clientes.",
+          "steps": ["Diseño premium", "Optimización para conversión", "Velocidad y experiencia de usuario", "Preparado para crecer con su negocio"]
+        },
+        "visibility": {
+          "label": "Visibility Engine",
+          "title": "SEO & Posicionamiento en Google",
+          "description": "Logramos que las personas encuentren su empresa cuando realmente necesitan sus servicios.",
+          "steps": ["SEO técnico", "Optimización local", "Arquitectura preparada para Google", "Contenido optimizado para búsquedas"]
+        },
+        "growth": {
+          "label": "Digital Growth",
+          "title": "Optimización Continua",
+          "description": "El lanzamiento es solo el comienzo. Analizamos datos reales para mejorar continuamente el rendimiento de su plataforma digital.",
+          "steps": ["Análisis de comportamiento", "Optimización de conversiones", "Mejoras continuas", "Reportes de crecimiento"]
+        }
+      }
+    },
+    "approach": {
+      "eyebrow": "Enfoque Estratégico",
+      "title": "Una estrategia diseñada para generar clientes.",
+      "description": "No creemos en proyectos aislados. Cada elemento de su presencia digital debe trabajar en conjunto para generar confianza, posicionamiento y crecimiento constante.",
+      "items": {
+        "design": {
+          "label": "Premium Design",
+          "title": "Primera impresión que genera confianza",
+          "description": "Un diseño profesional transmite credibilidad antes de que el cliente lea una sola palabra."
+        },
+        "conversion": {
+          "label": "Conversion Focus",
+          "title": "Diseñado para convertir visitantes",
+          "description": "Cada sección tiene un propósito claro: acercar al usuario a convertirse en cliente."
+        },
+        "search": {
+          "label": "Search Visibility",
+          "title": "Presencia cuando más importa",
+          "description": "Su empresa aparece cuando las personas buscan exactamente lo que usted ofrece."
+        },
+        "scalable": {
+          "label": "Scalable Platform",
+          "title": "Preparado para crecer",
+          "description": "Su plataforma evoluciona junto con su empresa sin necesidad de empezar desde cero."
+        },
+        "partnership": {
+          "label": "Long-Term Partnership",
+          "title": "Acompañamiento continuo",
+          "description": "Seguimos optimizando su plataforma para mantener resultados a largo plazo."
+        }
+      }
+    },
+    "capabilities": {
+      "eyebrow": "Capacidades",
+      "title": "Lo que obtiene su empresa",
+      "description": "Una plataforma digital diseñada para convertirse en uno de sus principales canales de adquisición de clientes.",
+      "items": ["Mayor credibilidad desde la primera visita", "Más oportunidades comerciales", "Mejor posicionamiento en Google", "Mayor tasa de conversión", "Experiencia rápida en cualquier dispositivo", "Plataforma preparada para crecer", "Datos para tomar mejores decisiones", "Base sólida para futuras campañas de marketing"]
+    },
+    "applications": {
+      "eyebrow": "Aplicaciones",
+      "title": "Ideal para empresas que desean crecer",
+      "description": "Trabajamos con organizaciones que entienden que una presencia digital profesional ya no es opcional.",
+      "items": ["Clínicas y centros médicos", "Empresas de servicios", "Firmas profesionales", "Estudios especializados", "Talleres y negocios técnicos", "Empresas B2B", "Marcas personales", "Organizaciones en expansión"]
+    },
+    "collaborations": {
+      "eyebrow": "COLABORACIONES",
+      "title": "Empresas que han confiado en nosotros",
+      "description": "Hemos desarrollado plataformas digitales para organizaciones de distintos sectores que buscaban fortalecer su presencia digital y generar mejores resultados comerciales."
+    },
+    "cta": {
+      "eyebrow": "COMENCEMOS",
+      "title": "Su próximo cliente probablemente ya lo está buscando.",
+      "description": "La pregunta es sencilla: ¿lo encontrará a usted o encontrará a su competencia?",
+      "supportingText": "Solicite un diagnóstico estratégico y descubra cómo convertir su presencia digital en una herramienta que genere confianza, visibilidad y nuevos clientes.",
+      "benefits": ["Diagnóstico personalizado", "Sin compromiso", "Recomendaciones accionables", "Respuesta en menos de 24 horas"],
+      "contact": {
+        "email": "contacto@yieldge.com",
+        "whatsapp": "+506 8333 5408"
+      },
+      "form": {
+        "name": {
+          "label": "Su Nombre",
+          "placeholder": "Nombre completo"
+        },
+        "organization": {
+          "label": "Empresa / Organización",
+          "placeholder": "Nombre de la empresa"
+        },
+        "email": {
+          "label": "Correo Corporativo",
+          "placeholder": "trabajo@empresa.com"
+        },
+        "message": {
+          "label": "Objetivo de Crecimiento",
+          "placeholder": "Cuéntenos qué objetivos desea alcanzar y cuáles son sus principales desafíos para conseguir más clientes..."
+        },
+        "button": "Solicitar Diagnóstico Estratégico"
+      },
+      "success": {
+        "title": "Solicitud Recibida",
+        "message": "Nuestro equipo lo contactará en las próximas 24 horas para agendar su diagnóstico estratégico."
+      },
+      "error": {
+        "title": "No se pudo enviar",
+        "message": "Ocurrió un error al enviar su solicitud. Intente nuevamente o escríbanos a contacto@yieldge.com."
+      },
+      "submitting": "Enviando..."
+    },
+    "footer": {
+      "brand": "Yieldge",
+      "tagline": "Tecnología que Rinde",
+      "description": "Construimos plataformas digitales que ayudan a empresas, clínicas y profesionales a atraer más clientes, fortalecer su credibilidad y crecer de forma sostenible.",
+      "servicesTitle": "Servicios",
+      "services": ["Diseño Web Premium", "SEO", "Landing Pages", "Branding", "Optimización de Conversión"],
+      "contactTitle": "Contacto",
+      "contactDescription": "Para consultas sobre proyectos digitales:",
+      "cta": "Solicitar Información",
+      "legalTitle": "Legal",
+      "legal": ["Política de Privacidad", "Términos y Condiciones"],
+      "email": "info@yieldge.com",
+      "copyright": "© 2026 Yieldge. Todos los derechos reservados."
+    }
   }
 }

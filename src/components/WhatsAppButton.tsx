@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useLocale } from 'next-intl';
+import { usePathname } from 'next/navigation';
 
 // Official WhatsApp logo SVG component
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -17,13 +18,24 @@ function WhatsAppIcon({ className }: { className?: string }) {
   );
 }
 
+// Phone numbers for different paths
+const PRESENCIA_DIGITAL_PHONE = '50683335408';
+const DEFAULT_PHONE = '50670724236';
+
+interface WhatsAppButtonProps {
+  phoneNumber?: string;
+}
+
 /**
  * WhatsAppButton - Floating WhatsApp button
  */
-export default function WhatsAppButton() {
+export default function WhatsAppButton({ phoneNumber: customPhoneNumber }: WhatsAppButtonProps = {}) {
   const locale = useLocale();
+  const pathname = usePathname();
 
-  const phoneNumber = '50670724236';
+  // Use custom phone for presencia-digital path
+  const isPresenciaDigital = pathname.includes('/presencia-digital');
+  const phoneNumber = customPhoneNumber || (isPresenciaDigital ? PRESENCIA_DIGITAL_PHONE : DEFAULT_PHONE);
 
   const message =
     locale === 'es'
