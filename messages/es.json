@@ -1403,99 +1403,122 @@
   },
   "presenciaDigital": {
     "hero": {
-      "eyebrow": "CRECIMIENTO DIGITAL",
-      "title": "Convierta su presencia digital en una máquina para atraer clientes.",
-      "description": "Diseñamos plataformas digitales que generan confianza desde el primer segundo, aparecen cuando sus clientes las buscan y convierten visitantes en oportunidades reales de negocio.",
-      "supportingText": "No desarrollamos simplemente sitios web. Construimos el activo digital sobre el que crecerá su empresa durante los próximos años.",
-      "cta": "Solicitar Diagnóstico Estratégico"
-    },
-    "practiceAreas": {
-      "eyebrow": "Áreas de Práctica",
-      "title": "Cómo impulsamos el crecimiento de su empresa",
-      "description": "Cada proyecto sigue una metodología enfocada en atraer más clientes, fortalecer su marca y aumentar las oportunidades comerciales.",
-      "items": {
-        "strategy": {
-          "label": "Digital Strategy",
-          "title": "Diagnóstico de Crecimiento Digital",
-          "description": "Antes de diseñar cualquier solución entendemos por qué hoy su empresa está perdiendo oportunidades.",
-          "steps": ["Auditoría completa de su presencia digital", "Análisis de competidores", "Identificación de oportunidades de crecimiento", "Plan estratégico personalizado"]
+      "eyebrow": "PRESENCIA DIGITAL · COSTA RICA",
+      "title": "Su empresa ya es buena. Que Google también lo demuestre.",
+      "description": "Rediseñamos el sitio de GastroMedical CR y en 4 meses las consultas por web se triplicaron. Diseño, SEO y conversión con un solo equipo — hacemos lo mismo para su negocio.",
+      "cta": "Quiero saber si aplica a mi negocio",
+      "microcopy": "Le respondemos por WhatsApp en menos de 1 hora. Sin formularios, sin compromiso.",
+      "badge": "GastroMedical CR · consultas x3",
+      "overlays": {
+        "chart": {
+          "title": "Consultas web",
+          "period": "4 meses",
+          "growth": "+180%"
         },
-        "website": {
-          "label": "Premium Website",
-          "title": "Plataforma Web de Alto Rendimiento",
-          "description": "Creamos un sitio web diseñado para transmitir confianza, diferenciar su empresa y convertir visitantes en clientes.",
-          "steps": ["Diseño premium", "Optimización para conversión", "Velocidad y experiencia de usuario", "Preparado para crecer con su negocio"]
+        "months": ["Ene", "Feb", "Mar", "Abr"],
+        "notifications": [
+          "Nueva consulta",
+          "Cita agendada",
+          "Formulario enviado"
+        ],
+        "google": {
+          "rank": "#1 en Google",
+          "keyword": "gastroenterología CR"
         },
-        "visibility": {
-          "label": "Visibility Engine",
-          "title": "SEO & Posicionamiento en Google",
-          "description": "Logramos que las personas encuentren su empresa cuando realmente necesitan sus servicios.",
-          "steps": ["SEO técnico", "Optimización local", "Arquitectura preparada para Google", "Contenido optimizado para búsquedas"]
-        },
-        "growth": {
-          "label": "Digital Growth",
-          "title": "Optimización Continua",
-          "description": "El lanzamiento es solo el comienzo. Analizamos datos reales para mejorar continuamente el rendimiento de su plataforma digital.",
-          "steps": ["Análisis de comportamiento", "Optimización de conversiones", "Mejoras continuas", "Reportes de crecimiento"]
+        "result": {
+          "client": "GastroMedical CR",
+          "metric": "Consultas x3"
         }
       }
     },
-    "approach": {
-      "eyebrow": "Enfoque Estratégico",
-      "title": "Una estrategia diseñada para generar clientes.",
-      "description": "No creemos en proyectos aislados. Cada elemento de su presencia digital debe trabajar en conjunto para generar confianza, posicionamiento y crecimiento constante.",
-      "items": {
-        "design": {
-          "label": "Premium Design",
-          "title": "Primera impresión que genera confianza",
-          "description": "Un diseño profesional transmite credibilidad antes de que el cliente lea una sola palabra."
+    "logos": {
+      "title": "Empresas que confían en nosotros"
+    },
+    "socialProof": {
+      "stats": [
+        { "value": "15+", "label": "Proyectos entregados" },
+        { "value": "5", "label": "Sectores atendidos" },
+        { "value": "<1h", "label": "Tiempo de respuesta" },
+        { "value": "4-6", "label": "Semanas promedio" }
+      ],
+      "testimonial": {
+        "quote": "Antes casi todo llegaba por referidos. Hoy hay semanas en que la mitad de las consultas vienen del sitio — y por fin se ve como la clínica que somos.",
+        "author": "Dr. Daniel Zúñiga",
+        "role": "GastroMedical · San José, Costa Rica"
+      },
+      "caseStudies": [
+        {
+          "client": "GastroMedical CR",
+          "sector": "Gastroenterología",
+          "service": "Rediseño web + SEO local",
+          "result": "+180% consultas orgánicas en 4 meses"
         },
-        "conversion": {
-          "label": "Conversion Focus",
-          "title": "Diseñado para convertir visitantes",
-          "description": "Cada sección tiene un propósito claro: acercar al usuario a convertirse en cliente."
-        },
-        "search": {
-          "label": "Search Visibility",
-          "title": "Presencia cuando más importa",
-          "description": "Su empresa aparece cuando las personas buscan exactamente lo que usted ofrece."
-        },
-        "scalable": {
-          "label": "Scalable Platform",
-          "title": "Preparado para crecer",
-          "description": "Su plataforma evoluciona junto con su empresa sin necesidad de empezar desde cero."
-        },
-        "partnership": {
-          "label": "Long-Term Partnership",
-          "title": "Acompañamiento continuo",
-          "description": "Seguimos optimizando su plataforma para mantener resultados a largo plazo."
+        {
+          "client": "PHYC",
+          "sector": "Consultoría",
+          "service": "Plataforma corporativa + posicionamiento",
+          "result": "Primera página en Google para 12 keywords"
         }
-      }
+      ]
     },
-    "capabilities": {
-      "eyebrow": "Capacidades",
-      "title": "Lo que obtiene su empresa",
-      "description": "Una plataforma digital diseñada para convertirse en uno de sus principales canales de adquisición de clientes.",
-      "items": ["Mayor credibilidad desde la primera visita", "Más oportunidades comerciales", "Mejor posicionamiento en Google", "Mayor tasa de conversión", "Experiencia rápida en cualquier dispositivo", "Plataforma preparada para crecer", "Datos para tomar mejores decisiones", "Base sólida para futuras campañas de marketing"]
+    "problemSolution": {
+      "eyebrow": "EL PROBLEMA",
+      "title": "Si su web no genera clientes, no es un activo,",
+      "titleEmphasis": "es un costo.",
+      "intro": "Su empresa tiene años de reputación y clientes satisfechos, pero en Google su competencia aparece primero y su sitio actual tarda una eternidad en cargar. ¿Le suena familiar?",
+      "problems": [
+        "No aparece en Google cuando lo buscan",
+        "El sitio no transmite la calidad real de su empresa",
+        "Recibe visitas pero casi ninguna consulta"
+      ],
+      "solutionsTitle": "Nuestra respuesta",
+      "solutions": [
+        "SEO técnico y contenido para aparecer cuando importa",
+        "Diseño premium que genera confianza al instante",
+        "Embudo optimizado para convertir en WhatsApp o formulario"
+      ]
     },
-    "applications": {
-      "eyebrow": "Aplicaciones",
-      "title": "Ideal para empresas que desean crecer",
-      "description": "Trabajamos con organizaciones que entienden que una presencia digital profesional ya no es opcional.",
-      "items": ["Clínicas y centros médicos", "Empresas de servicios", "Firmas profesionales", "Estudios especializados", "Talleres y negocios técnicos", "Organizaciones en expansión"]
+    "process": {
+      "eyebrow": "CÓMO TRABAJAMOS",
+      "title": "4 pasos. Un solo equipo.",
+      "description": "Metodología probada para lanzar su plataforma digital y empezar a generar oportunidades.",
+      "steps": [
+        { "title": "Diagnóstico", "description": "Entendemos por qué pierde clientes hoy" },
+        { "title": "Diseño + desarrollo", "description": "Sitio premium listo en 4-6 semanas" },
+        { "title": "SEO", "description": "Aparece cuando lo buscan en Google" },
+        { "title": "Optimización", "description": "Mejoramos conversiones con datos reales" }
+      ]
     },
-    "collaborations": {
-      "eyebrow": "COLABORACIONES",
-      "title": "Empresas que han confiado en nosotros",
-      "description": "Hemos desarrollado plataformas digitales para organizaciones de distintos sectores que buscaban fortalecer su presencia digital y generar mejores resultados comerciales."
+    "results": {
+      "eyebrow": "RESULTADOS",
+      "title": "Qué obtiene su empresa",
+      "items": [
+        { "metric": "+40%", "label": "Más consultas", "description": "Promedio en clientes tras el relanzamiento" },
+        { "metric": "Top 3", "label": "Google local", "description": "Posicionamiento en búsquedas de su zona" },
+        { "metric": "<2s", "label": "Carga rápida", "description": "Experiencia fluida en móvil y desktop" },
+        { "metric": "1", "label": "Plataforma escalable", "description": "Lista para campañas y crecimiento futuro" }
+      ]
+    },
+    "midCta": {
+      "title": "¿Quiere saber qué le está costando a su empresa no tener esto hoy?",
+      "button": "Diagnóstico gratis por WhatsApp"
+    },
+    "sectors": {
+      "eyebrow": "SECTORES",
+      "title": "Donde generamos resultados",
+      "items": [
+        { "name": "Clínicas y centros médicos", "client": "GastroMedical CR", "result": "+180% consultas orgánicas" },
+        { "name": "Empresas de servicios", "client": "Construrack", "result": "Presencia digital profesional" },
+        { "name": "Firmas profesionales", "client": "PHYC", "result": "Top Google en su sector" },
+        { "name": "Organizaciones en expansión", "client": "3M", "result": "Plataforma escalable" }
+      ]
     },
     "cta": {
       "eyebrow": "CONVERSEMOS",
-      "title": "Tu próximo cliente podría estar buscando tus servicios en este momento.",
-      "description": "Cada día que tu empresa no proyecta la confianza que realmente merece, existen oportunidades que terminan en manos de la competencia. Una conversación de pocos minutos puede ayudarte a identificar qué está frenando tu crecimiento digital y cuál es la estrategia con mayor retorno para tu negocio.",
-      "highlight": "Escríbenos por WhatsApp. Analizaremos tu caso, responderemos tus preguntas y te diremos con total transparencia si podemos ayudarte. Sin compromiso, sin presión comercial y sin formularios interminables.",
+      "title": "Su próximo cliente está en Google ahora mismo.",
+      "description": "Escríbanos por WhatsApp. Diagnóstico gratis en 15 minutos.",
       "primaryButton": "Hablar por WhatsApp",
-      "secondaryText": "Respuesta normalmente en menos de una hora durante horario laboral.",
+      "secondaryText": "Sin compromiso · Respuesta en menos de 1 hora",
       "trustIndicators": ["Primera conversación sin costo", "Estrategia personalizada", "Sin compromiso"]
     },
     "faq": {
@@ -1503,34 +1526,37 @@
       "items": [
         {
           "question": "¿Tiene algún costo escribir por WhatsApp?",
-          "answer": "No. La primera conversación es completamente gratuita. Nuestro objetivo es comprender tu situación, responder tus preguntas y ayudarte a determinar cuál es el mejor camino para tu empresa."
+          "answer": "No. La primera conversación es completamente gratuita. Nuestro objetivo es comprender su situación, responder sus preguntas y ayudarle a determinar cuál es el mejor camino para su empresa."
         },
         {
-          "question": "¿Qué sucede después de contactarlos?",
-          "answer": "Primero conoceremos tu negocio, tus objetivos y los desafíos actuales. Si consideramos que podemos aportar valor, prepararemos una propuesta personalizada con una estrategia clara, alcance del proyecto y una inversión acorde a tus necesidades."
+          "question": "¿Qué sucede después de contactarnos?",
+          "answer": "Primero conoceremos su negocio, sus objetivos y los desafíos actuales. Si consideramos que podemos aportar valor, prepararemos una propuesta personalizada con una estrategia clara, alcance del proyecto y una inversión acorde a sus necesidades."
+        },
+        {
+          "question": "¿Cuánto cuesta un proyecto?",
+          "answer": "Depende del alcance y las necesidades de su empresa. En el diagnóstico gratuito le damos un rango transparente sin compromiso, para que pueda evaluar el retorno antes de decidir."
+        },
+        {
+          "question": "¿El sitio web es mío o es un alquiler?",
+          "answer": "Es 100% suyo. El código, el dominio y el contenido le pertenecen. Usted decide cómo gestionarlo a futuro."
+        },
+        {
+          "question": "¿Qué pasa si ya tengo sitio web?",
+          "answer": "Empezamos con una auditoría. En muchos casos optimizamos lo existente; en otros, un rediseño estratégico genera mejor retorno. Se lo diremos con honestidad en el diagnóstico."
         },
         {
           "question": "¿Trabajan únicamente con clínicas?",
-          "answer": "No. Colaboramos con clínicas, empresas, profesionales independientes y organizaciones que buscan fortalecer su presencia digital, generar mayor credibilidad y atraer más clientes."
+          "answer": "No. Colaboramos con clínicas, empresas, profesionales independientes y organizaciones que buscan fortalecer su presencia digital y atraer más clientes."
         },
         {
           "question": "¿Cuánto tarda un proyecto?",
-          "answer": "Depende del alcance. La mayoría de los proyectos se desarrollan entre tres y ocho semanas, con un cronograma definido y comunicación constante durante todo el proceso."
-        },
-        {
-          "question": "¿También ofrecen SEO y posicionamiento en Google?",
-          "answer": "Sí. Todos nuestros proyectos se construyen sobre una base técnica optimizada para buscadores y pueden complementarse con estrategias de SEO para aumentar la visibilidad y generar más oportunidades de negocio."
+          "answer": "La mayoría de los proyectos se desarrollan entre cuatro y seis semanas, con un cronograma definido y comunicación constante durante todo el proceso."
         },
         {
           "question": "¿Por qué escribir por WhatsApp en lugar de llenar un formulario?",
-          "answer": "Porque es la forma más rápida de recibir orientación. En pocos minutos podremos entender tu situación, responder tus dudas y decirte honestamente si somos el equipo adecuado para ayudarte."
+          "answer": "Porque es la forma más rápida de recibir orientación. En pocos minutos podremos entender su situación, responder sus dudas y decirle honestamente si somos el equipo adecuado."
         }
       ]
-    },
-    "closing": {
-      "title": "La mejor estrategia digital comienza con una conversación.",
-      "description": "Si tu empresa está lista para proyectar una imagen más profesional, atraer mejores oportunidades y convertir su presencia digital en una ventaja competitiva, estaremos encantados de ayudarte.",
-      "button": "Escribir por WhatsApp"
     },
     "footer": {
       "brand": "Yieldge",

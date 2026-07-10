@@ -1403,99 +1403,122 @@
   },
   "presenciaDigital": {
     "hero": {
-      "eyebrow": "DIGITAL GROWTH",
-      "title": "Turn your digital presence into a client-generating machine.",
-      "description": "We design digital platforms that build trust from the first second, appear when your clients search for them, and convert visitors into real business opportunities.",
-      "supportingText": "We don't just build websites. We construct the digital asset upon which your company will grow for years to come.",
-      "cta": "Request Strategic Assessment"
-    },
-    "practiceAreas": {
-      "eyebrow": "Practice Areas",
-      "title": "How we drive your company's growth",
-      "description": "Each project follows a methodology focused on attracting more clients, strengthening your brand, and increasing commercial opportunities.",
-      "items": {
-        "strategy": {
-          "label": "Digital Strategy",
-          "title": "Digital Growth Assessment",
-          "description": "Before designing any solution, we understand why your company is currently losing opportunities.",
-          "steps": ["Complete audit of your digital presence", "Competitor analysis", "Identification of growth opportunities", "Personalized strategic plan"]
+      "eyebrow": "DIGITAL PRESENCE · COSTA RICA",
+      "title": "Your business is already great. Make Google show it too.",
+      "description": "We redesigned GastroMedical CR's website and web inquiries tripled in 4 months. Design, SEO, and conversion from one team — we do the same for your business.",
+      "cta": "See if this fits my business",
+      "microcopy": "We reply on WhatsApp in under 1 hour. No forms, no commitment.",
+      "badge": "GastroMedical CR · 3x inquiries",
+      "overlays": {
+        "chart": {
+          "title": "Web inquiries",
+          "period": "4 months",
+          "growth": "+180%"
         },
-        "website": {
-          "label": "Premium Website",
-          "title": "High-Performance Web Platform",
-          "description": "We create a website designed to convey trust, differentiate your company, and convert visitors into clients.",
-          "steps": ["Premium design", "Conversion optimization", "Speed and user experience", "Built to grow with your business"]
+        "months": ["Jan", "Feb", "Mar", "Apr"],
+        "notifications": [
+          "New inquiry",
+          "Appointment booked",
+          "Form submitted"
+        ],
+        "google": {
+          "rank": "#1 on Google",
+          "keyword": "gastroenterology CR"
         },
-        "visibility": {
-          "label": "Visibility Engine",
-          "title": "SEO & Google Positioning",
-          "description": "We make people find your company when they really need your services.",
-          "steps": ["Technical SEO", "Local optimization", "Google-ready architecture", "Search-optimized content"]
-        },
-        "growth": {
-          "label": "Digital Growth",
-          "title": "Continuous Optimization",
-          "description": "Launch is just the beginning. We analyze real data to continuously improve your digital platform's performance.",
-          "steps": ["Behavior analysis", "Conversion optimization", "Continuous improvements", "Growth reports"]
+        "result": {
+          "client": "GastroMedical CR",
+          "metric": "3x inquiries"
         }
       }
     },
-    "approach": {
-      "eyebrow": "Strategic Approach",
-      "title": "A strategy designed to generate clients.",
-      "description": "We don't believe in isolated projects. Every element of your digital presence must work together to generate trust, positioning, and constant growth.",
-      "items": {
-        "design": {
-          "label": "Premium Design",
-          "title": "First impression that builds trust",
-          "description": "A professional design conveys credibility before the client reads a single word."
-        },
-        "conversion": {
-          "label": "Conversion Focus",
-          "title": "Designed to convert visitors",
-          "description": "Every section has a clear purpose: bringing the user closer to becoming a client."
-        },
-        "search": {
-          "label": "Search Visibility",
-          "title": "Presence when it matters most",
-          "description": "Your company appears when people search for exactly what you offer."
-        },
-        "scalable": {
-          "label": "Scalable Platform",
-          "title": "Built to grow",
-          "description": "Your platform evolves alongside your company without starting from scratch."
-        },
-        "partnership": {
-          "label": "Long-Term Partnership",
-          "title": "Continuous support",
-          "description": "We keep optimizing your platform to maintain long-term results."
-        }
-      }
+    "logos": {
+      "title": "Companies that trust us"
     },
-    "capabilities": {
-      "eyebrow": "Capabilities",
+    "socialProof": {
+      "stats": [
+        { "value": "15+", "label": "Projects delivered" },
+        { "value": "5", "label": "Industries served" },
+        { "value": "<1h", "label": "Response time" },
+        { "value": "4-6", "label": "Average weeks" }
+      ],
+      "testimonial": {
+        "quote": "Before, almost everything came through referrals. Now some weeks half our inquiries come from the website — and it finally looks like the clinic we are.",
+        "author": "Dr. Daniel Zúñiga",
+        "role": "GastroMedical · San José, Costa Rica"
+      },
+      "caseStudies": [
+        {
+          "client": "GastroMedical CR",
+          "sector": "Gastroenterology",
+          "service": "Web redesign + local SEO",
+          "result": "+180% organic inquiries in 4 months"
+        },
+        {
+          "client": "PHYC",
+          "sector": "Consulting",
+          "service": "Corporate platform + positioning",
+          "result": "First page on Google for 12 keywords"
+        }
+      ]
+    },
+    "problemSolution": {
+      "eyebrow": "THE PROBLEM",
+      "title": "If your website doesn't generate clients, it's not an asset,",
+      "titleEmphasis": "it's a cost.",
+      "intro": "Your business has years of reputation and happy clients, but on Google your competitors show up first and your current site takes forever to load. Sound familiar?",
+      "problems": [
+        "You don't appear on Google when people search",
+        "Your site doesn't reflect your company's real quality",
+        "You get visits but almost no inquiries"
+      ],
+      "solutionsTitle": "Our answer",
+      "solutions": [
+        "Technical SEO and content to appear when it matters",
+        "Premium design that builds instant trust",
+        "Optimized funnel to convert via WhatsApp or forms"
+      ]
+    },
+    "process": {
+      "eyebrow": "HOW WE WORK",
+      "title": "4 steps. One team.",
+      "description": "A proven methodology to launch your digital platform and start generating opportunities.",
+      "steps": [
+        { "title": "Assessment", "description": "We understand why you're losing clients today" },
+        { "title": "Design + development", "description": "Premium site ready in 4-6 weeks" },
+        { "title": "SEO", "description": "Appear when people search on Google" },
+        { "title": "Optimization", "description": "We improve conversions with real data" }
+      ]
+    },
+    "results": {
+      "eyebrow": "RESULTS",
       "title": "What your company gets",
-      "description": "A digital platform designed to become one of your main client acquisition channels.",
-      "items": ["Greater credibility from the first visit", "More commercial opportunities", "Better Google positioning", "Higher conversion rate", "Fast experience on any device", "Platform ready to grow", "Data for better decisions", "Solid foundation for future marketing campaigns"]
+      "items": [
+        { "metric": "+40%", "label": "More inquiries", "description": "Average for clients after relaunch" },
+        { "metric": "Top 3", "label": "Local Google", "description": "Positioning in your area searches" },
+        { "metric": "<2s", "label": "Fast loading", "description": "Smooth experience on mobile and desktop" },
+        { "metric": "1", "label": "Scalable platform", "description": "Ready for campaigns and future growth" }
+      ]
     },
-    "applications": {
-      "eyebrow": "Applications",
-      "title": "Ideal for companies that want to grow",
-      "description": "We work with organizations that understand that a professional digital presence is no longer optional.",
-      "items": ["Clinics and medical centers", "Service companies", "Professional firms", "Specialized studios", "Workshops and technical businesses", "Expanding organizations"]
+    "midCta": {
+      "title": "Want to know what it's costing your company not to have this today?",
+      "button": "Free assessment on WhatsApp"
     },
-    "collaborations": {
-      "eyebrow": "COLLABORATIONS",
-      "title": "Companies that have trusted us",
-      "description": "We have developed digital platforms for organizations across different sectors looking to strengthen their digital presence and generate better commercial results."
+    "sectors": {
+      "eyebrow": "INDUSTRIES",
+      "title": "Where we deliver results",
+      "items": [
+        { "name": "Clinics and medical centers", "client": "GastroMedical CR", "result": "+180% organic inquiries" },
+        { "name": "Service companies", "client": "Construrack", "result": "Professional digital presence" },
+        { "name": "Professional firms", "client": "PHYC", "result": "Top Google in their sector" },
+        { "name": "Expanding organizations", "client": "3M", "result": "Scalable platform" }
+      ]
     },
     "cta": {
       "eyebrow": "LET'S TALK",
-      "title": "Your next client could be searching for your services right now.",
-      "description": "Every day your company doesn't project the confidence it truly deserves, opportunities end up in the hands of your competition. A few minutes of conversation can help you identify what's holding back your digital growth and which strategy offers the best return for your business.",
-      "highlight": "Message us on WhatsApp. We'll analyze your case, answer your questions, and tell you with complete transparency if we can help. No commitment, no sales pressure, and no endless forms.",
+      "title": "Your next client is on Google right now.",
+      "description": "Message us on WhatsApp. Free 15-minute assessment.",
       "primaryButton": "Chat on WhatsApp",
-      "secondaryText": "Response usually within one hour during business hours.",
+      "secondaryText": "No commitment · Response in under 1 hour",
       "trustIndicators": ["First conversation free", "Personalized strategy", "No commitment"]
     },
     "faq": {
@@ -1503,34 +1526,37 @@
       "items": [
         {
           "question": "Is there any cost to message on WhatsApp?",
-          "answer": "No. The first conversation is completely free. Our goal is to understand your situation, answer your questions, and help you determine the best path forward for your business."
+          "answer": "No. The first conversation is completely free. Our goal is to understand your situation, answer your questions, and help you determine the best path for your business."
         },
         {
           "question": "What happens after I contact you?",
-          "answer": "First, we'll learn about your business, your goals, and your current challenges. If we believe we can add value, we'll prepare a personalized proposal with a clear strategy, project scope, and investment tailored to your needs."
+          "answer": "First, we'll learn about your business, goals, and current challenges. If we can add value, we'll prepare a personalized proposal with a clear strategy, scope, and investment tailored to your needs."
+        },
+        {
+          "question": "How much does a project cost?",
+          "answer": "It depends on scope and your company's needs. In the free assessment we give you a transparent range with no commitment, so you can evaluate the return before deciding."
+        },
+        {
+          "question": "Do I own the website or is it rented?",
+          "answer": "It's 100% yours. The code, domain, and content belong to you. You decide how to manage it going forward."
+        },
+        {
+          "question": "What if I already have a website?",
+          "answer": "We start with an audit. In many cases we optimize what exists; sometimes a strategic redesign delivers better ROI. We'll tell you honestly in the assessment."
         },
         {
           "question": "Do you only work with clinics?",
-          "answer": "No. We collaborate with clinics, businesses, independent professionals, and organizations looking to strengthen their digital presence, build greater credibility, and attract more clients."
+          "answer": "No. We work with clinics, businesses, independent professionals, and organizations looking to strengthen their digital presence and attract more clients."
         },
         {
           "question": "How long does a project take?",
-          "answer": "It depends on the scope. Most projects are developed within three to eight weeks, with a defined timeline and constant communication throughout the process."
-        },
-        {
-          "question": "Do you also offer SEO and Google positioning?",
-          "answer": "Yes. All our projects are built on a technical foundation optimized for search engines and can be complemented with SEO strategies to increase visibility and generate more business opportunities."
+          "answer": "Most projects are delivered within four to six weeks, with a defined timeline and constant communication throughout."
         },
         {
           "question": "Why message on WhatsApp instead of filling out a form?",
-          "answer": "Because it's the fastest way to receive guidance. In just a few minutes, we can understand your situation, answer your questions, and honestly tell you if we're the right team to help you."
+          "answer": "Because it's the fastest way to get guidance. In just a few minutes we can understand your situation, answer your questions, and honestly tell you if we're the right team."
         }
       ]
-    },
-    "closing": {
-      "title": "The best digital strategy starts with a conversation.",
-      "description": "If your company is ready to project a more professional image, attract better opportunities, and turn its digital presence into a competitive advantage, we'd be happy to help.",
-      "button": "Message on WhatsApp"
     },
     "footer": {
       "brand": "Yieldge",
