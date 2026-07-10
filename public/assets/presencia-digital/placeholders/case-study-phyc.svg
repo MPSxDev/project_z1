@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="300" viewBox="0 0 480 300" fill="none">
+  <rect width="480" height="300" rx="12" fill="#FFFFFF" stroke="#C7D7FE" stroke-width="2" stroke-dasharray="8 8"/>
+  <rect x="24" y="24" width="432" height="40" rx="8" fill="#EFF4FF"/>
+  <rect x="24" y="80" width="320" height="20" rx="6" fill="#DBE6FF"/>
+  <rect x="24" y="116" width="240" height="14" rx="4" fill="#E5E7EB"/>
+  <rect x="24" y="150" width="432" height="100" rx="8" fill="#F3F4F6"/>
+  <text x="240" y="170" text-anchor="middle" fill="#6B7280" font-family="system-ui,sans-serif" font-size="14" font-weight="600">PHYC</text>
+  <text x="240" y="195" text-anchor="middle" fill="#9CA3AF" font-family="system-ui,sans-serif" font-size="12">Screenshot del sitio web</text>
+</svg>
