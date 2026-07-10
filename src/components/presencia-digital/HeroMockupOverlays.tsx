@@ -111,10 +111,7 @@ function GoogleRankBadge() {
     >
       <div className="flex items-center gap-1.5 rounded-full bg-gray-900/88 backdrop-blur-sm text-white px-2.5 py-1 shadow-md border border-white/10">
         <Search className="w-2.5 h-2.5 text-blue-300 flex-shrink-0" aria-hidden="true" />
-        <div>
-          <p className="text-[8px] font-semibold leading-tight whitespace-nowrap">{t('rank')}</p>
-          <p className="text-[7px] text-gray-400 leading-tight whitespace-nowrap">{t('keyword')}</p>
-        </div>
+        <p className="text-[8px] font-semibold leading-tight whitespace-nowrap">{t('rank')}</p>
       </div>
     </motion.div>
   );
@@ -131,13 +128,13 @@ function ResultBadge() {
       className="absolute -bottom-3 -left-3 sm:-bottom-4 sm:-left-4 z-10"
     >
       <div className="flex items-center gap-2 bg-[#1F5CFF] text-white pl-2.5 pr-3 py-2 rounded-lg shadow-md">
-        <div className="flex h-6 w-6 items-center justify-center rounded-md bg-white/15">
-          <CalendarCheck className="w-3 h-3" aria-hidden="true" />
+        <div className="flex h-7 w-7 items-center justify-center rounded-md bg-white/15">
+          <CalendarCheck className="w-4 h-4" aria-hidden="true" />
         </div>
         <div>
           <p className="text-[10px] font-semibold leading-tight whitespace-nowrap">{t('client')}</p>
-          <p className="text-[8px] text-blue-100 flex items-center gap-0.5 leading-tight whitespace-nowrap">
-            <TrendingUp className="w-2 h-2" aria-hidden="true" />
+          <p className="text-[8px] text-blue-100 flex items-center gap-1 leading-tight whitespace-nowrap">
+            <TrendingUp className="w-3.5 h-3.5" aria-hidden="true" />
             {t('metric')}
           </p>
         </div>

@@ -304,7 +304,7 @@ function HeroSection() {
                   alt={`${company.name} logo`}
                   width={company.large ? 160 : 120}
                   height={48}
-                  className="max-h-12 w-auto object-contain opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                  className="max-h-12 w-auto object-contain"
                 />
               </div>
             ))}
