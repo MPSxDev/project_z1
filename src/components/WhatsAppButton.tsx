@@ -3,6 +3,11 @@
 import { motion } from 'framer-motion';
 import { useLocale } from 'next-intl';
 import { usePathname } from 'next/navigation';
+import {
+  PRESENCIA_DIGITAL_PHONE,
+  PRESENCIA_DIGITAL_WHATSAPP_MESSAGE_EN,
+  PRESENCIA_DIGITAL_WHATSAPP_MESSAGE_ES,
+} from '@/lib/presencia-digital';
 
 // Official WhatsApp logo SVG component
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -19,7 +24,6 @@ function WhatsAppIcon({ className }: { className?: string }) {
 }
 
 // Phone numbers for different paths
-const PRESENCIA_DIGITAL_PHONE = '50683335408';
 const DEFAULT_PHONE = '50670724236';
 
 interface WhatsAppButtonProps {
@@ -37,8 +41,11 @@ export default function WhatsAppButton({ phoneNumber: customPhoneNumber }: Whats
   const isPresenciaDigital = pathname.includes('/presencia-digital');
   const phoneNumber = customPhoneNumber || (isPresenciaDigital ? PRESENCIA_DIGITAL_PHONE : DEFAULT_PHONE);
 
-  const message =
-    locale === 'es'
+  const message = isPresenciaDigital
+    ? locale === 'es'
+      ? PRESENCIA_DIGITAL_WHATSAPP_MESSAGE_ES
+      : PRESENCIA_DIGITAL_WHATSAPP_MESSAGE_EN
+    : locale === 'es'
       ? 'Hola, me interesa obtener información sobre sus servicios.'
       : 'Hello, I am interested in learning more about your services.';
 

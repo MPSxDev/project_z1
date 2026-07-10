@@ -1,28 +1,32 @@
 'use client';
 
-import { memo, useRef, useState, useEffect, useCallback } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 import {
+  ArrowRight,
   CheckCircle,
-  ChevronLeft,
-  ChevronRight,
-  Sparkles,
-  Target,
-  Search,
-  TrendingUp,
-  Stethoscope,
-  Briefcase,
-  Scale,
-  FlaskConical,
-  Wrench,
-  Rocket,
-  Plus,
   Minus,
+  Plus,
+  Search,
+  PenTool,
+  TrendingUp,
+  BarChart3,
+  Quote,
 } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
+import { Link } from '@/i18n/navigation';
 import Container from '@/components/ui/Container';
-import Section from '@/components/ui/Section';
+import { cn } from '@/lib/utils';
+import HeroMockupOverlays, {
+  HeroResultBadge,
+} from '@/components/presencia-digital/HeroMockupOverlays';
+import {
+  PRESENCIA_DIGITAL_IMAGES,
+  PRESENCIA_DIGITAL_LOGOS,
+  getPresenciaDigitalWhatsAppUrl,
+} from '@/lib/presencia-digital';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -41,11 +45,6 @@ const staggerContainer = {
   },
 };
 
-// WhatsApp constants
-const WHATSAPP_NUMBER = '50683335408';
-const WHATSAPP_MESSAGE = encodeURIComponent('Hola, me interesa conocer más sobre sus servicios de presencia digital.');
-
-// Official WhatsApp logo SVG component
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
     <svg
@@ -59,618 +58,661 @@ function WhatsAppIcon({ className }: { className?: string }) {
   );
 }
 
-// Hero Section
-function HeroSection() {
-  const t = useTranslations('presenciaDigital.hero');
+function WhatsAppCta({
+  children,
+  variant = 'green',
+  className,
+}: {
+  children: React.ReactNode;
+  variant?: 'green' | 'white';
+  className?: string;
+}) {
+  const locale = useLocale();
+  const base =
+    'group inline-flex items-center justify-center gap-2.5 px-8 py-4 font-semibold rounded-lg transition-all duration-300 shadow-lg';
+  const styles =
+    variant === 'white'
+      ? 'bg-white text-[#1F5CFF] hover:bg-gray-50 hover:-translate-y-0.5'
+      : 'bg-[#25D366] text-white hover:bg-[#20bd5a] hover:-translate-y-0.5 hover:shadow-[#25D366]/30';
 
   return (
-    <section className="relative min-h-[calc(100vh-4rem)] sm:min-h-[calc(100vh-4.5rem)] flex items-center bg-gradient-to-b from-[#eff4ff] via-white to-white overflow-hidden">
+    <a
+      href={getPresenciaDigitalWhatsAppUrl(locale)}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={cn(base, styles, className)}
+    >
+      {children}
+    </a>
+  );
+}
+
+function Eyebrow({ children }: { children: React.ReactNode }) {
+  return (
+    <motion.span
+      variants={fadeInUp}
+      className="inline-flex items-center gap-3 text-gray-500 font-medium text-xs uppercase tracking-[0.2em] mb-6"
+    >
+      <span className="w-8 h-px bg-gray-400" />
+      {children}
+      <span className="w-8 h-px bg-gray-400" />
+    </motion.span>
+  );
+}
+
+function SectionHeading({
+  eyebrow,
+  title,
+  description,
+}: {
+  eyebrow?: string;
+  title: string;
+  description?: string;
+}) {
+  return (
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      variants={staggerContainer}
+      className="text-center mb-16 lg:mb-20"
+    >
+      {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
+      <motion.h2
+        variants={fadeInUp}
+        className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-gray-900 mb-6 leading-[1.1]"
+      >
+        {title}
+      </motion.h2>
+      {description ? (
+        <motion.p variants={fadeInUp} className="text-lg text-gray-600 max-w-3xl mx-auto">
+          {description}
+        </motion.p>
+      ) : null}
+    </motion.div>
+  );
+}
+
+const DotGrid = () => (
+  <div className="absolute inset-0 opacity-30 [background-image:radial-gradient(circle_at_2px_2px,rgba(31,92,255,0.1)_1px,transparent_0)] [background-size:40px_40px]" />
+);
+
+const AccentTop = () => (
+  <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#1F5CFF]/30 to-transparent" />
+);
+
+const AccentBottom = () => (
+  <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400/30 to-transparent" />
+);
+
+function ScrollOnHoverPreview({
+  src,
+  alt,
+  className,
+}: {
+  src: string;
+  alt: string;
+  className?: string;
+}) {
+  const [isHovering, setIsHovering] = useState(false);
+
+  return (
+    <div
+      className={cn('relative overflow-hidden bg-gray-100', className ?? 'h-44 sm:h-52')}
+      onMouseEnter={() => setIsHovering(true)}
+      onMouseLeave={() => setIsHovering(false)}
+    >
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        sizes="(max-width: 640px) 100vw, 50vw"
+        className="object-cover ease-in-out scale-[1.02]"
+        style={{
+          objectPosition: `center ${isHovering ? '100%' : '0%'}`,
+          transitionProperty: 'object-position',
+          transitionDuration: isHovering ? '5000ms' : '900ms',
+        }}
+      />
+    </div>
+  );
+}
+
+// Static "melted" letters: each glyph is frozen mid-drip with a soft blur.
+// Deterministic per-index pattern so the look is stable (no animation).
+const MELT_OFFSETS = [0, 0.6, 1.4, 0.4, 1.8, 1, 0.6, 1.4, 0, 1, 1.6, 0.4, 1.2, 0.8, 1];
+const MELT_STRETCH = [1, 1.03, 1.07, 1.02, 1.09, 1.05, 1.03, 1.07, 1, 1.05, 1.08, 1.02, 1.06, 1.04, 1.05];
+
+function MeltingText({ text, className }: { text: string; className?: string }) {
+  const characters = Array.from(text);
+
+  return (
+    <span
+      className={cn('inline-block whitespace-nowrap align-baseline', className)}
+      aria-label={text}
+    >
+      {characters.map((char, index) => (
+        <span
+          key={`${char}-${index}`}
+          aria-hidden="true"
+          className="inline-block origin-top"
+          style={{
+            transform: `translateY(${MELT_OFFSETS[index % MELT_OFFSETS.length]}px) scaleY(${MELT_STRETCH[index % MELT_STRETCH.length]})`,
+            filter: 'blur(0.2px)',
+          }}
+        >
+          {char === ' ' ? '\u00A0' : char}
+        </span>
+      ))}
+    </span>
+  );
+}
+
+// ─── Hero ───────────────────────────────────────────────────────────────────
+function HeroSection() {
+  const t = useTranslations('presenciaDigital.hero');
+  const tLogos = useTranslations('presenciaDigital.logos');
+
+  return (
+    <section className="relative flex items-center bg-gradient-to-b from-[#eff4ff] via-white to-white overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 right-0 w-[600px] h-[600px] bg-[#1F5CFF]/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#1F5CFF]/3 rounded-full blur-3xl" />
       </div>
 
-      <Container className="relative z-10 pt-24 pb-12 sm:pt-32 sm:pb-16 lg:pt-40 lg:pb-24">
+      <Container className="relative z-10 pt-28 pb-10 sm:pt-36 sm:pb-12 lg:pt-40 lg:pb-14">
         <motion.div
-          variants={staggerContainer}
           initial="hidden"
           animate="visible"
-          className="max-w-4xl mx-auto text-center"
+          variants={staggerContainer}
+          className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center"
         >
-          <motion.span
-            variants={fadeInUp}
-            className="block text-gray-500 font-medium text-xs uppercase tracking-[0.2em] mb-6 sm:mb-8"
-          >
-            {t('eyebrow')}
-          </motion.span>
+          <div className="text-center lg:text-left">
+            <motion.div variants={fadeInUp} className="mb-8">
+              <span className="inline-flex items-center gap-3 text-gray-500 font-medium text-xs uppercase tracking-[0.2em]">
+                <span className="w-8 h-px bg-gray-400" />
+                {t('eyebrow')}
+              </span>
+            </motion.div>
 
-          <motion.h1
-            variants={fadeInUp}
-            className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-semibold tracking-[-0.03em] text-gray-900 leading-[1.1] mb-8"
-          >
-            {t('title')}
-          </motion.h1>
-
-          <motion.p
-            variants={fadeInUp}
-            className="text-lg sm:text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-2xl mx-auto mb-6"
-          >
-            {t('description')}
-          </motion.p>
-
-          <motion.p
-            variants={fadeInUp}
-            className="text-base sm:text-lg text-gray-500 leading-relaxed max-w-2xl mx-auto mb-10"
-          >
-            {t('supportingText')}
-          </motion.p>
-
-          <motion.div variants={fadeInUp} className="flex justify-center">
-            <a
-              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-[#25D366] text-white font-semibold rounded-xl hover:bg-[#20bd5a] transition-colors duration-200 shadow-lg hover:shadow-xl"
+            <motion.h1
+              variants={fadeInUp}
+              className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-[-0.03em] text-gray-900 leading-[1.1] mb-6"
             >
-              <WhatsAppIcon className="w-5 h-5" />
-              {t('cta')}
-            </a>
+              {t('title')}
+            </motion.h1>
+
+            <motion.div
+              variants={fadeInUp}
+              className="w-32 h-px bg-gradient-to-r from-[#1F5CFF] to-blue-400 mb-8 origin-left mx-auto lg:mx-0"
+            />
+
+            <motion.p
+              variants={fadeInUp}
+              className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0"
+            >
+              {t('description')}
+            </motion.p>
+
+            <motion.div
+              variants={fadeInUp}
+              className="flex flex-col items-center lg:items-start gap-3"
+            >
+              <WhatsAppCta>
+                <WhatsAppIcon className="w-5 h-5" />
+                {t('cta')}
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </WhatsAppCta>
+              <p className="text-sm text-gray-500">{t('microcopy')}</p>
+            </motion.div>
+          </div>
+
+          <motion.div variants={fadeInUp} className="relative">
+            <div className="relative rounded-2xl overflow-hidden border border-gray-200/80 shadow-[0_20px_60px_-15px_rgba(31,92,255,0.25)] bg-white">
+              <Image
+                src={PRESENCIA_DIGITAL_IMAGES.heroMockup}
+                alt="Sitio web de GastroMedical CR"
+                width={800}
+                height={600}
+                className="w-full h-auto"
+                priority
+              />
+              <HeroMockupOverlays />
+            </div>
+            <HeroResultBadge />
           </motion.div>
+        </motion.div>
+
+        {/* Logo strip */}
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeInUp}
+          className="mt-16 pt-10 border-t border-gray-200/80"
+        >
+          <p className="text-xs uppercase tracking-[0.2em] text-gray-400 text-center mb-8">
+            {tLogos('title')}
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 items-center">
+            {PRESENCIA_DIGITAL_LOGOS.map((company) => (
+              <div
+                key={company.name}
+                className="flex items-center justify-center h-14 sm:h-16 px-3"
+              >
+                <Image
+                  src={company.logo}
+                  alt={`${company.name} logo`}
+                  width={company.large ? 160 : 120}
+                  height={48}
+                  className="max-h-12 w-auto object-contain"
+                />
+              </div>
+            ))}
+          </div>
         </motion.div>
       </Container>
     </section>
   );
 }
 
-// Practice Areas Section
-const practiceAreaIcons = [Sparkles, Target, Search, TrendingUp];
-
-function PracticeAreasSection() {
-  const t = useTranslations('presenciaDigital.practiceAreas');
-  const areas = ['strategy', 'website', 'visibility', 'growth'] as const;
-
-  return (
-    <Section background="gray" id="services">
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        className="max-w-3xl mx-auto text-center mb-12 sm:mb-16"
-      >
-        <motion.span
-          variants={fadeInUp}
-          className="block text-gray-500 font-medium text-xs uppercase tracking-[0.2em] mb-4 sm:mb-5"
-        >
-          {t('eyebrow')}
-        </motion.span>
-        <motion.h2
-          variants={fadeInUp}
-          className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-4 sm:mb-6 leading-tight"
-        >
-          {t('title')}
-        </motion.h2>
-        <motion.p
-          variants={fadeInUp}
-          className="text-base sm:text-lg text-gray-600 leading-relaxed"
-        >
-          {t('description')}
-        </motion.p>
-      </motion.div>
-
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8"
-      >
-        {areas.map((area, index) => {
-          const Icon = practiceAreaIcons[index];
-          const steps = t.raw(`items.${area}.steps`) as string[];
-
-          return (
-            <motion.div
-              key={area}
-              variants={fadeInUp}
-              className="group relative bg-white rounded-lg p-6 sm:p-8 border border-gray-200 hover:border-gray-400 transition-colors duration-200"
-            >
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-lg bg-[#1F5CFF]/10 flex items-center justify-center">
-                  <Icon className="w-5 h-5 text-[#1F5CFF]" />
-                </div>
-                <span className="text-xs font-medium text-[#1F5CFF] uppercase tracking-wider">
-                  {t(`items.${area}.label`)}
-                </span>
-              </div>
-
-              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3 leading-tight">
-                {t(`items.${area}.title`)}
-              </h3>
-
-              <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
-                {t(`items.${area}.description`)}
-              </p>
-
-              <ul className="space-y-2 sm:space-y-2.5">
-                {steps.map((step: string, i: number) => (
-                  <li
-                    key={i}
-                    className="flex items-start gap-3 text-xs sm:text-sm text-gray-600"
-                  >
-                    <span className="text-gray-400 font-mono text-xs mt-0.5">
-                      {String(i + 1).padStart(2, '0')}
-                    </span>
-                    <span>{step}</span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          );
-        })}
-      </motion.div>
-    </Section>
-  );
+// ─── Social Proof ─────────────────────────────────────────────────────────────
+interface StatItem {
+  value: string;
+  label: string;
 }
 
-// Approach Section - Using SVG icons
-const approachIcons = [
-  { src: '/assets/iconset/icons/1.svg', alt: 'Premium Design' },
-  { src: '/assets/iconset/icons/2.svg', alt: 'Conversion Focus' },
-  { src: '/assets/iconset/icons/3.svg', alt: 'Search Visibility' },
-  { src: '/assets/iconset/icons/4.svg', alt: 'Scalable Platform' },
-  { src: '/assets/iconset/icons/5.svg', alt: 'Long-Term Partnership' },
+interface CaseStudy {
+  client: string;
+  sector: string;
+  service: string;
+  result: string;
+}
+
+const caseStudyImages = [
+  PRESENCIA_DIGITAL_IMAGES.caseStudyGastroMedical,
+  PRESENCIA_DIGITAL_IMAGES.caseStudyPhyc,
 ];
 
-function ApproachSection() {
-  const t = useTranslations('presenciaDigital.approach');
-  const items = ['design', 'conversion', 'search', 'scalable', 'partnership'] as const;
+function SocialProofSection() {
+  const t = useTranslations('presenciaDigital.socialProof');
+  const stats = t.raw('stats') as StatItem[];
+  const caseStudies = t.raw('caseStudies') as CaseStudy[];
 
   return (
-    <Section background="white" id="approach">
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        className="max-w-3xl mx-auto text-center mb-12 sm:mb-16"
-      >
-        <motion.span
-          variants={fadeInUp}
-          className="block text-gray-500 font-medium text-xs uppercase tracking-[0.2em] mb-4 sm:mb-5"
-        >
-          {t('eyebrow')}
-        </motion.span>
-        <motion.h2
-          variants={fadeInUp}
-          className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-4 sm:mb-6 leading-tight"
-        >
-          {t('title')}
-        </motion.h2>
-        <motion.p
-          variants={fadeInUp}
-          className="text-base sm:text-lg text-gray-600 leading-relaxed"
-        >
-          {t('description')}
-        </motion.p>
-      </motion.div>
-
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
-      >
-        {items.map((item, index) => {
-          const icon = approachIcons[index];
-          return (
-            <motion.div
-              key={item}
-              variants={fadeInUp}
-              className="group text-left p-6 lg:p-8 rounded-lg bg-white border border-gray-200 hover:border-gray-300 transition-colors duration-200"
-            >
-              <div className="w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center mb-5">
-                <div className="relative w-8 h-8">
-                  <Image
-                    src={icon.src}
-                    alt={icon.alt}
-                    fill
-                    draggable={false}
-                    className="object-contain opacity-70"
-                  />
-                </div>
-              </div>
-              <span className="text-xs font-medium text-[#1F5CFF] uppercase tracking-wider mb-2 block">
-                {t(`items.${item}.label`)}
-              </span>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {t(`items.${item}.title`)}
-              </h3>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                {t(`items.${item}.description`)}
-              </p>
-            </motion.div>
-          );
-        })}
-      </motion.div>
-    </Section>
-  );
-}
-
-// Capabilities Section
-function CapabilitiesSection() {
-  const t = useTranslations('presenciaDigital.capabilities');
-  const items = t.raw('items') as string[];
-
-  return (
-    <Section background="gray" id="capabilities">
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        className="max-w-3xl mx-auto text-center mb-12 sm:mb-16"
-      >
-        <motion.span
-          variants={fadeInUp}
-          className="block text-gray-500 font-medium text-xs uppercase tracking-[0.2em] mb-4 sm:mb-5"
-        >
-          {t('eyebrow')}
-        </motion.span>
-        <motion.h2
-          variants={fadeInUp}
-          className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-4 sm:mb-6 leading-tight"
-        >
-          {t('title')}
-        </motion.h2>
-        <motion.p
-          variants={fadeInUp}
-          className="text-base sm:text-lg text-gray-600 leading-relaxed"
-        >
-          {t('description')}
-        </motion.p>
-      </motion.div>
-
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"
-      >
-        {items.map((item: string, index: number) => (
-          <motion.div
-            key={index}
-            variants={fadeInUp}
-            className="flex items-start gap-3 p-4 rounded-lg bg-white border border-gray-200"
-          >
-            <CheckCircle className="w-5 h-5 text-[#1F5CFF] flex-shrink-0 mt-0.5" />
-            <span className="text-sm text-gray-700 font-medium">{item}</span>
-          </motion.div>
-        ))}
-      </motion.div>
-    </Section>
-  );
-}
-
-// Applications Section - 6 items for 3x2 grid
-const applicationIcons = [
-  Stethoscope,
-  Briefcase,
-  Scale,
-  FlaskConical,
-  Wrench,
-  Rocket,
-];
-
-function ApplicationsSection() {
-  const t = useTranslations('presenciaDigital.applications');
-  const items = t.raw('items') as string[];
-
-  return (
-    <Section background="white" id="applications">
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        className="max-w-3xl mx-auto text-center mb-12 sm:mb-16"
-      >
-        <motion.span
-          variants={fadeInUp}
-          className="block text-gray-500 font-medium text-xs uppercase tracking-[0.2em] mb-4 sm:mb-5"
-        >
-          {t('eyebrow')}
-        </motion.span>
-        <motion.h2
-          variants={fadeInUp}
-          className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-4 sm:mb-6 leading-tight"
-        >
-          {t('title')}
-        </motion.h2>
-        <motion.p
-          variants={fadeInUp}
-          className="text-base sm:text-lg text-gray-600 leading-relaxed"
-        >
-          {t('description')}
-        </motion.p>
-      </motion.div>
-
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"
-      >
-        {items.map((item: string, index: number) => {
-          const Icon = applicationIcons[index];
-          return (
-            <motion.div
-              key={index}
-              variants={fadeInUp}
-              className="flex items-start gap-4 p-5 rounded-lg bg-gray-50 border border-gray-200"
-            >
-              <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-white flex items-center justify-center border border-gray-200">
-                <Icon className="w-5 h-5 text-gray-500" />
-              </div>
-              <p className="text-gray-700 font-medium leading-relaxed text-sm pt-2">
-                {item}
-              </p>
-            </motion.div>
-          );
-        })}
-      </motion.div>
-    </Section>
-  );
-}
-
-// Collaborations Section
-interface CompanyLogo {
-  name: string;
-  logo: string;
-  large?: boolean;
-}
-
-const logos: CompanyLogo[] = [
-  { name: '3M', logo: '/assets/logos/3m.png' },
-  { name: 'GastroMedical CR', logo: '/assets/logos/drzuniga-logo.png', large: true },
-  { name: 'PHYC', logo: '/assets/logos/phyclogo-removedbg.png' },
-  { name: 'HS', logo: '/assets/logos/hslogo.png' },
-  { name: 'Construrack', logo: '/assets/logos/construrack.png' },
-];
-
-function CollaborationsSection() {
-  const t = useTranslations('presenciaDigital.collaborations');
-  const totalLogos = logos.length;
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(true);
-  const [visibleCount, setVisibleCount] = useState(1);
-
-  const handlePrev = useCallback(() => {
-    setIsTransitioning(true);
-    setCurrentIndex((prev) => prev - 1);
-  }, []);
-
-  const handleNext = useCallback(() => {
-    setIsTransitioning(true);
-    setCurrentIndex((prev) => prev + 1);
-  }, []);
-
-  useEffect(() => {
-    const updateVisibleCount = () => {
-      if (window.innerWidth < 640) {
-        setVisibleCount(1);
-      } else {
-        setVisibleCount(3);
-      }
-    };
-
-    updateVisibleCount();
-    window.addEventListener('resize', updateVisibleCount);
-    return () => window.removeEventListener('resize', updateVisibleCount);
-  }, []);
-
-  useEffect(() => {
-    if (currentIndex <= 0) {
-      const timeout = setTimeout(() => {
-        setIsTransitioning(false);
-        setCurrentIndex(totalLogos);
-      }, 500);
-      return () => clearTimeout(timeout);
-    }
-    if (currentIndex >= totalLogos * 2) {
-      const timeout = setTimeout(() => {
-        setIsTransitioning(false);
-        setCurrentIndex(totalLogos);
-      }, 500);
-      return () => clearTimeout(timeout);
-    }
-  }, [currentIndex, totalLogos]);
-
-  useEffect(() => {
-    if (!isTransitioning) {
-      const timeout = setTimeout(() => {
-        setIsTransitioning(true);
-      }, 50);
-      return () => clearTimeout(timeout);
-    }
-  }, [isTransitioning]);
-
-  const extendedLogos = [...logos, ...logos, ...logos];
-  const itemWidthPercent = 100 / visibleCount;
-
-  return (
-    <section
-      id="collaborations"
-      className="relative bg-gradient-to-b from-white to-[#eff4ff]/20 py-16 sm:py-20 lg:py-24 overflow-hidden"
-    >
+    <section className="relative pt-14 pb-24 lg:pt-16 lg:pb-28 bg-white overflow-hidden">
       <Container className="relative z-10">
+        {/* Stats */}
         <motion.div
-          variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
+          viewport={{ once: true, amount: 0.2 }}
+          variants={staggerContainer}
+          className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-14 lg:mb-20"
         >
-          <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
-            <motion.span
+          {stats.map((stat) => (
+            <motion.div
+              key={stat.label}
               variants={fadeInUp}
-              className="block text-gray-500 font-medium text-xs uppercase tracking-[0.2em] mb-4 sm:mb-5"
+              className="text-center p-6 rounded-2xl bg-gradient-to-br from-white to-gray-50/80 border border-gray-200/60 shadow-[0_1px_3px_rgba(0,0,0,0.04)]"
             >
-              {t('eyebrow')}
-            </motion.span>
+              <p className="text-3xl sm:text-4xl font-semibold bg-gradient-to-r from-[#1F5CFF] to-blue-500 bg-clip-text text-transparent mb-1">
+                {stat.value}
+              </p>
+              <p className="text-sm text-gray-500">{stat.label}</p>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        {/* Testimonial + case studies */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.15 }}
+          variants={staggerContainer}
+          className="grid lg:grid-cols-5 gap-6 lg:gap-8 items-stretch"
+        >
+          {/* Testimonial */}
+          <motion.blockquote
+            variants={fadeInUp}
+            className="lg:col-span-2 relative flex flex-col justify-center p-8 rounded-2xl bg-gradient-to-br from-gray-900 to-gray-800 text-white shadow-[0_8px_30px_-8px_rgba(0,0,0,0.4)]"
+          >
+            <Quote className="w-8 h-8 text-blue-400/60 mb-4" />
+            <p className="text-base sm:text-lg leading-relaxed mb-6 text-gray-100">
+              {t('testimonial.quote')}
+            </p>
+            <div className="flex items-center gap-3 mt-auto">
+              <div className="relative w-12 h-12 shrink-0 rounded-full overflow-hidden border border-white/20">
+                <Image
+                  src={PRESENCIA_DIGITAL_IMAGES.testimonialAvatar}
+                  alt={t('testimonial.author')}
+                  fill
+                  sizes="48px"
+                  className="object-cover"
+                />
+              </div>
+              <div>
+                <p className="font-semibold">{t('testimonial.author')}</p>
+                <p className="text-sm text-gray-400">{t('testimonial.role')}</p>
+              </div>
+            </div>
+          </motion.blockquote>
+
+          {/* Case study */}
+          {caseStudies[0] ? (
+            <motion.div
+              variants={fadeInUp}
+              className="group lg:col-span-3 flex flex-col bg-white rounded-2xl border border-gray-200/60 overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:border-blue-200/80 hover:shadow-[0_8px_30px_-8px_rgba(31,92,255,0.15)] transition-all duration-300"
+            >
+              <ScrollOnHoverPreview
+                src={caseStudyImages[0]}
+                alt={`${caseStudies[0].client} website`}
+                className="flex-1 min-h-[16rem] sm:min-h-[20rem]"
+              />
+              <div className="p-6 sm:p-7">
+                <p className="text-[10px] font-semibold text-[#1F5CFF] uppercase tracking-[0.15em] mb-1.5">
+                  {caseStudies[0].sector}
+                </p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                  {caseStudies[0].client}
+                </h3>
+                <p className="text-sm text-gray-500 mb-3">{caseStudies[0].service}</p>
+                <p className="text-sm font-semibold text-gray-900 flex items-center gap-2">
+                  <TrendingUp className="w-4 h-4 text-[#25D366]" />
+                  {caseStudies[0].result}
+                </p>
+              </div>
+            </motion.div>
+          ) : null}
+        </motion.div>
+      </Container>
+    </section>
+  );
+}
+
+// ─── Problem / Solution ────────────────────────────────────────────────────────
+function ProblemSolutionSection() {
+  const t = useTranslations('presenciaDigital.problemSolution');
+  const problems = t.raw('problems') as string[];
+  const solutions = t.raw('solutions') as string[];
+
+  return (
+    <section className="relative py-24 lg:py-32 bg-gray-50 overflow-hidden">
+      <AccentTop />
+      <Container className="relative z-10">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={staggerContainer}
+          className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center"
+        >
+          <div>
+            <Eyebrow>{t('eyebrow')}</Eyebrow>
             <motion.h2
               variants={fadeInUp}
-              className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-4 sm:mb-6 leading-tight"
+              className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-gray-900 mb-5 leading-[1.1]"
             >
-              {t('title')}
+              {t('title')}{' '}
+              <MeltingText
+                text={t('titleEmphasis')}
+                className="text-rose-600 [filter:drop-shadow(0_2px_10px_rgba(225,29,72,0.28))]"
+              />
             </motion.h2>
             <motion.p
               variants={fadeInUp}
-              className="text-base sm:text-lg text-gray-600 leading-relaxed"
+              className="text-lg text-gray-600 leading-relaxed mb-8"
             >
-              {t('description')}
+              {t('intro')}
             </motion.p>
+            <div className="space-y-3">
+              {problems.map((problem) => (
+                <motion.div
+                  key={problem}
+                  variants={fadeInUp}
+                  className="flex items-start gap-3 p-4 rounded-xl bg-white border border-gray-200/80"
+                >
+                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-red-50 text-red-500 flex items-center justify-center text-sm font-bold mt-0.5">
+                    ✕
+                  </span>
+                  <span className="text-gray-700">{problem}</span>
+                </motion.div>
+              ))}
+            </div>
           </div>
 
-          <motion.div variants={fadeInUp} className="w-full">
-            <div className="relative flex items-center gap-4">
-              <button
-                onClick={handlePrev}
-                className="flex-shrink-0 w-12 h-12 rounded-full border-2 border-gray-300 text-gray-600 hover:border-[#1F5CFF] hover:text-[#1F5CFF] hover:bg-[#1F5CFF]/5 cursor-pointer flex items-center justify-center transition-all duration-200"
-                aria-label="Previous logos"
-              >
-                <ChevronLeft className="w-6 h-6" />
-              </button>
-
-              <div className="flex-1 overflow-hidden">
+          <motion.div variants={fadeInUp}>
+            <div className="relative rounded-2xl overflow-hidden border border-gray-200/80 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.15)] mb-8">
+              <Image
+                src={PRESENCIA_DIGITAL_IMAGES.problemVisual}
+                alt="Problema de presencia digital"
+                width={640}
+                height={480}
+                className="w-full h-auto"
+              />
+            </div>
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">{t('solutionsTitle')}</h3>
+            <div className="space-y-3">
+              {solutions.map((solution) => (
                 <div
-                  className={`flex ${isTransitioning ? 'transition-transform duration-500 ease-out' : ''}`}
-                  style={{
-                    transform: `translateX(-${currentIndex * itemWidthPercent}%)`,
-                  }}
+                  key={solution}
+                  className="flex items-start gap-3 p-4 rounded-xl bg-white border border-[#1F5CFF]/15"
                 >
-                  {extendedLogos.map((company, index) => (
-                    <div
-                      key={`${company.name}-${index}`}
-                      className="flex-shrink-0 px-4 sm:px-6 lg:px-8"
-                      style={{ width: `${itemWidthPercent}%` }}
-                    >
-                      <div className="relative w-full h-72 sm:h-72 lg:h-80 flex items-center justify-center">
-                        <Image
-                          src={company.logo}
-                          alt={`${company.name} logo`}
-                          width={company.large ? 720 : 576}
-                          height={company.large ? 346 : 269}
-                          className="max-h-80 sm:max-h-72 lg:max-h-80 max-w-full object-contain"
-                        />
-                      </div>
-                    </div>
-                  ))}
+                  <CheckCircle className="w-5 h-5 text-[#25D366] flex-shrink-0 mt-0.5" />
+                  <span className="text-gray-700">{solution}</span>
                 </div>
-              </div>
-
-              <button
-                onClick={handleNext}
-                className="flex-shrink-0 w-12 h-12 rounded-full border-2 border-gray-300 text-gray-600 hover:border-[#1F5CFF] hover:text-[#1F5CFF] hover:bg-[#1F5CFF]/5 cursor-pointer flex items-center justify-center transition-all duration-200"
-                aria-label="Next logos"
-              >
-                <ChevronRight className="w-6 h-6" />
-              </button>
+              ))}
             </div>
           </motion.div>
         </motion.div>
       </Container>
+      <AccentBottom />
     </section>
   );
 }
 
-// CTA Section
+// ─── Process ────────────────────────────────────────────────────────────────
+interface ProcessStep {
+  title: string;
+  description: string;
+}
+
+const processIcons: LucideIcon[] = [Search, PenTool, TrendingUp, BarChart3];
+
+function ProcessSection() {
+  const t = useTranslations('presenciaDigital.process');
+  const steps = t.raw('steps') as ProcessStep[];
+
+  return (
+    <section className="relative py-24 lg:py-32 bg-white overflow-hidden">
+      <Container className="relative z-10">
+        <SectionHeading
+          eyebrow={t('eyebrow')}
+          title={t('title')}
+          description={t('description')}
+        />
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={staggerContainer}
+          className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5"
+        >
+          {steps.map((step, index) => {
+            const Icon = processIcons[index];
+            return (
+              <motion.div
+                key={step.title}
+                variants={fadeInUp}
+                className="group relative flex flex-col items-center text-center"
+              >
+                <div className="relative mb-5">
+                  <div className="absolute -inset-3 rounded-3xl blur-2xl opacity-50 transition-opacity duration-300 group-hover:opacity-90 bg-gradient-to-br from-[#1F5CFF]/25 to-blue-400/10" />
+                  <div className="relative w-16 h-16 rounded-2xl bg-white border border-gray-200/80 flex items-center justify-center shadow-sm transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-md">
+                    <span className="absolute -top-2 -right-2 min-w-[1.375rem] h-[1.375rem] px-1 rounded-full border border-[#1F5CFF]/20 bg-[#1F5CFF]/10 text-[#1F5CFF] text-[9px] font-bold flex items-center justify-center">
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
+                    <Icon className="w-7 h-7 text-gray-400 transition-colors duration-300 group-hover:text-[#1F5CFF]" />
+                  </div>
+                </div>
+                <div className="w-full flex-1 rounded-xl border border-gray-100 bg-white/70 backdrop-blur-sm px-4 py-5 shadow-sm transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-md group-hover:bg-white">
+                  <h3 className="font-semibold text-gray-900 mb-2 transition-colors duration-300 group-hover:text-[#1F5CFF]">
+                    {step.title}
+                  </h3>
+                  <p className="text-sm text-gray-500 leading-relaxed">{step.description}</p>
+                </div>
+              </motion.div>
+            );
+          })}
+        </motion.div>
+      </Container>
+    </section>
+  );
+}
+
+// ─── Results ────────────────────────────────────────────────────────────────
+interface ResultItem {
+  metric: string;
+  label: string;
+  description: string;
+}
+
+function ResultsSection() {
+  const t = useTranslations('presenciaDigital.results');
+  const items = t.raw('items') as ResultItem[];
+
+  return (
+    <section className="relative py-24 lg:py-32 bg-gray-50 overflow-hidden">
+      <AccentTop />
+      <Container className="relative z-10">
+        <SectionHeading eyebrow={t('eyebrow')} title={t('title')} />
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.15 }}
+          variants={staggerContainer}
+          className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5"
+        >
+          {items.map((item) => (
+            <motion.div
+              key={item.label}
+              variants={fadeInUp}
+              className="group relative p-6 lg:p-8 rounded-2xl bg-white border border-gray-200/60 text-center hover:border-blue-200/80 hover:shadow-[0_8px_30px_-8px_rgba(31,92,255,0.15)] transition-all duration-300"
+            >
+              <p className="text-4xl font-semibold bg-gradient-to-r from-[#1F5CFF] to-blue-500 bg-clip-text text-transparent mb-2">
+                {item.metric}
+              </p>
+              <p className="font-semibold text-gray-900 mb-2">{item.label}</p>
+              <p className="text-sm text-gray-500 leading-relaxed">{item.description}</p>
+            </motion.div>
+          ))}
+        </motion.div>
+      </Container>
+      <AccentBottom />
+    </section>
+  );
+}
+
+// ─── Mid CTA ────────────────────────────────────────────────────────────────
+function MidCtaSection() {
+  const t = useTranslations('presenciaDigital.midCta');
+
+  return (
+    <section className="relative py-16 sm:py-20 bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
+      <div className="absolute inset-0 opacity-40 [background-image:radial-gradient(circle_at_2px_2px,rgba(31,92,255,0.15)_1px,transparent_0)] [background-size:40px_40px]" />
+      <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#1F5CFF]/10 rounded-full blur-3xl pointer-events-none" />
+      <Container className="relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="max-w-3xl mx-auto text-center"
+        >
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-[-0.02em] text-white mb-8 leading-[1.15]">
+            {t('title')}
+          </h2>
+          <WhatsAppCta variant="white">
+            <WhatsAppIcon className="w-5 h-5 text-[#25D366]" />
+            {t('button')}
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </WhatsAppCta>
+        </motion.div>
+      </Container>
+    </section>
+  );
+}
+
+// ─── Final CTA ──────────────────────────────────────────────────────────────
 function CTASection() {
   const t = useTranslations('presenciaDigital.cta');
   const trustIndicators = t.raw('trustIndicators') as string[];
 
   return (
-    <Section background="gray" id="contact">
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        className="max-w-4xl mx-auto text-center"
-      >
-        <motion.span
-          variants={fadeInUp}
-          className="block text-gray-500 font-medium text-xs uppercase tracking-[0.2em] mb-4 sm:mb-5"
-        >
-          {t('eyebrow')}
-        </motion.span>
-        <motion.h2
-          variants={fadeInUp}
-          className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-4 sm:mb-6 leading-tight"
-        >
-          {t('title')}
-        </motion.h2>
-        <motion.p
-          variants={fadeInUp}
-          className="text-base sm:text-lg text-gray-600 leading-relaxed mb-6"
-        >
-          {t('description')}
-        </motion.p>
-        <motion.p
-          variants={fadeInUp}
-          className="text-base sm:text-lg text-gray-700 leading-relaxed mb-8 font-medium bg-white p-6 rounded-xl border border-gray-200"
-        >
-          {t('highlight')}
-        </motion.p>
-
-        <motion.div variants={fadeInUp} className="flex flex-col items-center gap-4">
-          <a
-            href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-[#25D366] text-white font-semibold rounded-xl hover:bg-[#20bd5a] transition-colors duration-200 shadow-lg hover:shadow-xl"
-          >
-            <WhatsAppIcon className="w-5 h-5" />
-            {t('primaryButton')}
-          </a>
-          <p className="text-sm text-gray-500">{t('secondaryText')}</p>
-        </motion.div>
-
+    <section id="contact" className="relative py-24 lg:py-32 bg-gray-50 overflow-hidden">
+      <DotGrid />
+      <AccentTop />
+      <Container className="relative z-10">
         <motion.div
-          variants={fadeInUp}
-          className="flex flex-wrap justify-center gap-4 mt-8"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          variants={staggerContainer}
+          className="max-w-3xl mx-auto text-center"
         >
-          {trustIndicators.map((indicator: string, index: number) => (
-            <div
-              key={index}
-              className="flex items-center gap-2 text-sm text-gray-600"
-            >
-              <CheckCircle className="w-4 h-4 text-[#25D366]" />
-              <span>{indicator}</span>
-            </div>
-          ))}
+          <Eyebrow>{t('eyebrow')}</Eyebrow>
+          <motion.h2
+            variants={fadeInUp}
+            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-gray-900 mb-6 leading-[1.1]"
+          >
+            {t('title')}
+          </motion.h2>
+          <motion.p
+            variants={fadeInUp}
+            className="text-lg text-gray-600 leading-relaxed mb-8"
+          >
+            {t('description')}
+          </motion.p>
+
+          <motion.div variants={fadeInUp} className="flex flex-col items-center gap-4">
+            <WhatsAppCta>
+              <WhatsAppIcon className="w-5 h-5" />
+              {t('primaryButton')}
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </WhatsAppCta>
+            <p className="text-sm text-gray-500">{t('secondaryText')}</p>
+          </motion.div>
+
+          <motion.div
+            variants={fadeInUp}
+            className="flex flex-wrap justify-center gap-x-6 gap-y-3 mt-10"
+          >
+            {trustIndicators.map((indicator) => (
+              <div key={indicator} className="flex items-center gap-2 text-sm text-gray-600">
+                <CheckCircle className="w-4 h-4 text-[#25D366]" />
+                <span>{indicator}</span>
+              </div>
+            ))}
+          </motion.div>
         </motion.div>
-      </motion.div>
-    </Section>
+      </Container>
+      <AccentBottom />
+    </section>
   );
 }
 
-// FAQ Section
+// ─── FAQ ──────────────────────────────────────────────────────────────────────
 interface FAQItem {
   question: string;
   answer: string;
 }
 
-function FAQItemComponent({ item, index }: { item: FAQItem; index: number }) {
+function FAQItemComponent({ item }: { item: FAQItem }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <motion.div
-      variants={fadeInUp}
-      className="border-b border-gray-200 last:border-b-0"
-    >
+    <motion.div variants={fadeInUp} className="border-b border-gray-200 last:border-b-0">
       <button
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
@@ -689,7 +731,7 @@ function FAQItemComponent({ item, index }: { item: FAQItem; index: number }) {
       </button>
 
       <AnimatePresence initial={false}>
-        {isOpen && (
+        {isOpen ? (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
@@ -701,7 +743,7 @@ function FAQItemComponent({ item, index }: { item: FAQItem; index: number }) {
               {item.answer}
             </p>
           </motion.div>
-        )}
+        ) : null}
       </AnimatePresence>
     </motion.div>
   );
@@ -712,106 +754,98 @@ function FAQSection() {
   const items = t.raw('items') as FAQItem[];
 
   const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": items.map((item) => ({
-      "@type": "Question",
-      "name": item.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": item.answer
-      }
-    }))
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
   };
 
   return (
-    <Section background="white" id="faq">
+    <section className="relative py-24 lg:py-32 bg-white overflow-hidden">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-12">
-          <motion.h2
-            variants={fadeInUp}
-            className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-gray-900"
-          >
-            {t('title')}
-          </motion.h2>
-        </div>
-
-        <div className="max-w-3xl mx-auto bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm">
-          {items.map((item, index) => (
-            <FAQItemComponent key={index} item={item} index={index} />
-          ))}
-        </div>
-      </motion.div>
-    </Section>
-  );
-}
-
-// Closing Section
-function ClosingSection() {
-  const t = useTranslations('presenciaDigital.closing');
-
-  return (
-    <section className="relative bg-gradient-to-b from-white to-[#eff4ff] py-16 sm:py-20 lg:py-24">
       <Container className="relative z-10">
+        <SectionHeading title={t('title')} />
         <motion.div
-          variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          className="max-w-3xl mx-auto text-center"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={staggerContainer}
+          className="max-w-3xl mx-auto bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm"
         >
-          <motion.h2
-            variants={fadeInUp}
-            className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-gray-900 mb-4 sm:mb-6 leading-tight"
-          >
-            {t('title')}
-          </motion.h2>
-          <motion.p
-            variants={fadeInUp}
-            className="text-base sm:text-lg text-gray-600 leading-relaxed mb-8"
-          >
-            {t('description')}
-          </motion.p>
-          <motion.div variants={fadeInUp}>
-            <a
-              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-[#25D366] text-white font-semibold rounded-xl hover:bg-[#20bd5a] transition-colors duration-200 shadow-lg hover:shadow-xl"
-            >
-              <WhatsAppIcon className="w-5 h-5" />
-              {t('button')}
-            </a>
-          </motion.div>
+          {items.map((item) => (
+            <FAQItemComponent key={item.question} item={item} />
+          ))}
         </motion.div>
       </Container>
     </section>
   );
 }
 
-// Main Page Content Component
+// ─── Footer ─────────────────────────────────────────────────────────────────
+function FooterSection() {
+  const t = useTranslations('presenciaDigital.footer');
+  const legal = t.raw('legal') as string[];
+
+  return (
+    <footer className="relative bg-gray-900 text-gray-300 py-14 sm:py-16 overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#1F5CFF]/30 to-transparent" />
+      <Container>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
+          <div>
+            <p className="text-white font-bold text-lg mb-1">{t('brand')}</p>
+            <p className="text-sm text-gray-400 mb-3">{t('tagline')}</p>
+            <p className="text-sm leading-relaxed text-gray-400">{t('description')}</p>
+          </div>
+          <div>
+            <p className="text-white font-semibold mb-3">{t('contactTitle')}</p>
+            <p className="text-sm mb-2 text-gray-400">{t('contactDescription')}</p>
+            <a
+              href={`mailto:${t('email')}`}
+              className="text-sm text-blue-300 hover:text-white transition-colors"
+            >
+              {t('email')}
+            </a>
+          </div>
+          <div>
+            <p className="text-white font-semibold mb-3">{t('legalTitle')}</p>
+            <div className="flex flex-col gap-2">
+              <Link href="/privacy-policy" className="text-sm text-gray-400 hover:text-white transition-colors">
+                {legal[0]}
+              </Link>
+              <Link href="/terms" className="text-sm text-gray-400 hover:text-white transition-colors">
+                {legal[1]}
+              </Link>
+            </div>
+          </div>
+        </div>
+        <p className="text-sm text-gray-500 border-t border-gray-800 pt-8">{t('copyright')}</p>
+      </Container>
+    </footer>
+  );
+}
+
 export default function PresenciaDigitalPageContent() {
   return (
     <>
       <HeroSection />
       <main id="main-content">
-        <PracticeAreasSection />
-        <ApproachSection />
-        <CollaborationsSection />
-        <CapabilitiesSection />
-        <ApplicationsSection />
+        <SocialProofSection />
+        <ProblemSolutionSection />
+        <ProcessSection />
+        <ResultsSection />
+        <MidCtaSection />
         <CTASection />
         <FAQSection />
-        <ClosingSection />
+        <FooterSection />
       </main>
     </>
   );
