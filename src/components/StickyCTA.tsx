@@ -5,9 +5,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, MessageCircle } from 'lucide-react';
 import { useTranslations, useLocale } from 'next-intl';
 import { usePathname } from 'next/navigation';
+import {
+  PRESENCIA_DIGITAL_PHONE,
+  PRESENCIA_DIGITAL_WHATSAPP_MESSAGE_EN,
+  PRESENCIA_DIGITAL_WHATSAPP_MESSAGE_ES,
+} from '@/lib/presencia-digital';
 
 // Phone numbers for different paths
-const PRESENCIA_DIGITAL_PHONE = '50683335408';
 
 interface StickyCTAProps {
   whatsappNumber?: string;
@@ -54,9 +58,13 @@ const StickyCTA = memo(function StickyCTA({ whatsappNumber, ctaText }: StickyCTA
   // Use presencia-digital phone number on that path
   const effectiveWhatsappNumber = whatsappNumber || (isPresenciaDigital ? PRESENCIA_DIGITAL_PHONE : null);
 
-  const message = locale === 'es'
-    ? 'Hola, me interesa obtener información sobre sus servicios de presencia digital.'
-    : 'Hello, I am interested in learning more about your digital presence services.';
+  const message = isPresenciaDigital
+    ? locale === 'es'
+      ? PRESENCIA_DIGITAL_WHATSAPP_MESSAGE_ES
+      : PRESENCIA_DIGITAL_WHATSAPP_MESSAGE_EN
+    : locale === 'es'
+      ? 'Hola, me interesa obtener información sobre sus servicios de presencia digital.'
+      : 'Hello, I am interested in learning more about your digital presence services.';
 
   const href = effectiveWhatsappNumber
     ? `https://wa.me/${effectiveWhatsappNumber}?text=${encodeURIComponent(message)}`
