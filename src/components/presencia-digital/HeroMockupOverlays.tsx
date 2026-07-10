@@ -110,7 +110,7 @@ function GoogleRankBadge() {
       className="absolute bottom-12 right-2.5 sm:bottom-14 sm:right-3"
     >
       <div className="flex items-center gap-1.5 rounded-full bg-gray-900/88 backdrop-blur-sm text-white px-2.5 py-1 shadow-md border border-white/10">
-        <Search className="w-2.5 h-2.5 text-blue-300 flex-shrink-0" aria-hidden="true" />
+        <Search className="w-3.5 h-3.5 text-blue-300 flex-shrink-0" aria-hidden="true" />
         <p className="text-[8px] font-semibold leading-tight whitespace-nowrap">{t('rank')}</p>
       </div>
     </motion.div>
@@ -134,7 +134,7 @@ function ResultBadge() {
         <div>
           <p className="text-[10px] font-semibold leading-tight whitespace-nowrap">{t('client')}</p>
           <p className="text-[8px] text-blue-100 flex items-center gap-1 leading-tight whitespace-nowrap">
-            <TrendingUp className="w-3.5 h-3.5" aria-hidden="true" />
+            <TrendingUp className="w-4 h-4" aria-hidden="true" />
             {t('metric')}
           </p>
         </div>
