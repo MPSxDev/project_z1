@@ -1517,6 +1517,7 @@
       "eyebrow": "LET'S TALK",
       "title": "Your next client is on Google right now.",
       "description": "Message us on WhatsApp. Free 15-minute assessment.",
+      "highlight": "Let's talk today and define the next step for your business.",
       "primaryButton": "Chat on WhatsApp",
       "secondaryText": "No commitment · Response in under 1 hour",
       "trustIndicators": ["First conversation free", "Personalized strategy", "No commitment"]
@@ -1608,15 +1609,15 @@
       "consultation": "Schedule a conversation",
       "website": "See digital presence service"
     },
-    "article": {
+    "post": {
       "tableOfContents": "Table of contents",
       "shareArticle": "Share",
       "copyLink": "Copy link",
       "linkCopied": "Link copied",
-      "relatedArticles": "Related articles",
+      "relatedPosts": "Related articles",
       "references": "References and sources",
       "faq": "Frequently asked questions",
-      "aboutAuthor": "About the author",
+      "author": "About the author",
       "backToBlog": "Back to blog"
     }
   }

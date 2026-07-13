@@ -1608,15 +1608,15 @@
       "consultation": "Agendar conversación",
       "website": "Ver servicio de presencia digital"
     },
-    "article": {
+    "post": {
       "tableOfContents": "Contenido del artículo",
       "shareArticle": "Compartir",
       "copyLink": "Copiar enlace",
       "linkCopied": "Enlace copiado",
-      "relatedArticles": "Artículos relacionados",
+      "relatedPosts": "Artículos relacionados",
       "references": "Referencias y fuentes",
       "faq": "Preguntas frecuentes",
-      "aboutAuthor": "Sobre el autor",
+      "author": "Sobre el autor",
       "backToBlog": "Volver al blog"
     }
   }
