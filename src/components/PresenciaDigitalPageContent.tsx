@@ -16,7 +16,6 @@ import {
   Quote,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
-import { Link } from '@/i18n/navigation';
 import Container from '@/components/ui/Container';
 import { cn } from '@/lib/utils';
 import HeroMockupOverlays, {
@@ -795,49 +794,6 @@ function FAQSection() {
   );
 }
 
-// ─── Footer ─────────────────────────────────────────────────────────────────
-function FooterSection() {
-  const t = useTranslations('presenciaDigital.footer');
-  const legal = t.raw('legal') as string[];
-
-  return (
-    <footer className="relative bg-gray-900 text-gray-300 py-14 sm:py-16 overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#1F5CFF]/30 to-transparent" />
-      <Container>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
-          <div>
-            <p className="text-white font-bold text-lg mb-1">{t('brand')}</p>
-            <p className="text-sm text-gray-400 mb-3">{t('tagline')}</p>
-            <p className="text-sm leading-relaxed text-gray-400">{t('description')}</p>
-          </div>
-          <div>
-            <p className="text-white font-semibold mb-3">{t('contactTitle')}</p>
-            <p className="text-sm mb-2 text-gray-400">{t('contactDescription')}</p>
-            <a
-              href={`mailto:${t('email')}`}
-              className="text-sm text-blue-300 hover:text-white transition-colors"
-            >
-              {t('email')}
-            </a>
-          </div>
-          <div>
-            <p className="text-white font-semibold mb-3">{t('legalTitle')}</p>
-            <div className="flex flex-col gap-2">
-              <Link href="/privacy-policy" className="text-sm text-gray-400 hover:text-white transition-colors">
-                {legal[0]}
-              </Link>
-              <Link href="/terms" className="text-sm text-gray-400 hover:text-white transition-colors">
-                {legal[1]}
-              </Link>
-            </div>
-          </div>
-        </div>
-        <p className="text-sm text-gray-500 border-t border-gray-800 pt-8">{t('copyright')}</p>
-      </Container>
-    </footer>
-  );
-}
-
 export default function PresenciaDigitalPageContent() {
   return (
     <>
@@ -848,9 +804,8 @@ export default function PresenciaDigitalPageContent() {
         <ProcessSection />
         <ResultsSection />
         <MidCtaSection />
-        <CTASection />
         <FAQSection />
-        <FooterSection />
+        <CTASection />
       </main>
     </>
   );
