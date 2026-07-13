@@ -1,6 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useLocale } from 'next-intl';
 import { usePathname } from 'next/navigation';
 import {
@@ -8,6 +9,9 @@ import {
   PRESENCIA_DIGITAL_WHATSAPP_MESSAGE_EN,
   PRESENCIA_DIGITAL_WHATSAPP_MESSAGE_ES,
 } from '@/lib/presencia-digital';
+
+// CTA section IDs to detect
+const CTA_SECTION_IDS = ['contact', 'contact-form'];
 
 // Official WhatsApp logo SVG component
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -32,10 +36,32 @@ interface WhatsAppButtonProps {
 
 /**
  * WhatsAppButton - Floating WhatsApp button
+ * Hides when final CTA section is visible
  */
 export default function WhatsAppButton({ phoneNumber: customPhoneNumber }: WhatsAppButtonProps = {}) {
   const locale = useLocale();
   const pathname = usePathname();
+  const [isCtaVisible, setIsCtaVisible] = useState(false);
+
+  // Detect when CTA section is visible
+  useEffect(() => {
+    const checkCtaVisibility = () => {
+      const anyCtaVisible = CTA_SECTION_IDS.some((id) => {
+        const el = document.getElementById(id);
+        if (!el) return false;
+        const rect = el.getBoundingClientRect();
+        return rect.top < window.innerHeight && rect.bottom > 0;
+      });
+      setIsCtaVisible(anyCtaVisible);
+    };
+
+    window.addEventListener('scroll', checkCtaVisibility, { passive: true });
+    checkCtaVisibility();
+
+    return () => {
+      window.removeEventListener('scroll', checkCtaVisibility);
+    };
+  }, []);
 
   // Use custom phone for presencia-digital path
   const isPresenciaDigital = pathname.includes('/presencia-digital');
@@ -59,29 +85,36 @@ export default function WhatsAppButton({ phoneNumber: customPhoneNumber }: Whats
   )}`;
 
   return (
-    <div className="fixed bottom-24 md:bottom-8 right-6 z-50">
-      <motion.a
-        href={whatsappUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={ariaLabel}
-        initial={{ opacity: 0, scale: 0.6 }}
-        animate={{ opacity: 1, scale: 1 }}
-        whileHover={{ scale: 1.08 }}
-        whileTap={{ scale: 0.94 }}
-        transition={{
-          type: 'spring',
-          stiffness: 280,
-          damping: 18,
-        }}
-        className="relative flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] shadow-[0_12px_35px_rgba(37,211,102,0.35)] transition-all duration-300 hover:bg-[#20ba5a] hover:shadow-[0_18px_45px_rgba(37,211,102,0.45)] focus:outline-none"
-      >
-        {/* Pulse animation */}
-        <span className="absolute inset-0 animate-ping rounded-full bg-[#25D366] opacity-20" />
+    <AnimatePresence>
+      {!isCtaVisible && (
+        <motion.div
+          initial={{ opacity: 0, scale: 0.6 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.6 }}
+          transition={{
+            type: 'spring',
+            stiffness: 280,
+            damping: 18,
+          }}
+          className="fixed bottom-24 md:bottom-8 right-6 z-50"
+        >
+          <motion.a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={ariaLabel}
+            whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 0.94 }}
+            className="relative flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] shadow-[0_12px_35px_rgba(37,211,102,0.35)] transition-all duration-300 hover:bg-[#20ba5a] hover:shadow-[0_18px_45px_rgba(37,211,102,0.45)] focus:outline-none"
+          >
+            {/* Pulse animation */}
+            <span className="absolute inset-0 animate-ping rounded-full bg-[#25D366] opacity-20" />
 
-        {/* WhatsApp Icon */}
-        <WhatsAppIcon className="relative z-10 h-8 w-8 text-white" />
-      </motion.a>
-    </div>
+            {/* WhatsApp Icon */}
+            <WhatsAppIcon className="relative z-10 h-8 w-8 text-white" />
+          </motion.a>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }

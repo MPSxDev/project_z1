@@ -1514,11 +1514,11 @@
     },
     "cta": {
       "eyebrow": "CONVERSEMOS",
-      "title": "Su próximo cliente está en Google ahora mismo.",
-      "description": "Escríbanos por WhatsApp. Diagnóstico gratis en 15 minutos.",
+      "title": "Tu próximo cliente ya está buscando. Asegúrate de que encuentre tu empresa.",
+      "description": "Convierte tu presencia digital en una herramienta para atraer nuevas oportunidades, generar confianza y hacer crecer tu negocio.",
+      "highlight": "Hablemos hoy y definamos el siguiente paso para tu empresa.",
       "primaryButton": "Hablar por WhatsApp",
-      "secondaryText": "Sin compromiso · Respuesta en menos de 1 hora",
-      "trustIndicators": ["Primera conversación sin costo", "Estrategia personalizada", "Sin compromiso"]
+      "trustIndicators": ["Estrategia personalizada", "Sin compromiso"]
     },
     "faq": {
       "title": "Preguntas Frecuentes",

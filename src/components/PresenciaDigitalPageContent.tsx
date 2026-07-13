@@ -670,9 +670,15 @@ function CTASection() {
           </motion.h2>
           <motion.p
             variants={fadeInUp}
-            className="text-lg text-gray-600 leading-relaxed mb-8"
+            className="text-lg text-gray-600 leading-relaxed mb-4"
           >
             {t('description')}
+          </motion.p>
+          <motion.p
+            variants={fadeInUp}
+            className="text-lg text-gray-900 font-semibold leading-relaxed mb-8"
+          >
+            {t('highlight')}
           </motion.p>
 
           <motion.div variants={fadeInUp} className="flex flex-col items-center gap-4">
@@ -681,7 +687,6 @@ function CTASection() {
               {t('primaryButton')}
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </WhatsAppCta>
-            <p className="text-sm text-gray-500">{t('secondaryText')}</p>
           </motion.div>
 
           <motion.div
