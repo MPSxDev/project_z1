@@ -1571,5 +1571,52 @@
       "email": "info@yieldge.com",
       "copyright": "© 2026 Yieldge. All rights reserved."
     }
+  },
+  "blog": {
+    "hero": {
+      "eyebrow": "RESOURCES & STRATEGIES",
+      "title": "Practical knowledge to grow your business",
+      "subtitle": "Articles, guides, and case studies for business owners who want to make better technology and digital marketing decisions."
+    },
+    "listing": {
+      "searchPlaceholder": "Search articles by topic, keyword, or category...",
+      "featured": "Featured",
+      "readMore": "Read article",
+      "minRead": "min read",
+      "latestArticles": "Latest articles",
+      "allPosts": "All articles",
+      "noPostsFound": "No articles found matching your criteria. Try a different search.",
+      "popularArticles": "Most read"
+    },
+    "categories": {
+      "all": "All",
+      "seo": "SEO & Rankings",
+      "ai": "Artificial Intelligence",
+      "websites": "Websites",
+      "digitalTransformation": "Digital Transformation",
+      "businessGrowth": "Business Growth",
+      "automation": "Automation",
+      "branding": "Branding",
+      "technology": "Technology",
+      "cybersecurity": "Cybersecurity",
+      "analytics": "Data Analytics"
+    },
+    "cta": {
+      "title": "Ready to take your business to the next level?",
+      "description": "Let's talk about how we can help you implement these strategies in your business.",
+      "consultation": "Schedule a conversation",
+      "website": "See digital presence service"
+    },
+    "article": {
+      "tableOfContents": "Table of contents",
+      "shareArticle": "Share",
+      "copyLink": "Copy link",
+      "linkCopied": "Link copied",
+      "relatedArticles": "Related articles",
+      "references": "References and sources",
+      "faq": "Frequently asked questions",
+      "aboutAuthor": "About the author",
+      "backToBlog": "Back to blog"
+    }
   }
 }

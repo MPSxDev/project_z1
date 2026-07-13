@@ -1571,5 +1571,52 @@
       "email": "info@yieldge.com",
       "copyright": "© 2026 Yieldge. Todos los derechos reservados."
     }
+  },
+  "blog": {
+    "hero": {
+      "eyebrow": "RECURSOS Y ESTRATEGIAS",
+      "title": "Conocimiento práctico para impulsar tu negocio",
+      "subtitle": "Artículos, guías y casos de estudio para empresarios que quieren tomar mejores decisiones tecnológicas y de marketing digital."
+    },
+    "listing": {
+      "searchPlaceholder": "Buscar artículos por tema, palabra clave o categoría...",
+      "featured": "Destacado",
+      "readMore": "Leer artículo",
+      "minRead": "min de lectura",
+      "latestArticles": "Artículos recientes",
+      "allPosts": "Todos los artículos",
+      "noPostsFound": "No se encontraron artículos con esos criterios. Intenta con otra búsqueda.",
+      "popularArticles": "Los más leídos"
+    },
+    "categories": {
+      "all": "Todos",
+      "seo": "SEO y Posicionamiento",
+      "ai": "Inteligencia Artificial",
+      "websites": "Sitios Web",
+      "digitalTransformation": "Transformación Digital",
+      "businessGrowth": "Crecimiento Empresarial",
+      "automation": "Automatización",
+      "branding": "Marca y Branding",
+      "technology": "Tecnología",
+      "cybersecurity": "Ciberseguridad",
+      "analytics": "Analítica de Datos"
+    },
+    "cta": {
+      "title": "¿Listo para llevar tu empresa al siguiente nivel?",
+      "description": "Hablemos sobre cómo podemos ayudarte a implementar estas estrategias en tu negocio.",
+      "consultation": "Agendar conversación",
+      "website": "Ver servicio de presencia digital"
+    },
+    "article": {
+      "tableOfContents": "Contenido del artículo",
+      "shareArticle": "Compartir",
+      "copyLink": "Copiar enlace",
+      "linkCopied": "Enlace copiado",
+      "relatedArticles": "Artículos relacionados",
+      "references": "Referencias y fuentes",
+      "faq": "Preguntas frecuentes",
+      "aboutAuthor": "Sobre el autor",
+      "backToBlog": "Volver al blog"
+    }
   }
 }
