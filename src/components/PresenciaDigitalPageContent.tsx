@@ -20,6 +20,7 @@ import Container from '@/components/ui/Container';
 import { cn } from '@/lib/utils';
 import HeroMockupOverlays, {
   HeroResultBadge,
+  HeroNotificationBadge,
 } from '@/components/presencia-digital/HeroMockupOverlays';
 import {
   PRESENCIA_DIGITAL_IMAGES,
@@ -267,6 +268,10 @@ function HeroSection() {
           </div>
 
           <motion.div variants={fadeInUp} className="relative">
+            {/* Mobile: Notification badge above image */}
+            <div className="flex justify-center mb-3 sm:hidden">
+              <HeroNotificationBadge />
+            </div>
             <div className="relative rounded-2xl overflow-hidden border border-gray-200/80 shadow-[0_20px_60px_-15px_rgba(31,92,255,0.25)] bg-white">
               <Image
                 src={PRESENCIA_DIGITAL_IMAGES.heroMockup}
@@ -276,9 +281,19 @@ function HeroSection() {
                 className="w-full h-auto"
                 priority
               />
-              <HeroMockupOverlays />
+              {/* Overlays only visible on desktop */}
+              <div className="hidden sm:block">
+                <HeroMockupOverlays />
+              </div>
             </div>
-            <HeroResultBadge />
+            {/* Mobile: Result badge below image */}
+            <div className="flex justify-center mt-3 sm:hidden">
+              <HeroResultBadge inline />
+            </div>
+            {/* Desktop: Result badge with absolute positioning */}
+            <div className="hidden sm:block">
+              <HeroResultBadge />
+            </div>
           </motion.div>
         </motion.div>
 
@@ -632,8 +647,8 @@ function MidCtaSection() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-[-0.02em] text-white mb-8 leading-[1.15]">
             {t('title')}
           </h2>
-          <WhatsAppCta variant="white">
-            <WhatsAppIcon className="w-5 h-5 text-[#25D366]" />
+          <WhatsAppCta>
+            <WhatsAppIcon className="w-5 h-5" />
             {t('button')}
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </WhatsAppCta>
