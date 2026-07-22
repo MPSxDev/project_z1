@@ -171,6 +171,22 @@ export function HeroResultBadge({ inline = false }: { inline?: boolean }) {
   return <ResultBadge />;
 }
 
+export function HeroGoogleBadge() {
+  const t = useTranslations('presenciaDigital.hero.overlays.google');
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.5, duration: 0.5 }}
+      className="inline-flex items-center gap-1.5 rounded-full bg-gray-900/90 backdrop-blur-sm text-white px-3 py-1.5 shadow-md border border-white/10"
+    >
+      <Search className="w-3.5 h-3.5 text-blue-300 flex-shrink-0" aria-hidden="true" />
+      <p className="text-[10px] font-semibold leading-tight whitespace-nowrap">{t('rank')}</p>
+    </motion.div>
+  );
+}
+
 export function HeroNotificationBadge() {
   const notifications = useTranslations('presenciaDigital.hero.overlays').raw(
     'notifications',

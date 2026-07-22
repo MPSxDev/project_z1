@@ -20,6 +20,7 @@ import Container from '@/components/ui/Container';
 import { cn } from '@/lib/utils';
 import HeroMockupOverlays, {
   HeroResultBadge,
+  HeroGoogleBadge,
   HeroNotificationBadge,
 } from '@/components/presencia-digital/HeroMockupOverlays';
 import {
@@ -286,9 +287,10 @@ function HeroSection() {
                 <HeroMockupOverlays />
               </div>
             </div>
-            {/* Mobile: Result badge below image */}
-            <div className="flex justify-center mt-3 sm:hidden">
+            {/* Mobile: Result badge and Google badge below image */}
+            <div className="flex flex-col items-center gap-2 mt-3 sm:hidden">
               <HeroResultBadge inline />
+              <HeroGoogleBadge />
             </div>
             {/* Desktop: Result badge with absolute positioning */}
             <div className="hidden sm:block">
