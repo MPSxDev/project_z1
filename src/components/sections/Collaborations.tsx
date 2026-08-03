@@ -53,6 +53,10 @@ const logos: CompanyLogo[] = [
     name: 'Logo',
     logo: '/assets/logos/construrack.png',
   },
+  {
+    name: 'Quant Energy',
+    logo: '/assets/logos/quant_energy.png',
+  },
 ];
 
 export default function Collaborations() {

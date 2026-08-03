@@ -754,6 +754,10 @@ export const crContent: PageContent = {
         name: 'Logo',
         logo: '/assets/logos/construrack.png',
       },
+      {
+        name: 'Quant Energy',
+        logo: '/assets/logos/quant_energy.png',
+      },
     ],
   },
 };

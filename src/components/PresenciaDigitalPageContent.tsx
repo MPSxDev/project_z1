@@ -309,7 +309,7 @@ function HeroSection() {
           <p className="text-xs uppercase tracking-[0.2em] text-gray-400 text-center mb-8">
             {tLogos('title')}
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 items-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
             {PRESENCIA_DIGITAL_LOGOS.map((company) => (
               <div
                 key={company.name}

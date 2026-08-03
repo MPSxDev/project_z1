@@ -48,6 +48,7 @@ const logos: CompanyLogo[] = [
   { name: 'GastroMedical CR', logo: '/assets/logos/drzuniga-logo.png', large: true },
   { name: 'PHYC', logo: '/assets/logos/phyclogo-removedbg.png' },
   { name: 'HS', logo: '/assets/logos/hslogo.png' },
+  { name: 'Quant Energy', logo: '/assets/logos/quant_energy.png' },
 ];
 
 // Impact pillars icons (using same icons as main page)

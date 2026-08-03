@@ -26,6 +26,7 @@ export const PRESENCIA_DIGITAL_LOGOS: CompanyLogo[] = [
   { name: 'PHYC', logo: '/assets/logos/phyclogo-removedbg.png' },
   { name: 'HS', logo: '/assets/logos/hslogo.png' },
   { name: 'Construrack', logo: '/assets/logos/construrack.png' },
+  { name: 'Quant Energy', logo: '/assets/logos/quant_energy.png' },
 ];
 
 /**
