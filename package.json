@@ -15,7 +15,7 @@
     "framer-motion": "^12.23.24",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.545.0",
-    "next": "^15.5.12",
+    "next": "^15.5.22",
     "next-intl": "^4.8.2",
     "next-mdx-remote": "^6.0.0",
     "react": "19.1.0",
@@ -31,7 +31,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "^16.1.6",
+    "eslint-config-next": "^16.2.12",
     "tailwindcss": "^4",
     "typescript": "^5"
   },
@@ -43,7 +43,13 @@
     "@typescript-eslint/utils": "8.56.1-alpha.3",
     "@typescript-eslint/type-utils": "8.56.1-alpha.3",
     "minimatch": "^10.2.1",
-    "postcss": "^8.5.14",
+    "postcss": "^8.5.25",
+    "brace-expansion@5": "5.0.9",
+    "js-yaml": "^4.3.1",
+    "gray-matter": {
+      "js-yaml": "^3.14.2"
+    },
+    "sharp": "^0.35.3",
     "@babel/core": "^7.29.6"
   },
   "pnpm": {
@@ -55,7 +61,11 @@
       "@typescript-eslint/utils": "8.56.1-alpha.3",
       "@typescript-eslint/type-utils": "8.56.1-alpha.3",
       "minimatch": "^10.2.1",
-      "postcss": "^8.5.14",
+      "postcss": "^8.5.25",
+      "brace-expansion@5": "5.0.9",
+      "js-yaml": "^4.3.1",
+      "gray-matter>js-yaml": "^3.14.2",
+      "sharp": "^0.35.3",
       "@babel/core": "^7.29.6"
     }
   }
