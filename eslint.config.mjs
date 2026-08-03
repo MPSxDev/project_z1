@@ -9,6 +9,11 @@ const eslintConfig = [
       "out/**",
       "build/**",
       "next-env.d.ts",
+      "LeadsMaster-byYieldge/**",
+      ".agents/**",
+      ".claude/**",
+      ".cursor/**",
+      "features/**",
     ],
   },
   {
