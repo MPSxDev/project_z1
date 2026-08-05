@@ -1403,6 +1403,13 @@
     }
   },
   "presenciaDigital": {
+    "navbar": {
+      "howWeAttract": "Cómo atraemos pacientes",
+      "googlePositioning": "Posicionamiento en Google",
+      "digitalSystem": "Sistema digital",
+      "results": "Resultados",
+      "cta": "Solicitar diagnóstico"
+    },
     "hero": {
       "eyebrow": "PRESENCIA DIGITAL · COSTA RICA",
       "title": "Su empresa ya es buena. Que Google también lo demuestre.",
@@ -1463,9 +1470,10 @@
     },
     "problemSolution": {
       "eyebrow": "EL PROBLEMA",
-      "title": "Si su web no genera clientes, no es un activo,",
-      "titleEmphasis": "es un costo.",
-      "intro": "Su empresa tiene años de reputación y clientes satisfechos, pero en Google su competencia aparece primero y su sitio actual tarda una eternidad en cargar. ¿Le suena familiar?",
+      "title": "¿Su presencia digital refleja el verdadero nivel de su clínica?",
+      "titleEmphasis": "Oportunidades que su clínica podría estar aprovechando.",
+      "intro": "Una estrategia digital poco efectiva puede hacer que pacientes potenciales elijan otras opciones antes de conocer su experiencia.",
+      "cta": "Descubrir oportunidades de mejora",
       "problems": [
         "No aparece en Google cuando lo buscan",
         "El sitio no transmite la calidad real de su empresa",
@@ -1500,8 +1508,8 @@
       ]
     },
     "midCta": {
-      "title": "¿Quiere saber qué le está costando a su empresa no tener esto hoy?",
-      "button": "Diagnóstico gratis por WhatsApp"
+      "title": "Convierta su presencia digital en un sistema para atraer más pacientes",
+      "button": "Recibir diagnóstico por WhatsApp"
     },
     "sectors": {
       "eyebrow": "SECTORES",
@@ -1525,38 +1533,304 @@
       "title": "Preguntas Frecuentes",
       "items": [
         {
-          "question": "¿Tiene algún costo escribir por WhatsApp?",
-          "answer": "No. La primera conversación es completamente gratuita. Nuestro objetivo es comprender su situación, responder sus preguntas y ayudarle a determinar cuál es el mejor camino para su empresa."
+          "question": "¿El diagnóstico inicial tiene algún costo?",
+          "answer": "No. Revisamos su presencia digital, identificamos oportunidades y le explicamos qué acciones podrían generar mayor impacto para su clínica."
         },
         {
           "question": "¿Qué sucede después de contactarnos?",
-          "answer": "Primero conoceremos su negocio, sus objetivos y los desafíos actuales. Si consideramos que podemos aportar valor, prepararemos una propuesta personalizada con una estrategia clara, alcance del proyecto y una inversión acorde a sus necesidades."
+          "answer": "Coordinamos una conversación breve, analizamos su situación y le presentamos una recomendación clara, sin compromiso."
         },
         {
-          "question": "¿Cuánto cuesta un proyecto?",
-          "answer": "Depende del alcance y las necesidades de su empresa. En el diagnóstico gratuito le damos un rango transparente sin compromiso, para que pueda evaluar el retorno antes de decidir."
+          "question": "¿Cuánto cuesta desarrollar una solución digital?",
+          "answer": "El costo depende del alcance, las páginas y las funcionalidades necesarias. Antes de iniciar, recibirá una propuesta clara y detallada."
         },
         {
-          "question": "¿El sitio web es mío o es un alquiler?",
-          "answer": "Es 100% suyo. El código, el dominio y el contenido le pertenecen. Usted decide cómo gestionarlo a futuro."
+          "question": "¿Qué pasa si ya tengo un sitio web?",
+          "answer": "Podemos evaluar su sitio actual y mejorar únicamente lo necesario: diseño, contenido, velocidad, posicionamiento o conversión."
         },
         {
-          "question": "¿Qué pasa si ya tengo sitio web?",
-          "answer": "Empezamos con una auditoría. En muchos casos optimizamos lo existente; en otros, un rediseño estratégico genera mejor retorno. Se lo diremos con honestidad en el diagnóstico."
-        },
-        {
-          "question": "¿Trabajan únicamente con clínicas?",
-          "answer": "No. Colaboramos con clínicas, empresas, profesionales independientes y organizaciones que buscan fortalecer su presencia digital y atraer más clientes."
+          "question": "¿El sitio queda completamente a nombre de la clínica?",
+          "answer": "Sí. La clínica conserva la propiedad del sitio, el contenido, el dominio y los activos desarrollados."
         },
         {
           "question": "¿Cuánto tarda un proyecto?",
-          "answer": "La mayoría de los proyectos se desarrollan entre cuatro y seis semanas, con un cronograma definido y comunicación constante durante todo el proceso."
+          "answer": "El tiempo depende del alcance. Antes de comenzar, definimos las etapas, los entregables y una fecha estimada de publicación."
+        }
+      ],
+      "ctaTitle": "¿Tiene otra pregunta?",
+      "ctaButton": "Conversemos por WhatsApp"
+    },
+    "clinicsSpecialists": {
+      "eyebrow": "SALUD Y TURISMO MÉDICO",
+      "title": "Una presencia digital diseñada para atraer más pacientes",
+      "intro": "La calidad de una clínica no siempre se refleja en su presencia digital.",
+      "description": "Antes de reservar una cita, muchos pacientes investigan al especialista, comparan tratamientos, revisan testimonios, consultan ubicaciones y evalúan la confianza que transmite cada opción.",
+      "solution": "Yieldge desarrolla una presencia digital que permite presentar tus servicios con claridad, fortalecer la autoridad profesional de la clínica y facilitar que nuevos pacientes den el siguiente paso.",
+      "features": [
+        "Presentación profesional de médicos y especialistas",
+        "Páginas específicas para procedimientos y tratamientos",
+        "Integración con WhatsApp, formularios y sistemas de citas",
+        "Testimonios y elementos de confianza",
+        "Información clara para pacientes nacionales e internacionales",
+        "Medición de consultas y acciones importantes",
+        "Arquitectura preparada para SEO y crecimiento de contenido"
+      ],
+      "cta": "Analizar la presencia digital de mi clínica"
+    },
+    "patientJourney": {
+      "eyebrow": "EL RECORRIDO DEL PACIENTE",
+      "title": "La decisión del paciente comienza antes de contactar la clínica",
+      "description": "Un paciente potencial puede descubrir la clínica mediante una búsqueda en Google, una recomendación, una publicación en redes sociales o un anuncio.",
+      "intro": "Sin embargo, antes de comunicarse, normalmente necesita resolver varias preguntas:",
+      "questions": [
+        "¿Este especialista trata mi condición?",
+        "¿Cómo se realiza el procedimiento?",
+        "¿Puedo confiar en este especialista y su clínica?",
+        "¿Por qué elegir esta clínica?",
+        "¿Qué tan fácil es solicitar una cita?",
+        "¿Atienden pacientes internacionales?"
+      ],
+      "conclusion": "La presencia digital debe responder estas preguntas de forma estratégica y guiar al paciente desde su búsqueda inicial hasta la solicitud de una cita.",
+      "flowTitle": "Flujo del paciente",
+      "flowSteps": [
+        "Búsqueda en Google",
+        "Página del tratamiento",
+        "Validación del especialista",
+        "Confianza",
+        "Contacto",
+        "Cita"
+      ]
+    },
+    "patientSystem": {
+      "eyebrow": "SISTEMA DE CAPTACIÓN",
+      "title": "No construimos páginas aisladas. Construimos sistemas de captación.",
+      "description": "Un sitio web por sí solo no garantiza nuevos pacientes. Para generar oportunidades comerciales, debe formar parte de un sistema que conecte posicionamiento, contenido, confianza, experiencia del usuario y canales de contacto.",
+      "intro": "Yieldge estructura la presencia digital alrededor de cinco componentes:",
+      "components": [
+        {
+          "title": "Descubrimiento",
+          "description": "La clínica aparece cuando una persona busca un especialista, procedimiento, tratamiento o respuesta relacionada con su condición."
         },
         {
-          "question": "¿Por qué escribir por WhatsApp en lugar de llenar un formulario?",
-          "answer": "Porque es la forma más rápida de recibir orientación. En pocos minutos podremos entender su situación, responder sus dudas y decirle honestamente si somos el equipo adecuado."
+          "title": "Educación",
+          "description": "El sitio ofrece información clara que ayuda al paciente a comprender sus opciones y reduce la incertidumbre antes del contacto."
+        },
+        {
+          "title": "Autoridad",
+          "description": "La experiencia del especialista, los servicios, la tecnología, los testimonios y la calidad visual fortalecen la credibilidad de la clínica."
+        },
+        {
+          "title": "Conversión",
+          "description": "El paciente encuentra rutas directas para escribir por WhatsApp, llamar, solicitar información o reservar una cita."
+        },
+        {
+          "title": "Medición y optimización",
+          "description": "Se analizan las páginas visitadas, las fuentes de tráfico y las acciones realizadas para identificar qué servicios generan mayor interés."
         }
+      ],
+      "highlight": "El objetivo no es únicamente recibir más visitas, sino convertir el tráfico correcto en consultas y oportunidades reales para la clínica."
+    },
+    "medicalSeo": {
+      "eyebrow": "POSICIONAMIENTO EN GOOGLE",
+      "title": "Cuando alguien busque un tratamiento en Google, haga que encuentre su clínica",
+      "description": "Personas que aún no conocen su clínica buscan cada día síntomas, tratamientos y especialistas. Su presencia digital debe convertir esas búsquedas en nuevas oportunidades de cita.",
+      "searchExamplesTitle": "Ejemplos de búsquedas reales",
+      "searchExamples": [
+        "Gastroenterólogo en Costa Rica",
+        "Dentista en Santa Teresa",
+        "Colonoscopía en San José",
+        "Tratamiento para reflujo",
+        "Implantes dentales para pacientes internacionales"
+      ],
+      "conclusion": "Aparecer en la búsqueda correcta puede ser el primer paso hacia una nueva cita."
+    },
+    "rightTraffic": {
+      "eyebrow": "ESTRATEGIA DE TRÁFICO",
+      "title": "Más tráfico no siempre significa más pacientes",
+      "description": "Una clínica no necesita miles de visitantes sin intención clara. Necesita atraer personas que estén buscando activamente sus servicios y que tengan una posibilidad real de convertirse en pacientes.",
+      "intro": "Por eso, la estrategia de tráfico debe concentrarse en tres niveles:",
+      "levels": [
+        {
+          "title": "Tráfico informativo",
+          "description": "Personas que buscan comprender síntomas, condiciones, tratamientos o procedimientos. Este contenido permite que la clínica sea descubierta durante las primeras etapas de investigación."
+        },
+        {
+          "title": "Tráfico comercial",
+          "description": "Personas que están comparando especialistas, clínicas, precios, ubicaciones o alternativas de tratamiento. Estas búsquedas tienen una intención más cercana a la decisión."
+        },
+        {
+          "title": "Tráfico transaccional",
+          "description": "Personas que buscan reservar, contactar, cotizar o iniciar un tratamiento. Estas son las oportunidades de mayor valor y requieren páginas claras, rápidas y orientadas a la conversión."
+        }
+      ],
+      "highlight": "Una estrategia efectiva combina contenido educativo para generar visibilidad con páginas comerciales diseñadas para convertir esa atención en consultas."
+    },
+    "seoVsSocial": {
+      "eyebrow": "CANALES DIGITALES",
+      "title": "Las redes generan atención. Google captura intención.",
+      "description": "Las redes sociales permiten fortalecer la marca, mostrar resultados, compartir contenido y mantener presencia frente a una audiencia.",
+      "intro": "El SEO cumple una función diferente: conecta la clínica con personas que ya están buscando una solución.",
+      "longevity": "Una publicación en redes puede perder visibilidad rápidamente. Una página optimizada puede continuar atrayendo pacientes potenciales mientras mantenga relevancia y buen posicionamiento.",
+      "comparisonTitle": "Comparación",
+      "social": {
+        "title": "Redes sociales",
+        "points": [
+          "Generan reconocimiento",
+          "Mantienen contacto con la audiencia",
+          "Dependen de publicaciones frecuentes",
+          "Interrumpen al usuario mientras consume contenido"
+        ]
+      },
+      "seo": {
+        "title": "SEO y sitio web",
+        "points": [
+          "Capturan búsquedas activas",
+          "Responden preguntas concretas",
+          "Construyen visibilidad a largo plazo",
+          "Reciben usuarios con una necesidad definida"
+        ]
+      },
+      "conclusion": "La mejor estrategia no enfrenta ambos canales. Utiliza las redes para generar interés y el sitio web para transformar ese interés en confianza, posicionamiento y contacto."
+    },
+    "mobileExperience": {
+      "eyebrow": "EXPERIENCIA MÓVIL",
+      "title": "Si su sitio no funciona bien en celular, el paciente sigue buscando",
+      "description": "Una experiencia lenta o confusa reduce la confianza y puede hacer que el paciente elija otra clínica.",
+      "capabilities": [
+        "Entender el servicio rápidamente",
+        "Validar al especialista",
+        "Contactar por WhatsApp",
+        "Solicitar una cita"
+      ],
+      "highlight": "Menos fricción. Más confianza. Más oportunidades de cita."
+    },
+    "medicalTourism": {
+      "eyebrow": "TURISMO MÉDICO",
+      "title": "Convierta su clínica en una opción confiable para pacientes internacionales",
+      "description": "Los pacientes internacionales necesitan claridad, confianza y una experiencia digital que les ayude a tomar una decisión antes de viajar.",
+      "featuresTitle": "Información clave para generar confianza desde el primer contacto",
+      "features": [
+        "Presentación del especialista y sus credenciales",
+        "Explicación detallada de procedimientos",
+        "Proceso para pacientes internacionales",
+        "Contenido en inglés y español",
+        "Testimonios de otros pacientes",
+        "Información sobre recuperación y seguimiento"
+      ],
+      "highlight": "Para un paciente internacional, su sitio web puede ser la diferencia entre una consulta perdida y una nueva oportunidad de tratamiento."
+    },
+    "treatmentPages": {
+      "eyebrow": "PÁGINAS DE SERVICIOS",
+      "title": "Cada servicio necesita su propia oportunidad de posicionamiento",
+      "description": "Colocar todos los servicios en una sola página limita la cantidad de información disponible y dificulta que Google comprenda la especialidad de la clínica.",
+      "intro": "Las páginas individuales permiten desarrollar cada tratamiento alrededor de las preguntas y necesidades reales del paciente.",
+      "structureTitle": "Estructura sugerida para cada página",
+      "structure": [
+        "Qué es el procedimiento",
+        "Para quién puede ser adecuado",
+        "Beneficios principales",
+        "Cómo se realiza",
+        "Preparación requerida",
+        "Proceso de recuperación",
+        "Preguntas frecuentes",
+        "Experiencia del especialista",
+        "Llamado a reservar o solicitar información"
+      ],
+      "highlight": "Una página específica puede posicionarse para una búsqueda específica, educar al paciente y conducirlo directamente hacia el contacto."
+    },
+    "medicalContent": {
+      "eyebrow": "VISIBILIDAD EN GOOGLE",
+      "title": "Cuando alguien busque en Google un tratamiento, haga que encuentre su clínica",
+      "description": "Cada día, personas que aún no conocen su clínica buscan en Google síntomas, tratamientos, procedimientos y especialistas. Una estrategia de contenido bien estructurada ayuda a que su clínica aparezca en esas búsquedas, transmita confianza y genere nuevas oportunidades de cita.",
+      "subtitle": "Su clínica puede posicionarse en búsquedas relacionadas con:",
+      "topics": [
+        "Síntomas y señales de alerta",
+        "Tratamientos disponibles",
+        "Procedimientos médicos",
+        "Comparación de opciones",
+        "Preparación para procedimientos",
+        "Recuperación y cuidados",
+        "Prevención",
+        "Costos y factores a considerar",
+        "Atención para pacientes internacionales"
+      ],
+      "conclusion": "Más visibilidad en Google puede convertirse en más consultas, más citas y mayor crecimiento para su clínica."
+    },
+    "growthMeasurement": {
+      "eyebrow": "ANALÍTICA Y MEDICIÓN",
+      "title": "Convierte el comportamiento del paciente en información comercial",
+      "description": "La presencia digital debe permitir identificar qué genera resultados.",
+      "intro": "Mediante herramientas de analítica se pueden medir acciones como:",
+      "metrics": [
+        "Visitas desde Google",
+        "Páginas de servicios más consultadas",
+        "Clics en WhatsApp",
+        "Llamadas desde el sitio",
+        "Formularios completados",
+        "Solicitudes de citas",
+        "Países o ciudades de origen",
+        "Dispositivos utilizados",
+        "Contenido que genera mayor interés",
+        "Canales que producen más consultas"
+      ],
+      "benefit": "Estas métricas permiten decidir qué tratamientos promocionar, qué contenidos desarrollar y qué páginas necesitan optimización.",
+      "highlight": "Lo que no se mide no puede optimizarse. Yieldge convierte la presencia digital en un sistema observable y mejorable."
+    },
+    "clinicScalability": {
+      "eyebrow": "ESCALABILIDAD",
+      "title": "Una plataforma preparada para crecer con su clínica",
+      "description": "Comience con lo esencial y agregue nuevas capacidades conforme la clínica crece.",
+      "capabilities": [
+        "Especialistas y ubicaciones",
+        "Tratamientos y blog médico",
+        "Contenido bilingüe",
+        "Formularios y reservas",
+        "Pagos en línea",
+        "Seguimiento automatizado",
+        "Integración con CRM",
+        "Portal del paciente e IA"
+      ],
+      "conclusion": "Una base digital para atraer, atender y dar seguimiento a más pacientes."
+    },
+    "specializedCta": {
+      "title": "Tus próximos pacientes ya te están buscando en Google. ¿Qué encuentran al llegar a tu clínica?",
+      "description": "Analizamos cómo descubren tu clínica, qué información encuentran antes de contactarte y qué oportunidades pueden mejorarse para aumentar la captación de pacientes.",
+      "primaryButton": "Solicitar diagnóstico gratuito",
+      "support": "Recibe una evaluación inicial de tu sitio web, posicionamiento, experiencia móvil y rutas de contacto."
+    },
+    "ctaScarcity": {
+      "title": "Si tu competencia ya tiene presencia digital, cada día que pasa te aleja más de tus pacientes",
+      "description": "El primer resultado en Google recibe el 28% de los clics. El segundo, solo el 15%. No se trata de tener un sitio web — se trata de aparecer primero.",
+      "button": "Quiero aparecer primero",
+      "badge": "Posicionamiento estratégico"
+    },
+    "ctaSocialProof": {
+      "title": "Clínicas como GastroMedical CR ya triplicaron sus consultas",
+      "description": "Únete a los especialistas que dejaron de depender solo de referidos y ahora reciben pacientes directamente desde Google.",
+      "button": "Quiero los mismos resultados",
+      "stats": [
+        { "value": "+180%", "label": "consultas orgánicas" },
+        { "value": "Top 3", "label": "en Google local" },
+        { "value": "4 meses", "label": "para ver resultados" }
       ]
+    },
+    "ctaAuthority": {
+      "title": "Estrategias respaldadas por datos, no por suposiciones",
+      "description": "Utilizamos las mismas metodologías de posicionamiento que aplican las clínicas líderes en turismo médico. Cada decisión está basada en métricas reales.",
+      "button": "Hablar con un especialista",
+      "credentials": ["SEO técnico avanzado", "Analítica de conversión", "Experiencia en sector salud"]
+    },
+    "ctaReciprocity": {
+      "title": "Recibe un análisis gratuito de tu presencia digital",
+      "description": "Sin compromiso, te mostramos exactamente dónde están las oportunidades de mejora y qué está funcionando bien. El diagnóstico es tuyo, decidas o no trabajar con nosotros.",
+      "button": "Solicitar análisis gratuito",
+      "guarantee": "100% gratis · Sin compromiso · Respuesta en 24h"
+    },
+    "ctaCommitment": {
+      "title": "El primer paso es el más importante",
+      "description": "Una conversación de 15 minutos puede cambiar la forma en que los pacientes encuentran tu clínica. Sin presión, sin compromiso — solo claridad sobre el camino a seguir.",
+      "button": "Dar el primer paso",
+      "microcopy": "Solo necesitas responder: ¿qué especialidad ofreces?"
     },
     "footer": {
       "brand": "Yieldge",

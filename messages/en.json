@@ -1403,6 +1403,13 @@
     }
   },
   "presenciaDigital": {
+    "navbar": {
+      "howWeAttract": "How we attract patients",
+      "googlePositioning": "Google positioning",
+      "digitalSystem": "Digital system",
+      "results": "Results",
+      "cta": "Request assessment"
+    },
     "hero": {
       "eyebrow": "DIGITAL PRESENCE · COSTA RICA",
       "title": "Your business is already great. Make Google show it too.",
@@ -1463,9 +1470,10 @@
     },
     "problemSolution": {
       "eyebrow": "THE PROBLEM",
-      "title": "If your website doesn't generate clients, it's not an asset,",
-      "titleEmphasis": "it's a cost.",
-      "intro": "Your business has years of reputation and happy clients, but on Google your competitors show up first and your current site takes forever to load. Sound familiar?",
+      "title": "Does your digital presence reflect the true level of your clinic?",
+      "titleEmphasis": "Opportunities your clinic could be leveraging.",
+      "intro": "An ineffective digital strategy can cause potential patients to choose other options before learning about your expertise.",
+      "cta": "Discover improvement opportunities",
       "problems": [
         "You don't appear on Google when people search",
         "Your site doesn't reflect your company's real quality",
@@ -1500,8 +1508,8 @@
       ]
     },
     "midCta": {
-      "title": "Want to know what it's costing your company not to have this today?",
-      "button": "Free assessment on WhatsApp"
+      "title": "Turn your digital presence into a system to attract more patients",
+      "button": "Get assessment via WhatsApp"
     },
     "sectors": {
       "eyebrow": "INDUSTRIES",
@@ -1526,38 +1534,304 @@
       "title": "Frequently Asked Questions",
       "items": [
         {
-          "question": "Is there any cost to message on WhatsApp?",
-          "answer": "No. The first conversation is completely free. Our goal is to understand your situation, answer your questions, and help you determine the best path for your business."
+          "question": "Is the initial assessment free?",
+          "answer": "Yes. We review your digital presence, identify opportunities, and explain which actions could generate the greatest impact for your clinic."
         },
         {
           "question": "What happens after I contact you?",
-          "answer": "First, we'll learn about your business, goals, and current challenges. If we can add value, we'll prepare a personalized proposal with a clear strategy, scope, and investment tailored to your needs."
+          "answer": "We schedule a brief conversation, analyze your situation, and present a clear recommendation with no commitment."
         },
         {
-          "question": "How much does a project cost?",
-          "answer": "It depends on scope and your company's needs. In the free assessment we give you a transparent range with no commitment, so you can evaluate the return before deciding."
-        },
-        {
-          "question": "Do I own the website or is it rented?",
-          "answer": "It's 100% yours. The code, domain, and content belong to you. You decide how to manage it going forward."
+          "question": "How much does a digital solution cost?",
+          "answer": "The cost depends on scope, pages, and required features. Before starting, you'll receive a clear and detailed proposal."
         },
         {
           "question": "What if I already have a website?",
-          "answer": "We start with an audit. In many cases we optimize what exists; sometimes a strategic redesign delivers better ROI. We'll tell you honestly in the assessment."
+          "answer": "We can evaluate your current site and improve only what's necessary: design, content, speed, positioning, or conversion."
         },
         {
-          "question": "Do you only work with clinics?",
-          "answer": "No. We work with clinics, businesses, independent professionals, and organizations looking to strengthen their digital presence and attract more clients."
+          "question": "Does the clinic fully own the website?",
+          "answer": "Yes. The clinic retains ownership of the site, content, domain, and all developed assets."
         },
         {
           "question": "How long does a project take?",
-          "answer": "Most projects are delivered within four to six weeks, with a defined timeline and constant communication throughout."
+          "answer": "The timeline depends on scope. Before starting, we define phases, deliverables, and an estimated launch date."
+        }
+      ],
+      "ctaTitle": "Have another question?",
+      "ctaButton": "Let's chat on WhatsApp"
+    },
+    "clinicsSpecialists": {
+      "eyebrow": "HEALTH & MEDICAL TOURISM",
+      "title": "A digital presence designed to attract more patients",
+      "intro": "A clinic's quality isn't always reflected in its digital presence.",
+      "description": "Before booking an appointment, many patients research the specialist, compare treatments, review testimonials, check locations, and evaluate the trust each option conveys.",
+      "solution": "Yieldge develops a digital presence that allows you to present your services clearly, strengthen the clinic's professional authority, and make it easier for new patients to take the next step.",
+      "features": [
+        "Professional presentation of doctors and specialists",
+        "Specific pages for procedures and treatments",
+        "Integration with WhatsApp, forms, and appointment systems",
+        "Testimonials and trust elements",
+        "Clear information for national and international patients",
+        "Measurement of inquiries and important actions",
+        "Architecture ready for SEO and content growth"
+      ],
+      "cta": "Analyze my clinic's digital presence"
+    },
+    "patientJourney": {
+      "eyebrow": "THE PATIENT JOURNEY",
+      "title": "The patient's decision begins before contacting the clinic",
+      "description": "A potential patient may discover the clinic through a Google search, a recommendation, a social media post, or an ad.",
+      "intro": "However, before reaching out, they usually need to resolve several questions:",
+      "questions": [
+        "Does this specialist treat my condition?",
+        "How is the procedure performed?",
+        "Can I trust this specialist and their clinic?",
+        "Why choose this clinic?",
+        "How easy is it to schedule an appointment?",
+        "Do they serve international patients?"
+      ],
+      "conclusion": "The digital presence must answer these questions strategically and guide the patient from their initial search to requesting an appointment.",
+      "flowTitle": "Patient flow",
+      "flowSteps": [
+        "Google search",
+        "Treatment page",
+        "Specialist validation",
+        "Trust",
+        "Contact",
+        "Appointment"
+      ]
+    },
+    "patientSystem": {
+      "eyebrow": "PATIENT ACQUISITION SYSTEM",
+      "title": "We don't build isolated pages. We build acquisition systems.",
+      "description": "A website alone doesn't guarantee new patients. To generate business opportunities, it must be part of a system that connects positioning, content, trust, user experience, and contact channels.",
+      "intro": "Yieldge structures the digital presence around five components:",
+      "components": [
+        {
+          "title": "Discovery",
+          "description": "The clinic appears when someone searches for a specialist, procedure, treatment, or answer related to their condition."
         },
         {
-          "question": "Why message on WhatsApp instead of filling out a form?",
-          "answer": "Because it's the fastest way to get guidance. In just a few minutes we can understand your situation, answer your questions, and honestly tell you if we're the right team."
+          "title": "Education",
+          "description": "The site offers clear information that helps the patient understand their options and reduces uncertainty before contact."
+        },
+        {
+          "title": "Authority",
+          "description": "The specialist's experience, services, technology, testimonials, and visual quality strengthen the clinic's credibility."
+        },
+        {
+          "title": "Conversion",
+          "description": "The patient finds direct routes to message on WhatsApp, call, request information, or book an appointment."
+        },
+        {
+          "title": "Measurement and optimization",
+          "description": "Pages visited, traffic sources, and actions taken are analyzed to identify which services generate the most interest."
         }
+      ],
+      "highlight": "The goal isn't just to receive more visits, but to convert the right traffic into inquiries and real opportunities for the clinic."
+    },
+    "medicalSeo": {
+      "eyebrow": "GOOGLE POSITIONING",
+      "title": "When someone searches for a treatment on Google, make sure they find your clinic",
+      "description": "People who don't yet know your clinic search every day for symptoms, treatments, and specialists. Your digital presence should turn those searches into new appointment opportunities.",
+      "searchExamplesTitle": "Real search examples",
+      "searchExamples": [
+        "Gastroenterologist in Costa Rica",
+        "Dentist in Santa Teresa",
+        "Colonoscopy in San José",
+        "Treatment for reflux",
+        "Dental implants for international patients"
+      ],
+      "conclusion": "Appearing in the right search can be the first step toward a new appointment."
+    },
+    "rightTraffic": {
+      "eyebrow": "TRAFFIC STRATEGY",
+      "title": "More traffic doesn't always mean more patients",
+      "description": "A clinic doesn't need thousands of visitors without clear intent. It needs to attract people who are actively searching for its services and have a real chance of becoming patients.",
+      "intro": "That's why the traffic strategy must focus on three levels:",
+      "levels": [
+        {
+          "title": "Informational traffic",
+          "description": "People seeking to understand symptoms, conditions, treatments, or procedures. This content allows the clinic to be discovered during the early stages of research."
+        },
+        {
+          "title": "Commercial traffic",
+          "description": "People comparing specialists, clinics, prices, locations, or treatment alternatives. These searches have intent closer to a decision."
+        },
+        {
+          "title": "Transactional traffic",
+          "description": "People looking to book, contact, quote, or start treatment. These are the highest-value opportunities and require clear, fast, conversion-oriented pages."
+        }
+      ],
+      "highlight": "An effective strategy combines educational content to generate visibility with commercial pages designed to convert that attention into inquiries."
+    },
+    "seoVsSocial": {
+      "eyebrow": "DIGITAL CHANNELS",
+      "title": "Social media generates attention. Google captures intent.",
+      "description": "Social media allows you to strengthen your brand, show results, share content, and maintain presence in front of an audience.",
+      "intro": "SEO serves a different function: it connects the clinic with people who are already looking for a solution.",
+      "longevity": "A social media post can quickly lose visibility. An optimized page can continue attracting potential patients as long as it maintains relevance and good positioning.",
+      "comparisonTitle": "Comparison",
+      "social": {
+        "title": "Social media",
+        "points": [
+          "Generate recognition",
+          "Maintain contact with the audience",
+          "Depend on frequent posts",
+          "Interrupt the user while consuming content"
+        ]
+      },
+      "seo": {
+        "title": "SEO and website",
+        "points": [
+          "Capture active searches",
+          "Answer specific questions",
+          "Build long-term visibility",
+          "Receive users with a defined need"
+        ]
+      },
+      "conclusion": "The best strategy doesn't pit both channels against each other. It uses social media to generate interest and the website to transform that interest into trust, positioning, and contact."
+    },
+    "mobileExperience": {
+      "eyebrow": "MOBILE EXPERIENCE",
+      "title": "If your site doesn't work well on mobile, the patient keeps searching",
+      "description": "A slow or confusing experience reduces trust and may cause the patient to choose another clinic.",
+      "capabilities": [
+        "Understand the service quickly",
+        "Validate the specialist",
+        "Contact via WhatsApp",
+        "Request an appointment"
+      ],
+      "highlight": "Less friction. More trust. More appointment opportunities."
+    },
+    "medicalTourism": {
+      "eyebrow": "MEDICAL TOURISM",
+      "title": "Turn your clinic into a trusted option for international patients",
+      "description": "International patients need clarity, trust, and a digital experience that helps them make a decision before traveling.",
+      "featuresTitle": "Key information to build trust from the first contact",
+      "features": [
+        "Presentation of the specialist and credentials",
+        "Detailed explanation of procedures",
+        "Process for international patients",
+        "Content in English and Spanish",
+        "Testimonials from other patients",
+        "Information about recovery and follow-up"
+      ],
+      "highlight": "For an international patient, your website can be the difference between a lost consultation and a new treatment opportunity."
+    },
+    "treatmentPages": {
+      "eyebrow": "SERVICE PAGES",
+      "title": "Each service needs its own positioning opportunity",
+      "description": "Placing all services on a single page limits the amount of available information and makes it harder for Google to understand the clinic's specialty.",
+      "intro": "Individual pages allow each treatment to be developed around the patient's real questions and needs.",
+      "structureTitle": "Suggested structure for each page",
+      "structure": [
+        "What the procedure is",
+        "Who it may be suitable for",
+        "Main benefits",
+        "How it's performed",
+        "Required preparation",
+        "Recovery process",
+        "Frequently asked questions",
+        "Specialist's experience",
+        "Call to book or request information"
+      ],
+      "highlight": "A specific page can rank for a specific search, educate the patient, and lead them directly to contact."
+    },
+    "medicalContent": {
+      "eyebrow": "GOOGLE VISIBILITY",
+      "title": "When someone searches Google for a treatment, make sure they find your clinic",
+      "description": "Every day, people who don't yet know your clinic search Google for symptoms, treatments, procedures, and specialists. A well-structured content strategy helps your clinic appear in those searches, build trust, and generate new appointment opportunities.",
+      "subtitle": "Your clinic can rank for searches related to:",
+      "topics": [
+        "Symptoms and warning signs",
+        "Available treatments",
+        "Medical procedures",
+        "Comparing options",
+        "Procedure preparation",
+        "Recovery and aftercare",
+        "Prevention",
+        "Costs and factors to consider",
+        "Care for international patients"
+      ],
+      "conclusion": "More visibility on Google can turn into more inquiries, more appointments, and greater growth for your clinic."
+    },
+    "growthMeasurement": {
+      "eyebrow": "ANALYTICS & MEASUREMENT",
+      "title": "Turn patient behavior into business intelligence",
+      "description": "The digital presence must allow you to identify what generates results.",
+      "intro": "Through analytics tools, actions can be measured such as:",
+      "metrics": [
+        "Visits from Google",
+        "Most viewed service pages",
+        "WhatsApp clicks",
+        "Calls from the site",
+        "Completed forms",
+        "Appointment requests",
+        "Countries or cities of origin",
+        "Devices used",
+        "Content that generates the most interest",
+        "Channels that produce the most inquiries"
+      ],
+      "benefit": "These metrics allow you to decide which treatments to promote, which content to develop, and which pages need optimization.",
+      "highlight": "What isn't measured can't be optimized. Yieldge turns the digital presence into an observable and improvable system."
+    },
+    "clinicScalability": {
+      "eyebrow": "SCALABILITY",
+      "title": "A platform ready to grow with your clinic",
+      "description": "Start with the essentials and add new capabilities as your clinic grows.",
+      "capabilities": [
+        "Specialists and locations",
+        "Treatments and medical blog",
+        "Bilingual content",
+        "Forms and bookings",
+        "Online payments",
+        "Automated follow-up",
+        "CRM integration",
+        "Patient portal and AI"
+      ],
+      "conclusion": "A digital foundation to attract, serve, and follow up with more patients."
+    },
+    "specializedCta": {
+      "title": "Your next patients are already searching for you on Google. What do they find when they reach your clinic?",
+      "description": "We analyze how they discover your clinic, what information they find before contacting you, and what opportunities can be improved to increase patient acquisition.",
+      "primaryButton": "Request free assessment",
+      "support": "Receive an initial evaluation of your website, positioning, mobile experience, and contact routes."
+    },
+    "ctaScarcity": {
+      "title": "If your competition already has a digital presence, every day that passes takes you further from your patients",
+      "description": "The first Google result gets 28% of clicks. The second, only 15%. It's not about having a website — it's about appearing first.",
+      "button": "I want to appear first",
+      "badge": "Strategic positioning"
+    },
+    "ctaSocialProof": {
+      "title": "Clinics like GastroMedical CR have already tripled their inquiries",
+      "description": "Join the specialists who stopped relying only on referrals and now receive patients directly from Google.",
+      "button": "I want the same results",
+      "stats": [
+        { "value": "+180%", "label": "organic inquiries" },
+        { "value": "Top 3", "label": "in local Google" },
+        { "value": "4 months", "label": "to see results" }
       ]
+    },
+    "ctaAuthority": {
+      "title": "Strategies backed by data, not assumptions",
+      "description": "We use the same positioning methodologies applied by leading medical tourism clinics. Every decision is based on real metrics.",
+      "button": "Talk to a specialist",
+      "credentials": ["Advanced technical SEO", "Conversion analytics", "Healthcare sector experience"]
+    },
+    "ctaReciprocity": {
+      "title": "Receive a free analysis of your digital presence",
+      "description": "No strings attached, we show you exactly where the improvement opportunities are and what's working well. The diagnosis is yours, whether you decide to work with us or not.",
+      "button": "Request free analysis",
+      "guarantee": "100% free · No commitment · Response in 24h"
+    },
+    "ctaCommitment": {
+      "title": "The first step is the most important",
+      "description": "A 15-minute conversation can change how patients find your clinic. No pressure, no commitment — just clarity on the path forward.",
+      "button": "Take the first step",
+      "microcopy": "You just need to answer: what specialty do you offer?"
     },
     "footer": {
       "brand": "Yieldge",
