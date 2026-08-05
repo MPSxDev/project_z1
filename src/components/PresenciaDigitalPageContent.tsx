@@ -1790,47 +1790,6 @@ function ClinicScalabilitySection() {
   );
 }
 
-function SpecializedCtaSection() {
-  const t = useTranslations('presenciaDigital.specializedCta');
-
-  return (
-    <section className="relative py-20 lg:py-28 bg-gradient-to-br from-[#1F5CFF] to-blue-600 overflow-hidden">
-      <div className="absolute inset-0 opacity-30 [background-image:radial-gradient(circle_at_2px_2px,rgba(255,255,255,0.15)_1px,transparent_0)] [background-size:40px_40px]" />
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none" />
-      <Container className="relative z-10">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          variants={staggerContainer}
-          className="max-w-2xl mx-auto text-center"
-        >
-          <motion.h2
-            variants={fadeInUp}
-            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-white mb-6 leading-[1.15]"
-          >
-            {t('title')}
-          </motion.h2>
-          <motion.p variants={fadeInUp} className="text-lg text-blue-100 mb-10 leading-relaxed">
-            {t('description')}
-          </motion.p>
-
-          <motion.div variants={fadeInUp} className="mb-6">
-            <WhatsAppCta className="text-lg px-10 py-5 w-full sm:w-auto">
-              <WhatsAppIcon className="w-6 h-6" />
-              {t('primaryButton')}
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </WhatsAppCta>
-          </motion.div>
-
-          <motion.p variants={fadeInUp} className="text-sm text-blue-200/80">
-            {t('support')}
-          </motion.p>
-        </motion.div>
-      </Container>
-    </section>
-  );
-}
 
 // ─── Cialdini CTAs ───────────────────────────────────────────────────────────
 
@@ -2076,7 +2035,6 @@ export default function PresenciaDigitalPageContent() {
           <CtaReciprocity />
         </section>
 
-        <SpecializedCtaSection />
         <ProcessSection />
         <CtaCommitment />
         <FAQSection />
