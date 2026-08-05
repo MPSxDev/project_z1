@@ -156,6 +156,7 @@ function ScrollOnHoverPreview({
   className?: string;
 }) {
   const [isHovering, setIsHovering] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   return (
     <div
@@ -167,11 +168,16 @@ function ScrollOnHoverPreview({
         src={src}
         alt={alt}
         fill
-        sizes="(max-width: 640px) 100vw, 50vw"
-        className="object-cover ease-in-out scale-[1.02]"
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        loading="eager"
+        onLoad={() => setIsLoaded(true)}
+        className={cn(
+          'object-cover ease-in-out scale-[1.02] transition-opacity duration-300',
+          isLoaded ? 'opacity-100' : 'opacity-0'
+        )}
         style={{
           objectPosition: `center ${isHovering ? '100%' : '0%'}`,
-          transitionProperty: 'object-position',
+          transitionProperty: 'object-position, opacity',
           transitionDuration: isHovering ? '5000ms' : '900ms',
         }}
       />
