@@ -541,6 +541,15 @@ function ProblemSolutionSection() {
           </div>
 
           <motion.div variants={fadeInUp}>
+            <div className="relative rounded-2xl overflow-hidden border border-gray-200/80 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.15)] mb-8">
+              <Image
+                src={PRESENCIA_DIGITAL_IMAGES.problemVisual}
+                alt="Problema de presencia digital"
+                width={640}
+                height={480}
+                className="w-full h-auto"
+              />
+            </div>
             <h3 className="text-lg font-semibold text-gray-900 mb-4">{t('solutionsTitle')}</h3>
             <div className="space-y-3">
               {solutions.map((solution) => (
@@ -2005,6 +2014,11 @@ export default function PresenciaDigitalPageContent() {
 
         <CtaScarcity />
 
+        {/* Section: Cómo atraemos pacientes - hidden */}
+        <div className="hidden">
+          <ProblemSolutionSection />
+        </div>
+
         <MidCtaSection />
 
         {/* Section: Sistema digital */}
@@ -2012,6 +2026,9 @@ export default function PresenciaDigitalPageContent() {
           <PatientJourneySection />
           <CtaSocialProof />
           <CtaAuthority />
+          <div className="hidden">
+            <MobileExperienceSection />
+          </div>
         </section>
 
         {/* Section: Posicionamiento en Google */}
@@ -2019,6 +2036,7 @@ export default function PresenciaDigitalPageContent() {
           <MedicalSeoSection />
           <CtaReciprocity />
         </section>
+
         <CtaCommitment />
         <FAQSection />
         <CTASection />
