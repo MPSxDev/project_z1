@@ -2005,11 +2005,6 @@ export default function PresenciaDigitalPageContent() {
 
         <CtaScarcity />
 
-        {/* Section: Cómo atraemos pacientes */}
-        <section id="como-atraemos-pacientes">
-          <ProblemSolutionSection />
-        </section>
-
         <MidCtaSection />
 
         {/* Section: Sistema digital */}
