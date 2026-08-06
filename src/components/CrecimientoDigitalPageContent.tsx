@@ -2534,11 +2534,6 @@ export default function CrecimientoDigitalPageContent() {
         <SocialProofSection />
         <ValuePropositionSection />
 
-        {/* Section: The Problem */}
-        <section id="como-atraemos-clientes">
-          <ProblemSolutionSection />
-        </section>
-
         <MidCtaSection />
 
         {/* Section: Customer Journey */}
