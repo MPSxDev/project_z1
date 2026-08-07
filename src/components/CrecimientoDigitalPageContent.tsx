@@ -344,7 +344,7 @@ function HeroSection() {
           <p className="text-xs uppercase tracking-[0.2em] text-gray-400 text-center mb-8">
             {tLogos('title')}
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-8 items-center justify-items-center max-w-4xl mx-auto">
             {CRECIMIENTO_DIGITAL_LOGOS.map((company) => (
               <div
                 key={company.name}
@@ -1868,50 +1868,6 @@ function CtaSocialProof() {
               ))}
             </div>
           </div>
-        </motion.div>
-      </Container>
-    </section>
-  );
-}
-
-// Authority CTA - Establishes expertise and credibility
-function CtaAuthority() {
-  const t = useTranslations('crecimientoDigital.ctaAuthority');
-  const credentials = t.raw('credentials') as string[];
-
-  return (
-    <section className="relative py-16 sm:py-20 bg-gray-900 overflow-hidden">
-      <div className="absolute inset-0 opacity-30 [background-image:radial-gradient(circle_at_2px_2px,rgba(31,92,255,0.2)_1px,transparent_0)] [background-size:40px_40px]" />
-      <Container className="relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="max-w-3xl mx-auto text-center"
-        >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-[-0.02em] text-white mb-4 leading-[1.15]">
-            {t('title')}
-          </h2>
-          <p className="text-lg text-gray-300 mb-6">
-            {t('description')}
-          </p>
-          <div className="flex flex-wrap justify-center gap-3 mb-8">
-            {credentials.map((credential) => (
-              <span
-                key={credential}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white text-sm border border-white/10"
-              >
-                <Shield className="w-4 h-4 text-blue-400" />
-                {credential}
-              </span>
-            ))}
-          </div>
-          <WhatsAppCta>
-            <WhatsAppIcon className="w-5 h-5" />
-            {t('button')}
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </WhatsAppCta>
         </motion.div>
       </Container>
     </section>

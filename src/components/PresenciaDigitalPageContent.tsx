@@ -303,11 +303,7 @@ function HeroSection() {
             </motion.div>
           </div>
 
-          <motion.div variants={fadeInUp} className="relative">
-            {/* Mobile: Notification badge above image */}
-            <div className="flex justify-center mb-3 sm:hidden">
-              <HeroNotificationBadge />
-            </div>
+          <motion.div variants={fadeInUp} className="relative hidden lg:block">
             <div className="relative rounded-2xl overflow-hidden border border-gray-200/80 shadow-[0_20px_60px_-15px_rgba(31,92,255,0.25)] bg-white">
               <Image
                 src={PRESENCIA_DIGITAL_IMAGES.heroMockup}
@@ -317,20 +313,9 @@ function HeroSection() {
                 className="w-full h-auto"
                 priority
               />
-              {/* Overlays only visible on desktop */}
-              <div className="hidden sm:block">
-                <HeroMockupOverlays />
-              </div>
+              <HeroMockupOverlays />
             </div>
-            {/* Mobile: Result badge and Google badge below image */}
-            <div className="flex flex-col items-center gap-2 mt-3 sm:hidden">
-              <HeroResultBadge inline />
-              <HeroGoogleBadge />
-            </div>
-            {/* Desktop: Result badge with absolute positioning */}
-            <div className="hidden sm:block">
-              <HeroResultBadge />
-            </div>
+            <HeroResultBadge />
           </motion.div>
         </motion.div>
 
@@ -344,7 +329,7 @@ function HeroSection() {
           <p className="text-xs uppercase tracking-[0.2em] text-gray-400 text-center mb-8">
             {tLogos('title')}
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-8 items-center justify-items-center max-w-4xl mx-auto">
             {PRESENCIA_DIGITAL_LOGOS.map((company) => (
               <div
                 key={company.name}
@@ -1883,50 +1868,6 @@ function CtaSocialProof() {
   );
 }
 
-// Authority CTA - Establishes expertise and credibility
-function CtaAuthority() {
-  const t = useTranslations('presenciaDigital.ctaAuthority');
-  const credentials = t.raw('credentials') as string[];
-
-  return (
-    <section className="relative py-16 sm:py-20 bg-gray-900 overflow-hidden">
-      <div className="absolute inset-0 opacity-30 [background-image:radial-gradient(circle_at_2px_2px,rgba(31,92,255,0.2)_1px,transparent_0)] [background-size:40px_40px]" />
-      <Container className="relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="max-w-3xl mx-auto text-center"
-        >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-[-0.02em] text-white mb-4 leading-[1.15]">
-            {t('title')}
-          </h2>
-          <p className="text-lg text-gray-300 mb-6">
-            {t('description')}
-          </p>
-          <div className="flex flex-wrap justify-center gap-3 mb-8">
-            {credentials.map((credential) => (
-              <span
-                key={credential}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white text-sm border border-white/10"
-              >
-                <Shield className="w-4 h-4 text-blue-400" />
-                {credential}
-              </span>
-            ))}
-          </div>
-          <WhatsAppCta>
-            <WhatsAppIcon className="w-5 h-5" />
-            {t('button')}
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </WhatsAppCta>
-        </motion.div>
-      </Container>
-    </section>
-  );
-}
-
 // Reciprocity CTA - Offers value first
 function CtaReciprocity() {
   const t = useTranslations('presenciaDigital.ctaReciprocity');
@@ -2025,7 +1966,6 @@ export default function PresenciaDigitalPageContent() {
         <section id="sistema-digital">
           <PatientJourneySection />
           <CtaSocialProof />
-          <CtaAuthority />
           <div className="hidden">
             <MobileExperienceSection />
           </div>
