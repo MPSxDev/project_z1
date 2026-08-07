@@ -432,11 +432,11 @@ function SocialProofSection() {
             </div>
           </motion.blockquote>
 
-          {/* Case study */}
+          {/* Case study - hidden on mobile */}
           {caseStudies[0] ? (
             <motion.div
               variants={fadeInUp}
-              className="group lg:col-span-3 flex flex-col bg-white rounded-2xl border border-gray-200/60 overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:border-blue-200/80 hover:shadow-[0_8px_30px_-8px_rgba(31,92,255,0.15)] transition-all duration-300"
+              className="group lg:col-span-3 hidden lg:flex flex-col bg-white rounded-2xl border border-gray-200/60 overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.04)] hover:border-blue-200/80 hover:shadow-[0_8px_30px_-8px_rgba(31,92,255,0.15)] transition-all duration-300"
             >
               <ScrollOnHoverPreview
                 src={caseStudyImages[0]}
