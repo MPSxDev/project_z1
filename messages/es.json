@@ -1443,10 +1443,10 @@
     },
     "socialProof": {
       "stats": [
-        { "value": "15+", "label": "Proyectos entregados" },
-        { "value": "5", "label": "Sectores atendidos" },
-        { "value": "<1h", "label": "Tiempo de respuesta" },
-        { "value": "4-6", "label": "Semanas promedio" }
+        { "value": "15+ años", "label": "Experiencia en tecnología" },
+        { "value": "Enfoque especializado", "label": "Clínicas y especialistas médicos" },
+        { "value": "Más visibilidad", "label": "SEO, contenido y presencia digital" },
+        { "value": "4–6 semanas", "label": "Implementación promedio" }
       ],
       "testimonial": {
         "quote": "Antes casi todo llegaba por referidos. Hoy hay semanas en que la mitad de las consultas vienen del sitio — y por fin se ve como la clínica que somos.",
@@ -1555,6 +1555,10 @@
         {
           "question": "¿Cuánto tarda un proyecto?",
           "answer": "El tiempo depende del alcance. Antes de comenzar, definimos las etapas, los entregables y una fecha estimada de publicación."
+        },
+        {
+          "question": "¿Qué es SEO?",
+          "answer": "SEO (Search Engine Optimization) es el conjunto de técnicas que ayudan a que su clínica aparezca en los primeros resultados de Google cuando pacientes buscan servicios relacionados. Incluye optimización de contenido, velocidad del sitio, estructura técnica y construcción de autoridad online."
         }
       ],
       "ctaTitle": "¿Tiene otra pregunta?",
@@ -1882,10 +1886,10 @@
     },
     "socialProof": {
       "stats": [
-        { "value": "15+", "label": "Proyectos entregados" },
-        { "value": "6+", "label": "Industrias atendidas" },
-        { "value": "<1h", "label": "Tiempo de respuesta" },
-        { "value": "4-6", "label": "Semanas promedio" }
+        { "value": "15+ años", "label": "Experiencia en tecnología" },
+        { "value": "Experiencia multisectorial", "label": "Soluciones para empresas de diferentes industrias" },
+        { "value": "Soluciones a la medida", "label": "Estrategias adaptadas a cada empresa" },
+        { "value": "4–6 semanas", "label": "Tiempo promedio de implementación" }
       ],
       "testimonial": {
         "quote": "Antes casi todo llegaba por referidos. Hoy hay semanas en que la mitad de las consultas vienen del sitio — y por fin se ve como la empresa que somos.",
