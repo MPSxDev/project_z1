@@ -1897,43 +1897,6 @@ function CtaReciprocity() {
   );
 }
 
-// Commitment CTA - Small first step
-function CtaCommitment() {
-  const t = useTranslations('presenciaDigital.ctaCommitment');
-
-  return (
-    <section className="relative py-16 sm:py-20 bg-white overflow-hidden">
-      <Container className="relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="max-w-2xl mx-auto text-center"
-        >
-          <div className="w-16 h-16 rounded-2xl bg-[#1F5CFF]/10 flex items-center justify-center mx-auto mb-6">
-            <MessageCircle className="w-8 h-8 text-[#1F5CFF]" />
-          </div>
-          <h2 className="text-2xl sm:text-3xl font-semibold tracking-[-0.02em] text-gray-900 mb-4 leading-[1.15]">
-            {t('title')}
-          </h2>
-          <p className="text-lg text-gray-600 mb-8">
-            {t('description')}
-          </p>
-          <WhatsAppCta>
-            <WhatsAppIcon className="w-5 h-5" />
-            {t('button')}
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </WhatsAppCta>
-          <p className="mt-4 text-sm text-gray-500">
-            {t('microcopy')}
-          </p>
-        </motion.div>
-      </Container>
-    </section>
-  );
-}
-
 export default function PresenciaDigitalPageContent() {
   return (
     <>
@@ -1971,7 +1934,6 @@ export default function PresenciaDigitalPageContent() {
           <CtaReciprocity />
         </section>
 
-        <CtaCommitment />
         <FAQSection />
         <CTASection />
       </main>
