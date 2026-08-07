@@ -299,7 +299,6 @@ function HeroSection() {
                 {t('cta')}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </WhatsAppCta>
-              <p className="text-sm text-gray-500">{t('microcopy')}</p>
             </motion.div>
           </div>
 
@@ -1800,14 +1799,9 @@ function CtaScarcity() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-[-0.02em] text-white mb-4 leading-[1.15]">
             {t('title')}
           </h2>
-          <p className="text-lg text-white/90 mb-8">
+          <p className="text-lg text-white/90">
             {t('description')}
           </p>
-          <WhatsAppCta>
-            <WhatsAppIcon className="w-5 h-5" />
-            {t('button')}
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </WhatsAppCta>
         </motion.div>
       </Container>
     </section>
