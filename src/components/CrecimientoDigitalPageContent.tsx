@@ -2430,7 +2430,6 @@ export default function CrecimientoDigitalPageContent() {
       <HeroSection />
       <main id="main-content">
         <SocialProofSection />
-        <ValuePropositionSection />
 
         <MidCtaSection />
 
