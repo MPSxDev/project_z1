@@ -303,11 +303,7 @@ function HeroSection() {
             </motion.div>
           </div>
 
-          <motion.div variants={fadeInUp} className="relative">
-            {/* Mobile: Notification badge above image */}
-            <div className="flex justify-center mb-3 sm:hidden">
-              <HeroNotificationBadge />
-            </div>
+          <motion.div variants={fadeInUp} className="relative hidden lg:block">
             <div className="relative rounded-2xl overflow-hidden border border-gray-200/80 shadow-[0_20px_60px_-15px_rgba(31,92,255,0.25)] bg-white">
               <Image
                 src={CRECIMIENTO_DIGITAL_IMAGES.heroMockup}
@@ -317,20 +313,9 @@ function HeroSection() {
                 className="w-full h-auto"
                 priority
               />
-              {/* Overlays only visible on desktop */}
-              <div className="hidden sm:block">
-                <HeroMockupOverlays />
-              </div>
+              <HeroMockupOverlays />
             </div>
-            {/* Mobile: Result badge and Google badge below image */}
-            <div className="flex flex-col items-center gap-2 mt-3 sm:hidden">
-              <HeroResultBadge inline />
-              <HeroGoogleBadge />
-            </div>
-            {/* Desktop: Result badge with absolute positioning */}
-            <div className="hidden sm:block">
-              <HeroResultBadge />
-            </div>
+            <HeroResultBadge />
           </motion.div>
         </motion.div>
 
