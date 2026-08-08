@@ -2163,7 +2163,7 @@ function DesignConversionSection() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={staggerContainer}
-          className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5"
+          className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5"
         >
           {principles.map((principle) => (
             <motion.div

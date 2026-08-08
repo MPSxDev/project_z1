@@ -1855,11 +1855,11 @@
     },
     "hero": {
       "eyebrow": "CRECIMIENTO DIGITAL · COSTA RICA",
-      "title": "Su empresa ya tiene experiencia. Hagamos que más clientes puedan encontrarla.",
-      "description": "Diseñamos sitios web y estrategias digitales que ayudan a las empresas a generar confianza, aparecer en Google y convertir más visitas en consultas, cotizaciones y oportunidades comerciales.",
+      "title": "Convierta su presencia digital en más clientes y más ventas",
+      "description": "Ayudamos a empresas a ser encontradas en Google, generar confianza y convertir visitas en consultas, reservaciones, cotizaciones y nuevas oportunidades de negocio.",
       "cta": "Solicitar diagnóstico gratuito",
       "secondaryCta": "Conocer cómo trabajamos",
-      "microcopy": "Analizamos su presencia digital y le mostramos oportunidades concretas de mejora. Sin compromiso.",
+      "microcopy": "Descubra qué puede mejorar para atraer más clientes.",
       "overlays": {
         "chart": {
           "title": "Oportunidades",
@@ -1963,57 +1963,55 @@
       "button": "Solicitar diagnóstico por WhatsApp"
     },
     "customerJourney": {
-      "eyebrow": "EL RECORRIDO DEL CLIENTE",
-      "title": "La decisión del cliente comienza antes de contactarlo",
-      "description": "Un cliente potencial puede descubrir su empresa mediante una búsqueda en Google, una recomendación, una publicación en redes sociales o un anuncio.",
-      "intro": "Sin embargo, antes de comunicarse, normalmente necesita resolver varias preguntas:",
+      "eyebrow": "MÁS VISIBILIDAD. MÁS OPORTUNIDADES.",
+      "title": "Sus próximos clientes ya están buscando. ¿Están encontrando su empresa?",
+      "description": "Antes de comprar, reservar o solicitar una cotización, muchas personas investigan el negocio en internet.",
+      "intro": "Una buena presencia digital debe responder rápidamente:",
       "questions": [
-        "¿Esta empresa ofrece exactamente lo que necesito?",
-        "¿Puedo confiar en su experiencia?",
-        "¿Qué la diferencia de otras opciones?",
-        "¿Ha trabajado con clientes o proyectos similares?",
-        "¿Cómo puedo solicitar información?",
-        "¿Será fácil comunicarme con ellos?"
+        "¿Qué ofrece esta empresa?",
+        "¿Puedo confiar en ella?",
+        "¿Por qué debería elegirla?",
+        "¿Cómo puedo comprar, reservar o contactarla?"
       ],
-      "conclusion": "Su sitio web debe responder estas preguntas y guiar al visitante hacia el siguiente paso.",
+      "conclusion": "Si estas respuestas no están claras, el cliente puede terminar eligiendo otra opción.",
       "cta": "Mejorar el recorrido de mis clientes"
     },
     "sectors": {
-      "eyebrow": "SOLUCIONES PARA EMPRESAS",
-      "title": "Una estrategia adaptada a su modelo de negocio",
-      "description": "Cada industria tiene un proceso de compra diferente. Por eso no utilizamos soluciones genéricas.",
+      "eyebrow": "SOLUCIONES PARA DIFERENTES EMPRESAS",
+      "title": "Diferentes negocios. El mismo objetivo: crecer.",
+      "description": "",
       "items": [
         {
-          "name": "Bienes raíces",
-          "description": "Presente propiedades, proyectos y servicios inmobiliarios de forma profesional. Facilite consultas de compradores nacionales e internacionales."
+          "name": "Real Estate",
+          "description": "Más consultas sobre propiedades y proyectos."
         },
         {
-          "name": "Turismo y hospitalidad",
-          "description": "Muestre alojamientos, experiencias, tours y servicios de una manera que inspire confianza y facilite las reservaciones."
+          "name": "Restaurantes y bares",
+          "description": "Más clientes, reservaciones y visitas."
         },
         {
-          "name": "Construcción y arquitectura",
-          "description": "Presente proyectos, experiencia, capacidades técnicas y casos de éxito para generar nuevas solicitudes de cotización."
+          "name": "Hoteles y turismo",
+          "description": "Más consultas y reservaciones nacionales e internacionales."
         },
         {
-          "name": "Servicios profesionales",
-          "description": "Comunique su experiencia, metodología y propuesta de valor para atraer clientes que buscan conocimiento especializado."
+          "name": "Construcción",
+          "description": "Más solicitudes de cotización y nuevos proyectos."
         },
         {
-          "name": "Comercios y empresas locales",
-          "description": "Ayude a que más personas encuentren su negocio, conozcan sus productos y puedan contactarlo fácilmente."
+          "name": "Comercios",
+          "description": "Más personas descubriendo productos y servicios."
         },
         {
-          "name": "Empresas B2B",
-          "description": "Construya credibilidad, explique soluciones complejas y genere oportunidades comerciales con otras organizaciones."
+          "name": "Empresas de servicios",
+          "description": "Más consultas y oportunidades comerciales."
         }
       ],
       "cta": "Conversar sobre mi empresa"
     },
     "seo": {
       "eyebrow": "POSICIONAMIENTO EN GOOGLE",
-      "title": "Cuando alguien busque su servicio, haga que encuentre su empresa",
-      "description": "Todos los días, personas que aún no conocen su empresa buscan servicios, soluciones y proveedores en Google. Su presencia digital debe convertir esas búsquedas en nuevas oportunidades.",
+      "title": "Esté presente cuando un cliente esté buscando lo que usted vende",
+      "description": "Google permite llegar a personas que ya tienen una necesidad. No buscamos simplemente generar más visitas. Buscamos que más clientes potenciales encuentren su empresa en el momento correcto y tengan una razón clara para contactarla.",
       "searchExamplesTitle": "Ejemplos de búsquedas reales",
       "searchExamples": [
         "Constructora en Costa Rica",
@@ -2030,14 +2028,15 @@
       ]
     },
     "designConversion": {
-      "eyebrow": "DISEÑO Y CONVERSIÓN",
-      "title": "Un diseño que genera confianza en segundos",
-      "description": "La calidad visual ya no es opcional. Su sitio web es la primera impresión de su empresa, y debe proyectar la misma calidad que su servicio.",
+      "eyebrow": "DISEÑADO PARA GENERAR NEGOCIO",
+      "title": "No se trata solamente de tener un sitio web",
+      "description": "Creamos una presencia digital enfocada en ayudar a su empresa a:",
       "principles": [
-        { "title": "Primera impresión", "description": "Los usuarios deciden en 3 segundos si confían en su sitio." },
-        { "title": "Navegación clara", "description": "Encuentran lo que necesitan sin esfuerzo." },
-        { "title": "CTAs visibles", "description": "Cada página guía hacia una acción." },
-        { "title": "Estética profesional", "description": "Diseño que refleja la calidad de su empresa." }
+        { "title": "Atraer más clientes", "description": "Llegar a personas que están buscando lo que usted ofrece." },
+        { "title": "Generar más consultas", "description": "Facilitar WhatsApp, llamadas y solicitudes de información." },
+        { "title": "Conseguir más reservaciones", "description": "Reducir pasos entre el interés y la reserva." },
+        { "title": "Generar más cotizaciones", "description": "Presentar claramente sus servicios y facilitar el contacto." },
+        { "title": "Vender más", "description": "Convertir una mayor parte de las visitas en oportunidades comerciales." }
       ]
     },
     "mobileExperience": {
@@ -2069,24 +2068,21 @@
       "conclusion": "Una base digital para atraer, atender y dar seguimiento a más clientes."
     },
     "analytics": {
-      "eyebrow": "ANALÍTICA Y MEDICIÓN",
-      "title": "Convierta el comportamiento del usuario en inteligencia comercial",
-      "description": "Su presencia digital debe permitirle identificar qué genera resultados.",
-      "intro": "Mediante herramientas de analítica se pueden medir acciones como:",
+      "eyebrow": "RESULTADOS MEDIBLES",
+      "title": "Sepa de dónde vienen sus oportunidades",
+      "description": "Medimos las acciones que realmente importan para el negocio:",
+      "intro": "",
       "metrics": [
-        "Visitas desde Google",
-        "Páginas de servicios más consultadas",
         "Clics en WhatsApp",
-        "Llamadas desde el sitio",
-        "Formularios completados",
+        "Formularios enviados",
+        "Reservaciones",
         "Solicitudes de cotización",
-        "Países o ciudades de origen",
-        "Dispositivos utilizados",
-        "Contenido que genera mayor interés",
-        "Canales que producen más consultas"
+        "Llamadas",
+        "Visitas desde Google",
+        "Páginas que generan más interés"
       ],
-      "benefit": "Estas métricas permiten decidir qué servicios promocionar, qué contenidos desarrollar y qué páginas necesitan optimización.",
-      "highlight": "Lo que no se mide no puede optimizarse. Yieldge convierte la presencia digital en un sistema observable y mejorable."
+      "benefit": "El objetivo es identificar qué está generando negocio y mejorar continuamente.",
+      "highlight": "Lo que no se mide no puede optimizarse."
     },
     "results": {
       "eyebrow": "RESULTADOS",
@@ -2100,21 +2096,22 @@
     },
     "diagnosis": {
       "eyebrow": "DIAGNÓSTICO GRATUITO",
-      "title": "Descubra qué está limitando su presencia digital",
-      "description": "Analizamos su situación actual y le mostramos oportunidades específicas para mejorar visibilidad, confianza y conversión.",
+      "title": "Descubra dónde puede estar perdiendo clientes",
+      "description": "Analizamos su presencia digital, Google, sitio web y proceso de contacto para identificar oportunidades concretas para atraer más clientes y generar más ventas.",
       "includes": [
         "Revisión de sitio y SEO",
         "Análisis de competencia",
         "Oportunidades identificadas",
         "Recomendación de acción"
       ],
-      "cta": "Solicitar diagnóstico gratuito"
+      "cta": "Solicitar mi diagnóstico",
+      "microcopy": "Sin compromiso. Primero identificamos las oportunidades."
     },
     "cta": {
       "eyebrow": "EL PRIMER PASO",
-      "title": "Su próximo cliente ya está buscando una solución. Asegúrese de que encuentre su empresa.",
-      "description": "Convierta su presencia digital en una herramienta para generar confianza, atraer oportunidades y respaldar el crecimiento de su negocio.",
-      "highlight": "Conversemos sobre su empresa, sus objetivos y la manera en que actualmente consigue clientes. Le mostraremos qué puede mejorar y cuál sería la estrategia más adecuada para su negocio.",
+      "title": "Su próximo cliente ya está buscando. Haga que encuentre su empresa.",
+      "description": "Fortalezca su presencia digital para generar más consultas, reservaciones, cotizaciones y ventas.",
+      "highlight": "",
       "primaryButton": "Hablar por WhatsApp",
       "secondaryButton": "Solicitar diagnóstico gratuito",
       "trustIndicators": ["Estrategia personalizada", "Sin compromiso"]
