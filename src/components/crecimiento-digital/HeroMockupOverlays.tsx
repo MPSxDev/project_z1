@@ -3,13 +3,13 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { CalendarCheck, Search, TrendingUp } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useCrecimientoT } from '@/components/crecimiento-digital/market-context';
 
 const BAR_HEIGHTS = [28, 42, 68, 100];
 
 function ConsultasChartCard() {
-  const t = useTranslations('crecimientoDigital.hero.overlays.chart');
-  const months = useTranslations('crecimientoDigital.hero.overlays').raw('months') as string[];
+  const t = useCrecimientoT('hero.overlays.chart');
+  const months = useCrecimientoT('hero.overlays').raw('months') as string[];
   const prefersReducedMotion = useReducedMotion();
 
   return (
@@ -50,7 +50,7 @@ function ConsultasChartCard() {
 }
 
 function InquiryNotificationCarousel() {
-  const notifications = useTranslations('crecimientoDigital.hero.overlays').raw(
+  const notifications = useCrecimientoT('hero.overlays').raw(
     'notifications',
   ) as string[];
   const [activeIndex, setActiveIndex] = useState(0);
@@ -100,7 +100,7 @@ function InquiryNotificationCarousel() {
 }
 
 function GoogleRankBadge() {
-  const t = useTranslations('crecimientoDigital.hero.overlays.google');
+  const t = useCrecimientoT('hero.overlays.google');
 
   return (
     <motion.div
@@ -118,7 +118,7 @@ function GoogleRankBadge() {
 }
 
 function ResultBadge() {
-  const t = useTranslations('crecimientoDigital.hero.overlays.result');
+  const t = useCrecimientoT('hero.overlays.result');
 
   return (
     <motion.div
@@ -144,7 +144,7 @@ function ResultBadge() {
 }
 
 export function HeroResultBadge({ inline = false }: { inline?: boolean }) {
-  const t = useTranslations('crecimientoDigital.hero.overlays.result');
+  const t = useCrecimientoT('hero.overlays.result');
 
   if (inline) {
     return (
@@ -172,7 +172,7 @@ export function HeroResultBadge({ inline = false }: { inline?: boolean }) {
 }
 
 export function HeroGoogleBadge() {
-  const t = useTranslations('crecimientoDigital.hero.overlays.google');
+  const t = useCrecimientoT('hero.overlays.google');
 
   return (
     <motion.div
@@ -188,7 +188,7 @@ export function HeroGoogleBadge() {
 }
 
 export function HeroNotificationBadge() {
-  const notifications = useTranslations('crecimientoDigital.hero.overlays').raw(
+  const notifications = useCrecimientoT('hero.overlays').raw(
     'notifications',
   ) as string[];
   const [activeIndex, setActiveIndex] = useState(0);

@@ -78,6 +78,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       },
     },
+    {
+      url: `${baseUrl}/crecimiento-digital`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+      alternates: {
+        languages: {
+          es: `${baseUrl}/crecimiento-digital`,
+          en: `${baseUrl}/en/crecimiento-digital`,
+        },
+      },
+    },
+    {
+      url: `${baseUrl}/crecimiento-digital/cl`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+      alternates: {
+        languages: {
+          es: `${baseUrl}/crecimiento-digital/cl`,
+          en: `${baseUrl}/en/crecimiento-digital/cl`,
+        },
+      },
+    },
   ];
 
   // English versions of main pages
@@ -151,6 +175,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
           es: `${baseUrl}/casos-de-exito`,
           en: `${baseUrl}/en/casos-de-exito`,
+        },
+      },
+    },
+    {
+      url: `${baseUrl}/en/crecimiento-digital`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+      alternates: {
+        languages: {
+          es: `${baseUrl}/crecimiento-digital`,
+          en: `${baseUrl}/en/crecimiento-digital`,
+        },
+      },
+    },
+    {
+      url: `${baseUrl}/en/crecimiento-digital/cl`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+      alternates: {
+        languages: {
+          es: `${baseUrl}/crecimiento-digital/cl`,
+          en: `${baseUrl}/en/crecimiento-digital/cl`,
         },
       },
     },

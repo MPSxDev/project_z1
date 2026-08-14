@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 import {
   ArrowRight,
@@ -44,8 +43,11 @@ import HeroMockupOverlays, {
 import {
   CRECIMIENTO_DIGITAL_IMAGES,
   CRECIMIENTO_DIGITAL_LOGOS,
-  getCrecimientoDigitalWhatsAppUrl,
 } from '@/lib/crecimiento-digital';
+import {
+  useCrecimientoT,
+  useCrecimientoWhatsAppUrl,
+} from '@/components/crecimiento-digital/market-context';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -86,7 +88,7 @@ function WhatsAppCta({
   variant?: 'green' | 'white';
   className?: string;
 }) {
-  const locale = useLocale();
+  const whatsappUrl = useCrecimientoWhatsAppUrl();
   const base =
     'group inline-flex items-center justify-center gap-2.5 px-8 py-4 font-semibold rounded-lg transition-all duration-300 shadow-lg';
   const styles =
@@ -96,7 +98,7 @@ function WhatsAppCta({
 
   return (
     <a
-      href={getCrecimientoDigitalWhatsAppUrl(locale)}
+      href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
       className={cn(base, styles, className)}
@@ -246,8 +248,8 @@ function MeltingText({ text, className }: { text: string; className?: string }) 
 
 // ─── Hero ───────────────────────────────────────────────────────────────────
 function HeroSection() {
-  const t = useTranslations('crecimientoDigital.hero');
-  const tLogos = useTranslations('crecimientoDigital.logos');
+  const t = useCrecimientoT('hero');
+  const tLogos = useCrecimientoT('logos');
 
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-to-b from-[#eff4ff] via-white to-white overflow-hidden">
@@ -369,7 +371,7 @@ const caseStudyImages = [
 ];
 
 function SocialProofSection() {
-  const t = useTranslations('crecimientoDigital.socialProof');
+  const t = useCrecimientoT('socialProof');
   const stats = t.raw('stats') as StatItem[];
   const caseStudies = t.raw('caseStudies') as CaseStudy[];
 
@@ -466,7 +468,7 @@ function SocialProofSection() {
 
 // ─── Problem / Solution ────────────────────────────────────────────────────────
 function ProblemSolutionSection() {
-  const t = useTranslations('crecimientoDigital.problemSolution');
+  const t = useCrecimientoT('problemSolution');
   const problems = t.raw('problems') as string[];
   const solutions = t.raw('solutions') as string[];
 
@@ -554,7 +556,7 @@ interface ProcessStep {
 const processIcons: LucideIcon[] = [Search, PenTool, TrendingUp, BarChart3];
 
 function ProcessSection() {
-  const t = useTranslations('crecimientoDigital.process');
+  const t = useCrecimientoT('process');
   const steps = t.raw('steps') as ProcessStep[];
 
   return (
@@ -613,7 +615,7 @@ interface ResultItem {
 }
 
 function ResultsSection() {
-  const t = useTranslations('crecimientoDigital.results');
+  const t = useCrecimientoT('results');
   const items = t.raw('items') as ResultItem[];
 
   return (
@@ -651,7 +653,7 @@ function ResultsSection() {
 
 // ─── Mid CTA ────────────────────────────────────────────────────────────────
 function MidCtaSection() {
-  const t = useTranslations('crecimientoDigital.midCta');
+  const t = useCrecimientoT('midCta');
 
   return (
     <section className="relative py-16 sm:py-20 bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
@@ -681,7 +683,7 @@ function MidCtaSection() {
 
 // ─── Final CTA ──────────────────────────────────────────────────────────────
 function CTASection() {
-  const t = useTranslations('crecimientoDigital.cta');
+  const t = useCrecimientoT('cta');
   const trustIndicators = t.raw('trustIndicators') as string[];
 
   return (
@@ -811,8 +813,8 @@ function FAQItemComponent({ item, isOpen, onToggle, isFirst }: FAQItemComponentP
 }
 
 function FAQSection() {
-  const t = useTranslations('crecimientoDigital.faq');
-  const locale = useLocale();
+  const t = useCrecimientoT('faq');
+  const whatsappUrl = useCrecimientoWhatsAppUrl();
   const items = t.raw('items') as FAQItem[];
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -903,7 +905,7 @@ function FAQSection() {
             {t('ctaTitle')}
           </p>
           <a
-            href={getCrecimientoDigitalWhatsAppUrl(locale)}
+            href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 px-6 py-3 bg-[#25D366] text-white font-semibold rounded-lg hover:bg-[#20bd5a] hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-[#25D366]/30"
@@ -920,8 +922,7 @@ function FAQSection() {
 // ─── Healthcare Sections ─────────────────────────────────────────────────────
 
 function ClinicsSpecialistsSection() {
-  const t = useTranslations('crecimientoDigital.clinicsSpecialists');
-  const locale = useLocale();
+  const t = useCrecimientoT('clinicsSpecialists');
   const features = t.raw('features') as string[];
 
   return (
@@ -998,7 +999,7 @@ const patientJourneyIcons: LucideIcon[] = [
 ];
 
 function PatientJourneySection() {
-  const t = useTranslations('crecimientoDigital.patientJourney');
+  const t = useCrecimientoT('patientJourney');
   const questions = t.raw('questions') as string[];
 
   return (
@@ -1062,7 +1063,7 @@ interface SystemComponent {
 const systemIcons: LucideIcon[] = [Search, BookOpen, Shield, MessageCircle, LineChart];
 
 function PatientSystemSection() {
-  const t = useTranslations('crecimientoDigital.patientSystem');
+  const t = useCrecimientoT('patientSystem');
   const components = t.raw('components') as SystemComponent[];
 
   return (
@@ -1129,7 +1130,7 @@ function PatientSystemSection() {
 }
 
 function MedicalSeoSection() {
-  const t = useTranslations('crecimientoDigital.medicalSeo');
+  const t = useCrecimientoT('medicalSeo');
   const searchExamples = t.raw('searchExamples') as string[];
 
   return (
@@ -1204,7 +1205,7 @@ interface TrafficLevel {
 const trafficIcons: LucideIcon[] = [Lightbulb, Target, MessageCircle];
 
 function RightTrafficSection() {
-  const t = useTranslations('crecimientoDigital.rightTraffic');
+  const t = useCrecimientoT('rightTraffic');
   const levels = t.raw('levels') as TrafficLevel[];
 
   return (
@@ -1277,7 +1278,7 @@ function RightTrafficSection() {
 }
 
 function SeoVsSocialSection() {
-  const t = useTranslations('crecimientoDigital.seoVsSocial');
+  const t = useCrecimientoT('seoVsSocial');
   const socialPoints = t.raw('social.points') as string[];
   const seoPoints = t.raw('seo.points') as string[];
 
@@ -1375,7 +1376,7 @@ function SeoVsSocialSection() {
 const mobileCapabilityIcons: LucideIcon[] = [Lightbulb, Shield, MessageCircle, Calendar];
 
 function MobileExperienceSection() {
-  const t = useTranslations('crecimientoDigital.mobileExperience');
+  const t = useCrecimientoT('mobileExperience');
   const capabilities = t.raw('capabilities') as string[];
 
   return (
@@ -1440,7 +1441,7 @@ function MobileExperienceSection() {
 }
 
 function MedicalTourismSection() {
-  const t = useTranslations('crecimientoDigital.medicalTourism');
+  const t = useCrecimientoT('medicalTourism');
   const features = t.raw('features') as string[];
 
   return (
@@ -1509,7 +1510,7 @@ function MedicalTourismSection() {
 }
 
 function TreatmentPagesSection() {
-  const t = useTranslations('crecimientoDigital.treatmentPages');
+  const t = useCrecimientoT('treatmentPages');
   const structure = t.raw('structure') as string[];
 
   return (
@@ -1572,7 +1573,7 @@ function TreatmentPagesSection() {
 }
 
 function MedicalContentSection() {
-  const t = useTranslations('crecimientoDigital.medicalContent');
+  const t = useCrecimientoT('medicalContent');
   const topics = t.raw('topics') as string[];
 
   return (
@@ -1643,7 +1644,7 @@ function MedicalContentSection() {
 }
 
 function GrowthMeasurementSection() {
-  const t = useTranslations('crecimientoDigital.growthMeasurement');
+  const t = useCrecimientoT('growthMeasurement');
   const metrics = t.raw('metrics') as string[];
 
   return (
@@ -1704,7 +1705,7 @@ function GrowthMeasurementSection() {
 }
 
 function ClinicScalabilitySection() {
-  const t = useTranslations('crecimientoDigital.clinicScalability');
+  const t = useCrecimientoT('clinicScalability');
   const capabilities = t.raw('capabilities') as string[];
 
   return (
@@ -1770,7 +1771,7 @@ function ClinicScalabilitySection() {
 
 // Scarcity CTA - Creates urgency through limited availability
 function CtaScarcity() {
-  const t = useTranslations('crecimientoDigital.ctaScarcity');
+  const t = useCrecimientoT('ctaScarcity');
 
   return (
     <section className="relative py-16 sm:py-20 bg-gradient-to-r from-amber-500 to-orange-500 overflow-hidden">
@@ -1806,7 +1807,7 @@ interface StatItemSimple {
 }
 
 function CtaSocialProof() {
-  const t = useTranslations('crecimientoDigital.ctaSocialProof');
+  const t = useCrecimientoT('ctaSocialProof');
   const stats = t.raw('stats') as StatItemSimple[];
 
   return (
@@ -1855,7 +1856,7 @@ function CtaSocialProof() {
 
 // Reciprocity CTA - Offers value first
 function CtaReciprocity() {
-  const t = useTranslations('crecimientoDigital.ctaReciprocity');
+  const t = useCrecimientoT('ctaReciprocity');
 
   return (
     <section className="relative py-16 sm:py-20 bg-gradient-to-br from-emerald-500 to-teal-600 overflow-hidden">
@@ -1895,7 +1896,7 @@ interface ValueItem {
 }
 
 function ValuePropositionSection() {
-  const t = useTranslations('crecimientoDigital.valueProposition');
+  const t = useCrecimientoT('valueProposition');
   const items = t.raw('items') as ValueItem[];
 
   return (
@@ -1940,7 +1941,7 @@ const customerJourneyIcons: LucideIcon[] = [
 ];
 
 function CustomerJourneySection() {
-  const t = useTranslations('crecimientoDigital.customerJourney');
+  const t = useCrecimientoT('customerJourney');
   const questions = t.raw('questions') as string[];
 
   return (
@@ -2012,7 +2013,7 @@ const sectorIcons: LucideIcon[] = [
 ];
 
 function SectorsSection() {
-  const t = useTranslations('crecimientoDigital.sectors');
+  const t = useCrecimientoT('sectors');
   const items = t.raw('items') as SectorItem[];
 
   return (
@@ -2063,7 +2064,7 @@ interface SeoStat {
 }
 
 function SEOSection() {
-  const t = useTranslations('crecimientoDigital.seo');
+  const t = useCrecimientoT('seo');
   const searchExamples = t.raw('searchExamples') as string[];
   const stats = t.raw('stats') as SeoStat[];
 
@@ -2146,7 +2147,7 @@ interface DesignPrinciple {
 }
 
 function DesignConversionSection() {
-  const t = useTranslations('crecimientoDigital.designConversion');
+  const t = useCrecimientoT('designConversion');
   const principles = t.raw('principles') as DesignPrinciple[];
 
   return (
@@ -2183,7 +2184,7 @@ function DesignConversionSection() {
 
 // ─── Scalability Section ──────────────────────────────────────────────────────
 function ScalabilitySection() {
-  const t = useTranslations('crecimientoDigital.scalability');
+  const t = useCrecimientoT('scalability');
   const capabilities = t.raw('capabilities') as string[];
 
   return (
@@ -2246,7 +2247,7 @@ function ScalabilitySection() {
 
 // ─── Analytics Section ────────────────────────────────────────────────────────
 function AnalyticsSection() {
-  const t = useTranslations('crecimientoDigital.analytics');
+  const t = useCrecimientoT('analytics');
   const metrics = t.raw('metrics') as string[];
 
   return (
@@ -2308,8 +2309,8 @@ function AnalyticsSection() {
 
 // ─── Diagnosis Section ────────────────────────────────────────────────────────
 function DiagnosisSection() {
-  const t = useTranslations('crecimientoDigital.diagnosis');
-  const locale = useLocale();
+  const t = useCrecimientoT('diagnosis');
+  const whatsappUrl = useCrecimientoWhatsAppUrl();
   const includes = t.raw('includes') as string[];
 
   return (
@@ -2335,7 +2336,7 @@ function DiagnosisSection() {
                 {t('description')}
               </p>
               <a
-                href={getCrecimientoDigitalWhatsAppUrl(locale)}
+                href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2.5 px-8 py-4 font-semibold rounded-lg bg-white text-[#1F5CFF] hover:bg-gray-50 hover:-translate-y-0.5 transition-all duration-300 shadow-lg"
@@ -2365,7 +2366,7 @@ function DiagnosisSection() {
 
 // ─── Updated Mobile Experience Section ────────────────────────────────────────
 function UpdatedMobileExperienceSection() {
-  const t = useTranslations('crecimientoDigital.mobileExperience');
+  const t = useCrecimientoT('mobileExperience');
   const capabilities = t.raw('capabilities') as string[];
 
   return (

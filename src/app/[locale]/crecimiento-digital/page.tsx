@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import CrecimientoDigitalNavbar from '@/components/crecimiento-digital/CrecimientoDigitalNavbar';
+import { CrecimientoDigitalMarketProvider } from '@/components/crecimiento-digital/market-context';
 import CrecimientoDigitalPageContent from '@/components/CrecimientoDigitalPageContent';
 import { BreadcrumbSchema } from '@/components/seo';
 
@@ -95,8 +96,10 @@ export default async function CrecimientoDigitalPage({
       >
         Skip to main content
       </a>
-      <CrecimientoDigitalNavbar />
-      <CrecimientoDigitalPageContent />
+      <CrecimientoDigitalMarketProvider market="cr">
+        <CrecimientoDigitalNavbar />
+        <CrecimientoDigitalPageContent />
+      </CrecimientoDigitalMarketProvider>
     </div>
   );
 }

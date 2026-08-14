@@ -4,9 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect, useCallback, useMemo, memo } from 'react';
 import { Menu, X, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
-import { getCrecimientoDigitalWhatsAppUrl } from '@/lib/crecimiento-digital';
+import { useCrecimientoT, useCrecimientoWhatsAppUrl } from '@/components/crecimiento-digital/market-context';
 
 interface NavItem {
   id: string;
@@ -31,9 +31,9 @@ const CrecimientoDigitalNavbar = memo(function CrecimientoDigitalNavbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState<string>('');
-  const t = useTranslations('crecimientoDigital.navbar');
+  const t = useCrecimientoT('navbar');
   const tCommon = useTranslations('common');
-  const locale = useLocale();
+  const whatsappUrl = useCrecimientoWhatsAppUrl();
 
   const navItems: NavItem[] = useMemo(() => [
     { id: 'como-atraemos-pacientes', label: t('howWeAttract'), href: '#como-atraemos-pacientes' },
@@ -155,7 +155,7 @@ const CrecimientoDigitalNavbar = memo(function CrecimientoDigitalNavbar() {
 
             {/* CTA Button */}
             <a
-              href={getCrecimientoDigitalWhatsAppUrl(locale)}
+              href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 px-5 py-2.5 bg-[#25D366] text-white font-semibold text-sm rounded-lg hover:bg-[#20bd5a] transition-all duration-300 shadow-sm hover:shadow-md"
@@ -242,7 +242,7 @@ const CrecimientoDigitalNavbar = memo(function CrecimientoDigitalNavbar() {
                   className="pt-4"
                 >
                   <a
-                    href={getCrecimientoDigitalWhatsAppUrl(locale)}
+                    href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={closeMobileMenu}
