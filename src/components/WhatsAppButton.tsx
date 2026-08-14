@@ -9,6 +9,22 @@ import {
   PRESENCIA_DIGITAL_WHATSAPP_MESSAGE_EN,
   PRESENCIA_DIGITAL_WHATSAPP_MESSAGE_ES,
 } from '@/lib/presencia-digital';
+import {
+  CRECIMIENTO_DIGITAL_PHONE,
+  CRECIMIENTO_DIGITAL_WHATSAPP_MESSAGE_EN,
+  CRECIMIENTO_DIGITAL_WHATSAPP_MESSAGE_ES,
+} from '@/lib/crecimiento-digital';
+import {
+  CRECIMIENTO_DIGITAL_CL_PHONE,
+  CRECIMIENTO_DIGITAL_CL_WHATSAPP_MESSAGE_EN,
+  CRECIMIENTO_DIGITAL_CL_WHATSAPP_MESSAGE_ES,
+  isCrecimientoDigitalClPath,
+} from '@/lib/crecimiento-digital-cl';
+import {
+  CLINICAS_PHONE,
+  CLINICAS_WHATSAPP_MESSAGE_EN,
+  CLINICAS_WHATSAPP_MESSAGE_ES,
+} from '@/lib/sistema-comercial-clinicas';
 
 // CTA section IDs to detect
 const CTA_SECTION_IDS = ['contact', 'contact-form'];
@@ -63,17 +79,42 @@ export default function WhatsAppButton({ phoneNumber: customPhoneNumber }: Whats
     };
   }, []);
 
-  // Use custom phone for presencia-digital path
+  // Use custom phone for landing pages
+  const isChileLanding = isCrecimientoDigitalClPath(pathname);
+  const isCrecimientoDigital = pathname.includes('/crecimiento-digital');
   const isPresenciaDigital = pathname.includes('/presencia-digital');
-  const phoneNumber = customPhoneNumber || (isPresenciaDigital ? PRESENCIA_DIGITAL_PHONE : DEFAULT_PHONE);
+  const isClinicasLanding = pathname.includes('/sistema-comercial-clinicas');
+  const phoneNumber =
+    customPhoneNumber ||
+    (isChileLanding
+      ? CRECIMIENTO_DIGITAL_CL_PHONE
+      : isCrecimientoDigital
+        ? CRECIMIENTO_DIGITAL_PHONE
+        : isClinicasLanding
+          ? CLINICAS_PHONE
+          : isPresenciaDigital
+            ? PRESENCIA_DIGITAL_PHONE
+            : DEFAULT_PHONE);
 
-  const message = isPresenciaDigital
+  const message = isChileLanding
     ? locale === 'es'
-      ? PRESENCIA_DIGITAL_WHATSAPP_MESSAGE_ES
-      : PRESENCIA_DIGITAL_WHATSAPP_MESSAGE_EN
-    : locale === 'es'
-      ? 'Hola, me interesa obtener información sobre sus servicios.'
-      : 'Hello, I am interested in learning more about your services.';
+      ? CRECIMIENTO_DIGITAL_CL_WHATSAPP_MESSAGE_ES
+      : CRECIMIENTO_DIGITAL_CL_WHATSAPP_MESSAGE_EN
+    : isCrecimientoDigital
+      ? locale === 'es'
+        ? CRECIMIENTO_DIGITAL_WHATSAPP_MESSAGE_ES
+        : CRECIMIENTO_DIGITAL_WHATSAPP_MESSAGE_EN
+      : isClinicasLanding
+        ? locale === 'es'
+          ? CLINICAS_WHATSAPP_MESSAGE_ES
+          : CLINICAS_WHATSAPP_MESSAGE_EN
+        : isPresenciaDigital
+          ? locale === 'es'
+            ? PRESENCIA_DIGITAL_WHATSAPP_MESSAGE_ES
+            : PRESENCIA_DIGITAL_WHATSAPP_MESSAGE_EN
+          : locale === 'es'
+            ? 'Hola, me interesa obtener información sobre sus servicios.'
+            : 'Hello, I am interested in learning more about your services.';
 
   const ariaLabel =
     locale === 'es'
