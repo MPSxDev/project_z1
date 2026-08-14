@@ -71,63 +71,99 @@
       "shortDescription": "Software sin errores, entregas más rápidas.",
       "subtitle": "Entrega más rápido con confianza a través de aseguramiento de calidad automatizado integrado en tu pipeline de entrega.",
       "description": "Aseguramos que tu software funcione perfectamente antes de llegar a los usuarios.",
-      "features": ["Pruebas automatizadas E2E", "Pruebas de rendimiento", "Integración CI/CD"]
+      "features": [
+        "Pruebas automatizadas E2E",
+        "Pruebas de rendimiento",
+        "Integración CI/CD"
+      ]
     },
     "security": {
       "title": "Ciberseguridad",
       "shortDescription": "Protege sistemas, datos y reputación.",
       "subtitle": "Protege tus sistemas, datos y reputación con ciberseguridad de nivel empresarial.",
       "description": "Identificamos vulnerabilidades y prevenimos ataques en tu infraestructura.",
-      "features": ["Evaluaciones de seguridad", "Detección de amenazas", "Cumplimiento SOC/ISO"]
+      "features": [
+        "Evaluaciones de seguridad",
+        "Detección de amenazas",
+        "Cumplimiento SOC/ISO"
+      ]
     },
     "consulting": {
       "title": "Consultoría Tech",
       "shortDescription": "Decisiones tecnológicas estratégicas.",
       "subtitle": "Convierte las decisiones tecnológicas en ventajas comerciales a largo plazo.",
       "description": "Diseñamos arquitecturas escalables alineadas con tus objetivos.",
-      "features": ["Planificación estratégica", "Transformación digital", "Diseño de arquitectura"]
+      "features": [
+        "Planificación estratégica",
+        "Transformación digital",
+        "Diseño de arquitectura"
+      ]
     },
     "mobileWeb": {
       "title": "Apps Móviles y Web",
       "shortDescription": "Experiencias digitales excepcionales.",
       "subtitle": "Desarrollo de aplicaciones móviles y web personalizadas.",
       "description": "Aplicaciones móviles y web de alto rendimiento.",
-      "features": ["Apps nativas/híbridas", "Desarrollo web", "UX/UI optimizado"]
+      "features": [
+        "Apps nativas/híbridas",
+        "Desarrollo web",
+        "UX/UI optimizado"
+      ]
     },
     "staffAugmentation": {
       "title": "Staff Augmentation",
       "shortDescription": "Talento técnico on-demand.",
       "subtitle": "Accede a talento técnico de primer nivel.",
       "description": "Escala tu equipo con expertos certificados.",
-      "features": ["Talento certificado", "Integración rápida", "Modelo flexible"]
+      "features": [
+        "Talento certificado",
+        "Integración rápida",
+        "Modelo flexible"
+      ]
     },
     "analytics": {
       "title": "Analytics e IA",
       "shortDescription": "Datos que impulsan decisiones.",
       "subtitle": "Insights basados en datos para decisiones informadas.",
       "description": "Transforma datos en ventajas competitivas.",
-      "features": ["Business Intelligence", "Machine Learning", "Dashboards en tiempo real"]
+      "features": [
+        "Business Intelligence",
+        "Machine Learning",
+        "Dashboards en tiempo real"
+      ]
     },
     "cloud": {
       "title": "Cloud Solutions",
       "shortDescription": "Infraestructura escalable y segura.",
       "subtitle": "Infraestructura en la nube escalable y servicios de migración.",
       "description": "Migración y optimización en AWS, Azure, GCP.",
-      "features": ["Migración cloud", "Infraestructura IaC", "DevOps/SRE"]
+      "features": [
+        "Migración cloud",
+        "Infraestructura IaC",
+        "DevOps/SRE"
+      ]
     },
     "offshore": {
       "title": "Nearshore Dev",
       "shortDescription": "Equipos dedicados, misma zona horaria.",
       "subtitle": "Equipos de desarrollo nearshore que entregan calidad.",
       "description": "Desarrollo de software con equipos en tu zona horaria.",
-      "features": ["Equipos dedicados", "Zona horaria compatible", "Comunicación fluida"]
+      "features": [
+        "Equipos dedicados",
+        "Zona horaria compatible",
+        "Comunicación fluida"
+      ]
     },
     "tailoredSoftware": {
       "title": "Software a Medida",
       "shortDescription": "Soluciones únicas para tu negocio.",
       "subtitle": "Software personalizado para necesidades únicas.",
       "description": "Desarrollo end-to-end adaptado a tu operación.",
-      "features": ["Desarrollo custom", "Integración sistemas", "Soporte continuo"]
+      "features": [
+        "Desarrollo custom",
+        "Integración sistemas",
+        "Soporte continuo"
+      ]
     }
   },
   "whyChooseUs": {
@@ -177,22 +213,38 @@
       "discovery": {
         "title": "Descubrimiento",
         "description": "Analizamos tus necesidades, objetivos y desafíos para crear una estrategia personalizada.",
-        "deliverables": ["Análisis de requisitos", "Evaluación técnica", "Hoja de ruta del proyecto"]
+        "deliverables": [
+          "Análisis de requisitos",
+          "Evaluación técnica",
+          "Hoja de ruta del proyecto"
+        ]
       },
       "planning": {
         "title": "Planificación",
         "description": "Diseñamos la arquitectura y planificamos la implementación con plazos claros.",
-        "deliverables": ["Diseño de arquitectura", "Plan de proyecto", "Estimaciones de recursos"]
+        "deliverables": [
+          "Diseño de arquitectura",
+          "Plan de proyecto",
+          "Estimaciones de recursos"
+        ]
       },
       "development": {
         "title": "Desarrollo",
         "description": "Construimos tu solución usando metodologías ágiles y mejores prácticas.",
-        "deliverables": ["Sprints de desarrollo", "Revisiones de código", "Demostraciones incrementales"]
+        "deliverables": [
+          "Sprints de desarrollo",
+          "Revisiones de código",
+          "Demostraciones incrementales"
+        ]
       },
       "delivery": {
         "title": "Entrega",
         "description": "Desplegamos, probamos y entregamos tu solución con soporte continuo.",
-        "deliverables": ["Despliegue", "Pruebas de aceptación", "Documentación"]
+        "deliverables": [
+          "Despliegue",
+          "Pruebas de aceptación",
+          "Documentación"
+        ]
       }
     }
   },
@@ -238,7 +290,11 @@
     "sectionLabel": "¿Listo para Comenzar?",
     "title": "Transforma tu Negocio Hoy",
     "description": "Agenda una consulta gratuita con nuestro equipo de expertos y descubre cómo podemos ayudarte a alcanzar tus objetivos tecnológicos.",
-    "benefits": ["Consulta gratuita sin compromiso", "Soluciones personalizadas para tu negocio", "Equipo de expertos dedicado"],
+    "benefits": [
+      "Consulta gratuita sin compromiso",
+      "Soluciones personalizadas para tu negocio",
+      "Equipo de expertos dedicado"
+    ],
     "ctaText": "Agenda tu Consulta",
     "ctaSubtext": "Sin compromiso - Solo posibilidades",
     "businessInquiries": "Para consultas comerciales:",
@@ -1142,55 +1198,100 @@
         "title": "QA y Automatización de Pruebas",
         "subtitle": "Entrega más rápido con confianza a través de aseguramiento de calidad automatizado integrado en tu pipeline de entrega.",
         "description": "Aseguramos que tu software funcione perfectamente antes de llegar a los usuarios. Nuestros servicios de QA y automatización de pruebas reducen errores, mejoran la estabilidad y protegen tus plazos de entrega sin ralentizar el desarrollo.",
-        "features": ["Suites de pruebas automatizadas (unitarias, integración, E2E)", "Pruebas manuales y exploratorias", "Pruebas de rendimiento y carga", "Integración de pruebas CI/CD"]
+        "features": [
+          "Suites de pruebas automatizadas (unitarias, integración, E2E)",
+          "Pruebas manuales y exploratorias",
+          "Pruebas de rendimiento y carga",
+          "Integración de pruebas CI/CD"
+        ]
       },
       "security": {
         "title": "Servicios de Seguridad",
         "subtitle": "Protege tus sistemas, datos y reputación con ciberseguridad de nivel empresarial.",
         "description": "Ayudamos a las organizaciones a identificar vulnerabilidades, prevenir ataques y cumplir con normativas en un panorama digital cada vez más hostil. La seguridad se integra en cada capa antes de que las amenazas se conviertan en incidentes.",
-        "features": ["Evaluaciones de ciberseguridad y hardening", "Detección y prevención de amenazas", "Auditorías de seguridad y análisis de riesgos", "Soporte de cumplimiento (SOC, ISO, mejores prácticas)"]
+        "features": [
+          "Evaluaciones de ciberseguridad y hardening",
+          "Detección y prevención de amenazas",
+          "Auditorías de seguridad y análisis de riesgos",
+          "Soporte de cumplimiento (SOC, ISO, mejores prácticas)"
+        ]
       },
       "consulting": {
         "title": "Consultoría Tecnológica",
         "subtitle": "Convierte las decisiones tecnológicas en ventajas comerciales a largo plazo.",
         "description": "Trabajamos junto a tu equipo de liderazgo para diseñar arquitecturas escalables, modernizar sistemas y alinear la tecnología con los objetivos del negocio sin complejidad innecesaria.",
-        "features": ["Planificación tecnológica estratégica", "Iniciativas de transformación digital", "Diseño de sistemas y arquitectura", "Mejores prácticas de ingeniería"]
+        "features": [
+          "Planificación tecnológica estratégica",
+          "Iniciativas de transformación digital",
+          "Diseño de sistemas y arquitectura",
+          "Mejores prácticas de ingeniería"
+        ]
       },
       "mobileWeb": {
         "title": "Apps Móviles y Web",
         "subtitle": "Desarrollo de aplicaciones móviles y web personalizadas para experiencias de usuario excepcionales.",
         "description": "Desarrollo de aplicaciones móviles y web personalizadas para experiencias de usuario excepcionales",
-        "features": ["Apps móviles", "Desarrollo web", "Experiencia de usuario", "Diseño responsive"]
+        "features": [
+          "Apps móviles",
+          "Desarrollo web",
+          "Experiencia de usuario",
+          "Diseño responsive"
+        ]
       },
       "staffAugmentation": {
         "title": "Staff Augmentation",
         "subtitle": "Accede a talento técnico de primer nivel para escalar tu equipo.",
         "description": "Accede a talento técnico de primer nivel para escalar tu equipo de forma rápida y eficiente",
-        "features": ["Talento técnico", "Escalado de equipos", "Recursos expertos", "Modelo flexible"]
+        "features": [
+          "Talento técnico",
+          "Escalado de equipos",
+          "Recursos expertos",
+          "Modelo flexible"
+        ]
       },
       "analytics": {
         "title": "Analytics e Insights",
         "subtitle": "Insights basados en datos y soluciones de analytics para potenciar decisiones empresariales informadas.",
         "description": "Insights basados en datos y soluciones de analytics para potenciar decisiones empresariales informadas",
-        "features": ["Inteligencia de negocios", "Análisis de datos", "Reportería", "Insights"]
+        "features": [
+          "Inteligencia de negocios",
+          "Análisis de datos",
+          "Reportería",
+          "Insights"
+        ]
       },
       "cloud": {
         "title": "Soluciones Cloud",
         "subtitle": "Infraestructura cloud escalable y servicios de migración para empresas modernas.",
         "description": "Infraestructura cloud escalable y servicios de migración para empresas modernas",
-        "features": ["Migración cloud", "Infraestructura", "Escalabilidad", "DevOps"]
+        "features": [
+          "Migración cloud",
+          "Infraestructura",
+          "Escalabilidad",
+          "DevOps"
+        ]
       },
       "offshore": {
         "title": "Desarrollo Offshore",
         "subtitle": "Equipos de desarrollo nearshore que entregan calidad y valor.",
         "description": "Equipos de desarrollo de software nearshore que entregan calidad y valor",
-        "features": ["Equipos nearshore", "Entrega de calidad", "Costo-efectivo", "Desarrolladores expertos"]
+        "features": [
+          "Equipos nearshore",
+          "Entrega de calidad",
+          "Costo-efectivo",
+          "Desarrolladores expertos"
+        ]
       },
       "tailoredSoftware": {
         "title": "Software a Medida",
         "subtitle": "Soluciones de software personalizadas diseñadas específicamente para las necesidades únicas de tu negocio.",
         "description": "Soluciones de software personalizadas diseñadas específicamente para las necesidades únicas de tu negocio",
-        "features": ["Desarrollo personalizado", "Específico para tu negocio", "Soluciones escalables", "Ciclo de vida completo"]
+        "features": [
+          "Desarrollo personalizado",
+          "Específico para tu negocio",
+          "Soluciones escalables",
+          "Ciclo de vida completo"
+        ]
       }
     }
   },
@@ -1423,7 +1524,12 @@
           "period": "4 meses",
           "growth": "+180%"
         },
-        "months": ["Ene", "Feb", "Mar", "Abr"],
+        "months": [
+          "Ene",
+          "Feb",
+          "Mar",
+          "Abr"
+        ],
         "notifications": [
           "Nueva consulta",
           "Cita agendada",
@@ -1443,10 +1549,22 @@
     },
     "socialProof": {
       "stats": [
-        { "value": "15+ años", "label": "Experiencia en tecnología" },
-        { "value": "Enfoque especializado", "label": "Clínicas y especialistas médicos" },
-        { "value": "Más visibilidad", "label": "SEO, contenido y presencia digital" },
-        { "value": "4–6 semanas", "label": "Implementación promedio" }
+        {
+          "value": "15+ años",
+          "label": "Experiencia en tecnología"
+        },
+        {
+          "value": "Enfoque especializado",
+          "label": "Clínicas y especialistas médicos"
+        },
+        {
+          "value": "Más visibilidad",
+          "label": "SEO, contenido y presencia digital"
+        },
+        {
+          "value": "4–6 semanas",
+          "label": "Implementación promedio"
+        }
       ],
       "testimonial": {
         "quote": "Antes casi todo llegaba por referidos. Hoy hay semanas en que la mitad de las consultas vienen del sitio — y por fin se ve como la clínica que somos.",
@@ -1491,20 +1609,48 @@
       "title": "4 pasos. Un solo equipo.",
       "description": "Metodología probada para lanzar su plataforma digital y empezar a generar oportunidades.",
       "steps": [
-        { "title": "Diagnóstico", "description": "Entendemos por qué pierde clientes hoy" },
-        { "title": "Diseño + desarrollo", "description": "Sitio premium listo en 4-6 semanas" },
-        { "title": "SEO", "description": "Aparece cuando lo buscan en Google" },
-        { "title": "Optimización", "description": "Mejoramos conversiones con datos reales" }
+        {
+          "title": "Diagnóstico",
+          "description": "Entendemos por qué pierde clientes hoy"
+        },
+        {
+          "title": "Diseño + desarrollo",
+          "description": "Sitio premium listo en 4-6 semanas"
+        },
+        {
+          "title": "SEO",
+          "description": "Aparece cuando lo buscan en Google"
+        },
+        {
+          "title": "Optimización",
+          "description": "Mejoramos conversiones con datos reales"
+        }
       ]
     },
     "results": {
       "eyebrow": "RESULTADOS",
       "title": "Qué obtiene su empresa",
       "items": [
-        { "metric": "+40%", "label": "Más consultas", "description": "Promedio en clientes tras el relanzamiento" },
-        { "metric": "Top 3", "label": "Google local", "description": "Posicionamiento en búsquedas de su zona" },
-        { "metric": "<2s", "label": "Carga rápida", "description": "Experiencia fluida en móvil y desktop" },
-        { "metric": "1", "label": "Plataforma escalable", "description": "Lista para campañas y crecimiento futuro" }
+        {
+          "metric": "+40%",
+          "label": "Más consultas",
+          "description": "Promedio en clientes tras el relanzamiento"
+        },
+        {
+          "metric": "Top 3",
+          "label": "Google local",
+          "description": "Posicionamiento en búsquedas de su zona"
+        },
+        {
+          "metric": "<2s",
+          "label": "Carga rápida",
+          "description": "Experiencia fluida en móvil y desktop"
+        },
+        {
+          "metric": "1",
+          "label": "Plataforma escalable",
+          "description": "Lista para campañas y crecimiento futuro"
+        }
       ]
     },
     "midCta": {
@@ -1515,10 +1661,26 @@
       "eyebrow": "SECTORES",
       "title": "Donde generamos resultados",
       "items": [
-        { "name": "Clínicas y centros médicos", "client": "GastroMedical CR", "result": "+180% consultas orgánicas" },
-        { "name": "Empresas de servicios", "client": "Construrack", "result": "Presencia digital profesional" },
-        { "name": "Firmas profesionales", "client": "PHYC", "result": "Top Google en su sector" },
-        { "name": "Organizaciones en expansión", "client": "3M", "result": "Plataforma escalable" }
+        {
+          "name": "Clínicas y centros médicos",
+          "client": "GastroMedical CR",
+          "result": "+180% consultas orgánicas"
+        },
+        {
+          "name": "Empresas de servicios",
+          "client": "Construrack",
+          "result": "Presencia digital profesional"
+        },
+        {
+          "name": "Firmas profesionales",
+          "client": "PHYC",
+          "result": "Top Google en su sector"
+        },
+        {
+          "name": "Organizaciones en expansión",
+          "client": "3M",
+          "result": "Plataforma escalable"
+        }
       ]
     },
     "cta": {
@@ -1527,7 +1689,10 @@
       "description": "Convierte tu presencia digital en una herramienta para atraer nuevas oportunidades, generar confianza y hacer crecer tu negocio.",
       "highlight": "Hablemos hoy y definamos el siguiente paso para tu empresa.",
       "primaryButton": "Hablar por WhatsApp",
-      "trustIndicators": ["Estrategia personalizada", "Sin compromiso"]
+      "trustIndicators": [
+        "Estrategia personalizada",
+        "Sin compromiso"
+      ]
     },
     "faq": {
       "title": "Preguntas Frecuentes",
@@ -1807,16 +1972,29 @@
       "description": "Únete a los especialistas que dejaron de depender solo de referidos y ahora reciben pacientes directamente desde Google.",
       "button": "Quiero los mismos resultados",
       "stats": [
-        { "value": "+180%", "label": "consultas orgánicas" },
-        { "value": "Top 3", "label": "en Google local" },
-        { "value": "4 meses", "label": "para ver resultados" }
+        {
+          "value": "+180%",
+          "label": "consultas orgánicas"
+        },
+        {
+          "value": "Top 3",
+          "label": "en Google local"
+        },
+        {
+          "value": "4 meses",
+          "label": "para ver resultados"
+        }
       ]
     },
     "ctaAuthority": {
       "title": "Estrategias respaldadas por datos, no por suposiciones",
       "description": "Utilizamos las mismas metodologías de posicionamiento que aplican las clínicas líderes en turismo médico. Cada decisión está basada en métricas reales.",
       "button": "Hablar con un especialista",
-      "credentials": ["SEO técnico avanzado", "Analítica de conversión", "Experiencia en sector salud"]
+      "credentials": [
+        "SEO técnico avanzado",
+        "Analítica de conversión",
+        "Experiencia en sector salud"
+      ]
     },
     "ctaReciprocity": {
       "title": "Recibe un análisis gratuito de tu presencia digital",
@@ -1835,12 +2013,21 @@
       "tagline": "Tecnología que Rinde",
       "description": "Construimos plataformas digitales que ayudan a empresas, clínicas y profesionales a atraer más clientes, fortalecer su credibilidad y crecer de forma sostenible.",
       "servicesTitle": "Servicios",
-      "services": ["Diseño Web Premium", "SEO", "Landing Pages", "Branding", "Optimización de Conversión"],
+      "services": [
+        "Diseño Web Premium",
+        "SEO",
+        "Landing Pages",
+        "Branding",
+        "Optimización de Conversión"
+      ],
       "contactTitle": "Contacto",
       "contactDescription": "Para consultas sobre proyectos digitales:",
       "cta": "Solicitar Información",
       "legalTitle": "Legal",
-      "legal": ["Política de Privacidad", "Términos y Condiciones"],
+      "legal": [
+        "Política de Privacidad",
+        "Términos y Condiciones"
+      ],
       "email": "info@yieldge.com",
       "copyright": "© 2026 Yieldge. Todos los derechos reservados."
     }
@@ -1866,7 +2053,12 @@
           "period": "Mensual",
           "growth": "+45%"
         },
-        "months": ["Ene", "Feb", "Mar", "Abr"],
+        "months": [
+          "Ene",
+          "Feb",
+          "Mar",
+          "Abr"
+        ],
         "notifications": [
           "Nueva consulta",
           "Solicitud de cotización",
@@ -1886,10 +2078,22 @@
     },
     "socialProof": {
       "stats": [
-        { "value": "15+ años", "label": "Experiencia en tecnología" },
-        { "value": "Experiencia multisectorial", "label": "Soluciones para empresas de diferentes industrias" },
-        { "value": "Soluciones a la medida", "label": "Estrategias adaptadas a cada empresa" },
-        { "value": "4–6 semanas", "label": "Tiempo promedio de implementación" }
+        {
+          "value": "15+ años",
+          "label": "Experiencia en tecnología"
+        },
+        {
+          "value": "Experiencia multisectorial",
+          "label": "Soluciones para empresas de diferentes industrias"
+        },
+        {
+          "value": "Soluciones a la medida",
+          "label": "Estrategias adaptadas a cada empresa"
+        },
+        {
+          "value": "4–6 semanas",
+          "label": "Tiempo promedio de implementación"
+        }
       ],
       "testimonial": {
         "quote": "Antes casi todo llegaba por referidos. Hoy hay semanas en que la mitad de las consultas vienen del sitio — y por fin se ve como la empresa que somos.",
@@ -1916,10 +2120,22 @@
       "title": "Más que un sitio web: un sistema para atraer clientes",
       "description": "Un sitio web que no aparece en Google, no genera confianza o no facilita el contacto es un costo, no una inversión. Desarrollamos plataformas digitales que fortalecen su credibilidad, lo hacen visible para clientes potenciales y facilitan su decisión de contactarlo.",
       "items": [
-        { "title": "Diseño profesional", "description": "Refuerza la confianza desde el primer segundo." },
-        { "title": "SEO y visibilidad", "description": "Lo encuentran cuando buscan." },
-        { "title": "Conversión optimizada", "description": "Cada visita es una oportunidad." },
-        { "title": "Medición y optimización", "description": "Datos claros para tomar mejores decisiones." }
+        {
+          "title": "Diseño profesional",
+          "description": "Refuerza la confianza desde el primer segundo."
+        },
+        {
+          "title": "SEO y visibilidad",
+          "description": "Lo encuentran cuando buscan."
+        },
+        {
+          "title": "Conversión optimizada",
+          "description": "Cada visita es una oportunidad."
+        },
+        {
+          "title": "Medición y optimización",
+          "description": "Datos claros para tomar mejores decisiones."
+        }
       ]
     },
     "problemSolution": {
@@ -1952,10 +2168,22 @@
       "title": "Cuatro pasos. Un solo equipo.",
       "description": "Una metodología clara para convertir su presencia digital en una herramienta de crecimiento.",
       "steps": [
-        { "title": "Diagnóstico", "description": "Analizamos su empresa, sus clientes, sus competidores y sus oportunidades digitales" },
-        { "title": "Estrategia y diseño", "description": "Definimos la estructura, los mensajes y la experiencia necesaria para comunicar su valor" },
-        { "title": "Desarrollo y posicionamiento", "description": "Construimos una plataforma rápida, profesional y preparada para aparecer en Google" },
-        { "title": "Medición y optimización", "description": "Analizamos el comportamiento de los visitantes y fortalecemos las conversiones utilizando información real" }
+        {
+          "title": "Diagnóstico",
+          "description": "Analizamos su empresa, sus clientes, sus competidores y sus oportunidades digitales"
+        },
+        {
+          "title": "Estrategia y diseño",
+          "description": "Definimos la estructura, los mensajes y la experiencia necesaria para comunicar su valor"
+        },
+        {
+          "title": "Desarrollo y posicionamiento",
+          "description": "Construimos una plataforma rápida, profesional y preparada para aparecer en Google"
+        },
+        {
+          "title": "Medición y optimización",
+          "description": "Analizamos el comportamiento de los visitantes y fortalecemos las conversiones utilizando información real"
+        }
       ]
     },
     "midCta": {
@@ -2022,9 +2250,18 @@
       ],
       "conclusion": "Aparecer en la búsqueda correcta puede ser el primer paso hacia un nuevo cliente.",
       "stats": [
-        { "value": "75%", "label": "de usuarios nunca pasa de la página 1" },
-        { "value": "53%", "label": "del tráfico viene de búsquedas orgánicas" },
-        { "value": "14.6%", "label": "tasa de cierre desde SEO (vs 1.7% outbound)" }
+        {
+          "value": "75%",
+          "label": "de usuarios nunca pasa de la página 1"
+        },
+        {
+          "value": "53%",
+          "label": "del tráfico viene de búsquedas orgánicas"
+        },
+        {
+          "value": "14.6%",
+          "label": "tasa de cierre desde SEO (vs 1.7% outbound)"
+        }
       ]
     },
     "designConversion": {
@@ -2032,11 +2269,26 @@
       "title": "No se trata solamente de tener un sitio web",
       "description": "Creamos una presencia digital enfocada en ayudar a su empresa a:",
       "principles": [
-        { "title": "Atraer más clientes", "description": "Llegar a personas que están buscando lo que usted ofrece." },
-        { "title": "Generar más consultas", "description": "Facilitar WhatsApp, llamadas y solicitudes de información." },
-        { "title": "Conseguir más reservaciones", "description": "Reducir pasos entre el interés y la reserva." },
-        { "title": "Generar más cotizaciones", "description": "Presentar claramente sus servicios y facilitar el contacto." },
-        { "title": "Vender más", "description": "Convertir una mayor parte de las visitas en oportunidades comerciales." }
+        {
+          "title": "Atraer más clientes",
+          "description": "Llegar a personas que están buscando lo que usted ofrece."
+        },
+        {
+          "title": "Generar más consultas",
+          "description": "Facilitar WhatsApp, llamadas y solicitudes de información."
+        },
+        {
+          "title": "Conseguir más reservaciones",
+          "description": "Reducir pasos entre el interés y la reserva."
+        },
+        {
+          "title": "Generar más cotizaciones",
+          "description": "Presentar claramente sus servicios y facilitar el contacto."
+        },
+        {
+          "title": "Vender más",
+          "description": "Convertir una mayor parte de las visitas en oportunidades comerciales."
+        }
       ]
     },
     "mobileExperience": {
@@ -2088,10 +2340,26 @@
       "eyebrow": "RESULTADOS",
       "title": "Lo que obtiene su empresa",
       "items": [
-        { "metric": "+40%", "label": "Más consultas", "description": "Promedio para clientes después del relanzamiento" },
-        { "metric": "Top 3", "label": "Google local", "description": "Posicionamiento en búsquedas de su área" },
-        { "metric": "<2s", "label": "Carga rápida", "description": "Experiencia fluida en móvil y escritorio" },
-        { "metric": "1", "label": "Plataforma escalable", "description": "Preparada para campañas y crecimiento futuro" }
+        {
+          "metric": "+40%",
+          "label": "Más consultas",
+          "description": "Promedio para clientes después del relanzamiento"
+        },
+        {
+          "metric": "Top 3",
+          "label": "Google local",
+          "description": "Posicionamiento en búsquedas de su área"
+        },
+        {
+          "metric": "<2s",
+          "label": "Carga rápida",
+          "description": "Experiencia fluida en móvil y escritorio"
+        },
+        {
+          "metric": "1",
+          "label": "Plataforma escalable",
+          "description": "Preparada para campañas y crecimiento futuro"
+        }
       ]
     },
     "diagnosis": {
@@ -2114,7 +2382,10 @@
       "highlight": "",
       "primaryButton": "Hablar por WhatsApp",
       "secondaryButton": "Solicitar diagnóstico gratuito",
-      "trustIndicators": ["Estrategia personalizada", "Sin compromiso"]
+      "trustIndicators": [
+        "Estrategia personalizada",
+        "Sin compromiso"
+      ]
     },
     "faq": {
       "title": "Preguntas Frecuentes",
@@ -2201,6 +2472,595 @@
       "faq": "Preguntas frecuentes",
       "author": "Sobre el autor",
       "backToBlog": "Volver al blog"
+    }
+  },
+  "crecimientoDigitalCl": {
+    "navbar": {
+      "howWeAttract": "Cómo trabajamos",
+      "googlePositioning": "Posicionamiento en Google",
+      "digitalSystem": "Sectores",
+      "results": "Resultados",
+      "cta": "Solicitar diagnóstico"
+    },
+    "hero": {
+      "eyebrow": "CRECIMIENTO DIGITAL · CHILE",
+      "title": "Convierta su presencia digital en más clientes y más ventas",
+      "description": "Ayudamos a empresas en Chile a ser encontradas en Google, generar confianza y convertir visitas en consultas, reservaciones, cotizaciones y nuevas oportunidades de negocio.",
+      "cta": "Solicitar diagnóstico gratuito",
+      "secondaryCta": "Conocer cómo trabajamos",
+      "microcopy": "Descubra qué puede mejorar para atraer más clientes.",
+      "overlays": {
+        "chart": {
+          "title": "Oportunidades",
+          "period": "Mensual",
+          "growth": "+45%"
+        },
+        "months": [
+          "Ene",
+          "Feb",
+          "Mar",
+          "Abr"
+        ],
+        "notifications": [
+          "Nueva consulta",
+          "Solicitud de cotización",
+          "Formulario enviado"
+        ],
+        "google": {
+          "rank": "Posicionado en Google"
+        },
+        "result": {
+          "client": "Empresas Chile",
+          "metric": "Más oportunidades"
+        }
+      }
+    },
+    "logos": {
+      "title": "Empresas que confían en nosotros"
+    },
+    "socialProof": {
+      "stats": [
+        {
+          "value": "15+ años",
+          "label": "Experiencia en tecnología"
+        },
+        {
+          "value": "Experiencia multisectorial",
+          "label": "Soluciones para empresas de diferentes industrias"
+        },
+        {
+          "value": "Soluciones a la medida",
+          "label": "Estrategias adaptadas a cada empresa"
+        },
+        {
+          "value": "4–6 semanas",
+          "label": "Tiempo promedio de implementación"
+        }
+      ],
+      "testimonial": {
+        "quote": "Antes casi todo llegaba por referidos. Hoy hay semanas en que la mitad de las consultas vienen del sitio — y por fin se ve como la empresa que somos.",
+        "author": "Cliente Satisfecho",
+        "role": "Empresario · Chile"
+      },
+      "caseStudies": [
+        {
+          "client": "Construrack",
+          "sector": "Construcción",
+          "service": "Sitio corporativo + SEO local",
+          "result": "Presencia digital profesional"
+        },
+        {
+          "client": "PHYC",
+          "sector": "Consultoría",
+          "service": "Plataforma corporativa + posicionamiento",
+          "result": "Primera página en Google para 12 keywords"
+        }
+      ]
+    },
+    "valueProposition": {
+      "eyebrow": "CONSTRUIMOS PRESENCIA DIGITAL",
+      "title": "Más que un sitio web: un sistema para atraer clientes",
+      "description": "Un sitio web que no aparece en Google, no genera confianza o no facilita el contacto es un costo, no una inversión. Desarrollamos plataformas digitales que fortalecen su credibilidad, lo hacen visible para clientes potenciales y facilitan su decisión de contactarlo.",
+      "items": [
+        {
+          "title": "Diseño profesional",
+          "description": "Refuerza la confianza desde el primer segundo."
+        },
+        {
+          "title": "SEO y visibilidad",
+          "description": "Lo encuentran cuando buscan."
+        },
+        {
+          "title": "Conversión optimizada",
+          "description": "Cada visita es una oportunidad."
+        },
+        {
+          "title": "Medición y optimización",
+          "description": "Datos claros para tomar mejores decisiones."
+        }
+      ]
+    },
+    "problemSolution": {
+      "eyebrow": "EL PROBLEMA",
+      "title": "¿Su presencia digital refleja el verdadero nivel de su empresa?",
+      "titleEmphasis": "Oportunidades que su empresa podría estar aprovechando.",
+      "intro": "Muchas empresas ofrecen un excelente servicio, pero pierden oportunidades porque su sitio web no comunica correctamente su experiencia, calidad o propuesta de valor.",
+      "cta": "Recibir diagnóstico por WhatsApp",
+      "problems": [
+        "No aparece cuando sus clientes buscan sus servicios en Google",
+        "Su sitio web se ve desactualizado o poco profesional",
+        "Las personas visitan la página, pero no contactan",
+        "Sus servicios no se entienden con facilidad",
+        "Depende principalmente de recomendaciones o redes sociales",
+        "No puede identificar cuáles canales están generando clientes"
+      ],
+      "solutionsTitle": "Nuestra respuesta",
+      "solutions": [
+        "Estrategia digital orientada a objetivos comerciales",
+        "Diseño profesional que fortalece la confianza",
+        "SEO para servicios y ubicaciones estratégicas",
+        "Llamados a la acción orientados a generar contactos",
+        "Formularios, WhatsApp y métodos de contacto claros",
+        "Analítica para medir consultas y conversiones"
+      ],
+      "closingStatement": "Convierta su presencia digital en un sistema para atraer nuevas oportunidades."
+    },
+    "process": {
+      "eyebrow": "CÓMO TRABAJAMOS",
+      "title": "Cuatro pasos. Un solo equipo.",
+      "description": "Una metodología clara para convertir su presencia digital en una herramienta de crecimiento.",
+      "steps": [
+        {
+          "title": "Diagnóstico",
+          "description": "Analizamos su empresa, sus clientes, sus competidores y sus oportunidades digitales"
+        },
+        {
+          "title": "Estrategia y diseño",
+          "description": "Definimos la estructura, los mensajes y la experiencia necesaria para comunicar su valor"
+        },
+        {
+          "title": "Desarrollo y posicionamiento",
+          "description": "Construimos una plataforma rápida, profesional y preparada para aparecer en Google"
+        },
+        {
+          "title": "Medición y optimización",
+          "description": "Analizamos el comportamiento de los visitantes y fortalecemos las conversiones utilizando información real"
+        }
+      ]
+    },
+    "midCta": {
+      "title": "Transforme su presencia digital en un sistema para atraer más clientes",
+      "button": "Solicitar diagnóstico por WhatsApp"
+    },
+    "customerJourney": {
+      "eyebrow": "MÁS VISIBILIDAD. MÁS OPORTUNIDADES.",
+      "title": "Sus próximos clientes ya están buscando. ¿Están encontrando su empresa?",
+      "description": "Antes de comprar, reservar o solicitar una cotización, muchas personas investigan el negocio en internet.",
+      "intro": "Una buena presencia digital debe responder rápidamente:",
+      "questions": [
+        "¿Qué ofrece esta empresa?",
+        "¿Puedo confiar en ella?",
+        "¿Por qué debería elegirla?",
+        "¿Cómo puedo comprar, reservar o contactarla?"
+      ],
+      "conclusion": "Si estas respuestas no están claras, el cliente puede terminar eligiendo otra opción.",
+      "cta": "Mejorar el recorrido de mis clientes"
+    },
+    "sectors": {
+      "eyebrow": "SOLUCIONES PARA DIFERENTES EMPRESAS",
+      "title": "Diferentes negocios. El mismo objetivo: crecer.",
+      "description": "",
+      "items": [
+        {
+          "name": "Real Estate",
+          "description": "Más consultas sobre propiedades y proyectos."
+        },
+        {
+          "name": "Restaurantes y bares",
+          "description": "Más clientes, reservaciones y visitas."
+        },
+        {
+          "name": "Hoteles y turismo",
+          "description": "Más consultas y reservaciones nacionales e internacionales."
+        },
+        {
+          "name": "Construcción",
+          "description": "Más solicitudes de cotización y nuevos proyectos."
+        },
+        {
+          "name": "Comercios",
+          "description": "Más personas descubriendo productos y servicios."
+        },
+        {
+          "name": "Empresas de servicios",
+          "description": "Más consultas y oportunidades comerciales."
+        }
+      ],
+      "cta": "Conversar sobre mi empresa"
+    },
+    "seo": {
+      "eyebrow": "POSICIONAMIENTO EN GOOGLE",
+      "title": "Esté presente cuando un cliente esté buscando lo que usted vende",
+      "description": "Google permite llegar a personas que ya tienen una necesidad. No buscamos simplemente generar más visitas. Buscamos que más clientes potenciales encuentren su empresa en el momento correcto y tengan una razón clara para contactarla.",
+      "searchExamplesTitle": "Ejemplos de búsquedas reales",
+      "searchExamples": [
+        "Constructora en Santiago",
+        "Inmobiliaria en Las Condes",
+        "Consultoría Providencia",
+        "Hotel en Viña del Mar",
+        "Abogado de familia en Ñuñoa"
+      ],
+      "conclusion": "Aparecer en la búsqueda correcta puede ser el primer paso hacia un nuevo cliente.",
+      "stats": [
+        {
+          "value": "75%",
+          "label": "de usuarios nunca pasa de la página 1"
+        },
+        {
+          "value": "53%",
+          "label": "del tráfico viene de búsquedas orgánicas"
+        },
+        {
+          "value": "14.6%",
+          "label": "tasa de cierre desde SEO (vs 1.7% outbound)"
+        }
+      ]
+    },
+    "designConversion": {
+      "eyebrow": "DISEÑADO PARA GENERAR NEGOCIO",
+      "title": "No se trata solamente de tener un sitio web",
+      "description": "Creamos una presencia digital enfocada en ayudar a su empresa a:",
+      "principles": [
+        {
+          "title": "Atraer más clientes",
+          "description": "Llegar a personas que están buscando lo que usted ofrece."
+        },
+        {
+          "title": "Generar más consultas",
+          "description": "Facilitar WhatsApp, llamadas y solicitudes de información."
+        },
+        {
+          "title": "Conseguir más reservaciones",
+          "description": "Reducir pasos entre el interés y la reserva."
+        },
+        {
+          "title": "Generar más cotizaciones",
+          "description": "Presentar claramente sus servicios y facilitar el contacto."
+        },
+        {
+          "title": "Vender más",
+          "description": "Convertir una mayor parte de las visitas en oportunidades comerciales."
+        }
+      ]
+    },
+    "mobileExperience": {
+      "eyebrow": "EXPERIENCIA MÓVIL",
+      "title": "Si su sitio no funciona bien en celular, el cliente sigue buscando",
+      "description": "Más del 70% del tráfico web en Chile es móvil. Una experiencia lenta o confusa puede costarle oportunidades todos los días.",
+      "capabilities": [
+        "Carga rápida en móvil",
+        "Navegación optimizada",
+        "Botones de contacto directo",
+        "Formularios fáciles de completar"
+      ],
+      "highlight": "Menos fricción. Más confianza. Más oportunidades comerciales."
+    },
+    "scalability": {
+      "eyebrow": "ESCALABILIDAD",
+      "title": "Una plataforma preparada para crecer con su empresa",
+      "description": "Comience con lo esencial y agregue nuevas capacidades conforme su negocio crece.",
+      "capabilities": [
+        "Servicios y áreas de servicio",
+        "Blog y contenido estratégico",
+        "Contenido bilingüe",
+        "Formularios y reservaciones",
+        "Pagos en línea",
+        "Seguimiento automatizado",
+        "Integración con CRM",
+        "Dashboard e IA"
+      ],
+      "conclusion": "Una base digital para atraer, atender y dar seguimiento a más clientes."
+    },
+    "analytics": {
+      "eyebrow": "RESULTADOS MEDIBLES",
+      "title": "Sepa de dónde vienen sus oportunidades",
+      "description": "Medimos las acciones que realmente importan para el negocio:",
+      "intro": "",
+      "metrics": [
+        "Clics en WhatsApp",
+        "Formularios enviados",
+        "Reservaciones",
+        "Solicitudes de cotización",
+        "Llamadas",
+        "Visitas desde Google",
+        "Páginas que generan más interés"
+      ],
+      "benefit": "El objetivo es identificar qué está generando negocio y mejorar continuamente.",
+      "highlight": "Lo que no se mide no puede optimizarse."
+    },
+    "results": {
+      "eyebrow": "RESULTADOS",
+      "title": "Lo que obtiene su empresa",
+      "items": [
+        {
+          "metric": "+40%",
+          "label": "Más consultas",
+          "description": "Promedio para clientes después del relanzamiento"
+        },
+        {
+          "metric": "Top 3",
+          "label": "Google local",
+          "description": "Posicionamiento en búsquedas de su área"
+        },
+        {
+          "metric": "<2s",
+          "label": "Carga rápida",
+          "description": "Experiencia fluida en móvil y escritorio"
+        },
+        {
+          "metric": "1",
+          "label": "Plataforma escalable",
+          "description": "Preparada para campañas y crecimiento futuro"
+        }
+      ]
+    },
+    "diagnosis": {
+      "eyebrow": "DIAGNÓSTICO GRATUITO",
+      "title": "Descubra dónde puede estar perdiendo clientes",
+      "description": "Analizamos su presencia digital, Google, sitio web y proceso de contacto para identificar oportunidades concretas para atraer más clientes y generar más ventas.",
+      "includes": [
+        "Revisión de sitio y SEO",
+        "Análisis de competencia",
+        "Oportunidades identificadas",
+        "Recomendación de acción"
+      ],
+      "cta": "Solicitar mi diagnóstico",
+      "microcopy": "Sin compromiso. Primero identificamos las oportunidades."
+    },
+    "cta": {
+      "eyebrow": "EL PRIMER PASO",
+      "title": "Su próximo cliente ya está buscando. Haga que encuentre su empresa.",
+      "description": "Fortalezca su presencia digital para generar más consultas, reservaciones, cotizaciones y ventas.",
+      "highlight": "",
+      "primaryButton": "Hablar por WhatsApp",
+      "secondaryButton": "Solicitar diagnóstico gratuito",
+      "trustIndicators": [
+        "Estrategia personalizada",
+        "Sin compromiso"
+      ]
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "items": [
+        {
+          "question": "¿El diagnóstico inicial tiene algún costo?",
+          "answer": "No. El análisis inicial es completamente gratuito y no implica ningún compromiso."
+        },
+        {
+          "question": "¿Trabajan con cualquier tipo de empresa?",
+          "answer": "Trabajamos principalmente con empresas de servicios, bienes raíces, turismo, construcción, servicios profesionales, comercios y organizaciones B2B en Chile."
+        },
+        {
+          "question": "¿Qué sucede después de contactarlos?",
+          "answer": "Primero conocemos su empresa y sus objetivos. Después analizamos su presencia digital y presentamos las oportunidades identificadas."
+        },
+        {
+          "question": "¿Qué pasa si ya tengo un sitio web?",
+          "answer": "Podemos auditarlo, rediseñarlo u optimizar únicamente las áreas que están limitando sus resultados."
+        },
+        {
+          "question": "¿La página queda a nombre de mi empresa?",
+          "answer": "Sí. El sitio, el dominio y los activos desarrollados quedan bajo el control de la empresa."
+        },
+        {
+          "question": "¿Cuánto cuesta desarrollar una solución digital?",
+          "answer": "El precio depende del alcance, las funcionalidades y los objetivos. Después del diagnóstico se presenta una propuesta clara y personalizada."
+        },
+        {
+          "question": "¿Cuánto tarda un proyecto?",
+          "answer": "El tiempo depende de la complejidad. Antes de iniciar se definen las etapas, entregables y fechas estimadas."
+        },
+        {
+          "question": "¿Pueden ayudar con posicionamiento en Google?",
+          "answer": "Sí. Podemos implementar SEO técnico, páginas de servicios, contenido estratégico y analítica para mejorar progresivamente la visibilidad en Chile."
+        }
+      ],
+      "ctaTitle": "¿Tiene otra pregunta?",
+      "ctaButton": "Conversemos por WhatsApp"
+    }
+  },
+  "sistemaComercialClinicas": {
+    "meta": {
+      "title": "Sistema Comercial para Clínicas | Yieldge",
+      "description": "En 45 días, su clínica tiene un canal digital completo: web que convierte, Google, WhatsApp y captura de pacientes. Todo en nuestras manos. Garantía Sistema Vivo."
+    },
+    "stickyCta": "Pedir diagnóstico por WhatsApp",
+    "nav": {
+      "cta": "Diagnóstico para mi clínica"
+    },
+    "hero": {
+      "brand": "Yieldge",
+      "product": "Sistema Comercial",
+      "headline": "Más pacientes nuevos. Sin más caos en la recepción.",
+      "support": "En 45 días dejamos funcionando el canal digital completo de su clínica — web, Google, WhatsApp y seguimiento de consultas — sin que usted toque nada técnico.",
+      "cta": "Quiero el diagnóstico de mi clínica",
+      "microcopy": "15 minutos por WhatsApp. Sin compromiso. Cupos limitados este mes.",
+      "heroMediaLabel": "IMAGEN FULL-BLEED: recepción de clínica privada en Costa Rica, luz cálida de mañana, mostrador ordenado, sin logos de terceros ni texto sobreimpreso. Atmósfera de confianza médica, no hospital frío."
+    },
+    "problem": {
+      "eyebrow": "El costo invisible",
+      "title": "Su clínica es buena. Su sistema digital no trabaja por usted.",
+      "body": "Pacientes buscan en Google, miran el sitio en el celular y escriben por WhatsApp. Si eso no está conectado, las citas se van con quien sí responde.",
+      "points": [
+        {
+          "title": "Web que no convierte",
+          "text": "Se ve aceptable, pero no genera consultas. Es un folleto, no un canal."
+        },
+        {
+          "title": "Invisible en búsquedas locales",
+          "text": "Quien busca su especialidad en su zona encuentra a otro consultorio primero."
+        },
+        {
+          "title": "WhatsApp sin sistema",
+          "text": "Mensajes que llegan de noche, se pierden o se responden tarde."
+        }
+      ],
+      "close": "El problema no es falta de pacientes. Es un canal digital que no cierra el recorrido."
+    },
+    "reframe": {
+      "eyebrow": "El cambio",
+      "title": "Un sistema comercial, no una página más.",
+      "without": "Web suelta + Google abandonado + WhatsApp caótico = pacientes que no llegan.",
+      "with": "Web + Google + WhatsApp + tablero, operando como un solo canal.",
+      "mediaLabel": "COMPOSICIÓN GRÁFICA: diagrama simple de 4 nodos conectados — Web → Google → WhatsApp → Tablero — con flechas suaves. Fondo claro, tipografía Yieldge, sin iconos genéricos de stock."
+    },
+    "system": {
+      "eyebrow": "El sistema",
+      "title": "Cuatro piezas. Un canal que captura pacientes.",
+      "description": "Cada pieza tiene un trabajo. Juntas evitan que la consulta se pierda entre Google, el celular y la recepción.",
+      "items": [
+        {
+          "title": "Web que convierte",
+          "text": "Páginas claras para decidir y pedir cita desde el celular."
+        },
+        {
+          "title": "Presencia en Google",
+          "text": "Aparecer cuando buscan su especialidad en su zona."
+        },
+        {
+          "title": "WhatsApp comercial",
+          "text": "Un flujo para responder, calificar y agendar sin caos."
+        },
+        {
+          "title": "Tablero de consultas",
+          "text": "Saber de dónde vienen los pacientes y qué páginas funcionan."
+        }
+      ],
+      "mediaLabel": "MOCKUP UI: collage de 3 pantallas — home móvil de clínica, perfil Google Business, y chat WhatsApp con lead de cita. Marco limpio, sin badges flotantes."
+    },
+    "clinicExtras": {
+      "eyebrow": "Hecho para clínicas",
+      "title": "No es una web genérica con foto de estetoscopio.",
+      "description": "El sistema se arma alrededor de cómo el paciente elige especialista.",
+      "items": [
+        {
+          "title": "Especialistas y tratamientos",
+          "text": "Cada servicio con su propia página y llamado a la acción."
+        },
+        {
+          "title": "Confianza clínica",
+          "text": "Credenciales, proceso y testimonios donde el paciente duda."
+        },
+        {
+          "title": "Agenda y contacto",
+          "text": "WhatsApp, llamada o formulario, visibles en móvil."
+        }
+      ]
+    },
+    "method": {
+      "eyebrow": "Método",
+      "title": "45 días. Alcance cerrado. Sistema vivo.",
+      "steps": [
+        {
+          "letter": "A",
+          "name": "Diagnóstico",
+          "days": "Días 1–5",
+          "text": "Brecha digital, competencia local y recorrido del paciente."
+        },
+        {
+          "letter": "B",
+          "name": "Arquitectura",
+          "days": "Días 6–14",
+          "text": "Arquitectura del sistema, copy y flujo WhatsApp en una página."
+        },
+        {
+          "letter": "C",
+          "name": "Construcción",
+          "days": "Días 15–35",
+          "text": "Web, Google y captura de consultas, listos para publicar."
+        },
+        {
+          "letter": "D",
+          "name": "Puesta en marcha",
+          "days": "Días 36–45",
+          "text": "Publicación, tablero y traspaso operativo."
+        }
+      ],
+      "firstWin": "Primera versión navegable antes de la semana 3."
+    },
+    "proof": {
+      "eyebrow": "Prueba",
+      "title": "Cuando el canal está conectado, las consultas dejan de depender solo de referidos.",
+      "quote": "Antes casi todo llegaba por referidos. Hoy hay semanas en que la mitad de las consultas vienen del sitio — y por fin se ve como la clínica que somos.",
+      "author": "Dr. Daniel Zúñiga",
+      "role": "GastroMedical · San José, Costa Rica",
+      "metric": "+180%",
+      "metricDetail": "consultas orgánicas en 4 meses",
+      "mediaLabel": "FOTO DOCUMENTAL: especialista en consulta, luz natural, sin poses de stock. Recorte editorial, no publicidad genérica."
+    },
+    "offer": {
+      "eyebrow": "La oferta",
+      "title": "Sistema Comercial para su clínica. En 45 días.",
+      "stackTitle": "Incluye",
+      "stack": [
+        "Sistema completo (web + Google + WhatsApp + leads + tablero)",
+        "Implementación en 45 días con alcance cerrado",
+        "Copy, estructura y flujo de contacto hechos por nosotros",
+        "Garantía Sistema Vivo"
+      ],
+      "priceLabel": "Inversión",
+      "price": "A medida",
+      "priceNote": "El precio se confirma después del diagnóstico, según especialidad, sedes y alcance.",
+      "retainer": "Retainer opcional de optimización después de la puesta en marcha.",
+      "scarcity": "Cupos limitados este mes para implementación.",
+      "cta": "Quiero el diagnóstico de mi clínica",
+      "mediaLabel": "DIAGRAMA: stack de valor en 4 bloques apilados, tipografía Yieldge, fondo claro, sin clipart."
+    },
+    "guarantee": {
+      "eyebrow": "Garantía Sistema Vivo",
+      "title": "Si no está vivo en 45 días, no se cobra la cuota final.",
+      "body": "Si en 45 días calendario desde el kickoff el sistema no está publicado y capturando consultas (web y/o WhatsApp) con tablero operativo, no se cobra la cuota final y seguimos hasta dejarlo vivo — sin costo extra de desarrollo del alcance acordado.",
+      "conditions": "Aplica al alcance acordado en el kickoff. No cubre retrasos por contenidos o accesos que la clínica no entregue.",
+      "mediaLabel": "SELLO TIPOGRÁFICO: Garantía Sistema Vivo — 45 días. Composición editorial, no badge de e-commerce."
+    },
+    "faq": {
+      "eyebrow": "Preguntas",
+      "title": "Lo que suelen preguntar antes de empezar",
+      "items": [
+        {
+          "q": "¿Esto es solo una página web?",
+          "a": "No. La web es una pieza. El Sistema Comercial conecta captación local, WhatsApp, seguimiento y un tablero para que sepa de dónde vienen los pacientes."
+        },
+        {
+          "q": "¿El diagnóstico tiene costo?",
+          "a": "No. La primera conversación es gratuita y sin compromiso."
+        },
+        {
+          "q": "¿Qué pasa si ya tengo sitio?",
+          "a": "Lo auditamos. Si sirve como base, lo integramos. Si no convierte, lo reemplazamos dentro del alcance."
+        },
+        {
+          "q": "¿El sitio queda a nombre de la clínica?",
+          "a": "Sí. Dominio, contenido y activos desarrollados quedan bajo control de la clínica."
+        },
+        {
+          "q": "¿Cuánto tarda?",
+          "a": "45 días calendario desde el kickoff, con etapas y entregables definidos."
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "Siguiente paso",
+      "title": "Pida el diagnóstico de brecha de su clínica.",
+      "body": "15 minutos. Le decimos qué está roto en el recorrido del paciente y si el sistema aplica.",
+      "deliverables": [
+        "Mapa del recorrido actual",
+        "Brechas de Google, web y WhatsApp",
+        "Recomendación de alcance en 45 días"
+      ],
+      "cta": "Pedir diagnóstico por WhatsApp",
+      "support": "Respondemos en horario hábil. Sin formularios largos.",
+      "trust": "Sin compromiso · Cupos limitados este mes"
     }
   }
 }
