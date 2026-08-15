@@ -110,14 +110,12 @@ function WhatsAppCta({
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
-    <motion.span
+    <motion.h2
       variants={fadeInUp}
-      className="inline-flex items-center gap-3 text-gray-500 font-medium text-xs uppercase tracking-[0.2em] mb-6"
+      className="text-2xl sm:text-3xl font-semibold tracking-[-0.02em] text-gray-900 mb-6"
     >
-      <span className="w-8 h-px bg-gray-400" />
       {children}
-      <span className="w-8 h-px bg-gray-400" />
-    </motion.span>
+    </motion.h2>
   );
 }
 
@@ -266,12 +264,9 @@ function HeroSection() {
           className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center"
         >
           <div className="text-center lg:text-left">
-            <motion.div variants={fadeInUp} className="mb-8">
-              <span className="inline-flex items-center gap-3 text-gray-500 font-medium text-xs uppercase tracking-[0.2em]">
-                <span className="w-8 h-px bg-gray-400" />
-                {t('eyebrow')}
-              </span>
-            </motion.div>
+            <motion.h2 variants={fadeInUp} className="text-2xl sm:text-3xl font-semibold tracking-[-0.02em] text-gray-900 mb-8">
+              {t('eyebrow')}
+            </motion.h2>
 
             <motion.h1
               variants={fadeInUp}
@@ -316,7 +311,6 @@ function HeroSection() {
               />
               <HeroMockupOverlays />
             </div>
-            <HeroResultBadge />
           </motion.div>
         </motion.div>
 
@@ -2455,8 +2449,6 @@ export default function CrecimientoDigitalPageContent() {
         </section>
 
         <AnalyticsSection />
-        <DiagnosisSection />
-        <ResultsSection />
         <FAQSection />
         <CTASection />
       </main>
