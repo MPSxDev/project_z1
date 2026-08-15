@@ -108,14 +108,12 @@ function WhatsAppCta({
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
-    <motion.span
+    <motion.h2
       variants={fadeInUp}
-      className="inline-flex items-center gap-3 text-gray-500 font-medium text-xs uppercase tracking-[0.2em] mb-6"
+      className="text-2xl sm:text-3xl font-semibold tracking-[-0.02em] text-gray-900 mb-6"
     >
-      <span className="w-8 h-px bg-gray-400" />
       {children}
-      <span className="w-8 h-px bg-gray-400" />
-    </motion.span>
+    </motion.h2>
   );
 }
 
@@ -1465,13 +1463,12 @@ function MedicalTourismSection() {
         >
           {/* Header: Título + Texto corto */}
           <div className="max-w-3xl mx-auto text-center mb-10">
-            <motion.span
+            <motion.h2
               variants={fadeInUp}
-              className="inline-flex items-center gap-3 text-blue-400 font-medium text-xs uppercase tracking-[0.2em] mb-4"
+              className="text-2xl sm:text-3xl font-semibold tracking-[-0.02em] text-white mb-4"
             >
-              <Plane className="w-4 h-4" />
               {t('eyebrow')}
-            </motion.span>
+            </motion.h2>
             <motion.h2
               variants={fadeInUp}
               className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-[-0.02em] text-white mb-4 leading-[1.15]"
@@ -1909,8 +1906,6 @@ export default function PresenciaDigitalPageContent() {
         <section id="resultados">
           <ClinicScalabilitySection />
         </section>
-
-        <CtaScarcity />
 
         {/* Section: Cómo atraemos pacientes - hidden */}
         <div className="hidden">
