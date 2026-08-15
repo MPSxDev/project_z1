@@ -2438,11 +2438,6 @@ export default function CrecimientoDigitalPageContent() {
           <CustomerJourneySection />
         </section>
 
-        {/* Section: Google Positioning */}
-        <section id="posicionamiento-google">
-          <SEOSection />
-        </section>
-
         <DesignConversionSection />
 
         <FAQSection />
