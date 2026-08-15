@@ -2426,15 +2426,17 @@ export default function CrecimientoDigitalPageContent() {
       <main id="main-content">
         <SocialProofSection />
 
+        {/* Section: Results & Scalability */}
+        <section id="resultados">
+          <ScalabilitySection />
+        </section>
+
         <MidCtaSection />
 
         {/* Section: Customer Journey */}
         <section id="sistema-digital">
           <CustomerJourneySection />
         </section>
-
-        {/* Section: Industries */}
-        <SectorsSection />
 
         {/* Section: Google Positioning */}
         <section id="posicionamiento-google">
@@ -2443,12 +2445,6 @@ export default function CrecimientoDigitalPageContent() {
 
         <DesignConversionSection />
 
-        {/* Section: Results & Scalability */}
-        <section id="resultados">
-          <ScalabilitySection />
-        </section>
-
-        <AnalyticsSection />
         <FAQSection />
         <CTASection />
       </main>
