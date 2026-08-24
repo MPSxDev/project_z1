@@ -102,6 +102,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
       },
     },
+    {
+      url: `${baseUrl}/ia-privada`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+      alternates: {
+        languages: {
+          es: `${baseUrl}/ia-privada`,
+          en: `${baseUrl}/en/private-ai`,
+        },
+      },
+    },
   ];
 
   // English versions of main pages
@@ -199,6 +211,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages: {
           es: `${baseUrl}/crecimiento-digital/cl`,
           en: `${baseUrl}/en/crecimiento-digital/cl`,
+        },
+      },
+    },
+    {
+      url: `${baseUrl}/en/private-ai`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+      alternates: {
+        languages: {
+          es: `${baseUrl}/ia-privada`,
+          en: `${baseUrl}/en/private-ai`,
         },
       },
     },

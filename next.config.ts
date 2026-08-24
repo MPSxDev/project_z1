@@ -51,6 +51,16 @@ const nextConfig: NextConfig = {
   // Redirects for SEO
   async redirects() {
     return [
+      {
+        source: '/en/ia-privada',
+        destination: '/en/private-ai',
+        permanent: true,
+      },
+      {
+        source: '/private-ai',
+        destination: '/ia-privada',
+        permanent: true,
+      },
       // Redirect www to non-www (or vice versa based on preference)
       // Uncomment if needed:
       // {
@@ -69,7 +79,7 @@ const nextConfig: NextConfig = {
 
   // Enable experimental features for better performance
   experimental: {
-    optimizePackageImports: ['framer-motion', 'lucide-react'],
+    optimizePackageImports: ['framer-motion', 'lucide-react', 'three'],
   },
 };
 

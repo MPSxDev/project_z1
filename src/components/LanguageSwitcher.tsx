@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useLocale } from 'next-intl';
 import { locales, LOCALE_COOKIE, type Locale } from '@/i18n/config';
+import { getPrivateAiPath, isPrivateAiPath } from '@/lib/ia-privada';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
@@ -54,34 +55,30 @@ export default function LanguageSwitcher({
     setIsNavigating(true);
     setIsOpen(false);
 
-    // Get current full path from browser
     const currentFullPath = window.location.pathname;
-
-    // Remove any locale prefix to get the clean path
-    let cleanPath = currentFullPath;
-
-    // Check if path starts with a locale prefix and remove it
-    if (cleanPath.startsWith('/en/')) {
-      cleanPath = cleanPath.substring(3); // Remove '/en'
-    } else if (cleanPath === '/en') {
-      cleanPath = '/';
-    }
-    // Spanish (es) is default, so paths like /privacy-policy are already clean
-
-    // Build new path based on target locale
     let newPath: string;
-    if (newLocale === 'es') {
-      // Spanish is default - no prefix
-      newPath = cleanPath || '/';
+
+    if (isPrivateAiPath(currentFullPath)) {
+      newPath =
+        newLocale === 'es'
+          ? getPrivateAiPath('es')
+          : `/en${getPrivateAiPath('en')}`;
     } else {
-      // English needs /en prefix
-      newPath = `/en${cleanPath}`;
+      let cleanPath = currentFullPath;
+
+      if (cleanPath.startsWith('/en/')) {
+        cleanPath = cleanPath.substring(3);
+      } else if (cleanPath === '/en') {
+        cleanPath = '/';
+      }
+
+      newPath =
+        newLocale === 'es'
+          ? cleanPath || '/'
+          : `/en${cleanPath === '/' ? '' : cleanPath}`;
     }
 
-    // Set the locale cookie so the middleware respects user's explicit choice
     document.cookie = `${LOCALE_COOKIE}=${newLocale}; path=/; max-age=31536000; SameSite=Lax`;
-
-    // Navigate
     window.location.href = newPath;
   };
 

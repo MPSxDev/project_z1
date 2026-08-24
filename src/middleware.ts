@@ -1,21 +1,17 @@
 import createMiddleware from 'next-intl/middleware';
 import { NextRequest, NextResponse } from 'next/server';
 import {
-  locales,
   defaultLocale,
+  locales,
   LOCALE_COOKIE,
   countryToLocale,
   type Locale,
 } from './i18n/config';
+import { routing } from './i18n/routing';
 
 // Create the next-intl middleware with locale detection disabled
 // We handle detection ourselves with custom priority logic
-const intlMiddleware = createMiddleware({
-  locales,
-  defaultLocale,
-  localePrefix: 'as-needed',
-  localeDetection: false, // Disabled - we handle detection manually
-});
+const intlMiddleware = createMiddleware(routing);
 
 /**
  * Detects the preferred locale from the request
@@ -66,8 +62,23 @@ function isFirstVisit(request: NextRequest): boolean {
   return !request.cookies.has(LOCALE_COOKIE);
 }
 
-export default function middleware(request: NextRequest) {
+function rewriteLocalizedPrivateAiRequest(
+  request: NextRequest
+): NextRequest | null {
   const pathname = request.nextUrl.pathname;
+  if (pathname !== '/en/private-ai') {
+    return null;
+  }
+
+  const url = request.nextUrl.clone();
+  url.pathname = '/en/ia-privada';
+  return new NextRequest(url, request);
+}
+
+export default function middleware(request: NextRequest) {
+  const localizedPrivateAiRequest = rewriteLocalizedPrivateAiRequest(request);
+  const activeRequest = localizedPrivateAiRequest ?? request;
+  const pathname = activeRequest.nextUrl.pathname;
 
   // CR routes should always be in Spanish - redirect /en/cr/* to /cr/*
   if (pathname.startsWith('/en/cr')) {
@@ -83,8 +94,8 @@ export default function middleware(request: NextRequest) {
   }
 
   // Handle locale detection for first-time visitors
-  if (isFirstVisit(request)) {
-    const detectedLocale = detectLocale(request);
+  if (isFirstVisit(activeRequest)) {
+    const detectedLocale = detectLocale(activeRequest);
     const urlLocale = getLocaleFromPathname(pathname);
 
     // Determine if we need to redirect
@@ -105,7 +116,7 @@ export default function middleware(request: NextRequest) {
         newPathname = `/${detectedLocale}${newPathname === '/' ? '' : newPathname}`;
       }
 
-      const redirectUrl = new URL(newPathname, request.url);
+      const redirectUrl = new URL(newPathname, activeRequest.url);
       const response = NextResponse.redirect(redirectUrl);
 
       // Set the locale cookie to persist detected preference
@@ -119,7 +130,9 @@ export default function middleware(request: NextRequest) {
     }
 
     // No redirect needed, but set cookie with current locale
-    const response = intlMiddleware(request);
+    const response = localizedPrivateAiRequest
+      ? NextResponse.rewrite(activeRequest.nextUrl)
+      : intlMiddleware(activeRequest);
     response.cookies.set(LOCALE_COOKIE, effectiveUrlLocale, {
       path: '/',
       maxAge: 60 * 60 * 24 * 365,
@@ -129,7 +142,11 @@ export default function middleware(request: NextRequest) {
   }
 
   // Returning visitor - next-intl handles routing, cookie already exists
-  return intlMiddleware(request);
+  if (localizedPrivateAiRequest) {
+    return NextResponse.rewrite(activeRequest.nextUrl);
+  }
+
+  return intlMiddleware(activeRequest);
 }
 
 export const config = {
