@@ -25,9 +25,10 @@ import {
   CLINICAS_WHATSAPP_MESSAGE_EN,
   CLINICAS_WHATSAPP_MESSAGE_ES,
 } from '@/lib/sistema-comercial-clinicas';
+import { getPrivateAiWhatsAppUrl, isPrivateAiPath } from '@/lib/ia-privada';
 
 // CTA section IDs to detect
-const CTA_SECTION_IDS = ['contact', 'contact-form'];
+const CTA_SECTION_IDS = ['contact', 'contact-form', 'evaluacion'];
 
 // Official WhatsApp logo SVG component
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -84,6 +85,7 @@ export default function WhatsAppButton({ phoneNumber: customPhoneNumber }: Whats
   const isCrecimientoDigital = pathname.includes('/crecimiento-digital');
   const isPresenciaDigital = pathname.includes('/presencia-digital');
   const isClinicasLanding = pathname.includes('/sistema-comercial-clinicas');
+  const isPrivateAiLanding = isPrivateAiPath(pathname);
   const phoneNumber =
     customPhoneNumber ||
     (isChileLanding
@@ -121,9 +123,9 @@ export default function WhatsAppButton({ phoneNumber: customPhoneNumber }: Whats
       ? 'Contactar por WhatsApp'
       : 'Contact us on WhatsApp';
 
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-    message
-  )}`;
+  const whatsappUrl = isPrivateAiLanding
+    ? getPrivateAiWhatsAppUrl(locale)
+    : `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
     <AnimatePresence>

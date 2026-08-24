@@ -26,6 +26,11 @@ import {
   CLINICAS_WHATSAPP_MESSAGE_EN,
   CLINICAS_WHATSAPP_MESSAGE_ES,
 } from '@/lib/sistema-comercial-clinicas';
+import {
+  PRIVATE_AI_PHONE,
+  getPrivateAiWhatsAppUrl,
+  isPrivateAiPath,
+} from '@/lib/ia-privada';
 
 // Phone numbers for different paths
 
@@ -50,6 +55,7 @@ const StickyCTA = memo(function StickyCTA({ whatsappNumber, ctaText }: StickyCTA
   const tCrecimiento = useTranslations('crecimientoDigital.hero');
   const tCrecimientoCl = useTranslations('crecimientoDigitalCl.hero');
   const tClinicas = useTranslations('sistemaComercialClinicas');
+  const tPrivateAi = useTranslations('iaPrivada');
   const locale = useLocale();
   const pathname = usePathname();
 
@@ -57,6 +63,7 @@ const StickyCTA = memo(function StickyCTA({ whatsappNumber, ctaText }: StickyCTA
   const isCrecimientoDigital = pathname.includes('/crecimiento-digital');
   const isPresenciaDigital = pathname.includes('/presencia-digital');
   const isClinicasLanding = pathname.includes('/sistema-comercial-clinicas');
+  const isPrivateAiLanding = isPrivateAiPath(pathname);
 
   // Optimized scroll handler with requestAnimationFrame
   const handleScroll = useCallback(() => {
@@ -86,7 +93,9 @@ const StickyCTA = memo(function StickyCTA({ whatsappNumber, ctaText }: StickyCTA
           ? CLINICAS_PHONE
           : isPresenciaDigital
             ? PRESENCIA_DIGITAL_PHONE
-            : null);
+            : isPrivateAiLanding
+              ? PRIVATE_AI_PHONE
+              : null);
 
   const message = isChileLanding
     ? locale === 'es'
@@ -108,9 +117,11 @@ const StickyCTA = memo(function StickyCTA({ whatsappNumber, ctaText }: StickyCTA
             ? 'Hola, me interesa obtener información sobre sus servicios de presencia digital.'
             : 'Hello, I am interested in learning more about your digital presence services.';
 
-  const href = effectiveWhatsappNumber
-    ? `https://wa.me/${effectiveWhatsappNumber}?text=${encodeURIComponent(message)}`
-    : 'mailto:contacto@yieldge.com';
+  const href = isPrivateAiLanding
+    ? getPrivateAiWhatsAppUrl(locale)
+    : effectiveWhatsappNumber
+      ? `https://wa.me/${effectiveWhatsappNumber}?text=${encodeURIComponent(message)}`
+      : 'mailto:contacto@yieldge.com';
 
   const Icon = effectiveWhatsappNumber ? MessageCircle : Calendar;
   const buttonText =
@@ -121,9 +132,11 @@ const StickyCTA = memo(function StickyCTA({ whatsappNumber, ctaText }: StickyCTA
         ? tCrecimiento('cta')
         : isClinicasLanding
           ? tClinicas('stickyCta')
-          : isPresenciaDigital
-            ? tPresencia('cta')
-            : t('primaryCta'));
+          : isPrivateAiLanding
+            ? tPrivateAi('stickyCta')
+            : isPresenciaDigital
+              ? tPresencia('cta')
+              : t('primaryCta'));
 
   return (
     <AnimatePresence>

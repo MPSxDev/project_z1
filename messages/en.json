@@ -3074,5 +3074,414 @@
       "support": "We reply during business hours. No long forms.",
       "trust": "No commitment · Limited slots this month"
     }
+  },
+  "iaPrivada": {
+    "meta": {
+      "title": "Private AI for the enterprise",
+      "description": "We deploy private AI inside your infrastructure so you can work with sensitive data, enterprise models, and AI agents without depending on external services. On-premises, private cloud, or hybrid.",
+      "keywords": "private AI, on-premise AI, enterprise RAG, AI agents, GPU infrastructure, air-gapped AI, Yieldge",
+      "ogAlt": "Yieldge Private AI — private AI infrastructure"
+    },
+    "stickyCta": "Request an assessment",
+    "navbar": {
+      "howItWorks": "How it works",
+      "capabilities": "Infrastructure",
+      "packages": "Solutions",
+      "faq": "FAQ",
+      "cta": "Request an assessment",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu"
+    },
+    "hero": {
+      "eyebrow": "Private AI Infrastructure",
+      "headline": "Your company's AI.",
+      "headlineLine2": "Under your control.",
+      "subheadline": "We implement private artificial intelligence inside your own infrastructure so you can work with sensitive information, enterprise models, and AI agents without necessarily depending on external services.",
+      "primaryCta": "Request an assessment",
+      "secondaryCta": "See how it works",
+      "modes": [
+        "On-Premises",
+        "Private Cloud",
+        "Hybrid",
+        "Air-Gapped"
+      ]
+    },
+    "assets": {
+      "problem": "Risks of exposing sensitive data through external AI services",
+      "core": "GPU sealed inside a glass cube",
+      "architecture": "Hardware, model, and private AI application layers",
+      "dataControl": "Documents that circulate and stay inside the environment",
+      "knowledge": "Internal documents converted into private answers",
+      "gateway": "Control between private AI and external services",
+      "infrastructure": "GPU server for local inference"
+    },
+    "trust": {
+      "statement": "Designed for organizations where data cannot simply leave the company.",
+      "badges": [
+        "NVIDIA",
+        "On-Premises",
+        "Private Cloud",
+        "Air-Gapped",
+        "RAG",
+        "AI Agents"
+      ]
+    },
+    "problem": {
+      "eyebrow": "The problem",
+      "title": "Enterprise AI has a problem.",
+      "cards": [
+        {
+          "title": "Sensitive data",
+          "text": "Documents, contracts, financial information, intellectual property, and customer data cannot always be processed in external services."
+        },
+        {
+          "title": "Lack of control",
+          "text": "Where is your data processed? Which model receives it? What gets logged?"
+        },
+        {
+          "title": "Security and governance",
+          "text": "AI adoption introduces new challenges around access, auditability, traceability, and governance."
+        },
+        {
+          "title": "Generic models",
+          "text": "Every company has different information, processes, and needs."
+        }
+      ],
+      "anchor1": "The question is no longer whether your company will use AI.",
+      "anchor2": "It is where it will run."
+    },
+    "solution": {
+      "eyebrow": "Private AI",
+      "title": "Artificial intelligence inside your environment.",
+      "subheadline": "We design and implement private AI infrastructure adapted to each organization's technical, operational, and security requirements."
+    },
+    "capabilities": {
+      "eyebrow": "What we build",
+      "title": "An AI infrastructure. Not just a chatbot.",
+      "items": [
+        {
+          "title": "Private LLM / SLM",
+          "text": "Language models deployed inside your infrastructure, selected by performance, cost, security, and use case."
+        },
+        {
+          "title": "Enterprise RAG",
+          "text": "Connect your documents and knowledge bases to get answers grounded in internal information and verifiable sources."
+        },
+        {
+          "title": "AI Agents",
+          "text": "Agents that can query systems, execute actions, and automate business processes."
+        },
+        {
+          "title": "AI Infrastructure",
+          "text": "We design and deploy the GPU infrastructure required to run AI locally."
+        },
+        {
+          "title": "AI Gateway",
+          "text": "A control layer to manage models, policies, access, routing, and AI usage."
+        },
+        {
+          "title": "Managed Private AI",
+          "text": "We operate, monitor, and update your AI infrastructure on an ongoing basis."
+        }
+      ]
+    },
+    "dataControl": {
+      "title": "Keep your data where it belongs.",
+      "body": "We design architectures where sensitive data can remain inside your organization's infrastructure, including private, hybrid, and isolated deployments.",
+      "badges": [
+        "Local Inference",
+        "Private Network",
+        "Access Control",
+        "Audit Logs",
+        "Data Governance"
+      ]
+    },
+    "useCases": {
+      "title": "AI applied to real processes.",
+      "featured": {
+        "label": "Flagship use case",
+        "title": "Private Knowledge Assistant",
+        "text": "Ask thousands of internal documents as if you were talking to the entire organization."
+      },
+      "cards": [
+        {
+          "name": "Legal",
+          "text": "Analyze contracts, policies, and legal documentation."
+        },
+        {
+          "name": "Mining & Industry",
+          "text": "Query procedures, technical manuals, and operational documentation."
+        },
+        {
+          "name": "Finance",
+          "text": "Automate analysis and queries over internal financial information."
+        },
+        {
+          "name": "Healthcare",
+          "text": "Access institutional knowledge under a private architecture."
+        }
+      ]
+    },
+    "demo": {
+      "title": "Private AI Assistant",
+      "promptLabel": "Query",
+      "prompt": "What is the procedure for approving a purchase order?",
+      "answerLabel": "Response",
+      "answer": "According to the internal procurement procedure, orders above the defined threshold require area-manager approval and registration in the purchasing system. The standard turnaround is three business days.",
+      "sourcesLabel": "Sources",
+      "sources": [
+        {
+          "title": "Procurement Manual",
+          "loc": "p. 23"
+        },
+        {
+          "title": "Internal Policy",
+          "loc": "section 4.2"
+        }
+      ],
+      "localBadge": "Local inference",
+      "privateBadge": "Private data"
+    },
+    "industries": {
+      "title": "When the information matters, so does the infrastructure.",
+      "body": "We design the architecture around each organization's security, privacy, data-governance, and operating requirements.",
+      "items": [
+        "Financial Services",
+        "Healthcare",
+        "Mining",
+        "Legal",
+        "Government",
+        "Industrial"
+      ]
+    },
+    "technology": {
+      "eyebrow": "Stack",
+      "title": "Enterprise-grade AI infrastructure.",
+      "body": "Built around your infrastructure. We select models, serving, and GPUs based on the workload — not the other way around.",
+      "layers": [
+        {
+          "label": "Applications"
+        },
+        {
+          "label": "AI Agents"
+        },
+        {
+          "label": "RAG / Knowledge"
+        },
+        {
+          "label": "Model Serving",
+          "detail": "NVIDIA NIM · vLLM"
+        },
+        {
+          "label": "Foundation Models",
+          "detail": "Llama · Qwen · Mistral · Nemotron"
+        },
+        {
+          "label": "GPU Infrastructure",
+          "detail": "NVIDIA"
+        },
+        {
+          "label": "Your data center"
+        }
+      ]
+    },
+    "deployment": {
+      "title": "Not every workload needs the same model.",
+      "subheadline": "We design the right architecture for each type of information and process.",
+      "columns": [
+        {
+          "title": "Local — maximum control",
+          "text": "The model and the data operate inside your infrastructure."
+        },
+        {
+          "title": "Private Cloud — scale",
+          "text": "Dedicated infrastructure inside a private environment."
+        },
+        {
+          "title": "Hybrid — both worlds",
+          "text": "Decide which processes stay private and which can use external services."
+        }
+      ],
+      "gateway": "AI Gateway",
+      "privateLabel": "Private AI",
+      "cloudLabel": "Cloud AI",
+      "privateNote": "Sensitive data",
+      "cloudNote": "Low-risk tasks"
+    },
+    "security": {
+      "title": "Control at every layer.",
+      "body": "From who can access a model to what information an agent can use, every layer can be designed under your organization's security policies.",
+      "items": [
+        "Identity",
+        "RBAC",
+        "SSO",
+        "Audit",
+        "Encryption",
+        "Network Isolation",
+        "Model Governance",
+        "Data Policies"
+      ]
+    },
+    "process": {
+      "title": "From first proof to production.",
+      "steps": [
+        {
+          "id": "discover",
+          "name": "Discover",
+          "text": "We identify processes and data where Private AI can create impact."
+        },
+        {
+          "id": "architect",
+          "name": "Architect",
+          "text": "We design models, infrastructure, and the security architecture."
+        },
+        {
+          "id": "deploy",
+          "name": "Deploy",
+          "text": "We install and configure the platform."
+        },
+        {
+          "id": "integrate",
+          "name": "Integrate",
+          "text": "We connect documents, applications, APIs, and internal systems."
+        },
+        {
+          "id": "operate",
+          "name": "Operate",
+          "text": "We monitor, update, and optimize the platform."
+        }
+      ]
+    },
+    "startSmall": {
+      "title": "You do not need to transform the whole company to start.",
+      "body": "We begin with one concrete use case, measure results, and scale from there.",
+      "steps": [
+        "Assessment",
+        "Pilot",
+        "Production",
+        "Scale"
+      ],
+      "anchor": "One use case. One environment. Measurable results."
+    },
+    "packages": {
+      "title": "Start with one use case. Scale when you have results.",
+      "items": [
+        {
+          "id": "assessment",
+          "title": "AI Assessment",
+          "text": "Discover where Private AI can create value in your organization.",
+          "ideal": "Best for: companies still evaluating.",
+          "cta": "Explore the assessment"
+        },
+        {
+          "id": "pilot",
+          "title": "Private AI Pilot",
+          "text": "A first use case running on private infrastructure.",
+          "ideal": "Best for: validating the technology and ROI.",
+          "cta": "Request a pilot"
+        },
+        {
+          "id": "enterprise",
+          "title": "Enterprise Private AI",
+          "text": "Infrastructure, models, agents, and integrations for production.",
+          "ideal": "Best for: organizations that need AI at scale.",
+          "cta": "Talk to a specialist"
+        },
+        {
+          "id": "managed",
+          "title": "Managed Private AI",
+          "text": "We operate and maintain your AI infrastructure.",
+          "ideal": "Best for: teams that want to run this without an internal AI unit.",
+          "cta": "Learn about Managed AI"
+        }
+      ]
+    },
+    "roi": {
+      "title": "Private AI is not only a technology decision.",
+      "items": [
+        {
+          "title": "Less operational time",
+          "text": "Automation of repetitive tasks."
+        },
+        {
+          "title": "Faster access to knowledge",
+          "text": "Internal information available when it is needed."
+        },
+        {
+          "title": "Lower exposure risk",
+          "text": "Architectures designed to keep sensitive information under control."
+        }
+      ],
+      "anchor": "We measure impact before we scale."
+    },
+    "partners": {
+      "title": "Built for accelerated AI infrastructure.",
+      "body": "We work with leading acceleration technologies and enterprise ecosystems to design AI infrastructure adapted to each workload.",
+      "badges": [
+        "NVIDIA",
+        "NVIDIA NIM",
+        "NVIDIA AI Enterprise"
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "Do we need to buy servers?",
+          "a": "Not necessarily. We evaluate existing infrastructure, dedicated servers, workstations, a private datacenter, or a private cloud depending on the case."
+        },
+        {
+          "q": "Can we use our own models?",
+          "a": "Yes. The architecture can support different models and select the most suitable one for each use case."
+        },
+        {
+          "q": "Does our data have to leave the company?",
+          "a": "Not necessarily. One of the main advantages of Private AI is the ability to design inference and processing inside infrastructure controlled by the organization."
+        },
+        {
+          "q": "Can we connect our ERP?",
+          "a": "Yes. The platform can integrate through APIs, databases, and connectors according to the system's capabilities."
+        },
+        {
+          "q": "Do we need an internal AI team?",
+          "a": "No. We can take care of architecture, implementation, and operation of the platform."
+        },
+        {
+          "q": "Can we start with a pilot?",
+          "a": "Yes. We recommend starting with one concrete use case before a larger deployment."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "What if your company could use AI without taking its data out of its environment?",
+      "subheadline": "Let's evaluate a real use case and design a Private AI architecture for your organization.",
+      "cta": "Request a Private AI Assessment",
+      "microcopy": "30–45 min · Initial assessment · Recommended architecture"
+    },
+    "footer": {
+      "brand": "Private AI",
+      "tagline": "Enterprise AI Infrastructure",
+      "solutions": "Solutions",
+      "solutionsItems": [
+        "Private AI",
+        "RAG",
+        "AI Agents",
+        "AI Infrastructure",
+        "Managed AI"
+      ],
+      "industries": "Industries",
+      "industriesItems": [
+        "Financial",
+        "Healthcare",
+        "Mining",
+        "Legal",
+        "Industrial"
+      ],
+      "company": "Company",
+      "about": "About",
+      "contact": "Contact",
+      "security": "Security",
+      "copyright": "© {year} Yieldge"
+    }
   }
 }

@@ -3062,5 +3062,414 @@
       "support": "Respondemos en horario hábil. Sin formularios largos.",
       "trust": "Sin compromiso · Cupos limitados este mes"
     }
+  },
+  "iaPrivada": {
+    "meta": {
+      "title": "IA privada para empresas | Private AI",
+      "description": "Implementamos inteligencia artificial privada en tu infraestructura para trabajar con datos sensibles, modelos empresariales y agentes de IA. On-premises, private cloud o híbrido.",
+      "keywords": "IA privada, inteligencia artificial on premise, Private AI, RAG empresarial, agentes de IA, infraestructura GPU, IA on-premises, Yieldge",
+      "ogAlt": "Yieldge Private AI — infraestructura de IA privada"
+    },
+    "stickyCta": "Solicitar evaluación",
+    "navbar": {
+      "howItWorks": "Cómo funciona",
+      "capabilities": "Infraestructura",
+      "packages": "Soluciones",
+      "faq": "FAQ",
+      "cta": "Solicitar evaluación",
+      "openMenu": "Abrir menú",
+      "closeMenu": "Cerrar menú"
+    },
+    "hero": {
+      "eyebrow": "Private AI Infrastructure",
+      "headline": "La IA de tu empresa.",
+      "headlineLine2": "Bajo tu control.",
+      "subheadline": "Implementamos inteligencia artificial privada dentro de tu propia infraestructura para trabajar con información sensible, modelos empresariales y agentes de IA sin depender necesariamente de servicios externos.",
+      "primaryCta": "Solicitar evaluación",
+      "secondaryCta": "Ver cómo funciona",
+      "modes": [
+        "On-Premises",
+        "Private Cloud",
+        "Hybrid",
+        "Air-Gapped"
+      ]
+    },
+    "assets": {
+      "problem": "Riesgos de exponer datos sensibles en servicios de IA externos",
+      "core": "GPU encapsulado en un cubo de vidrio sellado",
+      "architecture": "Capas de hardware, modelo y aplicaciones de IA privada",
+      "dataControl": "Documentos que circulan y permanecen dentro del entorno",
+      "knowledge": "Documentos internos convertidos en respuestas privadas",
+      "gateway": "Control entre IA privada y servicios externos",
+      "infrastructure": "Servidor GPU para inferencia local"
+    },
+    "trust": {
+      "statement": "Diseñada para organizaciones donde los datos no pueden simplemente salir de la empresa.",
+      "badges": [
+        "NVIDIA",
+        "On-Premises",
+        "Private Cloud",
+        "Air-Gapped",
+        "RAG",
+        "AI Agents"
+      ]
+    },
+    "problem": {
+      "eyebrow": "El problema",
+      "title": "La IA empresarial tiene un problema.",
+      "cards": [
+        {
+          "title": "Datos sensibles",
+          "text": "Documentos, contratos, información financiera, propiedad intelectual y datos de clientes no siempre pueden tratarse en servicios externos."
+        },
+        {
+          "title": "Falta de control",
+          "text": "¿Dónde se procesan tus datos? ¿Qué modelo los recibe? ¿Qué queda registrado?"
+        },
+        {
+          "title": "Seguridad y gobierno",
+          "text": "La adopción de IA introduce nuevos desafíos de acceso, auditoría, trazabilidad y gobierno."
+        },
+        {
+          "title": "Modelos genéricos",
+          "text": "Cada empresa tiene información, procesos y necesidades diferentes."
+        }
+      ],
+      "anchor1": "La pregunta ya no es si tu empresa va a utilizar IA.",
+      "anchor2": "Es dónde va a ejecutarla."
+    },
+    "solution": {
+      "eyebrow": "Private AI",
+      "title": "Inteligencia artificial dentro de tu entorno.",
+      "subheadline": "Diseñamos e implementamos infraestructura de IA privada adaptada a los requerimientos técnicos, operacionales y de seguridad de cada organización."
+    },
+    "capabilities": {
+      "eyebrow": "Lo que construimos",
+      "title": "Una infraestructura de IA. No solo un chatbot.",
+      "items": [
+        {
+          "title": "Private LLM / SLM",
+          "text": "Modelos de lenguaje desplegados dentro de tu infraestructura, seleccionados según rendimiento, costo, seguridad y caso de uso."
+        },
+        {
+          "title": "Enterprise RAG",
+          "text": "Conecta tus documentos y knowledge bases para obtener respuestas basadas en información interna y fuentes verificables."
+        },
+        {
+          "title": "AI Agents",
+          "text": "Agentes capaces de consultar sistemas, ejecutar acciones y automatizar procesos empresariales."
+        },
+        {
+          "title": "AI Infrastructure",
+          "text": "Diseñamos y desplegamos la infraestructura GPU necesaria para ejecutar IA localmente."
+        },
+        {
+          "title": "AI Gateway",
+          "text": "Una capa de control para gestionar modelos, políticas, acceso, routing y uso de IA."
+        },
+        {
+          "title": "Managed Private AI",
+          "text": "Operamos, monitorizamos y actualizamos tu infraestructura de IA de forma continua."
+        }
+      ]
+    },
+    "dataControl": {
+      "title": "Mantén tus datos donde deben estar.",
+      "body": "Diseñamos arquitecturas donde los datos sensibles pueden permanecer dentro de la infraestructura de tu organización, incluyendo despliegues privados, híbridos y entornos aislados.",
+      "badges": [
+        "Local Inference",
+        "Private Network",
+        "Access Control",
+        "Audit Logs",
+        "Data Governance"
+      ]
+    },
+    "useCases": {
+      "title": "IA aplicada a procesos reales.",
+      "featured": {
+        "label": "Caso principal",
+        "title": "Private Knowledge Assistant",
+        "text": "Pregunta a miles de documentos internos como si estuvieras conversando con toda la organización."
+      },
+      "cards": [
+        {
+          "name": "Legal",
+          "text": "Analiza contratos, políticas y documentación jurídica."
+        },
+        {
+          "name": "Mining & Industry",
+          "text": "Consulta procedimientos, manuales técnicos y documentación operacional."
+        },
+        {
+          "name": "Finance",
+          "text": "Automatiza análisis y consultas sobre información financiera interna."
+        },
+        {
+          "name": "Healthcare",
+          "text": "Accede a conocimiento institucional bajo una arquitectura privada."
+        }
+      ]
+    },
+    "demo": {
+      "title": "Private AI Assistant",
+      "promptLabel": "Consulta",
+      "prompt": "¿Cuál es el procedimiento para aprobar una orden de compra?",
+      "answerLabel": "Respuesta",
+      "answer": "Según el procedimiento interno de adquisiciones, las órdenes sobre el umbral definido requieren aprobación del gerente de área y registro en el sistema de compras. El plazo estándar es de tres días hábiles.",
+      "sourcesLabel": "Fuentes",
+      "sources": [
+        {
+          "title": "Manual de Compras",
+          "loc": "p. 23"
+        },
+        {
+          "title": "Política Interna",
+          "loc": "sección 4.2"
+        }
+      ],
+      "localBadge": "Local inference",
+      "privateBadge": "Private data"
+    },
+    "industries": {
+      "title": "Cuando la información importa, la infraestructura también.",
+      "body": "Diseñamos la arquitectura considerando los requisitos de seguridad, privacidad, gobierno de datos y operación de cada organización.",
+      "items": [
+        "Financial Services",
+        "Healthcare",
+        "Mining",
+        "Legal",
+        "Government",
+        "Industrial"
+      ]
+    },
+    "technology": {
+      "eyebrow": "Stack",
+      "title": "Enterprise-grade AI infrastructure.",
+      "body": "Built around your infrastructure. Seleccionamos modelos, serving y GPU según la carga de trabajo — no al revés.",
+      "layers": [
+        {
+          "label": "Applications"
+        },
+        {
+          "label": "AI Agents"
+        },
+        {
+          "label": "RAG / Knowledge"
+        },
+        {
+          "label": "Model Serving",
+          "detail": "NVIDIA NIM · vLLM"
+        },
+        {
+          "label": "Foundation Models",
+          "detail": "Llama · Qwen · Mistral · Nemotron"
+        },
+        {
+          "label": "GPU Infrastructure",
+          "detail": "NVIDIA"
+        },
+        {
+          "label": "Your data center"
+        }
+      ]
+    },
+    "deployment": {
+      "title": "No todas las cargas necesitan el mismo modelo.",
+      "subheadline": "Diseñamos la arquitectura adecuada para cada tipo de información y proceso.",
+      "columns": [
+        {
+          "title": "Local — máximo control",
+          "text": "El modelo y los datos operan dentro de tu infraestructura."
+        },
+        {
+          "title": "Private Cloud — escalabilidad",
+          "text": "Infraestructura dedicada dentro de un entorno privado."
+        },
+        {
+          "title": "Hybrid — lo mejor de ambos",
+          "text": "Decide qué procesos permanecen privados y cuáles pueden utilizar servicios externos."
+        }
+      ],
+      "gateway": "AI Gateway",
+      "privateLabel": "Private AI",
+      "cloudLabel": "Cloud AI",
+      "privateNote": "Sensitive data",
+      "cloudNote": "Low-risk tasks"
+    },
+    "security": {
+      "title": "Control at every layer.",
+      "body": "Desde quién puede acceder a un modelo hasta qué información puede utilizar un agente, cada capa puede diseñarse bajo las políticas de seguridad de tu organización.",
+      "items": [
+        "Identity",
+        "RBAC",
+        "SSO",
+        "Audit",
+        "Encryption",
+        "Network Isolation",
+        "Model Governance",
+        "Data Policies"
+      ]
+    },
+    "process": {
+      "title": "De la primera prueba a producción.",
+      "steps": [
+        {
+          "id": "discover",
+          "name": "Discover",
+          "text": "Identificamos procesos y datos donde Private AI puede generar impacto."
+        },
+        {
+          "id": "architect",
+          "name": "Architect",
+          "text": "Diseñamos modelos, infraestructura y arquitectura de seguridad."
+        },
+        {
+          "id": "deploy",
+          "name": "Deploy",
+          "text": "Instalamos y configuramos la plataforma."
+        },
+        {
+          "id": "integrate",
+          "name": "Integrate",
+          "text": "Conectamos documentos, aplicaciones, APIs y sistemas internos."
+        },
+        {
+          "id": "operate",
+          "name": "Operate",
+          "text": "Monitorizamos, actualizamos y optimizamos la plataforma."
+        }
+      ]
+    },
+    "startSmall": {
+      "title": "No necesitas transformar toda tu empresa para empezar.",
+      "body": "Comenzamos con un caso de uso concreto, medimos resultados y escalamos desde ahí.",
+      "steps": [
+        "Assessment",
+        "Pilot",
+        "Production",
+        "Scale"
+      ],
+      "anchor": "Un caso. Un entorno. Resultados medibles."
+    },
+    "packages": {
+      "title": "Empieza con un caso. Escala cuando tengas resultados.",
+      "items": [
+        {
+          "id": "assessment",
+          "title": "AI Assessment",
+          "text": "Descubre dónde Private AI puede generar valor en tu organización.",
+          "ideal": "Ideal para: empresas que aún están evaluando.",
+          "cta": "Explorar assessment"
+        },
+        {
+          "id": "pilot",
+          "title": "Private AI Pilot",
+          "text": "Un primer caso de uso funcionando sobre infraestructura privada.",
+          "ideal": "Ideal para: validar tecnología y ROI.",
+          "cta": "Solicitar piloto"
+        },
+        {
+          "id": "enterprise",
+          "title": "Enterprise Private AI",
+          "text": "Infraestructura, modelos, agentes e integraciones para producción.",
+          "ideal": "Ideal para: organizaciones que necesitan IA a escala.",
+          "cta": "Hablar con un especialista"
+        },
+        {
+          "id": "managed",
+          "title": "Managed Private AI",
+          "text": "Nosotros operamos y mantenemos tu infraestructura de IA.",
+          "ideal": "Ideal para: equipos que quieren operar sin una unidad de IA interna.",
+          "cta": "Conocer Managed AI"
+        }
+      ]
+    },
+    "roi": {
+      "title": "La IA privada no es solo una decisión tecnológica.",
+      "items": [
+        {
+          "title": "Menos tiempo operativo",
+          "text": "Automatización de tareas repetitivas."
+        },
+        {
+          "title": "Más acceso al conocimiento",
+          "text": "Información interna disponible cuando se necesita."
+        },
+        {
+          "title": "Menor riesgo de exposición",
+          "text": "Arquitecturas diseñadas para mantener información sensible bajo control."
+        }
+      ],
+      "anchor": "Medimos el impacto antes de escalar."
+    },
+    "partners": {
+      "title": "Built for accelerated AI infrastructure.",
+      "body": "Trabajamos con tecnologías de aceleración y ecosistemas empresariales líderes para diseñar infraestructura de IA adaptada a cada carga de trabajo.",
+      "badges": [
+        "NVIDIA",
+        "NVIDIA NIM",
+        "NVIDIA AI Enterprise"
+      ]
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "items": [
+        {
+          "q": "¿Necesitamos comprar servidores?",
+          "a": "No necesariamente. Evaluamos infraestructura existente, servidores dedicados, workstation, datacenter privado o cloud privada según el caso."
+        },
+        {
+          "q": "¿Podemos utilizar nuestros propios modelos?",
+          "a": "Sí. La arquitectura puede soportar diferentes modelos y seleccionar el más adecuado según cada caso de uso."
+        },
+        {
+          "q": "¿Los datos tienen que salir de nuestra empresa?",
+          "a": "No necesariamente. Una de las principales ventajas de Private AI es poder diseñar inferencia y procesamiento dentro de infraestructura controlada por la organización."
+        },
+        {
+          "q": "¿Podemos conectar nuestro ERP?",
+          "a": "Sí. La plataforma puede integrarse mediante APIs, bases de datos y conectores según las capacidades del sistema."
+        },
+        {
+          "q": "¿Necesitamos un equipo de IA interno?",
+          "a": "No. Podemos encargarnos de la arquitectura, implementación y operación de la plataforma."
+        },
+        {
+          "q": "¿Podemos comenzar con un piloto?",
+          "a": "Sí. Recomendamos comenzar con un caso de uso concreto antes de realizar un despliegue mayor."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "¿Qué pasaría si tu empresa pudiera utilizar IA sin sacar sus datos de su entorno?",
+      "subheadline": "Evaluemos un caso de uso real y diseñemos una arquitectura Private AI para tu organización.",
+      "cta": "Solicitar Private AI Assessment",
+      "microcopy": "30–45 min · Evaluación inicial · Arquitectura recomendada"
+    },
+    "footer": {
+      "brand": "Private AI",
+      "tagline": "Enterprise AI Infrastructure",
+      "solutions": "Soluciones",
+      "solutionsItems": [
+        "Private AI",
+        "RAG",
+        "AI Agents",
+        "AI Infrastructure",
+        "Managed AI"
+      ],
+      "industries": "Industrias",
+      "industriesItems": [
+        "Financial",
+        "Healthcare",
+        "Mining",
+        "Legal",
+        "Industrial"
+      ],
+      "company": "Empresa",
+      "about": "Nosotros",
+      "contact": "Contacto",
+      "security": "Seguridad",
+      "copyright": "© {year} Yieldge"
+    }
   }
 }
